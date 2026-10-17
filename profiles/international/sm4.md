@@ -21,3 +21,5 @@ Parameters: 128-bit block; 128-bit key; 32 rounds
 ### Unresolved details
 
 - The hosted English translation lacks an official dated Chinese cover; its edition is not established by its filename.
+
+[Companion standards: China: original releases, parameters and successive standards](../../docs/companion-standards.md#shangmi)

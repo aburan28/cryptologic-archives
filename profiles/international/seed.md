@@ -20,3 +20,5 @@ Parameters: 128-bit block; 128-bit key
 ### Unresolved details
 
 - This profile concerns the 128-bit SEED specification in RFC 4269, not every later similarly named variant.
+
+[Companion standards: Republic of Korea: SEED and ARIA protocol profiles](../../docs/companion-standards.md#korea)

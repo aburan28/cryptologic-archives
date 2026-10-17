@@ -19,6 +19,8 @@ sources={s['id']:s for s in catalog['sources'] if 'international' in s.get('coll
 profiles=data['profiles']
 events=data['events']
 AS_OF=data['research_as_of']
+companion=json.loads((ROOT/'data/standards.json').read_text())
+family_for_profile={p['path']:f for f in companion['families'] for p in f['profiles']}
 
 def write(path,text):
     p=ROOT/path;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(text,encoding='utf8')
@@ -35,6 +37,9 @@ def profile_md(p,standalone=False):
         lines+=[f"- **{i['claim_id']} · {i['confidence']}** — {i['text']} Basis: {', '.join(i['depends_on'])}."]
         if i.get('assumption'):lines+=['  Assumption: '+i['assumption']]
     lines+=['','### Unresolved details','']+['- '+u for u in p['unknowns']]
+    family=family_for_profile.get('profiles/international/'+p['slug']+'.md')
+    if family:
+        lines+=['',f"[Companion standards: {family['name']}]({prefix}docs/companion-standards.md#{family['id']})"]
     return '\n'.join(lines)+'\n'
 
 INTRO='''This collection extends the archive across Soviet/Russian, Chinese, German, Japanese and Korean cryptography. It records public national standards, historical military machines and government systems for which only limited architectural information is public.
@@ -47,9 +52,9 @@ Every profile separates source-reported statements, deductions and unresolved de
 def markdown():
     lines=['# International cryptography: constructions and historical records','',f'Research snapshot: {AS_OF}','',INTRO,'## Comparison','', '| Region | Scheme | Role / construction | Parameters |','|---|---|---|---|']
     for p in profiles:lines += [f"| {p['region']} | [{p['name']}](../profiles/international/{p['slug']}.md) | {p['role']}; {p['primitive']} | {p['parameters']} |"]
-    lines+=['','See the [international timeline](international-timeline.md), [profile index](../profiles/international/README.md), and [source catalogue](../sources/README.md).','']
+    lines+=['','See the [international timeline](international-timeline.md), [profile index](../profiles/international/README.md), [companion standards](companion-standards.md), and [source catalogue](../sources/README.md).','']
     lines += [profile_md(p) for p in profiles]
-    lines += ['## Translation and preservation notes','','The seven English SM2/SM3/SM4 files are preserved as hosted by Alipay. Their covers lack official dated Chinese standard identifiers; the filenames alone do not verify an edition or an authorized translation. In particular, the SM2 Part 5 filename contains 2016 while RFC 8998 cites a 2017 standard. The catalogue keeps this discrepancy visible. Official Chinese records and the contemporary OSCCA announcement provide separate date evidence.','','The Fialka manual copy explicitly lacks original pages 2, 4 and 60. Turing Chapter 1, the Newmanry report portion and the Bletchley dictionary are edited transcriptions. They are labeled as such. Original RFC text is preserved when that is the publisher\'s available source format.','','## Further acquisitions','','The archive can be extended with independently sourced French, Swiss, Swedish, Israeli, Indian and other collections; earlier Chinese cryptologic history; and public records of additional Soviet equipment. Record a concrete source and its provenance before adding a design or approval claim. This edition does not claim worldwide completeness.','']
+    lines += ['## Translation and preservation notes','','The seven English SM2/SM3/SM4 files are preserved as hosted by Alipay. Their covers lack official dated Chinese standard identifiers; the filenames alone do not verify an edition or an authorized translation. In particular, the SM2 Part 5 filename contains 2016 while RFC 8998 cites a 2017 standard. The catalogue keeps this discrepancy visible. Official Chinese records and the contemporary OSCCA announcement provide separate date evidence.','','Official 2010 SM2 Parts 1–4, the recommended-curve sheet, and the original SM3 release are now preserved separately (S096–S098), together with the 2010-12-17 announcements (S070–S071). These earlier release texts are distinct from the hosted English translations and later GM/T/GB/T editions.','','The Fialka manual copy explicitly lacks original pages 2, 4 and 60. Turing Chapter 1, the Newmanry report portion and the Bletchley dictionary are edited transcriptions. They are labeled as such. Original RFC text is preserved when that is the publisher\'s available source format.','','## Further acquisitions','','The archive can be extended with independently sourced French, Swiss, Swedish, Israeli, Indian and other collections; earlier Chinese cryptologic history; and public records of additional Soviet equipment. Record a concrete source and its provenance before adding a design or approval claim. This edition does not claim worldwide completeness.','']
     write('docs/international-cryptography.md','\n'.join(lines))
     index=['# International algorithm and system profiles','',f'{len(profiles)} profiles. Detailed evidence is linked from each page.','']
     for p in profiles:
@@ -102,6 +107,7 @@ def pdf():
     add('Source formats and translations','h2')
     add('The archive preserves PDFs, original RFC text and raw web snapshots. Each acquired file has a SHA-256, timestamp and original/resolved URL in data/sources.json. English translations, edited transcriptions and scans are distinguished.')
     add('The seven hosted Chinese standard translations lack official dated Chinese covers. Their filenames do not independently establish an edition or translation authority. SM2 Part 5 illustrates the issue: the filename contains 2016, while RFC 8998 cites a 2017 standard.')
+    add('Official 2010 SM2 Parts 1–4, the recommended-curve sheet, and the original SM3 release are preserved separately in S096–S098. The 2010-12-17 announcements in S070–S071 provide direct release-date evidence. These are distinct from later GM/T/GB/T editions.','small')
     add('The Fialka manual copy explicitly lacks pages 2, 4 and 60. The Tunny/Newmanry PDF preserves only part of the complete wartime report. These limitations remain visible in the catalogue.','small')
     story.append(PageBreak())
     add('Comparison of constructions','h1')

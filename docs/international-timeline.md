@@ -27,6 +27,8 @@ Events describe particular records and milestones; an early record is not automa
 | 2007-06-01 | CLEFIA | designer specification | Sony specification version 1.0. | [S049](../sources/README.md#s049), Cover |
 | 2008-05-15 | SMS4 | english translation | Diffie/Ledin translation version 1.03. | [S053](../sources/README.md#s053), Cover |
 | 2010-03 | GOST 28147-89 / ARIA | english rfc | RFCs 5830 and 5794; later publications than the original designs. | [S020](../sources/README.md#s020), Header; companion RFC S046 |
+| 2010-12-17 | SM2 | official public release | Official release announcement with attached December 2010 specification; distinct from later GM/T and GB/T issue/effective dates. | [S070](../sources/README.md#s070), Release date, announcement and attachment links |
+| 2010-12-17 | SM3 | official public release | Official release announcement with attached December 2010 specification; distinct from later GM/T and GB/T issue/effective dates. | [S071](../sources/README.md#s071), Release date, announcement and attachment links |
 | 2011-03 | CLEFIA | english rfc | RFC 6114 publication. | [S044](../sources/README.md#s044), Header |
 | 2011-06-28 | ZUC | specification revision | Version 1.6 of the public ZUC core specification. | [S037](../sources/README.md#s037), Cover |
 | 2012-03-21 | ZUC / SM4 / SM2 / SM3 | industry standard release | OSCCA releases GM/T 0001-0004, effective on announcement. | [S034](../sources/README.md#s034), Announcement |

@@ -20,3 +20,5 @@ Parameters: 128-bit block; 256-bit key; ten round keys
 ### Unresolved details
 
 - Sharing a standard with Magma does not make the two ciphers mathematically interchangeable.
+
+[Companion standards: Russia: GOST parameters, modes and protocol bindings](../../docs/companion-standards.md#gost)

@@ -522,6 +522,20 @@
             }
           ],
           "claim_id": "INTL-SM3-F3"
+        },
+        {
+          "claim_id": "INTL-SM3-F4",
+          "text": "The official announcement of 2010-12-17 released SM3 with an attached algorithm specification whose cover is dated December 2010, preceding the 2012 industry-standard announcement.",
+          "source_refs": [
+            {
+              "source_id": "S071",
+              "locator": "Announcement date and attachment link"
+            },
+            {
+              "source_id": "S098",
+              "locator": "Cover and Sections 4–5"
+            }
+          ]
         }
       ],
       "inferences": [
@@ -606,6 +620,24 @@
             }
           ],
           "claim_id": "INTL-SM2-F4"
+        },
+        {
+          "claim_id": "INTL-SM2-F5",
+          "text": "Before the later GM/T and GB/T standards, the official announcement of 2010-12-17 released SM2 with a four-part algorithm PDF dated December 2010 and a separate recommended-curve parameter sheet.",
+          "source_refs": [
+            {
+              "source_id": "S070",
+              "locator": "Announcement date and attachment links"
+            },
+            {
+              "source_id": "S096",
+              "locator": "Part covers at PDF pages 1, 47, 61 and 80"
+            },
+            {
+              "source_id": "S097",
+              "locator": "One-page parameter sheet"
+            }
+          ]
         }
       ],
       "inferences": [
@@ -1418,6 +1450,22 @@
       "interpretation": "RFCs 5830 and 5794; later publications than the original designs.",
       "source_id": "S020",
       "locator": "Header; companion RFC S046"
+    },
+    {
+      "date": "2010-12-17",
+      "subject": "SM2",
+      "date_kind": "official_public_release",
+      "interpretation": "Official release announcement with attached December 2010 specification; distinct from later GM/T and GB/T issue/effective dates.",
+      "source_id": "S070",
+      "locator": "Release date, announcement and attachment links"
+    },
+    {
+      "date": "2010-12-17",
+      "subject": "SM3",
+      "date_kind": "official_public_release",
+      "interpretation": "Official release announcement with attached December 2010 specification; distinct from later GM/T and GB/T issue/effective dates.",
+      "source_id": "S071",
+      "locator": "Release date, announcement and attachment links"
     },
     {
       "date": "2011-03",

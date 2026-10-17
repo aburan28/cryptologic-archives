@@ -4,6 +4,7 @@ A historical research archive of public cryptologic records, original documents,
 
 ## Start here
 
+- [Companion standards guide](docs/companion-standards.md) and [PDF edition](reports/companion-standards.pdf): modes, parameters, encodings, protocol profiles, selection lists and evaluation records
 - [International research report](docs/international-cryptography.md) and [PDF edition](reports/international-cryptography.pdf)
 - [International profiles](profiles/international/README.md) and [historical timeline](docs/international-timeline.md)
 - [NSA Suite A report](docs/suite-a-research.md) and [PDF edition](reports/suite-a-research.pdf)
@@ -12,7 +13,7 @@ A historical research archive of public cryptologic records, original documents,
 - [NSA Suite A historical timeline](docs/timeline.md)
 - [Source catalogue and preservation status](sources/README.md)
 - [Research method](docs/methodology.md)
-- [Suite A claims](data/claims.json), [international claims](data/international-claims.json), [sources](data/sources.json), and [international profiles and timeline](data/international.json)
+- [Suite A claims](data/claims.json), [international claims](data/international-claims.json), [companion standards claims](data/standards-claims.json), [sources](data/sources.json), and [international profiles and timeline](data/international.json)
 
 ## What the archive records
 
@@ -22,6 +23,8 @@ Original source files, including PDFs and publisher-supplied RFC text, are store
 
 The international collection includes GOST 28147-89, Magma, Kuznyechik, Streebog, GOST signatures, Fialka, SM2, SM3, SM4, ZUC, Enigma, Lorenz/Tunny, CHIASMUS, LIBELLE/SINA, Camellia, CLEFIA, SEED and ARIA. Regional labels describe design or historical context. Each profile identifies the operation and type of evidence rather than treating all national standards as equivalents of Suite A.
 
+The companion collection adds official 2010 SM2 and SM3 release PDFs, GOST modes and protocol bindings, ZUC test/evaluation records, historical and revised CRYPTREC lists, BSI protocol guidance, and Camellia/SEED/ARIA profiles. It distinguishes publication categories, revisions and effective dates. Three KISA validation pages were unavailable; the preserved GM/T 0009-2012 booklet scan is incomplete. These limits are explicit in the guide and catalogue.
+
 ## Reproduce and check
 
 ```sh
@@ -29,6 +32,7 @@ python -m pip install -r requirements.txt
 python scripts/fetch_sources.py
 python scripts/build_report.py
 python scripts/build_international.py
+python scripts/build_standards.py
 python scripts/validate_archive.py
 ```
 

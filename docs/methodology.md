@@ -8,7 +8,7 @@
 - **Moderate inference:** a plausible reading with competing explanations.
 - **Unknown:** a detail that the cited records do not establish.
 
-Every inference in `data/claims.json` names the documented claim IDs on which it depends. This makes it possible to revise a deduction when its evidence changes.
+Every inference in the collection claim files (`data/claims.json`, `data/international-claims.json`, and `data/standards-claims.json`) names the premise claim IDs on which it depends. This makes it possible to revise a deduction when its evidence changes.
 
 ## Date semantics
 
@@ -19,6 +19,10 @@ Keep event date, document date, public-release date and retrieval time separate.
 Preserve source bytes unchanged. Record publisher, host, original and resolved URLs, retrieval timestamp, content type, size and SHA-256. A mirror is labeled as a mirror or transcription. Failed retrievals remain visible in the source catalogue, with no fabricated copy or checksum. An HTML snapshot may depend on external resources and is not necessarily a complete offline rendering.
 
 Original RFC text is retained where it is the publisher's source format. A digitized scan, edited transcription, English translation and original national-language standard are recorded as distinct kinds of evidence. Filenames and hosting-page dates do not establish a translation's edition or authorization. Missing pages and known discrepancies remain explicit.
+
+Successful retrieval does not mean a document is complete. The three-page GM/T 0009 booklet scan is an incomplete source, even though its acquired bytes are fully preserved. A revision announcement establishes the revisions and dates it actually lists; it does not supply the complete revised standard. Mutable publisher URLs identify a location, while the recorded hash and retrieval time identify the acquired edition.
+
+Record an RFC's publication category and stream separately: IETF Informational, IRTF Informational and Informational Independent Submissions have different provenance. These labels describe publication status at issue. They do not establish national approval, implementation certification or current deployment suitability. Check explicit version references: a later standards wrapper can incorporate an earlier algorithm edition.
 
 ## International context
 

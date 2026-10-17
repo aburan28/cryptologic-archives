@@ -20,3 +20,5 @@ Parameters: 128-bit key; 128-bit IV; 32-bit output words in version 1.6
 ### Unresolved details
 
 - Parameters in this profile apply to the preserved 128-bit version, not automatically to later ZUC-256 variants.
+
+[Companion standards: China and 3GPP: ZUC, EEA3 and EIA3](../../docs/companion-standards.md#zuc)

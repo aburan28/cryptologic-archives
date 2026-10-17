@@ -1,6 +1,6 @@
 # Source catalogue
 
-Research snapshot: 2026-10-17. Preserved: 56/56 records.
+Research snapshot: 2026-10-17. Preserved: 96/99 records.
 
 Original source bytes (PDF, RFC text and raw web snapshots) are preserved unchanged. Retrieval time is separate from document date. A checksum identifies the local copy; it is not an authentication certificate.
 
@@ -14,7 +14,7 @@ Provenance: Original publisher
 Original URL: <https://docs.oasis-open.org/pkcs11/pkcs11-hist/v3.0/os/pkcs11-hist-v3.0-os.pdf>  
 Preservation status: **archived**
 
-Collection: suite-a  
+Collection: suite-a, standards  
 Region: United States  
 Language: English  
 Format: pdf
@@ -58,7 +58,7 @@ Provenance: Original publisher
 Original URL: <https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-38d.pdf>  
 Preservation status: **archived**
 
-Collection: suite-a  
+Collection: suite-a, standards  
 Region: United States  
 Language: English  
 Format: pdf
@@ -80,7 +80,7 @@ Provenance: Original publisher
 Original URL: <https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-38a.pdf>  
 Preservation status: **archived**
 
-Collection: suite-a  
+Collection: suite-a, standards  
 Region: United States  
 Language: English  
 Format: pdf
@@ -606,10 +606,14 @@ Preservation status: **archived**
 
 Preserved in the original publisher format. RFC publication does not itself establish national approval or IETF endorsement; consult the document status statement.
 
-Collection: international  
+Collection: international, standards  
 Region: China  
 Language: English  
 Format: pdf
+
+RFC category: Informational
+
+RFC stream: Independent Submission
 
 [Preserved file](originals/S026-rfc8998.pdf) · 189,766 bytes · 13 pages
 
@@ -798,7 +802,7 @@ Preservation status: **archived**
 
 Contemporary announcement of industry standards; distinct from later GB/T national standards.
 
-Collection: international  
+Collection: international, standards  
 Region: China  
 Language: Chinese  
 Format: html
@@ -822,7 +826,7 @@ Preservation status: **archived**
 
 Official metadata distinguishes issue date from implementation date. A dynamic page snapshot may not preserve all rendered fields.
 
-Collection: international  
+Collection: international, standards  
 Region: China  
 Language: Chinese  
 Format: html
@@ -846,7 +850,7 @@ Preservation status: **archived**
 
 Official record: issue 2016-08-29, implementation 2017-03-01. These dates are not first invention or first classified use.
 
-Collection: international  
+Collection: international, standards  
 Region: China  
 Language: Chinese  
 Format: html
@@ -870,7 +874,7 @@ Preservation status: **archived**
 
 Algorithm specification for 128-EEA3 and 128-EIA3. The 2019 upload path is distinct from the 2011 document date.
 
-Collection: international  
+Collection: international, standards  
 Region: China / international mobile standards  
 Language: English  
 Format: pdf
@@ -1182,10 +1186,14 @@ Preservation status: **archived**
 
 Preserved in the original publisher format. RFC publication does not itself establish national approval or IETF endorsement; consult the document status statement.
 
-Collection: international  
+Collection: international, standards  
 Region: Russia  
 Language: English  
 Format: text
+
+RFC category: Informational
+
+RFC stream: Not stated in the preserved header
 
 [Preserved file](originals/S050-rfc4357.txt) · 114,564 bytes
 
@@ -1335,6 +1343,1133 @@ Format: html
 
 Retrieved: 2026-10-17T18:59:50.363466+00:00  
 SHA-256: `0346c7099c3007b1adb4308f1fd8e7af8697837afd7f43f563b7d83e137f4d6d`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S057
+
+**RFC 7836: Guidelines on the Cryptographic Algorithms to Accompany GOST R 34.10-2012 and GOST R 34.11-2012**
+
+Publisher: RFC Editor; named document authors  
+Document date: 2016-03  
+Provenance: Original publisher  
+Original URL: <https://www.rfc-editor.org/rfc/rfc7836.txt>  
+Preservation status: **archived**
+
+Publication category and stream are recorded separately from national approval. The preserved edition may be updated by later RFCs; its header governs its publication status.
+
+Collection: standards  
+Region: Russia  
+Language: English  
+Format: text
+
+RFC category: Informational
+
+RFC stream: Independent Submission
+
+[Preserved file](originals/S057-rfc7836.txt) · 57,463 bytes
+
+Retrieved: 2026-10-17T19:11:47.934571+00:00  
+SHA-256: `f92f3197751c5defd87e54b383d399d27f316761c379403af24efc8471577731`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S058
+
+**RFC 8645: Re-keying Mechanisms for Symmetric Keys**
+
+Publisher: RFC Editor; named document authors  
+Document date: 2019-08  
+Provenance: Original publisher  
+Original URL: <https://www.rfc-editor.org/rfc/rfc8645.txt>  
+Preservation status: **archived**
+
+Publication category and stream are recorded separately from national approval. The preserved edition may be updated by later RFCs; its header governs its publication status.
+
+Collection: standards  
+Region: Russia / international  
+Language: English  
+Format: text
+
+RFC category: Informational
+
+RFC stream: IRTF
+
+[Preserved file](originals/S058-rfc8645.txt) · 141,580 bytes
+
+Retrieved: 2026-10-17T19:11:47.935555+00:00  
+SHA-256: `08bad083c340eaff1072f16b0f5f57cda8a5e832ad8b1cd8efa5467e837feb38`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S059
+
+**RFC 9058: Multilinear Galois Mode (MGM)**
+
+Publisher: RFC Editor; named document authors  
+Document date: 2021-06  
+Provenance: Original publisher  
+Original URL: <https://www.rfc-editor.org/rfc/rfc9058.pdf>  
+Preservation status: **archived**
+
+Publication category and stream are recorded separately from national approval. The preserved edition may be updated by later RFCs; its header governs its publication status.
+
+Collection: standards  
+Region: Russia  
+Language: English  
+Format: pdf
+
+RFC category: Informational
+
+RFC stream: Independent Submission
+
+[Preserved file](originals/S059-rfc9058.pdf) · 173,239 bytes · 25 pages
+
+Retrieved: 2026-10-17T19:11:47.936282+00:00  
+SHA-256: `653bd6f4313468dea174690e05958a65b3fe203a706952042315e68e9902029a`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S060
+
+**RFC 9227: Using GOST Ciphers in ESP and IKEv2**
+
+Publisher: RFC Editor; named document authors  
+Document date: 2022-03  
+Provenance: Original publisher  
+Original URL: <https://www.rfc-editor.org/rfc/rfc9227.pdf>  
+Preservation status: **archived**
+
+Publication category and stream are recorded separately from national approval. The preserved edition may be updated by later RFCs; its header governs its publication status.
+
+Collection: standards  
+Region: Russia  
+Language: English  
+Format: pdf
+
+RFC category: Informational
+
+RFC stream: Independent Submission
+
+[Preserved file](originals/S060-rfc9227.pdf) · 251,876 bytes · 22 pages
+
+Retrieved: 2026-10-17T19:11:47.937205+00:00  
+SHA-256: `32c405af711d13d97166e0fbab6a618da4cb996ea27b5e5166ab9c484666cd1c`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S061
+
+**RFC 9215: Using GOST Algorithms with the Internet X.509 PKI**
+
+Publisher: RFC Editor; named document authors  
+Document date: 2022-03  
+Provenance: Original publisher  
+Original URL: <https://www.rfc-editor.org/rfc/rfc9215.pdf>  
+Preservation status: **archived**
+
+Publication category and stream are recorded separately from national approval. The preserved edition may be updated by later RFCs; its header governs its publication status.
+
+Collection: standards  
+Region: Russia  
+Language: English  
+Format: pdf
+
+RFC category: Informational
+
+RFC stream: Independent Submission
+
+[Preserved file](originals/S061-rfc9215.pdf) · 299,153 bytes · 38 pages
+
+Retrieved: 2026-10-17T19:11:48.363866+00:00  
+SHA-256: `2bcba999a1025a05fc23939136d5aa6326e350458e3575a74c7f25165f4dace3`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S062
+
+**RFC 9189: GOST Cipher Suites for TLS Version 1.2**
+
+Publisher: RFC Editor; named document authors  
+Document date: 2022-03  
+Provenance: Original publisher  
+Original URL: <https://www.rfc-editor.org/rfc/rfc9189.pdf>  
+Preservation status: **archived**
+
+Publication category and stream are recorded separately from national approval. The preserved edition may be updated by later RFCs; its header governs its publication status.
+
+Collection: standards  
+Region: Russia  
+Language: English  
+Format: pdf
+
+RFC category: Informational
+
+RFC stream: Independent Submission
+
+[Preserved file](originals/S062-rfc9189.pdf) · 579,033 bytes · 92 pages
+
+Retrieved: 2026-10-17T19:11:48.423981+00:00  
+SHA-256: `c88bbba5b99aefe100deba848c0b41fc89dc2845ce8b79d6383e0ef710a0d8c0`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S063
+
+**RFC 9367: GOST Cipher Suites for TLS Version 1.3**
+
+Publisher: RFC Editor; named document authors  
+Document date: 2023-02  
+Provenance: Original publisher  
+Original URL: <https://www.rfc-editor.org/rfc/rfc9367.pdf>  
+Preservation status: **archived**
+
+Publication category and stream are recorded separately from national approval. The preserved edition may be updated by later RFCs; its header governs its publication status.
+
+Collection: standards  
+Region: Russia  
+Language: English  
+Format: pdf
+
+RFC category: Informational
+
+RFC stream: Independent Submission
+
+[Preserved file](originals/S063-rfc9367.pdf) · 450,902 bytes · 71 pages
+
+Retrieved: 2026-10-17T19:11:48.758423+00:00  
+SHA-256: `f78461079a798f04737503fa382d1460dea4896fd8894f789a8a3fce2a673704`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S064
+
+**RFC 5280: Internet X.509 Public Key Infrastructure Certificate and CRL Profile**
+
+Publisher: RFC Editor; named document authors  
+Document date: 2008-05  
+Provenance: Original publisher  
+Original URL: <https://www.rfc-editor.org/rfc/rfc5280.txt>  
+Preservation status: **archived**
+
+Publication category and stream are recorded separately from national approval. The preserved edition may be updated by later RFCs; its header governs its publication status.
+
+Collection: standards  
+Region: International  
+Language: English  
+Format: text
+
+RFC category: Standards Track
+
+RFC stream: IETF (pre-explicit-stream header)
+
+[Preserved file](originals/S064-rfc5280.txt) · 352,580 bytes
+
+Retrieved: 2026-10-17T19:11:48.891486+00:00  
+SHA-256: `a2f2628c0a83b873fc4786abd921f9b2c02395954b655d190bf16b831633345d`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S065
+
+**RFC 8446: The Transport Layer Security (TLS) Protocol Version 1.3**
+
+Publisher: RFC Editor; named document authors  
+Document date: 2018-08  
+Provenance: Original publisher  
+Original URL: <https://www.rfc-editor.org/rfc/rfc8446.txt>  
+Preservation status: **archived**
+
+Publication category and stream are recorded separately from national approval. The preserved edition may be updated by later RFCs; its header governs its publication status.
+
+Collection: standards  
+Region: International  
+Language: English  
+Format: text
+
+RFC category: Standards Track
+
+RFC stream: IETF
+
+[Preserved file](originals/S065-rfc8446.txt) · 337,736 bytes
+
+Retrieved: 2026-10-17T19:11:48.984017+00:00  
+SHA-256: `47871bc8820a2c3b6ea89f061055577058862cf543686b82d10131239702b3bd`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S066
+
+**PKCS #11 Base Specification Version 3.0**
+
+Publisher: OASIS  
+Document date: 2020-06-15  
+Provenance: Original publisher  
+Original URL: <https://docs.oasis-open.org/pkcs11/pkcs11-base/v3.0/os/pkcs11-base-v3.0-os.pdf>  
+Preservation status: **archived**
+
+Edition selected to match the archived Historical Mechanisms v3.0 (S001), not asserted to be the newest PKCS #11 edition.
+
+Collection: standards  
+Region: International  
+Language: English  
+Format: pdf
+
+[Preserved file](originals/S066-pkcs11-base-v3-2020.pdf) · 2,235,865 bytes · 167 pages
+
+Retrieved: 2026-10-17T19:11:48.994501+00:00  
+SHA-256: `fbb3a84657ad7c06c982b511cc9541e9ec08f5f10e4e07dc2e0efa71f8cc7cc8`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S067
+
+**SP 800-38B: The CMAC Mode for Authentication**
+
+Publisher: NIST  
+Document date: 2005-05  
+Provenance: Original publisher  
+Original URL: <https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-38B.pdf>  
+Preservation status: **archived**
+
+First issued May 2005; the preserved publisher PDF includes updates dated 2016-10-06.
+
+Collection: standards  
+Region: United States / international  
+Language: English  
+Format: pdf
+
+Edition: 2005 edition with 2016 updates
+
+Revision: 2016-10-06
+
+[Preserved file](originals/S067-nist-cmac.pdf) · 253,317 bytes · 21 pages
+
+Retrieved: 2026-10-17T19:11:49.274110+00:00  
+SHA-256: `da9dc0f1e1f08af917caf4a831a7497cf18997b8046353af89570a812f1ec5a2`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S068
+
+**SP 800-38C: The CCM Mode for Authentication and Confidentiality**
+
+Publisher: NIST  
+Document date: 2004-05  
+Provenance: Original publisher  
+Original URL: <https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-38c.pdf>  
+Preservation status: **archived**
+
+First issued May 2004; the preserved PDF states that errata were updated 2007-07-20.
+
+Collection: standards  
+Region: United States / international  
+Language: English  
+Format: pdf
+
+Edition: 2004 edition with 2007 errata
+
+Revision: 2007-07-20
+
+[Preserved file](originals/S068-nist-ccm.pdf) · 287,840 bytes · 27 pages
+
+Retrieved: 2026-10-17T19:11:49.306060+00:00  
+SHA-256: `16ec6f99424192757b5b9928a7dcf41817be3aaf85d48366740dfdf7c16db250`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S069
+
+**SP 800-38F: Methods for Key Wrapping**
+
+Publisher: NIST  
+Document date: 2012-12  
+Provenance: Original publisher  
+Original URL: <https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-38F.pdf>  
+Preservation status: **archived**
+
+Collection: standards  
+Region: United States / international  
+Language: English  
+Format: pdf
+
+[Preserved file](originals/S069-nist-key-wrapping.pdf) · 289,262 bytes · 32 pages
+
+Retrieved: 2026-10-17T19:11:49.310097+00:00  
+SHA-256: `b8b1052755448e5ff3913ea09dc9b5ae47a97886752525a0cccfa024fb072fa8`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S070
+
+**Announcement No.21: release of the SM2 elliptic-curve public-key algorithm**
+
+Publisher: State Cryptography Administration of China  
+Document date: 2010-12-17  
+Provenance: Original publisher  
+Original URL: <https://www.sca.gov.cn/sca/xwdt/2010-12/17/content_1002386.shtml>  
+Preservation status: **archived**
+
+Contemporary public release announcement; distinct from the later GM/T and GB/T standards.
+
+Collection: standards, international  
+Region: China  
+Language: Chinese  
+Format: html
+
+[Preserved file](web/S070-sm2-announcement-2010.html) · 12,790 bytes
+
+Retrieved: 2026-10-17T19:11:49.381748+00:00  
+SHA-256: `27fdadba38fada46c3910c484f67ee1d1471fbc0ef58148b2c7ffd5d2b5db7d6`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S071
+
+**Announcement No.22: release of the SM3 hash algorithm**
+
+Publisher: State Cryptography Administration of China  
+Document date: 2010-12-17  
+Provenance: Original publisher  
+Original URL: <https://www.oscca.gov.cn/sca/xxgk/2010-12/17/content_1002389.shtml>  
+Preservation status: **archived**
+
+Collection: standards, international  
+Region: China  
+Language: Chinese  
+Format: html
+
+[Preserved file](web/S071-sm3-announcement-2010.html) · 12,696 bytes
+
+Retrieved: 2026-10-17T19:11:49.679498+00:00  
+SHA-256: `d46328faff445c1769df34d5786d59512bc7983268e2db6db8794cdbec1947be`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S072
+
+**Announcement No.24: fourteen cryptographic industry standards, including SM2 application and certificate specifications**
+
+Publisher: State Cryptography Administration of China  
+Document date: 2012-11-22  
+Provenance: Original publisher  
+Original URL: <https://www.sca.gov.cn/sca/xxgk/2012-11/22/content_1002397.shtml>  
+Preservation status: **archived**
+
+Collection: standards  
+Region: China  
+Language: Chinese  
+Format: html
+
+[Preserved file](web/S072-sm2-application-standards-2012.html) · 14,017 bytes
+
+Retrieved: 2026-10-17T19:11:50.224563+00:00  
+SHA-256: `2177d6207dc89b9a3259b6513af341073c10ae922e3acff37cc646bf481dbc44`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S073
+
+**Announcement No.45: 2023 cryptographic industry-standard revisions**
+
+Publisher: State Cryptography Administration of China  
+Document date: 2023-12-23  
+Provenance: Original publisher  
+Original URL: <https://oscca.gov.cn/sca/xxgk/2023-12/23/content_1061160.shtml>  
+Preservation status: **archived**
+
+Web announcement date is separate from individual standard issue dates and the stated 2024-06-01 implementation date.
+
+Collection: standards  
+Region: China  
+Language: Chinese  
+Format: html
+
+[Preserved file](web/S073-china-standards-revisions-2023.html) · 15,769 bytes
+
+Retrieved: 2026-10-17T19:11:50.240764+00:00  
+SHA-256: `1dd01569604b595616565886f8bb56be225df31faab45c4f645c2aa2a048845e`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S074
+
+**GM/T 0009-2012: SM2 application specification, three-page booklet scan**
+
+Publisher: State Cryptography Administration of China; preserved copy  
+Document date: 2012-11-22  
+Provenance: Original national-language standard scan preserved by Antpedia  
+Original URL: <https://img.antpedia.com/standard/files/pdfs_ora/CN-GM/c8e/GM_T%200009-2012_5625.pdf>  
+Preservation status: **archived**
+
+Third-party three-page booklet scan. The images contain the covers, contents, foreword, and printed body pages 6 and 7; the earlier body pages are absent. This is not a complete copy of GM/T 0009-2012. The cover states issue and implementation on 2012-11-22; S073 records a later revision.
+
+Collection: standards  
+Region: China  
+Language: Chinese  
+Format: pdf
+
+Extent: Three PDF pages of imposed booklet images; incomplete body
+
+[Preserved file](originals/S074-sm2-application-specification-2012.pdf) · 224,289 bytes · 3 pages
+
+Retrieved: 2026-10-17T19:11:51.622298+00:00  
+SHA-256: `572b0f9314e38c0f74f1bfdd562b8083fbef4e4cb1c334887021d1edea7cb9b9`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S075
+
+**ETSI TS 135 221 V19.0.0: EEA3 and EIA3 specifications, Release 19**
+
+Publisher: ETSI / 3GPP  
+Document date: 2025-10  
+Provenance: Original publisher  
+Original URL: <https://www.etsi.org/deliver/etsi_ts/135200_135299/135221/19.00.00_60/ts_135221v190000p.pdf>  
+Preservation status: **archived**
+
+The ETSI wrapper and its normative references are distinguished from the separately preserved detailed ETSI/SAGE algorithm document.
+
+Collection: standards  
+Region: China / international mobile standards  
+Language: English  
+Format: pdf
+
+Edition: 19.0.0 / Release 19
+
+[Preserved file](originals/S075-etsi-ts135221-release19.pdf) · 86,592 bytes · 8 pages
+
+Retrieved: 2026-10-17T19:11:52.123284+00:00  
+SHA-256: `c5a9a292787d2e653beb711d4dd1ef0345707e81caf13740d3bbefb8a606523f`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S076
+
+**128-EEA3 and 128-EIA3 Specification, Version 1.8**
+
+Publisher: ETSI/SAGE; hosted by GSMA  
+Document date: 2019-01-24  
+Provenance: Original publisher  
+Original URL: <https://www.gsma.com/solutions-and-impact/technologies/security/wp-content/uploads/2019/05/EEA3_EIA3_specification_v1_8.pdf>  
+Preservation status: **archived**
+
+Document 1 complements the ZUC core specification S037. The 2019 upload directory is not used as evidence for earlier revision dates.
+
+Collection: standards  
+Region: China / international mobile standards  
+Language: English  
+Format: pdf
+
+Edition: 1.8
+
+[Preserved file](originals/S076-eea3-eia3-specification-v18.pdf) · 236,953 bytes · 16 pages
+
+Retrieved: 2026-10-17T19:11:52.527124+00:00  
+SHA-256: `b65d11ffa74c87ae6c898b48df5b36fe838297aede9c819bacb782c43695b974`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S077
+
+**CRYPTREC Ciphers List: current and historical edition index**
+
+Publisher: CRYPTREC / Japanese government agencies  
+Document date: Not verified  
+Provenance: Original publisher  
+Original URL: <https://www.cryptrec.go.jp/en/list.html>  
+Preservation status: **archived**
+
+Raw snapshot of the official index; revised and historical lists are preserved separately.
+
+Collection: standards  
+Region: Japan  
+Language: English  
+Format: html
+
+[Preserved file](web/S077-cryptrec-list-index.html) · 11,658 bytes
+
+Retrieved: 2026-10-17T19:11:52.563131+00:00  
+SHA-256: `2d99652dcad14e3ac30f144425faf011466aa7ee4872cd2cd1cfe2223bfc2c9a`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S078
+
+**CRYPTREC Ciphers List, LS-0001-2022R2**
+
+Publisher: CRYPTREC  
+Document date: 2026-03-30  
+Provenance: Original publisher  
+Original URL: <https://www.cryptrec.go.jp/list/cryptrec-ls-0001-2022r2.pdf>  
+Preservation status: **archived**
+
+The identifier contains 2022. The cover dates the list family to 2023-03-30 and this revision to 2026-03-30. Preserve its three distinct list categories.
+
+Collection: standards  
+Region: Japan  
+Language: Japanese  
+Format: pdf
+
+Edition: LS-0001-2022R2
+
+Initial issue: 2023-03-30
+
+Revision: 2026-03-30
+
+[Preserved file](originals/S078-cryptrec-list-2026.pdf) · 239,893 bytes · 7 pages
+
+Retrieved: 2026-10-17T19:11:52.739325+00:00  
+SHA-256: `a492a5dce043b51cc0afd064a0bf7202518b31c65fb808bcc492f9cd4f0b32e3`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S079
+
+**CRYPTREC Ciphers List, LS-0001-2012, original 2013 edition**
+
+Publisher: CRYPTREC  
+Document date: 2013-03-01  
+Provenance: Original publisher  
+Original URL: <https://www.cryptrec.go.jp/list/cryptrec-ls-0001-2012.pdf>  
+Preservation status: **archived**
+
+Historical original list; recommendation categories and edition are kept separate from the later revised list.
+
+Collection: standards  
+Region: Japan  
+Language: Japanese  
+Format: pdf
+
+Edition: LS-0001-2012
+
+[Preserved file](originals/S079-cryptrec-list-2013.pdf) · 124,137 bytes · 4 pages
+
+Retrieved: 2026-10-17T19:11:52.780752+00:00  
+SHA-256: `b47b0f9477129812d6af321eed4bed99c0a66e988d8a8d50618fa76510cb0615`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S080
+
+**Standards for Cryptographic Strength Requirements, LS-0003-2022R1**
+
+Publisher: CRYPTREC  
+Document date: 2023-03-30  
+Provenance: Original publisher  
+Original URL: <https://www.cryptrec.go.jp/list/cryptrec-ls-0003-2022r1.pdf>  
+Preservation status: **archived**
+
+The revision table records first publication on 2022-07-01 and corrections on 2023-03-30, including correction of the publication month. The acquired cover still prints March 2022. These conflicting internal date fields are retained explicitly.
+
+Collection: standards  
+Region: Japan  
+Language: Japanese  
+Format: pdf
+
+Edition: LS-0003-2022R1 / Ver. 1.0
+
+Initial issue: 2022-07-01
+
+Revision: 2023-03-30
+
+[Preserved file](originals/S080-cryptrec-strength-requirements.pdf) · 1,424,925 bytes · 42 pages
+
+Retrieved: 2026-10-17T19:11:53.774667+00:00  
+SHA-256: `f249b7a5f880ce4bd239972de945bc8d5375912a98bf9d5e938e3293154cdced`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S081
+
+**TR-02102-1: Cryptographic Mechanisms, Recommendations and Key Lengths**
+
+Publisher: German Federal Office for Information Security (BSI)  
+Document date: 2026-01-23  
+Provenance: Original publisher  
+Original URL: <https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TG02102/BSI-TR-02102-1.pdf?__blob=publicationFile&v=15>  
+Preservation status: **archived**
+
+Version 2026-01; cover states as of 2026-01-23. General recommendations do not constitute approval of a particular classified product.
+
+Collection: standards  
+Region: Germany  
+Language: English  
+Format: pdf
+
+Edition: 2026-01
+
+[Preserved file](originals/S081-bsi-tr02102-1.pdf) · 568,388 bytes · 92 pages
+
+Retrieved: 2026-10-17T19:11:53.879999+00:00  
+SHA-256: `f601cdf25c000b431573a307a3c125f3c51d301897089e7e63dde0449367a62a`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S082
+
+**TR-02102-2: Use of Transport Layer Security (TLS)**
+
+Publisher: German Federal Office for Information Security (BSI)  
+Document date: 2026-01-27  
+Provenance: Original publisher  
+Original URL: <https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TG02102/BSI-TR-02102-2.pdf?__blob=publicationFile&v=11>  
+Preservation status: **archived**
+
+Document history dates version 2026-01 to 2026-01-27.
+
+Collection: standards  
+Region: Germany  
+Language: English  
+Format: pdf
+
+Edition: 2026-01
+
+[Preserved file](originals/S082-bsi-tr02102-2-tls.pdf) · 758,922 bytes · 18 pages
+
+Retrieved: 2026-10-17T19:11:53.933737+00:00  
+SHA-256: `a7f55c3403d45719287415d2698bf51e629aafe841e2e9867e8afe8749d238e5`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S083
+
+**TR-02102-3: Use of IPsec and IKEv2**
+
+Publisher: German Federal Office for Information Security (BSI)  
+Document date: 2026-01-27  
+Provenance: Original publisher  
+Original URL: <https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TG02102/BSI-TR-02102-3.pdf?__blob=publicationFile&v=10>  
+Preservation status: **archived**
+
+Document history dates version 2026-01 to 2026-01-27.
+
+Collection: standards  
+Region: Germany  
+Language: English  
+Format: pdf
+
+Edition: 2026-01
+
+[Preserved file](originals/S083-bsi-tr02102-3-ipsec.pdf) · 724,281 bytes · 18 pages
+
+Retrieved: 2026-10-17T19:11:53.950547+00:00  
+SHA-256: `ee6cf28a1b7fbc79b60dd2a913a905e99e3a246b0796cff894a41e22207d6bdc`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S084
+
+**KCMVP: algorithms subject to cryptographic module validation**
+
+Publisher: Korea Internet and Security Agency (KISA)  
+Document date: Not verified  
+Provenance: Original publisher  
+Original URL: <https://seed.kisa.or.kr/kisa/kcmvp/EgovVerification.do>  
+Preservation status: **failed**
+
+An eligibility/validation-reference page, not a certificate for a particular implementation. Acquisition may be unavailable; any failure remains explicit.
+
+Collection: standards  
+Region: Republic of Korea  
+Language: Korean  
+Format: html
+
+Retrieval note: HTTPError: HTTP Error 503: Service Unavailable
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S085
+
+**KCMVP: cryptographic module testing and validation procedures**
+
+Publisher: Korea Internet and Security Agency (KISA)  
+Document date: Not verified  
+Provenance: Original publisher  
+Original URL: <https://seed.kisa.or.kr/kisa/kcmvp/reference.do>  
+Preservation status: **failed**
+
+Collection: standards  
+Region: Republic of Korea  
+Language: Korean  
+Format: html
+
+Retrieval note: HTTPError: HTTP Error 503: Service Unavailable
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S086
+
+**RFC 5932: Camellia Cipher Suites for TLS**
+
+Publisher: RFC Editor; named document authors  
+Document date: 2010-06  
+Provenance: Original publisher  
+Original URL: <https://www.rfc-editor.org/rfc/rfc5932.txt>  
+Preservation status: **archived**
+
+Publication category and stream are recorded separately from national approval. The preserved edition may be updated by later RFCs; its header governs its publication status.
+
+Collection: standards  
+Region: Japan / international  
+Language: English  
+Format: text
+
+RFC category: Standards Track
+
+RFC stream: IETF
+
+[Preserved file](originals/S086-rfc5932.txt) · 11,949 bytes
+
+Retrieved: 2026-10-17T19:11:55.980731+00:00  
+SHA-256: `4da0b39f346d7807a210a6c4b88ea5780a74267f256547cc5cd6b1f64976bb5d`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S087
+
+**RFC 4312: The Camellia Cipher Algorithm and Its Use With IPsec**
+
+Publisher: RFC Editor; named document authors  
+Document date: 2005-12  
+Provenance: Original publisher  
+Original URL: <https://www.rfc-editor.org/rfc/rfc4312.txt>  
+Preservation status: **archived**
+
+Publication category and stream are recorded separately from national approval. The preserved edition may be updated by later RFCs; its header governs its publication status.
+
+Collection: standards  
+Region: Japan / international  
+Language: English  
+Format: text
+
+RFC category: Standards Track
+
+RFC stream: IETF (pre-explicit-stream header)
+
+[Preserved file](originals/S087-rfc4312.txt) · 15,980 bytes
+
+Retrieved: 2026-10-17T19:11:56.250552+00:00  
+SHA-256: `3a1034a459d9be0b6195576b1171b413e8556967e7126b692a617a9b4fa38988`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S088
+
+**RFC 4162: Addition of SEED Cipher Suites to TLS**
+
+Publisher: RFC Editor; named document authors  
+Document date: 2005-08  
+Provenance: Original publisher  
+Original URL: <https://www.rfc-editor.org/rfc/rfc4162.txt>  
+Preservation status: **archived**
+
+Publication category and stream are recorded separately from national approval. The preserved edition may be updated by later RFCs; its header governs its publication status.
+
+Collection: standards  
+Region: Republic of Korea / international  
+Language: English  
+Format: text
+
+RFC category: Standards Track
+
+RFC stream: IETF (pre-explicit-stream header)
+
+[Preserved file](originals/S088-rfc4162.txt) · 10,578 bytes
+
+Retrieved: 2026-10-17T19:11:56.447889+00:00  
+SHA-256: `ae3456638cacf62adc60577867f3f13b0c33ecb02d70ac7ca83ccaa209b1b67e`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S089
+
+**RFC 4196: The SEED Cipher Algorithm and Its Use with IPsec**
+
+Publisher: RFC Editor; named document authors  
+Document date: 2005-10  
+Provenance: Original publisher  
+Original URL: <https://www.rfc-editor.org/rfc/rfc4196.txt>  
+Preservation status: **archived**
+
+Publication category and stream are recorded separately from national approval. The preserved edition may be updated by later RFCs; its header governs its publication status.
+
+Collection: standards  
+Region: Republic of Korea / international  
+Language: English  
+Format: text
+
+RFC category: Standards Track
+
+RFC stream: IETF (pre-explicit-stream header)
+
+[Preserved file](originals/S089-rfc4196.txt) · 22,587 bytes
+
+Retrieved: 2026-10-17T19:11:56.634517+00:00  
+SHA-256: `fcd316975dc1abe1c9fdcfc48d0d29f9caca5858075ef4882a99d40abbd97d9a`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S090
+
+**RFC 6209: Addition of the ARIA Cipher Suites to TLS**
+
+Publisher: RFC Editor; named document authors  
+Document date: 2011-04  
+Provenance: Original publisher  
+Original URL: <https://www.rfc-editor.org/rfc/rfc6209.txt>  
+Preservation status: **archived**
+
+Publication category and stream are recorded separately from national approval. The preserved edition may be updated by later RFCs; its header governs its publication status.
+
+Collection: standards  
+Region: Republic of Korea / international  
+Language: English  
+Format: text
+
+RFC category: Informational
+
+RFC stream: IETF
+
+[Preserved file](originals/S090-rfc6209.txt) · 19,501 bytes
+
+Retrieved: 2026-10-17T19:11:56.645443+00:00  
+SHA-256: `bec379ec5fe8df5faa17315146c2208bdf901f0cbfdad0a2f5010243d813deeb`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S091
+
+**RFC 8269: The ARIA Algorithm and Its Use with SRTP**
+
+Publisher: RFC Editor; named document authors  
+Document date: 2017-10  
+Provenance: Original publisher  
+Original URL: <https://www.rfc-editor.org/rfc/rfc8269.txt>  
+Preservation status: **archived**
+
+Publication category and stream are recorded separately from national approval. The preserved edition may be updated by later RFCs; its header governs its publication status.
+
+Collection: standards  
+Region: Republic of Korea / international  
+Language: English  
+Format: text
+
+RFC category: Informational
+
+RFC stream: IETF
+
+[Preserved file](originals/S091-rfc8269.txt) · 39,285 bytes
+
+Retrieved: 2026-10-17T19:13:43.412389+00:00  
+SHA-256: `f2a4fa93fc63c6e94a1a9df148970b9759cdee770f98cb38cc706dee650e921d`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S092
+
+**128-EEA3 and 128-EIA3 Implementer Test Data, Version 1.1**
+
+Publisher: ETSI/SAGE; hosted by GSMA  
+Document date: 2011-01-04  
+Provenance: Original publisher  
+Original URL: <https://www.gsma.com/solutions-and-impact/technologies/security/wp-content/uploads/2019/05/eea3eia3testdatav11.pdf>  
+Preservation status: **archived**
+
+Cover date is 2011-01-04; the 2019 hosting directory is not the document publication date. The preface expressly says that passing these tests does not guarantee a correct implementation.
+
+Collection: standards  
+Region: China / international mobile standards  
+Language: English  
+Format: pdf
+
+Edition: 1.1
+
+[Preserved file](originals/S092-eea3-eia3-implementer-tests.pdf) · 227,188 bytes · 21 pages
+
+Retrieved: 2026-10-17T19:11:56.830113+00:00  
+SHA-256: `65b461c84daac4f9c7e831b739ca33792e25fdcbcf67e2e6befa60e4a58eea82`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S093
+
+**Design and Evaluation Report: 128-EEA3, 128-EIA3 and ZUC, Version 2.0**
+
+Publisher: ETSI/SAGE; hosted by GSMA  
+Document date: 2011-09-09  
+Provenance: Original publisher  
+Original URL: <https://www.gsma.com/solutions-and-impact/technologies/security/wp-content/uploads/2019/05/EEA3_EIA3_Design_Evaluation_v2_0.pdf>  
+Preservation status: **archived**
+
+Final-deliverable edition dated 2011-09-09. Its history records a first public release on 2010-08-11 and subsequent algorithm revisions.
+
+Collection: standards  
+Region: China / international mobile standards  
+Language: English  
+Format: pdf
+
+Edition: 2.0
+
+[Preserved file](originals/S093-zuc-design-evaluation.pdf) · 1,027,545 bytes · 43 pages
+
+Retrieved: 2026-10-17T19:11:56.988033+00:00  
+SHA-256: `f31c51cad773fff898d3fd6c6246629eca73cba8c0d9b893b451eca9d99165ee`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S094
+
+**CRYPTREC e-Government Recommended Ciphers List, LS-0001-2002R1**
+
+Publisher: CRYPTREC  
+Document date: 2005-10-12  
+Provenance: Original publisher  
+Original URL: <https://www.cryptrec.go.jp/list/cryptrec-ls-0001-2002r1.pdf>  
+Preservation status: **archived**
+
+List cover: 2003-02-20. Appended correction record: 2005-10-12, changing a Triple-DES specification reference from FIPS 46-3 to SP 800-67. This is the historical list with that correction, not a fresh 2005 selection.
+
+Collection: standards  
+Region: Japan  
+Language: Japanese  
+Format: pdf
+
+Edition: LS-0001-2002R1
+
+Initial issue: 2003-02-20
+
+Revision: 2005-10-12
+
+[Preserved file](originals/S094-cryptrec-legacy-list.pdf) · 153,555 bytes · 3 pages
+
+Retrieved: 2026-10-17T19:11:57.044703+00:00  
+SHA-256: `953e17ad183ea28e21052ec106eea85703bb0381ee1e2af7d8aee401828c0dca`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S095
+
+**TR-02102-4: Use of Secure Shell (SSH)**
+
+Publisher: German Federal Office for Information Security (BSI)  
+Document date: 2026-01-27  
+Provenance: Original publisher  
+Original URL: <https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TG02102/BSI-TR-02102-4.pdf?__blob=publicationFile&v=11>  
+Preservation status: **archived**
+
+Document history dates version 2026-01 to 2026-01-27.
+
+Collection: standards  
+Region: Germany  
+Language: English  
+Format: pdf
+
+Edition: 2026-01
+
+[Preserved file](originals/S095-bsi-tr02102-4-ssh.pdf) · 639,452 bytes · 12 pages
+
+Retrieved: 2026-10-17T19:11:57.110794+00:00  
+SHA-256: `9338643a2c5019bf1c819c759b9c1e903203f0db79e5ecb087b0ace0613f4de8`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S096
+
+**SM2 elliptic-curve public-key cryptographic algorithm: original release, Parts 1–4**
+
+Publisher: State Cryptography Administration of China  
+Document date: 2010-12  
+Provenance: Original publisher  
+Original URL: <https://www.sca.gov.cn/sca/xwdt/2010-12/17/1002386/files/b791a9f908bb4803875ab6aeeb7b4e03.pdf>  
+Preservation status: **archived**
+
+Official attachment to the release announcement of 2010-12-17 (S070). The four part covers are dated December 2010: general, signature, key exchange, and public-key encryption. These are the original release texts, not the later GB/T editions.
+
+Collection: standards, international  
+Region: China  
+Language: Chinese  
+Format: pdf
+
+Extent: 93 PDF pages; four separately titled parts combined
+
+[Preserved file](originals/S096-sm2-official-release-a.pdf) · 945,731 bytes · 93 pages
+
+Retrieved: 2026-10-17T19:14:35.055523+00:00  
+SHA-256: `727ad5611ccc6efeef9b184b39687a5ce72540eea5a9a58bf99685d881a9962a`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S097
+
+**SM2 recommended elliptic-curve parameters: original release attachment**
+
+Publisher: State Cryptography Administration of China  
+Document date: Not verified  
+Provenance: Original publisher  
+Original URL: <https://www.sca.gov.cn/sca/xwdt/2010-12/17/1002386/files/b965ce832cc34bc191cb1cde446b860d.pdf>  
+Preservation status: **archived**
+
+Undated one-page parameter sheet directly linked by the official 2010-12-17 announcement (S070). The announcement supplies the dated release evidence; the sheet itself has no printed date.
+
+Collection: standards, international  
+Region: China  
+Language: Chinese  
+Format: pdf
+
+Extent: One PDF page
+
+[Preserved file](originals/S097-sm2-official-release-b.pdf) · 22,552 bytes · 1 pages
+
+Retrieved: 2026-10-17T19:14:35.057158+00:00  
+SHA-256: `a2b7aa352aa218f46116879748e87596ce45a5a80aef8036fc6e3ab151d2b90c`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S098
+
+**SM3 Cryptographic Hash Algorithm: original official release**
+
+Publisher: State Cryptography Administration of China  
+Document date: 2010-12  
+Provenance: Original publisher  
+Original URL: <https://www.oscca.gov.cn/sca/xxgk/2010-12/17/1002389/files/302a3ada057c4a73830536d03e683110.pdf>  
+Preservation status: **archived**
+
+Cover dated December 2010; official attachment to the 2010-12-17 announcement (S071). This is the original release specification, not a later GM/T or GB/T edition.
+
+Collection: standards, international  
+Region: China  
+Language: Chinese  
+Format: pdf
+
+Extent: 13 PDF pages
+
+[Preserved file](originals/S098-sm3-official-release.pdf) · 103,677 bytes · 13 pages
+
+Retrieved: 2026-10-17T19:14:35.056622+00:00  
+SHA-256: `6f35d1870b8b137f70f309270d7c60c830a20a678f6bdedf33cb6008d00ab38e`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S099
+
+**Cryptographic module validation programme overview**
+
+Publisher: Korea Internet and Security Agency (KISA)  
+Document date: Not verified  
+Provenance: Original publisher  
+Original URL: <https://www.kisa.or.kr/1040209>  
+Preservation status: **failed**
+
+Official programme overview on KISA's main host, distinct from the unavailable seed.kisa.or.kr detail pages.
+
+Collection: standards  
+Region: Republic of Korea  
+Language: Korean  
+Format: html
+
+Retrieval note: HTTPError: HTTP Error 503: Service Unavailable
 
 Original publisher notices apply; no repository-wide license is applied to source documents.
 

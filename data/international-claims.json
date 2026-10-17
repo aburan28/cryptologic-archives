@@ -528,6 +528,24 @@
       "claim_id": "INTL-SM3-F3"
     },
     {
+      "id": "INTL-SM3-F4",
+      "profile": "sm3",
+      "kind": "documented",
+      "collection": "international",
+      "claim_id": "INTL-SM3-F4",
+      "text": "The official announcement of 2010-12-17 released SM3 with an attached algorithm specification whose cover is dated December 2010, preceding the 2012 industry-standard announcement.",
+      "source_refs": [
+        {
+          "source_id": "S071",
+          "locator": "Announcement date and attachment link"
+        },
+        {
+          "source_id": "S098",
+          "locator": "Cover and Sections 4–5"
+        }
+      ]
+    },
+    {
       "id": "INTL-SM3-I1",
       "profile": "sm3",
       "kind": "inference",
@@ -614,6 +632,28 @@
         }
       ],
       "claim_id": "INTL-SM2-F4"
+    },
+    {
+      "id": "INTL-SM2-F5",
+      "profile": "sm2",
+      "kind": "documented",
+      "collection": "international",
+      "claim_id": "INTL-SM2-F5",
+      "text": "Before the later GM/T and GB/T standards, the official announcement of 2010-12-17 released SM2 with a four-part algorithm PDF dated December 2010 and a separate recommended-curve parameter sheet.",
+      "source_refs": [
+        {
+          "source_id": "S070",
+          "locator": "Announcement date and attachment links"
+        },
+        {
+          "source_id": "S096",
+          "locator": "Part covers at PDF pages 1, 47, 61 and 80"
+        },
+        {
+          "source_id": "S097",
+          "locator": "One-page parameter sheet"
+        }
+      ]
     },
     {
       "id": "INTL-SM2-I1",

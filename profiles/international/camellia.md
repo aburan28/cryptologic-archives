@@ -20,3 +20,5 @@ Parameters: 128-bit block; 128/192/256-bit keys; 18 or 24 rounds
 ### Unresolved details
 
 - A submission, an algorithm publication and a national procurement approval are separate historical milestones.
+
+[Companion standards: Japan: CRYPTREC selections and Camellia protocol profiles](../../docs/companion-standards.md#japan)

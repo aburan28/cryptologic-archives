@@ -20,3 +20,5 @@ Parameters: Prime-field elliptic curves; 512- or 1024-bit encoded signatures
 ### Unresolved details
 
 - A product profile must additionally identify curve parameters, hash function and encoding conventions.
+
+[Companion standards: Russia: GOST parameters, modes and protocol bindings](../../docs/companion-standards.md#gost)

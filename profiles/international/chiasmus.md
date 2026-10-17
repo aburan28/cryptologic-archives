@@ -21,3 +21,5 @@ Parameters: Key material and format are product-specific in the cited agency acc
 
 - The cited agency records do not expose a complete round function or establish the cipher's original design date.
 - Independent reverse engineering should be catalogued separately from an official design release.
+
+[Companion standards: Germany: general recommendations and protocol guidance](../../docs/companion-standards.md#germany)

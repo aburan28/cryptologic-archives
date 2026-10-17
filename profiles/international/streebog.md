@@ -20,3 +20,5 @@ Parameters: 256- or 512-bit digest; 512-bit chaining state
 ### Unresolved details
 
 - This profile records the specified construction, not a complete survey of subsequent cryptanalysis.
+
+[Companion standards: Russia: GOST parameters, modes and protocol bindings](../../docs/companion-standards.md#gost)

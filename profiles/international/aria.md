@@ -20,3 +20,5 @@ Parameters: 128-bit block; 128/192/256-bit keys; 12/14/16 rounds
 ### Unresolved details
 
 - The 2004 national-standard milestone is not proof of universal approval for all Korean government information.
+
+[Companion standards: Republic of Korea: SEED and ARIA protocol profiles](../../docs/companion-standards.md#korea)

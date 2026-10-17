@@ -13,6 +13,7 @@ Parameters: TLS profile uses a 256-bit prime-field curve
 - **INTL-SM2-F2** — The signature algorithm hashes an identity-bound value with the message; its signing equations include r=(e+x1) mod n and s=(1+d)^(-1)*(k-r*d) mod n, with required retry conditions. ([S030](../../sources/README.md#s030), Sections 5.5 and 6.1)
 - **INTL-SM2-F3** — RFC 8998 specifies a 256-bit prime-field curve and uses SM2 signatures with SM3. Its TLS key exchange is ECDHE over that curve. ([S026](../../sources/README.md#s026), Sections 1, 3.2.1 and 3.3)
 - **INTL-SM2-F4** — OSCCA announced the GM/T SM2 family in March 2012. The official GB/T Part 1 record was issued in August 2016 and implemented in March 2017. ([S036](../../sources/README.md#s036), Publication and implementation metadata; [S034](../../sources/README.md#s034), Announcement list, GM/T0003-2012)
+- **INTL-SM2-F5** — Before the later GM/T and GB/T standards, the official announcement of 2010-12-17 released SM2 with a four-part algorithm PDF dated December 2010 and a separate recommended-curve parameter sheet. ([S070](../../sources/README.md#s070), Announcement date and attachment links; [S096](../../sources/README.md#s096), Part covers at PDF pages 1, 47, 61 and 80; [S097](../../sources/README.md#s097), One-page parameter sheet)
 
 ### Technical inferences
 
@@ -21,3 +22,5 @@ Parameters: TLS profile uses a 256-bit prime-field curve
 ### Unresolved details
 
 - The English Part 5 filename says 2016, whereas RFC 8998 cites GB/T 32918.5-2017. The filename must not be treated as authoritative edition metadata.
+
+[Companion standards: China: original releases, parameters and successive standards](../../docs/companion-standards.md#shangmi)

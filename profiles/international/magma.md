@@ -20,3 +20,5 @@ Parameters: 64-bit block; 256-bit key; 32 round keys
 ### Unresolved details
 
 - The 2020 RFC date is an English-publication milestone, not the cipher invention date.
+
+[Companion standards: Russia: GOST parameters, modes and protocol bindings](../../docs/companion-standards.md#gost)

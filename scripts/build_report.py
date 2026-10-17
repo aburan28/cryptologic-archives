@@ -99,6 +99,11 @@ Harris reports that Sierra II received NSA certification in Harris fiscal 2005 (
         if source['date_note']:
             source_doc += [source['date_note'], '']
         source_doc += [f"Collection: {', '.join(source.get('collections',['suite-a']))}  ",f"Region: {source.get('region','United States')}  ",f"Language: {source.get('language','English')}  ",f"Format: {source['format']}", '']
+        for key, label in [('version','Edition'), ('original_issue_date','Initial issue'),
+                           ('revision_date','Revision'), ('publication_category','RFC category'),
+                           ('publication_stream','RFC stream'), ('extent','Extent')]:
+            if source.get(key):
+                source_doc += [f"{label}: {source[key]}", '']
         if source.get('acquisition_url'):
             source_doc += [f"Acquisition URL: <{source['acquisition_url']}>", '']
         if d['status'] == 'archived':

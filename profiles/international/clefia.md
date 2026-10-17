@@ -20,3 +20,5 @@ Parameters: 128-bit block; 128/192/256-bit keys; 18/22/26 rounds
 ### Unresolved details
 
 - The preserved design dates do not establish when every Sony product first deployed CLEFIA.
+
+[Companion standards: Japan: CRYPTREC selections and Camellia protocol profiles](../../docs/companion-standards.md#japan)

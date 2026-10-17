@@ -31,7 +31,7 @@ Every profile separates source-reported statements, deductions and unresolved de
 | Republic of Korea | [SEED](../profiles/international/seed.md) | Symmetric encryption; 16-round Feistel network | 128-bit block; 128-bit key |
 | Republic of Korea | [ARIA](../profiles/international/aria.md) | Symmetric encryption; Substitution and involutive linear-diffusion layers | 128-bit block; 128/192/256-bit keys; 12/14/16 rounds |
 
-See the [international timeline](international-timeline.md), [profile index](../profiles/international/README.md), and [source catalogue](../sources/README.md).
+See the [international timeline](international-timeline.md), [profile index](../profiles/international/README.md), [companion standards](companion-standards.md), and [source catalogue](../sources/README.md).
 
 ## GOST 28147-89
 
@@ -57,6 +57,8 @@ Parameters: 64-bit block; 256-bit key; 32 encryption rounds
 
 - The 1989 standard date does not establish the original internal design date or approval for every later product.
 
+[Companion standards: Russia: GOST parameters, modes and protocol bindings](../docs/companion-standards.md#gost)
+
 ## Magma
 
 The updated 64-bit cipher in GOST R 34.12-2015, with important compatibility details.
@@ -79,6 +81,8 @@ Parameters: 64-bit block; 256-bit key; 32 round keys
 ### Unresolved details
 
 - The 2020 RFC date is an English-publication milestone, not the cipher invention date.
+
+[Companion standards: Russia: GOST parameters, modes and protocol bindings](../docs/companion-standards.md#gost)
 
 ## Kuznyechik
 
@@ -103,6 +107,8 @@ Parameters: 128-bit block; 256-bit key; ten round keys
 
 - Sharing a standard with Magma does not make the two ciphers mathematically interchangeable.
 
+[Companion standards: Russia: GOST parameters, modes and protocol bindings](../docs/companion-standards.md#gost)
+
 ## Streebog / GOST R 34.11-2012
 
 A hash-function standard, with a fully specified compression construction.
@@ -126,6 +132,8 @@ Parameters: 256- or 512-bit digest; 512-bit chaining state
 
 - This profile records the specified construction, not a complete survey of subsequent cryptanalysis.
 
+[Companion standards: Russia: GOST parameters, modes and protocol bindings](../docs/companion-standards.md#gost)
+
 ## GOST R 34.10-2012
 
 The GOST signature standard is a separate mathematical object from GOST block ciphers.
@@ -148,6 +156,8 @@ Parameters: Prime-field elliptic curves; 512- or 1024-bit encoded signatures
 ### Unresolved details
 
 - A product profile must additionally identify curve parameters, hash function and encoding conventions.
+
+[Companion standards: Russia: GOST parameters, modes and protocol bindings](../docs/companion-standards.md#gost)
 
 ## FIALKA / M-125 family
 
@@ -196,6 +206,8 @@ Parameters: 128-bit block; 128-bit key; 32 rounds
 
 - The hosted English translation lacks an official dated Chinese cover; its edition is not established by its filename.
 
+[Companion standards: China: original releases, parameters and successive standards](../docs/companion-standards.md#shangmi)
+
 ## SM3
 
 A public hash specification built from Boolean functions, word additions, rotations and message expansion.
@@ -210,6 +222,7 @@ Parameters: 256-bit digest; 512-bit message blocks; 64 compression steps
 - **INTL-SM3-F1** — SM3 pads messages into 512-bit blocks and updates a 256-bit chaining value with a compression function. That function iterates j from 0 to 63. ([S028](../sources/README.md#s028), Sections 5.1-5.3.3)
 - **INTL-SM3-F2** — The compression state comprises eight 32-bit words, using specified Boolean functions, rotations, additions and permutations P0/P1. ([S028](../sources/README.md#s028), Sections 3, 4 and 5.3.3)
 - **INTL-SM3-F3** — OSCCA announced GM/T 0004-2012 for SM3 on 21 March 2012. RFC 8998 later specifies SM3 in its SM TLS 1.3 profile. ([S034](../sources/README.md#s034), Announcement list, GM/T0004-2012; [S026](../sources/README.md#s026), Sections 1.1 and 3.4)
+- **INTL-SM3-F4** — The official announcement of 2010-12-17 released SM3 with an attached algorithm specification whose cover is dated December 2010, preceding the 2012 industry-standard announcement. ([S071](../sources/README.md#s071), Announcement date and attachment link; [S098](../sources/README.md#s098), Cover and Sections 4–5)
 
 ### Technical inferences
 
@@ -218,6 +231,8 @@ Parameters: 256-bit digest; 512-bit message blocks; 64 compression steps
 ### Unresolved details
 
 - A 256-bit digest length alone does not establish every security property or interoperability with other 256-bit hashes.
+
+[Companion standards: China: original releases, parameters and successive standards](../docs/companion-standards.md#shangmi)
 
 ## SM2 family
 
@@ -234,6 +249,7 @@ Parameters: TLS profile uses a 256-bit prime-field curve
 - **INTL-SM2-F2** — The signature algorithm hashes an identity-bound value with the message; its signing equations include r=(e+x1) mod n and s=(1+d)^(-1)*(k-r*d) mod n, with required retry conditions. ([S030](../sources/README.md#s030), Sections 5.5 and 6.1)
 - **INTL-SM2-F3** — RFC 8998 specifies a 256-bit prime-field curve and uses SM2 signatures with SM3. Its TLS key exchange is ECDHE over that curve. ([S026](../sources/README.md#s026), Sections 1, 3.2.1 and 3.3)
 - **INTL-SM2-F4** — OSCCA announced the GM/T SM2 family in March 2012. The official GB/T Part 1 record was issued in August 2016 and implemented in March 2017. ([S036](../sources/README.md#s036), Publication and implementation metadata; [S034](../sources/README.md#s034), Announcement list, GM/T0003-2012)
+- **INTL-SM2-F5** — Before the later GM/T and GB/T standards, the official announcement of 2010-12-17 released SM2 with a four-part algorithm PDF dated December 2010 and a separate recommended-curve parameter sheet. ([S070](../sources/README.md#s070), Announcement date and attachment links; [S096](../sources/README.md#s096), Part covers at PDF pages 1, 47, 61 and 80; [S097](../sources/README.md#s097), One-page parameter sheet)
 
 ### Technical inferences
 
@@ -242,6 +258,8 @@ Parameters: TLS profile uses a 256-bit prime-field curve
 ### Unresolved details
 
 - The English Part 5 filename says 2016, whereas RFC 8998 cites GB/T 32918.5-2017. The filename must not be treated as authoritative edition metadata.
+
+[Companion standards: China: original releases, parameters and successive standards](../docs/companion-standards.md#shangmi)
 
 ## ZUC / Zu Chongzhi
 
@@ -265,6 +283,8 @@ Parameters: 128-bit key; 128-bit IV; 32-bit output words in version 1.6
 ### Unresolved details
 
 - Parameters in this profile apply to the preserved 128-bit version, not automatically to later ZUC-256 variants.
+
+[Companion standards: China and 3GPP: ZUC, EEA3 and EIA3](../docs/companion-standards.md#zuc)
 
 ## Enigma
 
@@ -340,6 +360,8 @@ Parameters: Key material and format are product-specific in the cited agency acc
 - The cited agency records do not expose a complete round function or establish the cipher's original design date.
 - Independent reverse engineering should be catalogued separately from an official design release.
 
+[Companion standards: Germany: general recommendations and protocol guidance](../docs/companion-standards.md#germany)
+
 ## LIBELLE in SINA
 
 A named government cipher with public architectural and migration evidence.
@@ -362,6 +384,8 @@ Parameters: Internal primitive parameters not established by the cited BSI recor
 
 - The cited sources do not identify the replacement cipher or provide LIBELLE's round function.
 - The 1999 SINA contract is a system-development milestone, not a verified first approval of LIBELLE.
+
+[Companion standards: Germany: general recommendations and protocol guidance](../docs/companion-standards.md#germany)
 
 ## Camellia
 
@@ -386,6 +410,8 @@ Parameters: 128-bit block; 128/192/256-bit keys; 18 or 24 rounds
 
 - A submission, an algorithm publication and a national procurement approval are separate historical milestones.
 
+[Companion standards: Japan: CRYPTREC selections and Camellia protocol profiles](../docs/companion-standards.md#japan)
+
 ## CLEFIA
 
 Sony's published cipher gives an explicit alternative to a two-branch Feistel network.
@@ -408,6 +434,8 @@ Parameters: 128-bit block; 128/192/256-bit keys; 18/22/26 rounds
 ### Unresolved details
 
 - The preserved design dates do not establish when every Sony product first deployed CLEFIA.
+
+[Companion standards: Japan: CRYPTREC selections and Camellia protocol profiles](../docs/companion-standards.md#japan)
 
 ## SEED
 
@@ -432,6 +460,8 @@ Parameters: 128-bit block; 128-bit key
 
 - This profile concerns the 128-bit SEED specification in RFC 4269, not every later similarly named variant.
 
+[Companion standards: Republic of Korea: SEED and ARIA protocol profiles](../docs/companion-standards.md#korea)
+
 ## ARIA
 
 A Korean cipher with public development and standardization milestones.
@@ -455,9 +485,13 @@ Parameters: 128-bit block; 128/192/256-bit keys; 12/14/16 rounds
 
 - The 2004 national-standard milestone is not proof of universal approval for all Korean government information.
 
+[Companion standards: Republic of Korea: SEED and ARIA protocol profiles](../docs/companion-standards.md#korea)
+
 ## Translation and preservation notes
 
 The seven English SM2/SM3/SM4 files are preserved as hosted by Alipay. Their covers lack official dated Chinese standard identifiers; the filenames alone do not verify an edition or an authorized translation. In particular, the SM2 Part 5 filename contains 2016 while RFC 8998 cites a 2017 standard. The catalogue keeps this discrepancy visible. Official Chinese records and the contemporary OSCCA announcement provide separate date evidence.
+
+Official 2010 SM2 Parts 1–4, the recommended-curve sheet, and the original SM3 release are now preserved separately (S096–S098), together with the 2010-12-17 announcements (S070–S071). These earlier release texts are distinct from the hosted English translations and later GM/T/GB/T editions.
 
 The Fialka manual copy explicitly lacks original pages 2, 4 and 60. Turing Chapter 1, the Newmanry report portion and the Bletchley dictionary are edited transcriptions. They are labeled as such. Original RFC text is preserved when that is the publisher's available source format.
 

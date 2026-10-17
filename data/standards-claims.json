@@ -1,0 +1,649 @@
+{
+  "schema_version": 1,
+  "claims": [
+    {
+      "id": "STD-COM-F1",
+      "collection": "standards",
+      "family": "interfaces",
+      "claim_id": "STD-COM-F1",
+      "kind": "documented",
+      "text": "SP 800-38A specifies ECB, CBC, CFB, OFB and CTR confidentiality modes; SP 800-38D specifies GCM and GMAC and requires a 128-bit block cipher for GCM.",
+      "source_refs": [
+        {
+          "source_id": "S004",
+          "locator": "Abstract; Sections 6.1–6.5"
+        },
+        {
+          "source_id": "S003",
+          "locator": "Section 5.1"
+        }
+      ]
+    },
+    {
+      "id": "STD-COM-F2",
+      "collection": "standards",
+      "family": "interfaces",
+      "claim_id": "STD-COM-F2",
+      "kind": "documented",
+      "text": "CMAC supplies message authentication, CCM combines counter-mode encryption with CBC-MAC, and SP 800-38F specifies methods for cryptographic key wrapping. These documents address distinct operations.",
+      "source_refs": [
+        {
+          "source_id": "S067",
+          "locator": "Abstract; Section 6"
+        },
+        {
+          "source_id": "S068",
+          "locator": "Abstract; Section 6"
+        },
+        {
+          "source_id": "S069",
+          "locator": "Abstract; Sections 1 and 4"
+        }
+      ]
+    },
+    {
+      "id": "STD-COM-F3",
+      "collection": "standards",
+      "family": "interfaces",
+      "claim_id": "STD-COM-F3",
+      "kind": "documented",
+      "text": "The preserved PKCS #11 Base and Historical Mechanisms specifications are both OASIS v3.0 standards dated 2020-06-15. The base API and historical mechanism descriptions are separate companion documents.",
+      "source_refs": [
+        {
+          "source_id": "S066",
+          "locator": "Cover; Sections 1 and 2"
+        },
+        {
+          "source_id": "S001",
+          "locator": "Cover; Scope"
+        }
+      ]
+    },
+    {
+      "id": "STD-COM-F4",
+      "collection": "standards",
+      "family": "interfaces",
+      "claim_id": "STD-COM-F4",
+      "kind": "documented",
+      "text": "RFC 5280 profiles X.509 certificates and certificate revocation lists; RFC 8446 specifies TLS 1.3. Their publication category is Standards Track, which is distinct from the Informational categories of several national-algorithm profiles.",
+      "source_refs": [
+        {
+          "source_id": "S064",
+          "locator": "Header; Abstract; Sections 4 and 5"
+        },
+        {
+          "source_id": "S065",
+          "locator": "Header; Abstract"
+        }
+      ]
+    },
+    {
+      "id": "STD-COM-I1",
+      "collection": "standards",
+      "family": "interfaces",
+      "claim_id": "STD-COM-I1",
+      "kind": "inference",
+      "text": "If a product uses MEDLEY with GCM exactly as defined in SP 800-38D, the block cipher supplied to that mode has 128-bit blocks. This deduction supplies neither its key length nor its round construction.",
+      "confidence": "conditional",
+      "depends_on": [
+        "MEDLEY-F1",
+        "STD-COM-F1"
+      ],
+      "assumption": "The manufacturer’s GCM label refers to the standard mode without a proprietary change in its block interface."
+    },
+    {
+      "id": "STD-GOST-F1",
+      "collection": "standards",
+      "family": "gost",
+      "claim_id": "STD-GOST-F1",
+      "kind": "documented",
+      "text": "RFC 4357 provides additional modes, key meshing, wrapping, parameter sets and identifiers for the older GOST algorithm family. RFC 7836 adds HMAC, VKO key agreement, KDF and wrapping constructions and elliptic-curve parameters for the 2012 family.",
+      "source_refs": [
+        {
+          "source_id": "S050",
+          "locator": "Abstract; Sections 2–8"
+        },
+        {
+          "source_id": "S057",
+          "locator": "Sections 4 and 5; Appendix A"
+        }
+      ]
+    },
+    {
+      "id": "STD-GOST-F2",
+      "collection": "standards",
+      "family": "gost",
+      "claim_id": "STD-GOST-F2",
+      "kind": "documented",
+      "text": "MGM is an authenticated-encryption mode defined for both 64-bit and 128-bit block ciphers. RFC 9058 supplies test vectors for Kuznyechik and Magma.",
+      "source_refs": [
+        {
+          "source_id": "S059",
+          "locator": "Abstract; Section 4; Appendices A.1 and A.2"
+        }
+      ]
+    },
+    {
+      "id": "STD-GOST-F3",
+      "collection": "standards",
+      "family": "gost",
+      "claim_id": "STD-GOST-F3",
+      "kind": "documented",
+      "text": "RFC 9227 binds Magma and Kuznyechik in MGM, with external rekeying, to ESP and IKEv2. RFC 9189 profiles GOST for TLS 1.2; RFC 9367 separately defines cipher suites, signature schemes and key exchange for TLS 1.3.",
+      "source_refs": [
+        {
+          "source_id": "S060",
+          "locator": "Abstract; Section 1"
+        },
+        {
+          "source_id": "S062",
+          "locator": "Abstract"
+        },
+        {
+          "source_id": "S063",
+          "locator": "Abstract; Sections 4–6"
+        }
+      ]
+    },
+    {
+      "id": "STD-GOST-F4",
+      "collection": "standards",
+      "family": "gost",
+      "claim_id": "STD-GOST-F4",
+      "kind": "documented",
+      "text": "RFC 9215 specifies GOST signature/hash identifiers, parameters and encodings for the Internet X.509 PKI, including public-key encoding and signature representation.",
+      "source_refs": [
+        {
+          "source_id": "S061",
+          "locator": "Abstract; Sections 2–4"
+        }
+      ]
+    },
+    {
+      "id": "STD-GOST-F5",
+      "collection": "standards",
+      "family": "gost",
+      "claim_id": "STD-GOST-F5",
+      "kind": "documented",
+      "text": "RFCs 7836, 9058, 9189, 9215, 9227 and 9367 are Informational Independent Submissions. RFC 8645 is Informational in the IRTF stream and describes symmetric rekeying mechanisms.",
+      "source_refs": [
+        {
+          "source_id": "S057",
+          "locator": "Header; Status of This Memo"
+        },
+        {
+          "source_id": "S058",
+          "locator": "Header; Abstract; Status of This Memo"
+        },
+        {
+          "source_id": "S059",
+          "locator": "Header"
+        },
+        {
+          "source_id": "S060",
+          "locator": "Header"
+        },
+        {
+          "source_id": "S061",
+          "locator": "Header"
+        },
+        {
+          "source_id": "S062",
+          "locator": "Header"
+        },
+        {
+          "source_id": "S063",
+          "locator": "Header"
+        }
+      ]
+    },
+    {
+      "id": "STD-GOST-I1",
+      "collection": "standards",
+      "family": "gost",
+      "claim_id": "STD-GOST-I1",
+      "kind": "inference",
+      "text": "An implementation described only as supporting GOST is underspecified: interoperation also requires agreement on the primitive generation, curve or parameter set, mode, rekeying rules, encoding and protocol profile.",
+      "confidence": "conditional",
+      "depends_on": [
+        "STD-GOST-F1",
+        "STD-GOST-F2",
+        "STD-GOST-F3",
+        "STD-GOST-F4"
+      ],
+      "assumption": "The parties exchange keys, signatures or protected messages using the cited protocol families."
+    },
+    {
+      "id": "STD-SM-F1",
+      "collection": "standards",
+      "family": "shangmi",
+      "claim_id": "STD-SM-F1",
+      "kind": "documented",
+      "text": "The Chinese authority’s announcements No.21 and No.22 are dated 2010-12-17 and release SM2 and SM3 respectively. Their attached official algorithm PDFs carry December 2010 covers.",
+      "source_refs": [
+        {
+          "source_id": "S070",
+          "locator": "Release date and announcement text; attachment links"
+        },
+        {
+          "source_id": "S071",
+          "locator": "Release date and announcement text; attachment link"
+        },
+        {
+          "source_id": "S096",
+          "locator": "Covers at PDF pages 1, 47, 61 and 80"
+        },
+        {
+          "source_id": "S098",
+          "locator": "Cover"
+        }
+      ]
+    },
+    {
+      "id": "STD-SM-F2",
+      "collection": "standards",
+      "family": "shangmi",
+      "claim_id": "STD-SM-F2",
+      "kind": "documented",
+      "text": "The 93-page SM2 release combines Parts 1–4: general elliptic-curve rules, signatures, key exchange and public-key encryption. A separate one-page official attachment recommends a 256-bit prime-field curve and gives p, a, b, n, Gx and Gy.",
+      "source_refs": [
+        {
+          "source_id": "S096",
+          "locator": "Part covers at PDF pages 1, 47, 61 and 80"
+        },
+        {
+          "source_id": "S097",
+          "locator": "Entire one-page parameter sheet"
+        }
+      ]
+    },
+    {
+      "id": "STD-SM-F3",
+      "collection": "standards",
+      "family": "shangmi",
+      "claim_id": "STD-SM-F3",
+      "kind": "documented",
+      "text": "The recommended SM2 curve has p = FFFFFFFE FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 00000000 FFFFFFFF FFFFFFFF and a = p − 3. Its equation is y² = x³ + ax + b over that prime field. This parameter choice is more specific than the general label elliptic-curve cryptography.",
+      "source_refs": [
+        {
+          "source_id": "S097",
+          "locator": "Curve equation and parameter lines p and a"
+        }
+      ]
+    },
+    {
+      "id": "STD-SM-F4",
+      "collection": "standards",
+      "family": "shangmi",
+      "claim_id": "STD-SM-F4",
+      "kind": "documented",
+      "text": "The original SM3 specification uses 512-bit message blocks, 32-bit words, 64 compression rounds, modular addition, XOR, rotations and Boolean functions, and outputs 256 bits.",
+      "source_refs": [
+        {
+          "source_id": "S098",
+          "locator": "Sections 2–5, especially 4.3–4.4 and 5.2–5.4"
+        }
+      ]
+    },
+    {
+      "id": "STD-SM-F5",
+      "collection": "standards",
+      "family": "shangmi",
+      "claim_id": "STD-SM-F5",
+      "kind": "documented",
+      "text": "The 2012-11-22 announcement lists GM/T 0009-2012 for SM2 applications, GM/T 0010-2012 for signed/enveloped message syntax, GM/T 0014-2012 for certificate-authentication protocols and GM/T 0015-2012 for certificate format.",
+      "source_refs": [
+        {
+          "source_id": "S072",
+          "locator": "Announcement No.24; numbered standards list"
+        }
+      ]
+    },
+    {
+      "id": "STD-SM-F6",
+      "collection": "standards",
+      "family": "shangmi",
+      "claim_id": "STD-SM-F6",
+      "kind": "documented",
+      "text": "Announcement No.45, posted 2023-12-23, lists 2023 revisions of GM/T 0009, 0010, 0014 and 0015 among other standards and states an effective date of 2024-06-01. The web posting date is recorded separately from each standard’s issue date.",
+      "source_refs": [
+        {
+          "source_id": "S073",
+          "locator": "Posting date; announcement; attached standards list"
+        }
+      ]
+    },
+    {
+      "id": "STD-SM-F7",
+      "collection": "standards",
+      "family": "shangmi",
+      "claim_id": "STD-SM-F7",
+      "kind": "documented",
+      "text": "The official GB/T records for SM2 Part 1 and SM4 record issue on 2016-08-29 and implementation on 2017-03-01. These are later national-standard milestones, separate from the 2010 SM2 release and 2012 industry-standard announcements.",
+      "source_refs": [
+        {
+          "source_id": "S035",
+          "locator": "Issue and implementation metadata"
+        },
+        {
+          "source_id": "S036",
+          "locator": "Issue and implementation metadata"
+        },
+        {
+          "source_id": "S070",
+          "locator": "Release date"
+        },
+        {
+          "source_id": "S034",
+          "locator": "Announcement No.23 and standards list"
+        }
+      ]
+    },
+    {
+      "id": "STD-SM-F8",
+      "collection": "standards",
+      "family": "shangmi",
+      "claim_id": "STD-SM-F8",
+      "kind": "documented",
+      "text": "RFC 8998 profiles SM2, SM3 and SM4 for TLS 1.3, including SM4-GCM and SM4-CCM cipher suites. It is an Informational Independent Submission, while the underlying TLS 1.3 specification RFC 8446 is Standards Track.",
+      "source_refs": [
+        {
+          "source_id": "S026",
+          "locator": "Header; Sections 2 and 3"
+        },
+        {
+          "source_id": "S065",
+          "locator": "Header"
+        }
+      ]
+    },
+    {
+      "id": "STD-SM-I1",
+      "collection": "standards",
+      "family": "shangmi",
+      "claim_id": "STD-SM-I1",
+      "kind": "inference",
+      "text": "The curve sheet and SM3 text allow concrete descriptions of arithmetic, parameters and hashing without inferring those choices from a codeword. The published record does not, by itself, identify the original classified design date or every government use.",
+      "confidence": "conditional",
+      "depends_on": [
+        "STD-SM-F1",
+        "STD-SM-F2",
+        "STD-SM-F3",
+        "STD-SM-F4"
+      ],
+      "assumption": "The question concerns the preserved public specifications and their dated releases, rather than an undocumented earlier variant."
+    },
+    {
+      "id": "STD-ZUC-F1",
+      "collection": "standards",
+      "family": "zuc",
+      "claim_id": "STD-ZUC-F1",
+      "kind": "documented",
+      "text": "The archive holds ZUC Document 2 v1.6 (2011-06-28), EEA3/EIA3 Document 1 v1.8 (2019-01-24), Implementor’s Test Data v1.1 (2011-01-04), and Design and Evaluation Report v2.0 (2011-09-09).",
+      "source_refs": [
+        {
+          "source_id": "S037",
+          "locator": "Cover"
+        },
+        {
+          "source_id": "S076",
+          "locator": "Cover"
+        },
+        {
+          "source_id": "S092",
+          "locator": "Cover"
+        },
+        {
+          "source_id": "S093",
+          "locator": "Cover"
+        }
+      ]
+    },
+    {
+      "id": "STD-ZUC-F2",
+      "collection": "standards",
+      "family": "zuc",
+      "claim_id": "STD-ZUC-F2",
+      "kind": "documented",
+      "text": "The EEA3/EIA3 document history records initial publication on 2010-06-18, an EIA3 modification on 2011-01-04, and maximum-message-length changes in 2011 and 2019. The design report records the first public release of that report on 2010-08-11 and a ZUC/EIA3 modification in January 2011.",
+      "source_refs": [
+        {
+          "source_id": "S076",
+          "locator": "Document History, PDF page 2"
+        },
+        {
+          "source_id": "S093",
+          "locator": "Document History, PDF page 2"
+        }
+      ]
+    },
+    {
+      "id": "STD-ZUC-F3",
+      "collection": "standards",
+      "family": "zuc",
+      "claim_id": "STD-ZUC-F3",
+      "kind": "documented",
+      "text": "The test-data preface includes internal ZUC state and input/output examples, but expressly says conformance with the test data does not guarantee a correct implementation.",
+      "source_refs": [
+        {
+          "source_id": "S092",
+          "locator": "Preface, PDF page 3"
+        }
+      ]
+    },
+    {
+      "id": "STD-ZUC-F4",
+      "collection": "standards",
+      "family": "zuc",
+      "claim_id": "STD-ZUC-F4",
+      "kind": "documented",
+      "text": "ETSI TS 135 221 v19.0.0 is dated October 2025 and identifies 3GPP TS 35.221 Release 19. Its technical provisions are incorporated by reference to EEA3/EIA3 Document 1 v1.7; the separately archived Document 1 is v1.8.",
+      "source_refs": [
+        {
+          "source_id": "S075",
+          "locator": "Cover; Section 2 reference [2]; Section 4"
+        },
+        {
+          "source_id": "S076",
+          "locator": "Cover"
+        }
+      ]
+    },
+    {
+      "id": "STD-ZUC-I1",
+      "collection": "standards",
+      "family": "zuc",
+      "claim_id": "STD-ZUC-I1",
+      "kind": "inference",
+      "text": "The name ZUC alone does not fully specify the cellular confidentiality or integrity operation: EEA3 and EIA3 define different uses of the generator, with packet inputs and initialization rules. Version history is necessary when interpreting early analyses.",
+      "confidence": "conditional",
+      "depends_on": [
+        "STD-ZUC-F1",
+        "STD-ZUC-F2",
+        "STD-ZUC-F4"
+      ],
+      "assumption": "The implementation or historical analysis concerns the 128-EEA3/128-EIA3 family covered by these records."
+    },
+    {
+      "id": "STD-JP-F1",
+      "collection": "standards",
+      "family": "japan",
+      "claim_id": "STD-JP-F1",
+      "kind": "documented",
+      "text": "The preserved legacy CRYPTREC list is dated 2003-02-20 and includes a 2005-10-12 correction appendix. The archive also holds the 2013-03-01 list and the list revised 2026-03-30, whose family cover date is 2023-03-30.",
+      "source_refs": [
+        {
+          "source_id": "S094",
+          "locator": "Cover and correction appendix"
+        },
+        {
+          "source_id": "S079",
+          "locator": "Cover"
+        },
+        {
+          "source_id": "S078",
+          "locator": "Cover"
+        }
+      ]
+    },
+    {
+      "id": "STD-JP-F2",
+      "collection": "standards",
+      "family": "japan",
+      "claim_id": "STD-JP-F2",
+      "kind": "documented",
+      "text": "The March 2026 list places Camellia among e-Government Recommended Ciphers and CLEFIA among Candidate Recommended Ciphers. A separate Monitored Ciphers category also exists.",
+      "source_refs": [
+        {
+          "source_id": "S078",
+          "locator": "e-Government Recommended, Candidate Recommended and Monitored tables; PDF pages 1, 4 and 5"
+        }
+      ]
+    },
+    {
+      "id": "STD-JP-F3",
+      "collection": "standards",
+      "family": "japan",
+      "claim_id": "STD-JP-F3",
+      "kind": "documented",
+      "text": "The strength-requirements PDF’s revision table records first publication on 2022-07-01 and corrections on 2023-03-30. Its cover still states March 2022; the archive retains that internal date discrepancy.",
+      "source_refs": [
+        {
+          "source_id": "S080",
+          "locator": "Cover; revision table in introductory pages"
+        }
+      ]
+    },
+    {
+      "id": "STD-JP-F4",
+      "collection": "standards",
+      "family": "japan",
+      "claim_id": "STD-JP-F4",
+      "kind": "documented",
+      "text": "RFC 5932 specifies Camellia cipher suites for TLS (June 2010), and RFC 4312 specifies Camellia for IPsec (December 2005). Both were published with the Standards Track category.",
+      "source_refs": [
+        {
+          "source_id": "S086",
+          "locator": "Header; Abstract"
+        },
+        {
+          "source_id": "S087",
+          "locator": "Header; Abstract"
+        }
+      ]
+    },
+    {
+      "id": "STD-JP-I1",
+      "collection": "standards",
+      "family": "japan",
+      "claim_id": "STD-JP-I1",
+      "kind": "inference",
+      "text": "A claim that Camellia and CLEFIA have the same CRYPTREC recommendation status loses a distinction visible in the preserved 2026 list. An accurate claim names both the edition and category.",
+      "confidence": "conditional",
+      "depends_on": [
+        "STD-JP-F2"
+      ],
+      "assumption": "The claim refers to the March 2026 CRYPTREC list, rather than a different selection program or edition."
+    },
+    {
+      "id": "STD-KR-F1",
+      "collection": "standards",
+      "family": "korea",
+      "claim_id": "STD-KR-F1",
+      "kind": "documented",
+      "text": "RFCs 4162 and 4196 bind SEED to TLS and IPsec, with publication dates August and October 2005. Their preserved headers give the Standards Track category.",
+      "source_refs": [
+        {
+          "source_id": "S088",
+          "locator": "Header; Abstract"
+        },
+        {
+          "source_id": "S089",
+          "locator": "Header; Abstract"
+        }
+      ]
+    },
+    {
+      "id": "STD-KR-F2",
+      "collection": "standards",
+      "family": "korea",
+      "claim_id": "STD-KR-F2",
+      "kind": "documented",
+      "text": "RFC 6209 defines ARIA cipher suites for TLS (April 2011). RFC 8269 defines ARIA for SRTP (October 2017), including CTR/GCM, key derivation, DTLS-SRTP profiles and MIKEY parameters. Both are IETF Informational documents.",
+      "source_refs": [
+        {
+          "source_id": "S090",
+          "locator": "Header; Abstract; Status of This Memo"
+        },
+        {
+          "source_id": "S091",
+          "locator": "Header; Abstract; Status of This Memo"
+        }
+      ]
+    },
+    {
+      "id": "STD-KR-I1",
+      "collection": "standards",
+      "family": "korea",
+      "claim_id": "STD-KR-I1",
+      "kind": "inference",
+      "text": "The protocol records establish specified interoperability choices, but they do not by themselves show that a named product passed Korean module validation. Such a claim needs a product-specific validation record and its scope.",
+      "confidence": "conditional",
+      "depends_on": [
+        "STD-KR-F1",
+        "STD-KR-F2"
+      ],
+      "assumption": "The proposed claim concerns implementation validation rather than publication of a protocol profile."
+    },
+    {
+      "id": "STD-DE-F1",
+      "collection": "standards",
+      "family": "germany",
+      "claim_id": "STD-DE-F1",
+      "kind": "documented",
+      "text": "The archived TR-02102-1 is version 2026-01, as of 2026-01-23. It provides general cryptographic mechanism and key-length recommendations.",
+      "source_refs": [
+        {
+          "source_id": "S081",
+          "locator": "Cover; Section 1"
+        }
+      ]
+    },
+    {
+      "id": "STD-DE-F2",
+      "collection": "standards",
+      "family": "germany",
+      "claim_id": "STD-DE-F2",
+      "kind": "documented",
+      "text": "TR-02102 Parts 2, 3 and 4 address TLS, IPsec/IKEv2 and SSH respectively. Each preserved edition’s history dates version 2026-01 to 2026-01-27.",
+      "source_refs": [
+        {
+          "source_id": "S082",
+          "locator": "Cover; Document history; Section 1"
+        },
+        {
+          "source_id": "S083",
+          "locator": "Cover; Document history; Section 1"
+        },
+        {
+          "source_id": "S095",
+          "locator": "Cover; Document history; Section 1"
+        }
+      ]
+    },
+    {
+      "id": "STD-DE-I1",
+      "collection": "standards",
+      "family": "germany",
+      "claim_id": "STD-DE-I1",
+      "kind": "inference",
+      "text": "The TR series supplies a public policy and protocol context for German deployments; identifying the mathematics or approval scope of an opaque product still requires a record that names that product and its algorithm or certification boundary.",
+      "confidence": "conditional",
+      "depends_on": [
+        "STD-DE-F1",
+        "STD-DE-F2"
+      ],
+      "assumption": "No additional product-specific approval or algorithm specification is supplied by the generic guidance citation."
+    }
+  ]
+}
