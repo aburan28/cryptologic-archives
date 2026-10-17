@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "events": [
+    {
+      "date": "late-1960s",
+      "subject": "SAVILLE",
+      "date_kind": "development_program",
+      "interpretation": "NSA retrospective history dates the program launch.",
+      "source_id": "S011",
+      "locator": "Printed p.143; PDF p.154"
+    },
+    {
+      "date": "1987-10-30",
+      "subject": "ACCORDION 1.3",
+      "date_kind": "specification",
+      "interpretation": "Date of a referenced KM-TG-0001-87 record; not its public release.",
+      "source_id": "S014",
+      "locator": "Entry 41"
+    },
+    {
+      "date": "1988-05",
+      "subject": "FIREFLY",
+      "date_kind": "public_documentation",
+      "interpretation": "Discussed in a contemporary paper by Whitfield Diffie.",
+      "source_id": "S013",
+      "locator": "p.571"
+    },
+    {
+      "date": "1992-10-07",
+      "subject": "JOSEKI-1",
+      "date_kind": "specification",
+      "interpretation": "Date of referenced R21-TECH-0062-92 bootstrap procedures.",
+      "source_id": "S014",
+      "locator": "Entry 47"
+    },
+    {
+      "date": "after-1994-05-03",
+      "subject": "BATON",
+      "date_kind": "public_acknowledgment",
+      "interpretation": "NSA responses follow the May 1994 hearings; exact response and original publication dates remain unverified.",
+      "source_id": "S015",
+      "locator": "Question 6"
+    },
+    {
+      "date": "1996-03-05",
+      "subject": "KM-TG-0002-96",
+      "date_kind": "specification",
+      "interpretation": "Date of referenced software-signing/hashword standard.",
+      "source_id": "S014",
+      "locator": "Entry 42"
+    },
+    {
+      "date": "1999-12",
+      "subject": "BATON / JUNIPER",
+      "date_kind": "public_documentation",
+      "interpretation": "Public mechanism descriptions in PKCS #11 v2.10; not an earliest-ever claim.",
+      "source_id": "S002",
+      "locator": "Sections 12.22-12.23"
+    },
+    {
+      "date": "2000-08-01",
+      "subject": "ACCORDION 3.0",
+      "date_kind": "specification",
+      "interpretation": "Date of referenced R21-TECH-13-00 specification.",
+      "source_id": "S014",
+      "locator": "Entry 15"
+    },
+    {
+      "date": "2001-11-30",
+      "subject": "MEDLEY",
+      "date_kind": "specification",
+      "interpretation": "Date of referenced R21-TECH-30-01 implementation standard.",
+      "source_id": "S014",
+      "locator": "Entry 14"
+    },
+    {
+      "date": "2002-02-07",
+      "subject": "ACCORDION / MEDLEY",
+      "date_kind": "specification",
+      "interpretation": "Date of referenced An ACCORDION MEDLEY document.",
+      "source_id": "S010",
+      "locator": "Bibliography, printed p.4"
+    },
+    {
+      "date": "fiscal-2005",
+      "subject": "Sierra II platform",
+      "date_kind": "module_certification",
+      "interpretation": "Harris reports NSA certification in its fiscal 2005; not each algorithm first approval.",
+      "source_id": "S016",
+      "locator": "Sierra II cryptographic subsystem paragraph"
+    },
+    {
+      "date": "2005-12-20",
+      "subject": "WATARI",
+      "date_kind": "specification",
+      "interpretation": "Date of referenced R21-TECH-34-05 algorithm specification.",
+      "source_id": "S010",
+      "locator": "Bibliography, printed p.5"
+    },
+    {
+      "date": "by-2019-06-17",
+      "subject": "SPONDULIX-S / SILVER LINING",
+      "date_kind": "requirements_reference",
+      "interpretation": "Names appear in NGLD-M requirements; SILVER LINING includes prospective upgrade language.",
+      "source_id": "S010",
+      "locator": "Table 9"
+    }
+  ]
+}
