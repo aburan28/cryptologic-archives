@@ -1,5 +1,9 @@
 # Algorithm and scheme profiles
 
+[International collection: Soviet/Russian, Chinese, German, Japanese and Korean profiles](international/README.md)
+
+## NSA Suite A collection
+
 - [MEDLEY](medley.md) — A symmetric encryption primitive exposed through familiar block-cipher modes.
 - [BATON](baton.md) — A block-oriented cipher with structured key representation and token-controlled initialization.
 - [JUNIPER](juniper.md) — A historical block-cipher interface closely resembling BATON at the API boundary.

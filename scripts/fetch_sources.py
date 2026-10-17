@@ -38,6 +38,8 @@ def acquire(source, refresh=False):
             first = response.read(8192)
             if source['format'] == 'pdf' and b'%PDF-' not in first[:1024]:
                 raise ValueError('Response does not contain a PDF header')
+            if source['format'] == 'text' and b'Request for Comments:' not in first:
+                raise ValueError('Response does not contain the expected original RFC text header')
             if source['format'] == 'html' and any(marker in first.lower() for marker in (
                 b'your request originates from an undeclared automated tool',
                 b'<title>access denied', b'<title>just a moment')):

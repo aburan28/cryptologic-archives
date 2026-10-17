@@ -22,7 +22,10 @@
         "bytes": 1548298,
         "sha256": "d3cd42b3d17abfe068ed410967da38df97a4f14763bbf33aa10c1605ba7eb0a5",
         "page_count": 64
-      }
+      },
+      "collections": [
+        "suite-a"
+      ]
     },
     {
       "id": "S002",
@@ -44,7 +47,10 @@
         "bytes": 1232071,
         "sha256": "cdb040770c204df77cee01273ccdd2eff0731ae3946e1dc623878aa015a07cd1",
         "page_count": 319
-      }
+      },
+      "collections": [
+        "suite-a"
+      ]
     },
     {
       "id": "S003",
@@ -66,7 +72,10 @@
         "bytes": 271960,
         "sha256": "d99f3921ccebca049e7522426553aba071dae14ec3d5b6041e8c111a6cb57bba",
         "page_count": 39
-      }
+      },
+      "collections": [
+        "suite-a"
+      ]
     },
     {
       "id": "S004",
@@ -88,7 +97,10 @@
         "bytes": 378266,
         "sha256": "66821162de1e7130c5fb5eedb22140d8d6d013ec51af4550bb095c2a9481a00e",
         "page_count": 66
-      }
+      },
+      "collections": [
+        "suite-a"
+      ]
     },
     {
       "id": "S005",
@@ -109,7 +121,10 @@
         "content_type": "text/html;charset=utf-8",
         "bytes": 304304,
         "sha256": "191bac74a8a2225ddb22272c5cde00d8b3d6e598398c2e56e92eed070b497d59"
-      }
+      },
+      "collections": [
+        "suite-a"
+      ]
     },
     {
       "id": "S006",
@@ -131,7 +146,10 @@
         "bytes": 354304,
         "sha256": "9bbdf82cd54155963c6c2298c1a8d541549c32f8ed15f546ab3b71c0cf5249ee",
         "page_count": 2
-      }
+      },
+      "collections": [
+        "suite-a"
+      ]
     },
     {
       "id": "S007",
@@ -153,7 +171,10 @@
         "bytes": 756098,
         "sha256": "2eca7d9229f3c4ab3575f97a241af4a6e6f23e49aa91e416b808e24c7df4b7f8",
         "page_count": 2
-      }
+      },
+      "collections": [
+        "suite-a"
+      ]
     },
     {
       "id": "S008",
@@ -175,7 +196,10 @@
         "bytes": 281275,
         "sha256": "fda056b3ff46d570a4f44a907d9676ed3f22915b20c6cea153e74140e2ba51a8",
         "page_count": 2
-      }
+      },
+      "collections": [
+        "suite-a"
+      ]
     },
     {
       "id": "S009",
@@ -197,7 +221,10 @@
         "bytes": 1707003,
         "sha256": "30e6eca729e52fef36c1172f3e8882bbfc10ee53f27c80ac0d01f451b0b0e778",
         "page_count": 2
-      }
+      },
+      "collections": [
+        "suite-a"
+      ]
     },
     {
       "id": "S010",
@@ -219,7 +246,10 @@
         "bytes": 6103246,
         "sha256": "aa16f7fff3e9a7209f28d1ff6f7f8a5b58850e51ecd5f308688ba35e1fab1abf",
         "page_count": 255
-      }
+      },
+      "collections": [
+        "suite-a"
+      ]
     },
     {
       "id": "S011",
@@ -241,7 +271,10 @@
         "bytes": 36632126,
         "sha256": "28c938f2e43931e8f2a9e4dff64401324aadb42b1df1cf6851376e55e0b2731a",
         "page_count": 271
-      }
+      },
+      "collections": [
+        "suite-a"
+      ]
     },
     {
       "id": "S012",
@@ -263,7 +296,10 @@
         "bytes": 15311026,
         "sha256": "386ebc11e240824917bfea6f78212e5934149ef8c72964765dce50fb225f1f13",
         "page_count": 50
-      }
+      },
+      "collections": [
+        "suite-a"
+      ]
     },
     {
       "id": "S013",
@@ -285,7 +321,10 @@
         "bytes": 2308472,
         "sha256": "1ecc2b8456a49aadc2e4e347b5b6a456508df2073fde0a111ba95dbf470b5b7a",
         "page_count": 18
-      }
+      },
+      "collections": [
+        "suite-a"
+      ]
     },
     {
       "id": "S014",
@@ -314,6 +353,9 @@
           "attempted_at_utc": "2026-10-17T18:40:00.104670+00:00",
           "error": "HTTPError: HTTP Error 503: Service Unavailable"
         }
+      ],
+      "collections": [
+        "suite-a"
       ]
     },
     {
@@ -335,7 +377,10 @@
         "content_type": "text/html; charset=UTF-8",
         "bytes": 16919,
         "sha256": "ecdabd3ab7949fabbb347803843c73cfddb74c0d36a1f33d98e4b6175373e66f"
-      }
+      },
+      "collections": [
+        "suite-a"
+      ]
     },
     {
       "id": "S016",
@@ -356,7 +401,10 @@
         "content_type": "text/html",
         "bytes": 1293340,
         "sha256": "7dcf56fe4cb482ab1d361456f7fe60525205b3a24dfb6703d788f0eb4c765747"
-      }
+      },
+      "collections": [
+        "suite-a"
+      ]
     },
     {
       "id": "S017",
@@ -387,7 +435,10 @@
           "error": "HTTPError: HTTP Error 403: Forbidden"
         }
       ],
-      "acquisition_url": "https://web.archive.org/web/20200108180327id_/https://gdmissionsystems.com/-/media/General-Dynamics/Cyber-and-Electronic-Warfare-Systems/PDF/Brochures/cyber-poet-acm-high-speed-encryptor-datasheet.ashx"
+      "acquisition_url": "https://web.archive.org/web/20200108180327id_/https://gdmissionsystems.com/-/media/General-Dynamics/Cyber-and-Electronic-Warfare-Systems/PDF/Brochures/cyber-poet-acm-high-speed-encryptor-datasheet.ashx",
+      "collections": [
+        "suite-a"
+      ]
     },
     {
       "id": "S018",
@@ -408,7 +459,10 @@
         "content_type": "text/html;charset=utf-8",
         "bytes": 294352,
         "sha256": "58925779d37c84678bf83afeb22c899d67336924f0ba18e79f49d81e4e9b23ce"
-      }
+      },
+      "collections": [
+        "suite-a"
+      ]
     },
     {
       "id": "S019",
@@ -430,6 +484,1002 @@
         "bytes": 1551969,
         "sha256": "5b8c8fde0e534d4568f9dd4c6b9c6a36ac6539e5c4296af5a27de55c69f1a393",
         "page_count": 223
+      },
+      "collections": [
+        "suite-a"
+      ]
+    },
+    {
+      "id": "S020",
+      "title": "RFC 5830: GOST 28147-89: Encryption, Decryption, and MAC Algorithms",
+      "publisher": "RFC Editor; named document authors",
+      "document_date": "2010-03",
+      "date_note": "Preserved in the original publisher format. RFC publication does not itself establish national approval or IETF endorsement; consult the document status statement.",
+      "url": "https://www.rfc-editor.org/rfc/rfc5830.txt",
+      "format": "text",
+      "archive_path": "sources/originals/S020-rfc5830.txt",
+      "provenance": "RFC Editor publication; original national standards and RFC dates are distinguished",
+      "language": "English",
+      "region": "Soviet Union / Russia",
+      "collections": [
+        "international"
+      ],
+      "rights": "Original publisher notices apply; no repository-wide license is applied to source documents.",
+      "download": {
+        "status": "archived",
+        "retrieved_at_utc": "2026-10-17T18:50:42.729077+00:00",
+        "resolved_url": "https://www.rfc-editor.org/rfc/rfc5830.txt",
+        "http_status": 200,
+        "content_type": "text/plain;charset=utf-8",
+        "bytes": 36234,
+        "sha256": "5b85a3587130cd2c43e6b3a4a41f6b3bdaa3b320c84e0298a09c4fe1016b663e"
+      }
+    },
+    {
+      "id": "S021",
+      "title": "RFC 8891: GOST R 34.12-2015: Block Cipher Magma",
+      "publisher": "RFC Editor; named document authors",
+      "document_date": "2020-09",
+      "date_note": "Preserved in the original publisher format. RFC publication does not itself establish national approval or IETF endorsement; consult the document status statement.",
+      "url": "https://www.rfc-editor.org/rfc/rfc8891.pdf",
+      "format": "pdf",
+      "archive_path": "sources/originals/S021-rfc8891.pdf",
+      "provenance": "RFC Editor publication; original national standards and RFC dates are distinguished",
+      "language": "English",
+      "region": "Russia",
+      "collections": [
+        "international"
+      ],
+      "rights": "Original publisher notices apply; no repository-wide license is applied to source documents.",
+      "download": {
+        "status": "archived",
+        "retrieved_at_utc": "2026-10-17T18:50:42.731177+00:00",
+        "resolved_url": "https://www.rfc-editor.org/rfc/rfc8891.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "bytes": 154889,
+        "sha256": "efd5cdbc8335fa7cb5d214cf49b5064c7600a41e9e0430238b71ba3a87f59797",
+        "page_count": 13
+      }
+    },
+    {
+      "id": "S022",
+      "title": "RFC 7801: GOST R 34.12-2015: Block Cipher Kuznyechik",
+      "publisher": "RFC Editor; named document authors",
+      "document_date": "2016-03",
+      "date_note": "Preserved in the original publisher format. RFC publication does not itself establish national approval or IETF endorsement; consult the document status statement.",
+      "url": "https://www.rfc-editor.org/rfc/rfc7801.txt",
+      "format": "text",
+      "archive_path": "sources/originals/S022-rfc7801.txt",
+      "provenance": "RFC Editor publication; original national standards and RFC dates are distinguished",
+      "language": "English",
+      "region": "Russia",
+      "collections": [
+        "international"
+      ],
+      "rights": "Original publisher notices apply; no repository-wide license is applied to source documents.",
+      "download": {
+        "status": "archived",
+        "retrieved_at_utc": "2026-10-17T18:50:42.740936+00:00",
+        "resolved_url": "https://www.rfc-editor.org/rfc/rfc7801.txt",
+        "http_status": 200,
+        "content_type": "text/plain;charset=utf-8",
+        "bytes": 25039,
+        "sha256": "4e78cccae8ba582fa2e316aa8cbbb404ae0355d0a06b76d685482c0a0a842c69"
+      }
+    },
+    {
+      "id": "S023",
+      "title": "RFC 6986: GOST R 34.11-2012: Hash Function",
+      "publisher": "RFC Editor; named document authors",
+      "document_date": "2013-08",
+      "date_note": "Preserved in the original publisher format. RFC publication does not itself establish national approval or IETF endorsement; consult the document status statement.",
+      "url": "https://www.rfc-editor.org/rfc/rfc6986.txt",
+      "format": "text",
+      "archive_path": "sources/originals/S023-rfc6986.txt",
+      "provenance": "RFC Editor publication; original national standards and RFC dates are distinguished",
+      "language": "English",
+      "region": "Russia",
+      "collections": [
+        "international"
+      ],
+      "rights": "Original publisher notices apply; no repository-wide license is applied to source documents.",
+      "download": {
+        "status": "archived",
+        "retrieved_at_utc": "2026-10-17T18:50:42.764623+00:00",
+        "resolved_url": "https://www.rfc-editor.org/rfc/rfc6986.txt",
+        "http_status": 200,
+        "content_type": "text/plain;charset=utf-8",
+        "bytes": 78975,
+        "sha256": "fd5ea9e36d74743bbc49df7652e82d00aa97195aa40b6594d39ef4f0028e2226"
+      }
+    },
+    {
+      "id": "S024",
+      "title": "RFC 7091: GOST R 34.10-2012: Digital Signature Algorithm",
+      "publisher": "RFC Editor; named document authors",
+      "document_date": "2013-12",
+      "date_note": "Preserved in the original publisher format. RFC publication does not itself establish national approval or IETF endorsement; consult the document status statement.",
+      "url": "https://www.rfc-editor.org/rfc/rfc7091.txt",
+      "format": "text",
+      "archive_path": "sources/originals/S024-rfc7091.txt",
+      "provenance": "RFC Editor publication; original national standards and RFC dates are distinguished",
+      "language": "English",
+      "region": "Russia",
+      "collections": [
+        "international"
+      ],
+      "rights": "Original publisher notices apply; no repository-wide license is applied to source documents.",
+      "download": {
+        "status": "archived",
+        "retrieved_at_utc": "2026-10-17T18:50:43.120820+00:00",
+        "resolved_url": "https://www.rfc-editor.org/rfc/rfc7091.txt",
+        "http_status": 200,
+        "content_type": "text/plain;charset=utf-8",
+        "bytes": 39924,
+        "sha256": "559d87823305916db8996dad7bd954c6c8db58cd34df11748f4f0947b01c5758"
+      }
+    },
+    {
+      "id": "S025",
+      "title": "FIALKA M-125-MN / M-125-3MN German-language service manual",
+      "publisher": "Historical service manual; preserved by the Enigma Museum",
+      "document_date": null,
+      "date_note": "Digitized in 2005; original manual date not verified. The digitizer explicitly identifies original pages 2, 4 and 60 as missing. This copy is preserved unchanged with that limitation.",
+      "url": "https://enigmamuseum.com/mfman.pdf",
+      "format": "pdf",
+      "archive_path": "sources/originals/S025-fialka-german-manual.pdf",
+      "provenance": "Original manual scan preserved by the Enigma Museum; contributed by collector John Alexander",
+      "language": "German",
+      "region": "Soviet Union / East Germany",
+      "collections": [
+        "international"
+      ],
+      "rights": "Original publisher notices apply; no repository-wide license is applied to source documents.",
+      "download": {
+        "status": "archived",
+        "retrieved_at_utc": "2026-10-17T18:50:43.308709+00:00",
+        "resolved_url": "https://enigmamuseum.com/mfman.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "bytes": 3160433,
+        "sha256": "09a7e4fd862dd08154fae39205887e822435c2970dcda009de274922770c6c64",
+        "page_count": 112
+      },
+      "digitization_date": "2005-03-24"
+    },
+    {
+      "id": "S026",
+      "title": "RFC 8998: ShangMi (SM) Cipher Suites for TLS 1.3",
+      "publisher": "RFC Editor; named document authors",
+      "document_date": "2021-03",
+      "date_note": "Preserved in the original publisher format. RFC publication does not itself establish national approval or IETF endorsement; consult the document status statement.",
+      "url": "https://www.rfc-editor.org/rfc/rfc8998.pdf",
+      "format": "pdf",
+      "archive_path": "sources/originals/S026-rfc8998.pdf",
+      "provenance": "RFC Editor publication; original national standards and RFC dates are distinguished",
+      "language": "English",
+      "region": "China",
+      "collections": [
+        "international"
+      ],
+      "rights": "Original publisher notices apply; no repository-wide license is applied to source documents.",
+      "download": {
+        "status": "archived",
+        "retrieved_at_utc": "2026-10-17T18:50:43.324478+00:00",
+        "resolved_url": "https://www.rfc-editor.org/rfc/rfc8998.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "bytes": 189766,
+        "sha256": "6a8296ee227a22e5fdc8551e99833181bc206c79f949809506df5d6b24fbfecd",
+        "page_count": 13
+      }
+    },
+    {
+      "id": "S027",
+      "title": "GB/T 32907-2016: SM4 block cipher algorithm, English translation",
+      "publisher": "Chinese national standard; translation preserved by Alipay",
+      "document_date": null,
+      "date_note": "The host filename identifies a 2016 GB/T standard; the English translation itself lacks the dated official Chinese cover. Translation edition and authorization are unverified. Official metadata and the 2012 OSCCA announcement are cited separately for standardization dates.",
+      "url": "https://raw.githubusercontent.com/alipay/tls13-sm-spec/master/sm-en-pdfs/sm4/GBT.32907-2016.SM4-en.pdf",
+      "format": "pdf",
+      "archive_path": "sources/originals/S027-sm4-2016-english.pdf",
+      "provenance": "English translation preserved in Alipay's public TLS specification repository",
+      "language": "English",
+      "region": "China",
+      "collections": [
+        "international"
+      ],
+      "rights": "Original publisher notices apply; no repository-wide license is applied to source documents.",
+      "download": {
+        "status": "archived",
+        "retrieved_at_utc": "2026-10-17T18:50:43.433810+00:00",
+        "resolved_url": "https://raw.githubusercontent.com/alipay/tls13-sm-spec/master/sm-en-pdfs/sm4/GBT.32907-2016.SM4-en.pdf",
+        "http_status": 200,
+        "content_type": "application/octet-stream",
+        "bytes": 150643,
+        "sha256": "c7c2570f1a76ab4d1361bc487fb87ab58de659f3054f3fbb6f9e2ba014f85142",
+        "page_count": 8
+      }
+    },
+    {
+      "id": "S028",
+      "title": "GB/T 32905-2016: SM3 cryptographic hash algorithm, English translation",
+      "publisher": "Chinese national standard; translation preserved by Alipay",
+      "document_date": null,
+      "date_note": "The host filename identifies a 2016 GB/T standard; the English translation itself lacks the dated official Chinese cover. Translation edition and authorization are unverified. Official metadata and the 2012 OSCCA announcement are cited separately for standardization dates.",
+      "url": "https://raw.githubusercontent.com/alipay/tls13-sm-spec/master/sm-en-pdfs/sm3/GBT.32905-2016.SM3-en.pdf",
+      "format": "pdf",
+      "archive_path": "sources/originals/S028-sm3-2016-english.pdf",
+      "provenance": "English translation preserved in Alipay's public TLS specification repository",
+      "language": "English",
+      "region": "China",
+      "collections": [
+        "international"
+      ],
+      "rights": "Original publisher notices apply; no repository-wide license is applied to source documents.",
+      "download": {
+        "status": "archived",
+        "retrieved_at_utc": "2026-10-17T18:50:43.577123+00:00",
+        "resolved_url": "https://raw.githubusercontent.com/alipay/tls13-sm-spec/master/sm-en-pdfs/sm3/GBT.32905-2016.SM3-en.pdf",
+        "http_status": 200,
+        "content_type": "application/octet-stream",
+        "bytes": 965071,
+        "sha256": "4619044302bd407d9115091b0aee9afa8647c8e6a805ae65e5d22178c013ac82",
+        "page_count": 14
+      }
+    },
+    {
+      "id": "S029",
+      "title": "SM2 national standard, Part 1, English translation",
+      "publisher": "Chinese national standard; translation preserved by Alipay",
+      "document_date": null,
+      "date_note": "The host filename contains GB/T and 2016, but the English cover lacks a dated official standard identifier. In particular, do not infer a 2016 issue date for Part 5 from the filename: RFC 8998 cites GB/T 32918.5-2017. Translation edition and authorization are unverified.",
+      "url": "https://raw.githubusercontent.com/alipay/tls13-sm-spec/master/sm-en-pdfs/sm2/GBT.32918.1-2016.SM2-en.pdf",
+      "format": "pdf",
+      "archive_path": "sources/originals/S029-sm2-part1-english.pdf",
+      "provenance": "English translation preserved in Alipay's public TLS specification repository",
+      "language": "English",
+      "region": "China",
+      "collections": [
+        "international"
+      ],
+      "rights": "Original publisher notices apply; no repository-wide license is applied to source documents.",
+      "download": {
+        "status": "archived",
+        "retrieved_at_utc": "2026-10-17T18:50:43.749867+00:00",
+        "resolved_url": "https://raw.githubusercontent.com/alipay/tls13-sm-spec/master/sm-en-pdfs/sm2/GBT.32918.1-2016.SM2-en.pdf",
+        "http_status": 200,
+        "content_type": "application/octet-stream",
+        "bytes": 1252502,
+        "sha256": "8bd9ad8f4ae0190837e6ca1ccb9541a1c14f733010c2bf401f4f44e506149500",
+        "page_count": 60
+      }
+    },
+    {
+      "id": "S030",
+      "title": "SM2 national standard, Part 2, English translation",
+      "publisher": "Chinese national standard; translation preserved by Alipay",
+      "document_date": null,
+      "date_note": "The host filename contains GB/T and 2016, but the English cover lacks a dated official standard identifier. In particular, do not infer a 2016 issue date for Part 5 from the filename: RFC 8998 cites GB/T 32918.5-2017. Translation edition and authorization are unverified.",
+      "url": "https://raw.githubusercontent.com/alipay/tls13-sm-spec/master/sm-en-pdfs/sm2/GBT.32918.2-2016.SM2-en.pdf",
+      "format": "pdf",
+      "archive_path": "sources/originals/S030-sm2-part2-english.pdf",
+      "provenance": "English translation preserved in Alipay's public TLS specification repository",
+      "language": "English",
+      "region": "China",
+      "collections": [
+        "international"
+      ],
+      "rights": "Original publisher notices apply; no repository-wide license is applied to source documents.",
+      "download": {
+        "status": "archived",
+        "retrieved_at_utc": "2026-10-17T18:50:43.858393+00:00",
+        "resolved_url": "https://raw.githubusercontent.com/alipay/tls13-sm-spec/master/sm-en-pdfs/sm2/GBT.32918.2-2016.SM2-en.pdf",
+        "http_status": 200,
+        "content_type": "application/octet-stream",
+        "bytes": 685148,
+        "sha256": "d2607609564e2d04a242675769bde2cb394b0492d7c52a9d91b50ba858747fde",
+        "page_count": 14
+      }
+    },
+    {
+      "id": "S031",
+      "title": "SM2 national standard, Part 3, English translation",
+      "publisher": "Chinese national standard; translation preserved by Alipay",
+      "document_date": null,
+      "date_note": "The host filename contains GB/T and 2016, but the English cover lacks a dated official standard identifier. In particular, do not infer a 2016 issue date for Part 5 from the filename: RFC 8998 cites GB/T 32918.5-2017. Translation edition and authorization are unverified.",
+      "url": "https://raw.githubusercontent.com/alipay/tls13-sm-spec/master/sm-en-pdfs/sm2/GBT.32918.3-2016.SM2-en.pdf",
+      "format": "pdf",
+      "archive_path": "sources/originals/S031-sm2-part3-english.pdf",
+      "provenance": "English translation preserved in Alipay's public TLS specification repository",
+      "language": "English",
+      "region": "China",
+      "collections": [
+        "international"
+      ],
+      "rights": "Original publisher notices apply; no repository-wide license is applied to source documents.",
+      "download": {
+        "status": "archived",
+        "retrieved_at_utc": "2026-10-17T18:50:44.044137+00:00",
+        "resolved_url": "https://raw.githubusercontent.com/alipay/tls13-sm-spec/master/sm-en-pdfs/sm2/GBT.32918.3-2016.SM2-en.pdf",
+        "http_status": 200,
+        "content_type": "application/octet-stream",
+        "bytes": 740552,
+        "sha256": "ecd0384cc479abc0df9651173bc62866c31929140889536cc6c231ffb9a99f5c",
+        "page_count": 23
+      }
+    },
+    {
+      "id": "S032",
+      "title": "SM2 national standard, Part 4, English translation",
+      "publisher": "Chinese national standard; translation preserved by Alipay",
+      "document_date": null,
+      "date_note": "The host filename contains GB/T and 2016, but the English cover lacks a dated official standard identifier. In particular, do not infer a 2016 issue date for Part 5 from the filename: RFC 8998 cites GB/T 32918.5-2017. Translation edition and authorization are unverified.",
+      "url": "https://raw.githubusercontent.com/alipay/tls13-sm-spec/master/sm-en-pdfs/sm2/GBT.32918.4-2016.SM2-en.pdf",
+      "format": "pdf",
+      "archive_path": "sources/originals/S032-sm2-part4-english.pdf",
+      "provenance": "English translation preserved in Alipay's public TLS specification repository",
+      "language": "English",
+      "region": "China",
+      "collections": [
+        "international"
+      ],
+      "rights": "Original publisher notices apply; no repository-wide license is applied to source documents.",
+      "download": {
+        "status": "archived",
+        "retrieved_at_utc": "2026-10-17T18:50:44.175444+00:00",
+        "resolved_url": "https://raw.githubusercontent.com/alipay/tls13-sm-spec/master/sm-en-pdfs/sm2/GBT.32918.4-2016.SM2-en.pdf",
+        "http_status": 200,
+        "content_type": "application/octet-stream",
+        "bytes": 621510,
+        "sha256": "ab1f8e93df78bad3fb4db8456feb655e3a660fb12c352638bba3412553131043",
+        "page_count": 17
+      }
+    },
+    {
+      "id": "S033",
+      "title": "SM2 national standard, Part 5, English translation",
+      "publisher": "Chinese national standard; translation preserved by Alipay",
+      "document_date": null,
+      "date_note": "The host filename contains GB/T and 2016, but the English cover lacks a dated official standard identifier. In particular, do not infer a 2016 issue date for Part 5 from the filename: RFC 8998 cites GB/T 32918.5-2017. Translation edition and authorization are unverified.",
+      "url": "https://raw.githubusercontent.com/alipay/tls13-sm-spec/master/sm-en-pdfs/sm2/GBT.32918.5-2016.SM2-en.pdf",
+      "format": "pdf",
+      "archive_path": "sources/originals/S033-sm2-part5-english.pdf",
+      "provenance": "English translation preserved in Alipay's public TLS specification repository",
+      "language": "English",
+      "region": "China",
+      "collections": [
+        "international"
+      ],
+      "rights": "Original publisher notices apply; no repository-wide license is applied to source documents.",
+      "download": {
+        "status": "archived",
+        "retrieved_at_utc": "2026-10-17T18:50:44.241767+00:00",
+        "resolved_url": "https://raw.githubusercontent.com/alipay/tls13-sm-spec/master/sm-en-pdfs/sm2/GBT.32918.5-2016.SM2-en.pdf",
+        "http_status": 200,
+        "content_type": "application/octet-stream",
+        "bytes": 489475,
+        "sha256": "0947db39f88b81b5e8bc782dcb1c4eded21bfff70aa72e1457c82723d57b6409",
+        "page_count": 16
+      }
+    },
+    {
+      "id": "S034",
+      "title": "Announcement No.23: release of six cryptographic industry standards",
+      "publisher": "State Cryptography Administration of China (OSCCA)",
+      "document_date": "2012-03-21",
+      "date_note": "Contemporary announcement of industry standards; distinct from later GB/T national standards.",
+      "url": "https://oscca.gov.cn/sca/xxgk/2012-03/21/content_1002392.shtml",
+      "format": "html",
+      "archive_path": "sources/web/S034-oscca-standards-announcement-2012.html",
+      "provenance": "Original publisher",
+      "language": "Chinese",
+      "region": "China",
+      "collections": [
+        "international"
+      ],
+      "rights": "Original publisher notices apply; no repository-wide license is applied to source documents.",
+      "download": {
+        "status": "archived",
+        "retrieved_at_utc": "2026-10-17T18:50:44.307988+00:00",
+        "resolved_url": "https://oscca.gov.cn/sca/xxgk/2012-03/21/content_1002392.shtml",
+        "http_status": 200,
+        "content_type": "text/html",
+        "bytes": 13246,
+        "sha256": "86b601282319c44cf068df65a3207a7fca7ca968a036134eb80a6993e99da9af"
+      }
+    },
+    {
+      "id": "S035",
+      "title": "Official SM4 national-standard record: GB/T 32907-2016",
+      "publisher": "State Administration for Market Regulation / national standards platform",
+      "document_date": "2016-08-29",
+      "date_note": "Official metadata distinguishes issue date from implementation date. A dynamic page snapshot may not preserve all rendered fields.",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=71F772D81199D3A7E05397BE0A0AB82A",
+      "format": "html",
+      "archive_path": "sources/web/S035-samr-sm4-record.html",
+      "provenance": "Original publisher",
+      "language": "Chinese",
+      "region": "China",
+      "collections": [
+        "international"
+      ],
+      "rights": "Original publisher notices apply; no repository-wide license is applied to source documents.",
+      "download": {
+        "status": "archived",
+        "retrieved_at_utc": "2026-10-17T18:50:44.456635+00:00",
+        "resolved_url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=71F772D81199D3A7E05397BE0A0AB82A",
+        "http_status": 200,
+        "content_type": "text/html;charset=UTF-8",
+        "bytes": 70676,
+        "sha256": "dfb19daab1a72a95006e24d8dc1bd9ec1469b7b891d98a1ecb4b0c4107ede5a5"
+      }
+    },
+    {
+      "id": "S036",
+      "title": "Official SM2 Part 1 national-standard record: GB/T 32918.1-2016",
+      "publisher": "State Administration for Market Regulation / national standards platform",
+      "document_date": "2016-08-29",
+      "date_note": "Official record: issue 2016-08-29, implementation 2017-03-01. These dates are not first invention or first classified use.",
+      "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=3EE2FD47B962578070541ED468497C5B",
+      "format": "html",
+      "archive_path": "sources/web/S036-samr-sm2-record.html",
+      "provenance": "Original publisher",
+      "language": "Chinese",
+      "region": "China",
+      "collections": [
+        "international"
+      ],
+      "rights": "Original publisher notices apply; no repository-wide license is applied to source documents.",
+      "download": {
+        "status": "archived",
+        "retrieved_at_utc": "2026-10-17T18:50:44.572374+00:00",
+        "resolved_url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=3EE2FD47B962578070541ED468497C5B",
+        "http_status": 200,
+        "content_type": "text/html;charset=utf-8",
+        "bytes": 24217,
+        "sha256": "4933070480f36247e5983d4cc776e58138908a048177231bb11d58a4725769e1"
+      }
+    },
+    {
+      "id": "S037",
+      "title": "ZUC Algorithm Specification, Version 1.6",
+      "publisher": "ETSI/SAGE specification hosted by GSMA",
+      "document_date": "2011-06-28",
+      "date_note": "Algorithm specification for 128-EEA3 and 128-EIA3. The 2019 upload path is distinct from the 2011 document date.",
+      "url": "https://www.gsma.com/solutions-and-impact/technologies/security/wp-content/uploads/2019/05/eea3eia3zucv16",
+      "format": "pdf",
+      "archive_path": "sources/originals/S037-zuc-specification-2011.pdf",
+      "provenance": "Original publisher",
+      "language": "English",
+      "region": "China / international mobile standards",
+      "collections": [
+        "international"
+      ],
+      "rights": "Original publisher notices apply; no repository-wide license is applied to source documents.",
+      "download": {
+        "status": "archived",
+        "retrieved_at_utc": "2026-10-17T18:50:44.844568+00:00",
+        "resolved_url": "https://www.gsma.com/solutions-and-impact/technologies/security/wp-content/uploads/2019/05/eea3eia3zucv16",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "bytes": 293332,
+        "sha256": "07db149438c92b6931eb34708df81134c4fa9a89cb2e0802cb3dd2d59f8907ae",
+        "page_count": 18
+      }
+    },
+    {
+      "id": "S038",
+      "title": "Der Schluessel M: Verfahren M Allgemein, M.Dv.Nr.32/1",
+      "publisher": "Oberkommando der Kriegsmarine",
+      "document_date": "1940",
+      "date_note": "Contemporary naval procedures; the date is not Enigma's invention or first service date.",
+      "url": "https://www.cryptomuseum.com/crypto/enigma/files/schluessel_m.pdf",
+      "format": "pdf",
+      "archive_path": "sources/originals/S038-enigma-naval-instructions-1940.pdf",
+      "provenance": "Original wartime manual scan preserved by Crypto Museum",
+      "language": "German",
+      "region": "Germany",
+      "collections": [
+        "international"
+      ],
+      "rights": "Original publisher notices apply; no repository-wide license is applied to source documents.",
+      "download": {
+        "status": "archived",
+        "retrieved_at_utc": "2026-10-17T18:50:45.134451+00:00",
+        "resolved_url": "https://www.cryptomuseum.com/crypto/enigma/files/schluessel_m.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "bytes": 3416176,
+        "sha256": "93b2f6db52e747cc9d235da5b4589e6516144e749992f46bc368bb07d297de87",
+        "page_count": 17
+      }
+    },
+    {
+      "id": "S039",
+      "title": "Turing's Treatise on the Enigma, Chapter 1",
+      "publisher": "Alan M. Turing; edited transcription by Ralph Erskine, Philip Marks and Frode Weierud",
+      "document_date": "circa-1940",
+      "date_note": "Only Chapter 1 is preserved here; it is a transcription with editorial notes, not an unaltered scan of the entire treatise.",
+      "url": "https://cryptocellar.org/turing/turchap1.pdf",
+      "format": "pdf",
+      "archive_path": "sources/originals/S039-turing-enigma-chapter1.pdf",
+      "provenance": "Edited transcription of a wartime primary document, preserved by CryptoCellar",
+      "language": "English",
+      "region": "Germany / British cryptanalysis",
+      "collections": [
+        "international"
+      ],
+      "rights": "Original publisher notices apply; no repository-wide license is applied to source documents.",
+      "download": {
+        "status": "archived",
+        "retrieved_at_utc": "2026-10-17T18:50:46.770669+00:00",
+        "resolved_url": "https://cryptocellar.org/turing/turchap1.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "bytes": 36502,
+        "sha256": "4c1525ae8a7b27824d15d50b55b4e40098608fbcb77dff1393d20ff2c7115e28",
+        "page_count": 10
+      }
+    },
+    {
+      "id": "S040",
+      "title": "General Report on Tunny: Newmanry History portion",
+      "publisher": "Good, Michie, Timms and colleagues; transcription by Tony Sale",
+      "document_date": "1945",
+      "date_note": "This is the Newmanry portion, reformatted in March 2001, rather than a facsimile of the complete General Report on Tunny. Original page numbers are retained.",
+      "url": "https://www.codesandciphers.org.uk/documents/newman/newman.pdf",
+      "format": "pdf",
+      "archive_path": "sources/originals/S040-tunny-newmanry-history.pdf",
+      "provenance": "OCR transcription and reformatting of a primary wartime report",
+      "language": "English",
+      "region": "Germany / British cryptanalysis",
+      "collections": [
+        "international"
+      ],
+      "rights": "Original publisher notices apply; no repository-wide license is applied to source documents.",
+      "download": {
+        "status": "archived",
+        "retrieved_at_utc": "2026-10-17T18:50:47.348611+00:00",
+        "resolved_url": "https://www.codesandciphers.org.uk/documents/newman/newman.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "bytes": 434545,
+        "sha256": "35d2666628ab70c3f9f4319a9a8e456806f48899efda48ed4cb683116df4a0c1",
+        "page_count": 105
+      }
+    },
+    {
+      "id": "S041",
+      "title": "SINA im Wandel der Zeit",
+      "publisher": "German Federal Office for Information Security (BSI)",
+      "document_date": null,
+      "date_note": "Agency retrospective: dates of SINA procurement, migration and system development are distinct from algorithm invention dates.",
+      "url": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Zulassung/SINA/Historie/historie_node.html",
+      "format": "html",
+      "archive_path": "sources/web/S041-bsi-sina-history.html",
+      "provenance": "Original publisher",
+      "language": "German",
+      "region": "Germany",
+      "collections": [
+        "international"
+      ],
+      "rights": "Original publisher notices apply; no repository-wide license is applied to source documents.",
+      "download": {
+        "status": "archived",
+        "retrieved_at_utc": "2026-10-17T18:50:47.968724+00:00",
+        "resolved_url": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Zulassung/SINA/Historie/historie_node.html",
+        "http_status": 200,
+        "content_type": "text/html;charset=utf-8",
+        "bytes": 61678,
+        "sha256": "9e01781d7eda0eab722e01208c1def846c41ee06269eed25b6d2a3147206b3cb"
+      }
+    },
+    {
+      "id": "S042",
+      "title": "Abloesung von Chiasmus",
+      "publisher": "German Federal Office for Information Security (BSI)",
+      "document_date": "2023-01-25",
+      "date_note": "Version 1.5 is dated 2023-01-25 in the change history. This is migration guidance, not a first algorithm-approval record.",
+      "url": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Chiasmus/Chiasmus_Abloesung.pdf?__blob=publicationFile&v=6",
+      "format": "pdf",
+      "archive_path": "sources/originals/S042-bsi-chiasmus-retirement.pdf",
+      "provenance": "Original publisher",
+      "language": "German",
+      "region": "Germany",
+      "collections": [
+        "international"
+      ],
+      "rights": "Original publisher notices apply; no repository-wide license is applied to source documents.",
+      "download": {
+        "status": "archived",
+        "retrieved_at_utc": "2026-10-17T18:50:48.037653+00:00",
+        "resolved_url": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Chiasmus/Chiasmus_Abloesung.pdf?__blob=publicationFile&v=6",
+        "http_status": 200,
+        "content_type": "application/pdf;charset=UTF-8",
+        "bytes": 678816,
+        "sha256": "17235fe949de97659777e63b1dec609f36ef1a8e20b46ca84143354e90951e2f",
+        "page_count": 23
+      }
+    },
+    {
+      "id": "S043",
+      "title": "RFC 3713: A Description of the Camellia Encryption Algorithm",
+      "publisher": "RFC Editor; named document authors",
+      "document_date": "2004-04",
+      "date_note": "Preserved in the original publisher format. RFC publication does not itself establish national approval or IETF endorsement; consult the document status statement.",
+      "url": "https://www.rfc-editor.org/rfc/rfc3713.txt",
+      "format": "text",
+      "archive_path": "sources/originals/S043-rfc3713.txt",
+      "provenance": "RFC Editor publication; original national standards and RFC dates are distinguished",
+      "language": "English",
+      "region": "Japan",
+      "collections": [
+        "international"
+      ],
+      "rights": "Original publisher notices apply; no repository-wide license is applied to source documents.",
+      "download": {
+        "status": "archived",
+        "retrieved_at_utc": "2026-10-17T18:50:49.178001+00:00",
+        "resolved_url": "https://www.rfc-editor.org/rfc/rfc3713.txt",
+        "http_status": 200,
+        "content_type": "text/plain;charset=utf-8",
+        "bytes": 25031,
+        "sha256": "126cea1768aed9257fbdf52a4e1938eb15d79c8aacb83d14f60f1320d5b8770f"
+      }
+    },
+    {
+      "id": "S044",
+      "title": "RFC 6114: The 128-Bit Blockcipher CLEFIA",
+      "publisher": "RFC Editor; named document authors",
+      "document_date": "2011-03",
+      "date_note": "Preserved in the original publisher format. RFC publication does not itself establish national approval or IETF endorsement; consult the document status statement.",
+      "url": "https://www.rfc-editor.org/rfc/rfc6114.txt",
+      "format": "text",
+      "archive_path": "sources/originals/S044-rfc6114.txt",
+      "provenance": "RFC Editor publication; original national standards and RFC dates are distinguished",
+      "language": "English",
+      "region": "Japan",
+      "collections": [
+        "international"
+      ],
+      "rights": "Original publisher notices apply; no repository-wide license is applied to source documents.",
+      "download": {
+        "status": "archived",
+        "retrieved_at_utc": "2026-10-17T18:50:49.577540+00:00",
+        "resolved_url": "https://www.rfc-editor.org/rfc/rfc6114.txt",
+        "http_status": 200,
+        "content_type": "text/plain;charset=utf-8",
+        "bytes": 68618,
+        "sha256": "d62a3f085cd067c8bdc8b82b0064b097739926385aaad177590285773973a082"
+      }
+    },
+    {
+      "id": "S045",
+      "title": "RFC 4269: The SEED Encryption Algorithm",
+      "publisher": "RFC Editor; named document authors",
+      "document_date": "2005-12",
+      "date_note": "Preserved in the original publisher format. RFC publication does not itself establish national approval or IETF endorsement; consult the document status statement.",
+      "url": "https://www.rfc-editor.org/rfc/rfc4269.txt",
+      "format": "text",
+      "archive_path": "sources/originals/S045-rfc4269.txt",
+      "provenance": "RFC Editor publication; original national standards and RFC dates are distinguished",
+      "language": "English",
+      "region": "Republic of Korea",
+      "collections": [
+        "international"
+      ],
+      "rights": "Original publisher notices apply; no repository-wide license is applied to source documents.",
+      "download": {
+        "status": "archived",
+        "retrieved_at_utc": "2026-10-17T18:50:49.832702+00:00",
+        "resolved_url": "https://www.rfc-editor.org/rfc/rfc4269.txt",
+        "http_status": 200,
+        "content_type": "text/plain;charset=utf-8",
+        "bytes": 34390,
+        "sha256": "a1132bf03be7ff05ae9be59189632f849a200c2f1c86ce9ecc2f94f51b668f54"
+      }
+    },
+    {
+      "id": "S046",
+      "title": "RFC 5794: A Description of the ARIA Encryption Algorithm",
+      "publisher": "RFC Editor; named document authors",
+      "document_date": "2010-03",
+      "date_note": "Preserved in the original publisher format. RFC publication does not itself establish national approval or IETF endorsement; consult the document status statement.",
+      "url": "https://www.rfc-editor.org/rfc/rfc5794.txt",
+      "format": "text",
+      "archive_path": "sources/originals/S046-rfc5794.txt",
+      "provenance": "RFC Editor publication; original national standards and RFC dates are distinguished",
+      "language": "English",
+      "region": "Republic of Korea",
+      "collections": [
+        "international"
+      ],
+      "rights": "Original publisher notices apply; no repository-wide license is applied to source documents.",
+      "download": {
+        "status": "archived",
+        "retrieved_at_utc": "2026-10-17T18:50:50.155704+00:00",
+        "resolved_url": "https://www.rfc-editor.org/rfc/rfc5794.txt",
+        "http_status": 200,
+        "content_type": "text/plain;charset=utf-8",
+        "bytes": 31049,
+        "sha256": "e83bdeb56937cb26fc4e3cd6c230ddfa971bc27056c5f202d55820af350cd89d"
+      }
+    },
+    {
+      "id": "S047",
+      "title": "Specification of Camellia: a 128-bit block cipher, Version 2.0",
+      "publisher": "NTT and Mitsubishi Electric",
+      "document_date": "2001-09-26",
+      "date_note": "Designer specification; edition date is distinct from the earlier 2000 CRYPTREC submission.",
+      "url": "https://info.isl.ntt.co.jp/crypt/eng/camellia/dl/01espec.pdf",
+      "format": "pdf",
+      "archive_path": "sources/originals/S047-camellia-specification-2001.pdf",
+      "provenance": "Original publisher",
+      "language": "English",
+      "region": "Japan",
+      "collections": [
+        "international"
+      ],
+      "rights": "Original publisher notices apply; no repository-wide license is applied to source documents.",
+      "download": {
+        "status": "archived",
+        "retrieved_at_utc": "2026-10-17T18:50:50.250209+00:00",
+        "resolved_url": "https://info.isl.ntt.co.jp/crypt/eng/camellia/dl/01espec.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "bytes": 729102,
+        "sha256": "0558d476f05d11da932f2a94b9ff91a84dfe0854d59179b1c21e8d846f7f6074",
+        "page_count": 35
+      }
+    },
+    {
+      "id": "S048",
+      "title": "SINA: Sichere Inter-Netzwerk Architektur",
+      "publisher": "German Federal Office for Information Security (BSI)",
+      "document_date": "2016-01",
+      "date_note": "The imprint states January 2016, BSI-Bro16/322; historical system snapshot.",
+      "url": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/Broschueren/SINA.pdf?__blob=publicationFile",
+      "format": "pdf",
+      "archive_path": "sources/originals/S048-bsi-sina-brochure.pdf",
+      "provenance": "Original publisher",
+      "language": "German",
+      "region": "Germany",
+      "collections": [
+        "international"
+      ],
+      "rights": "Original publisher notices apply; no repository-wide license is applied to source documents.",
+      "download": {
+        "status": "archived",
+        "retrieved_at_utc": "2026-10-17T18:50:50.462748+00:00",
+        "resolved_url": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/Broschueren/SINA.pdf?__blob=publicationFile",
+        "http_status": 200,
+        "content_type": "application/pdf;charset=UTF-8",
+        "bytes": 2365274,
+        "sha256": "c44417ea2fe1b3427274c914bf5121fe73e20f36f0462e6767060857300fa093",
+        "page_count": 44
+      }
+    },
+    {
+      "id": "S049",
+      "title": "The 128-bit Blockcipher CLEFIA: Algorithm Specification, Version 1.0",
+      "publisher": "Sony Corporation",
+      "document_date": "2007-06-01",
+      "date_note": "Designer specification; the exact cover date is checked after acquisition.",
+      "url": "https://www.sony.net/Products/cryptography/clefia/download/data/clefia-spec-1.0.pdf",
+      "format": "pdf",
+      "archive_path": "sources/originals/S049-sony-clefia-specification-2007.pdf",
+      "provenance": "Original publisher",
+      "language": "English",
+      "region": "Japan",
+      "collections": [
+        "international"
+      ],
+      "rights": "Original publisher notices apply; no repository-wide license is applied to source documents.",
+      "download": {
+        "status": "archived",
+        "retrieved_at_utc": "2026-10-17T18:50:50.949327+00:00",
+        "resolved_url": "https://www.sony.co.jp/en/Products/cryptography/clefia/download/data/clefia-spec-1.0.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "bytes": 301431,
+        "sha256": "c325748d1923d696b4f0b6c79ca4257eacbaf6cf88ec5265bf28e6842592efe1",
+        "page_count": 41
+      }
+    },
+    {
+      "id": "S050",
+      "title": "RFC 4357: Additional Cryptographic Algorithms for Use with GOST Algorithms",
+      "publisher": "RFC Editor; named document authors",
+      "document_date": "2006-01",
+      "date_note": "Preserved in the original publisher format. RFC publication does not itself establish national approval or IETF endorsement; consult the document status statement.",
+      "url": "https://www.rfc-editor.org/rfc/rfc4357.txt",
+      "format": "text",
+      "archive_path": "sources/originals/S050-rfc4357.txt",
+      "provenance": "RFC Editor publication; original national standards and RFC dates are distinguished",
+      "language": "English",
+      "region": "Russia",
+      "collections": [
+        "international"
+      ],
+      "rights": "Original publisher notices apply; no repository-wide license is applied to source documents.",
+      "download": {
+        "status": "archived",
+        "retrieved_at_utc": "2026-10-17T18:50:52.141462+00:00",
+        "resolved_url": "https://www.rfc-editor.org/rfc/rfc4357.txt",
+        "http_status": 200,
+        "content_type": "text/plain;charset=utf-8",
+        "bytes": 114564,
+        "sha256": "384473bcec574b8934e45346006d91efaff7f92bdfd868ec3913cc713f6e21d2"
+      }
+    },
+    {
+      "id": "S051",
+      "title": "FIALKA M-125 and M-125-3MN: examination of surviving machines",
+      "publisher": "Tom Perera and David Hamer, Enigma Museum",
+      "document_date": "2005",
+      "date_note": "The profile uses directly observed construction details. General lineage statements elsewhere on the page are not adopted as verified introduction dates.",
+      "url": "https://enigmamuseum.com/mfialka.htm",
+      "format": "html",
+      "archive_path": "sources/web/S051-fialka-artifact-examination.html",
+      "provenance": "First-hand artifact photographs and technical examination by the Enigma Museum",
+      "language": "English",
+      "region": "Soviet Union",
+      "collections": [
+        "international"
+      ],
+      "rights": "Original publisher notices apply; no repository-wide license is applied to source documents.",
+      "download": {
+        "status": "archived",
+        "retrieved_at_utc": "2026-10-17T18:53:41.239714+00:00",
+        "resolved_url": "https://enigmamuseum.com/mfialka.htm",
+        "http_status": 200,
+        "content_type": "text/html",
+        "bytes": 20589,
+        "sha256": "541cad526eeb037af47c2d1508a80b82d166da909a46cc8cc78d19278fd3a09c"
+      }
+    },
+    {
+      "id": "S052",
+      "title": "Specification of Camellia: 2000 CRYPTREC submission",
+      "publisher": "NTT and Mitsubishi Electric",
+      "document_date": "2000-07-12",
+      "date_note": "Designer submission dated by NTT's CRYPTREC document index; distinct from later national adoption or an RFC.",
+      "url": "https://info.isl.ntt.co.jp/crypt/eng/camellia/dl/cryptrec/00espec.pdf",
+      "format": "pdf",
+      "archive_path": "sources/originals/S052-camellia-specification-2000.pdf",
+      "provenance": "Original publisher",
+      "language": "English",
+      "region": "Japan",
+      "collections": [
+        "international"
+      ],
+      "rights": "Original publisher notices apply; no repository-wide license is applied to source documents.",
+      "download": {
+        "status": "archived",
+        "retrieved_at_utc": "2026-10-17T18:57:13.755407+00:00",
+        "resolved_url": "https://info.isl.ntt.co.jp/crypt/eng/camellia/dl/cryptrec/00espec.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "bytes": 338418,
+        "sha256": "cedd73c0e85f4d89c5d7865a20716b455ffc458629c947fec965700185fa22d3",
+        "page_count": 31
+      },
+      "acquisition_history": [
+        {
+          "url": "https://info.isl.ntt.co.jp/crypt/eng/camellia/dl/00espec.pdf",
+          "status": "failed",
+          "attempted_at_utc": "2026-10-17T18:53:41.241488+00:00",
+          "error": "HTTPError: HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "id": "S053",
+      "title": "SMS4 Encryption Algorithm for Wireless Networks",
+      "publisher": "Whitfield Diffie and George Ledin; preserved by Alipay",
+      "document_date": "2008-05-15",
+      "date_note": "Version 1.03, dated 15 May 2008. Its introduction reports the January 2006 SMS4 issue date.",
+      "url": "https://raw.githubusercontent.com/alipay/tls13-sm-spec/master/sm-en-pdfs/sm4/diffie-sm4.pdf",
+      "format": "pdf",
+      "archive_path": "sources/originals/S053-diffie-ledin-sms4.pdf",
+      "provenance": "Translation and technical exposition by Whitfield Diffie and George Ledin, preserved by Alipay",
+      "language": "English",
+      "region": "China",
+      "collections": [
+        "international"
+      ],
+      "rights": "Original publisher notices apply; no repository-wide license is applied to source documents.",
+      "download": {
+        "status": "archived",
+        "retrieved_at_utc": "2026-10-17T18:53:41.242851+00:00",
+        "resolved_url": "https://raw.githubusercontent.com/alipay/tls13-sm-spec/master/sm-en-pdfs/sm4/diffie-sm4.pdf",
+        "http_status": 200,
+        "content_type": "application/octet-stream",
+        "bytes": 67269,
+        "sha256": "48f491d978c09d5a902923f412ccdd16aa1ecb7a8440795b7a2fbe48234682a0",
+        "page_count": 6
+      }
+    },
+    {
+      "id": "S054",
+      "title": "DE416219: Chiffrierapparat",
+      "publisher": "Arthur Scherbius; German patent record",
+      "document_date": "1925-07-08",
+      "date_note": "Application/priority date 1918-02-23 and publication date 1925-07-08 must be distinguished; this is not evidence of military approval in 1918.",
+      "url": "https://www.cryptomuseum.com/crypto/enigma/patents/files/DE416219.pdf",
+      "format": "pdf",
+      "archive_path": "sources/originals/S054-scherbius-patent-de416219.pdf",
+      "provenance": "Original patent scan preserved by Crypto Museum",
+      "language": "German",
+      "region": "Germany",
+      "collections": [
+        "international"
+      ],
+      "rights": "Original publisher notices apply; no repository-wide license is applied to source documents.",
+      "download": {
+        "status": "archived",
+        "retrieved_at_utc": "2026-10-17T18:53:41.243371+00:00",
+        "resolved_url": "https://www.cryptomuseum.com/crypto/enigma/patents/files/DE416219.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "bytes": 716601,
+        "sha256": "db77738697c929017682688dbdfed9a9c9134cbec8b384af1bf47e0b5085baa7",
+        "page_count": 6
+      }
+    },
+    {
+      "id": "S055",
+      "title": "Bletchley Park Cryptographic Dictionary",
+      "publisher": "Government Code and Cypher School; transcription by Tony Sale",
+      "document_date": "1944",
+      "date_note": "Historical terminology and machine descriptions; transcription and original document dates are kept separate.",
+      "url": "https://www.codesandciphers.org.uk/documents/cryptdict/cryptxtt.pdf",
+      "format": "pdf",
+      "archive_path": "sources/originals/S055-bletchley-cryptographic-dictionary.pdf",
+      "provenance": "Transcription of a wartime primary reference, reformatted in 2001",
+      "language": "English",
+      "region": "Germany / British cryptanalysis",
+      "collections": [
+        "international"
+      ],
+      "rights": "Original publisher notices apply; no repository-wide license is applied to source documents.",
+      "download": {
+        "status": "archived",
+        "retrieved_at_utc": "2026-10-17T18:53:41.667151+00:00",
+        "resolved_url": "https://www.codesandciphers.org.uk/documents/cryptdict/cryptxtt.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "bytes": 367808,
+        "sha256": "a26ea340f516258ff071eb0732887b1a276535c348742285923d3ad2b0c33e20",
+        "page_count": 96
+      }
+    },
+    {
+      "id": "S056",
+      "title": "Enigma: Cryptography and war",
+      "publisher": "German Patent and Trade Mark Office (DPMA)",
+      "document_date": null,
+      "date_note": "Agency history corroborates the 1918 patent application, distinguishing invention history from later service use. The page date is not treated as an original invention date.",
+      "url": "https://www.dpma.de/english/our_office/publications/milestones/computerpioneers/enigma/index.html",
+      "format": "html",
+      "archive_path": "sources/web/S056-dpma-enigma-history.html",
+      "provenance": "Original government agency retrospective",
+      "language": "English",
+      "region": "Germany",
+      "collections": [
+        "international"
+      ],
+      "rights": "Original publisher notices apply; no repository-wide license is applied to source documents.",
+      "download": {
+        "status": "archived",
+        "retrieved_at_utc": "2026-10-17T18:59:50.363466+00:00",
+        "resolved_url": "https://www.dpma.de/english/our_office/publications/milestones/computerpioneers/enigma/index.html",
+        "http_status": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "bytes": 42638,
+        "sha256": "0346c7099c3007b1adb4308f1fd8e7af8697837afd7f43f563b7d83e137f4d6d"
       }
     }
   ]

@@ -85,19 +85,20 @@ Manufacturer records also attest PADSTONE, CRAYON, KEESEE, GOODSPEED, PHALANX, S
 Harris reports that Sierra II received NSA certification in Harris fiscal 2005 (S016). This is a platform milestone, distinct from the development or first approval of every algorithm it can execute. Original first-approval dates for the individual schemes remain open research questions.
 '''
     write('docs/suite-a-research.md', body)
-    write('profiles/README.md', '# Algorithm and scheme profiles\n\n' + '\n'.join(f"- [{p['name']}]({p['slug']}.md) — {p['synopsis']}" for p in profiles) + '\n')
+    write('profiles/README.md', '# Algorithm and scheme profiles\n\n[International collection: Soviet/Russian, Chinese, German, Japanese and Korean profiles](international/README.md)\n\n## NSA Suite A collection\n\n' + '\n'.join(f"- [{p['name']}]({p['slug']}.md) — {p['synopsis']}" for p in profiles) + '\n')
     for profile in profiles:
         write('profiles/'+profile['slug']+'.md', profile_markdown(profile))
     timeline = ['# Historical timeline', '', 'These are verified record milestones, not claims of the earliest possible appearance or original approval.', '', '| Date | Subject | Date kind | Interpretation | Evidence |', '|---|---|---|---|---|']
     timeline += [f"| {e['date']} | {e['subject']} | {e['date_kind'].replace('_',' ')} | {e['interpretation']} | [{e['source_id']}](../sources/README.md#{e['source_id'].lower()}), {e['locator']} |" for e in events]
     write('docs/timeline.md', '\n'.join(timeline)+'\n')
     counts = Counter(s['download']['status'] for s in sources.values())
-    source_doc = ['# Source catalogue', '', f"Research snapshot: {AS_OF}. Preserved: {counts.get('archived',0)}/{len(sources)} records.", '', 'Original PDF bytes and raw web snapshots are preserved unchanged. Retrieval time is separate from document date. A checksum identifies the local copy; it is not an authentication certificate.', '']
+    source_doc = ['# Source catalogue', '', f"Research snapshot: {AS_OF}. Preserved: {counts.get('archived',0)}/{len(sources)} records.", '', 'Original source bytes (PDF, RFC text and raw web snapshots) are preserved unchanged. Retrieval time is separate from document date. A checksum identifies the local copy; it is not an authentication certificate.', '']
     for source in sources.values():
         d = source['download']
         source_doc += [f"## {source['id']}", '', f"**{source['title']}**", '', f"Publisher: {source['publisher']}  ", f"Document date: {source['document_date'] or 'Not verified'}  ", f"Provenance: {source['provenance']}  ", f"Original URL: <{source['url']}>  ", f"Preservation status: **{d['status']}**", '']
         if source['date_note']:
             source_doc += [source['date_note'], '']
+        source_doc += [f"Collection: {', '.join(source.get('collections',['suite-a']))}  ",f"Region: {source.get('region','United States')}  ",f"Language: {source.get('language','English')}  ",f"Format: {source['format']}", '']
         if source.get('acquisition_url'):
             source_doc += [f"Acquisition URL: <{source['acquisition_url']}>", '']
         if d['status'] == 'archived':
@@ -110,6 +111,7 @@ Harris reports that Sierra II received NSA certification in Harris fiscal 2005 (
 
 
 def build_pdf():
+    pdf_sources = {sid:s for sid,s in sources.items() if 'suite-a' in s.get('collections',['suite-a'])}
     font_root = Path('/usr/share/fonts/truetype/dejavu')
     for name, filename in [('Archive','DejaVuSans.ttf'), ('ArchiveBold','DejaVuSans-Bold.ttf'), ('ArchiveItalic','DejaVuSans-Oblique.ttf')]:
         pdfmetrics.registerFont(TTFont(name, str(font_root/filename)))
@@ -137,7 +139,7 @@ def build_pdf():
     add(f'Initial collection | Research snapshot {AS_OF}', 'ArchiveSmall')
     story.append(Spacer(1, 15*mm))
     add('What this edition contains', 'ArchiveH2')
-    add(f'{len(profiles)} scheme profiles; {len(events)} dated milestones; {len(sources)} source records; an explicit distinction between documented statements, inference and unresolved questions.')
+    add(f'{len(profiles)} scheme profiles; {len(events)} dated milestones; {len(pdf_sources)} source records; an explicit distinction between documented statements, inference and unresolved questions.')
     add('The accompanying repository contains editable research, structured claims and provenance records, and preserved original documents where retrieval succeeded.')
     add('Original source notices remain in place. This report is not an official algorithm inventory or current deployment guide.', 'ArchiveSmall')
     story.append(PageBreak())
@@ -205,9 +207,9 @@ def build_pdf():
         add(text)
     story.append(PageBreak())
     add('Source catalogue', 'ArchiveH1')
-    counts = Counter(s['download']['status'] for s in sources.values())
-    add(f"Preserved {counts.get('archived',0)} of {len(sources)} source records. Current acquisition status is recorded below; failed downloads remain linked to their original URLs.", 'ArchiveSmall')
-    for source in sources.values():
+    counts = Counter(s['download']['status'] for s in pdf_sources.values())
+    add(f"Preserved {counts.get('archived',0)} of {len(pdf_sources)} source records for this collection. The repository catalogue additionally covers the international collection.", 'ArchiveSmall')
+    for source in pdf_sources.values():
         d = source['download']
         block = [para(source['id']+' · '+source['title'],'ArchiveH2'),para(source['publisher']+' | Document date: '+(source['document_date'] or 'not verified'), 'ArchiveSmall')]
         if source['date_note']:

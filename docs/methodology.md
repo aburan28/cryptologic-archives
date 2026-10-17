@@ -18,6 +18,14 @@ Keep event date, document date, public-release date and retrieval time separate.
 
 Preserve source bytes unchanged. Record publisher, host, original and resolved URLs, retrieval timestamp, content type, size and SHA-256. A mirror is labeled as a mirror or transcription. Failed retrievals remain visible in the source catalogue, with no fabricated copy or checksum. An HTML snapshot may depend on external resources and is not necessarily a complete offline rendering.
 
+Original RFC text is retained where it is the publisher's source format. A digitized scan, edited transcription, English translation and original national-language standard are recorded as distinct kinds of evidence. Filenames and hosting-page dates do not establish a translation's edition or authorization. Missing pages and known discrepancies remain explicit.
+
+## International context
+
+Record design origin, standardization jurisdiction, service use and cryptanalytic source separately. British wartime analysis can be primary evidence about a German machine; an English RFC can describe a Russian standard without becoming its original Russian issuance. Regional labels do not imply exclusive use or a complete national inventory.
+
+Treat public national standards, historical military systems and government products as separate evidence contexts. A government product may change algorithms while retaining its family name. Record system procurement, national standard issue, implementation date, RFC publication and approval withdrawal as different milestones.
+
 ## Boundaries of inference
 
 Distinguish algorithms, modes, protocols, equipment personalities and product families. A shared API does not establish a shared round function. Encoded key length is not necessarily entropy or attack cost. A protocol identifier is not a key length. Throughput describes a particular implementation. An anticipated feature is not evidence of a shipped capability.

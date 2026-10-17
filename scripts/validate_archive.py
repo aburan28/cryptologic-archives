@@ -14,7 +14,9 @@ ids = [s['id'] for s in sources]
 if len(ids) != len(set(ids)):
     errors.append('Duplicate source IDs')
 source_ids = set(ids)
-claims = json.loads((ROOT/'data/claims.json').read_text())['claims']
+claims = []
+for claim_file in sorted((ROOT/'data').glob('*claims.json')):
+    claims.extend(json.loads(claim_file.read_text())['claims'])
 claim_ids = {c['id'] for c in claims}
 if len(claim_ids) != len(claims):
     errors.append('Duplicate claim IDs')
@@ -25,7 +27,9 @@ for claim in claims:
     for dep in claim.get('depends_on', []):
         if dep not in claim_ids:
             errors.append(f"Missing premise {dep} in {claim['id']}")
-for event in json.loads((ROOT/'data/timeline.json').read_text())['events']:
+international = json.loads((ROOT/'data/international.json').read_text())
+events = json.loads((ROOT/'data/timeline.json').read_text())['events'] + international['events']
+for event in events:
     if event['source_id'] not in source_ids:
         errors.append('Invalid timeline source '+event['source_id'])
 archived = 0
@@ -46,8 +50,11 @@ for source in sources:
         errors.append('Integrity mismatch '+source['id'])
     if source['format'] == 'pdf':
         try:
-            if len(PdfReader(target, strict=False).pages) < 1:
+            page_count = len(PdfReader(target, strict=False).pages)
+            if page_count < 1:
                 errors.append('Empty PDF '+source['id'])
+            if info.get('page_count',page_count) != page_count:
+                errors.append('PDF page-count mismatch '+source['id'])
         except Exception as error:
             errors.append(f"Unreadable PDF {source['id']}: {error}")
 for markdown in ROOT.rglob('*.md'):
@@ -57,16 +64,18 @@ for markdown in ROOT.rglob('*.md'):
         path = link.split('#',1)[0]
         if path and not (markdown.parent/path).exists():
             errors.append(f'Broken local link in {markdown.relative_to(ROOT)}: {link}')
-report = ROOT/'reports/suite-a-research.pdf'
-try:
-    reader = PdfReader(report)
-    text = '\n'.join(page.extract_text() or '' for page in reader.pages)
-    for phrase in ['MEDLEY', 'BATON', 'JOSEKI', 'SAVILLE', 'Source catalogue', '1987-10-30']:
-        if phrase not in text:
-            errors.append('Missing report content: '+phrase)
-    print(f'PDF: {len(reader.pages)} pages; {len(text):,} extractable characters')
-except Exception as error:
-    errors.append('Report inspection failed: '+str(error))
+reports = [('suite-a-research.pdf',['MEDLEY','BATON','JOSEKI','SAVILLE','Source catalogue','1987-10-30']),
+           ('international-cryptography.pdf',[p['name'] for p in international['profiles']]+['Source catalogue','1918-02-23','2022-06-30'])]
+for filename,phrases in reports:
+    try:
+        reader = PdfReader(ROOT/'reports'/filename)
+        text = '\n'.join(page.extract_text() or '' for page in reader.pages)
+        for phrase in phrases:
+            if phrase not in text:
+                errors.append('Missing content in '+filename+': '+phrase)
+        print(f'{filename}: {len(reader.pages)} pages; {len(text):,} extractable characters')
+    except Exception as error:
+        errors.append('Report inspection failed: '+filename+': '+str(error))
 if errors:
     for error in errors:
         print('ERROR:', error)

@@ -1,0 +1,7 @@
+# Preserve acquired source bytes across platforms.
+sources/originals/** -text -whitespace
+sources/web/** -text -diff -whitespace
+*.pdf -text -diff
+
+# Two trailing spaces are deliberate Markdown line breaks.
+*.md whitespace=-blank-at-eol

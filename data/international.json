@@ -1,0 +1,1535 @@
+{
+  "schema_version": 1,
+  "collection": "international",
+  "research_as_of": "2026-10-17",
+  "profiles": [
+    {
+      "slug": "gost-28147",
+      "name": "GOST 28147-89",
+      "region": "Soviet Union / Russia",
+      "role": "Symmetric encryption and MAC",
+      "primitive": "Feistel block cipher",
+      "parameters": "64-bit block; 256-bit key; 32 encryption rounds",
+      "synopsis": "A Soviet standard whose public description exposes the round function, key schedule and modes.",
+      "facts": [
+        {
+          "text": "The encryption core processes 64-bit blocks using a 256-bit key and 32 rounds. Its round transformation combines addition modulo 2^32, eight 4-bit substitutions, an 11-bit cyclic rotation and XOR.",
+          "source_refs": [
+            {
+              "source_id": "S020",
+              "locator": "Sections 4 and 5.1"
+            }
+          ],
+          "claim_id": "INTL-GOST-28147-F1"
+        },
+        {
+          "text": "The 1989 standard leaves substitution tables to a parameter set; RFC 4357 supplies named parameter sets and identifiers.",
+          "source_refs": [
+            {
+              "source_id": "S020",
+              "locator": "Section 4, S-box remark and long-term parameter discussion"
+            }
+          ],
+          "claim_id": "INTL-GOST-28147-F2"
+        },
+        {
+          "text": "RFC 4357 gives concrete encryption parameter-set encodings and S-box tables.",
+          "source_refs": [
+            {
+              "source_id": "S050",
+              "locator": "Sections 8.1, 11.1 and 11.2"
+            }
+          ],
+          "claim_id": "INTL-GOST-28147-F3"
+        },
+        {
+          "text": "The reference standard is dated 1989; the preserved English RFC was published in March 2010.",
+          "source_refs": [
+            {
+              "source_id": "S020",
+              "locator": "Header and Section 10, GOST28147-89 reference"
+            }
+          ],
+          "claim_id": "INTL-GOST-28147-F4"
+        }
+      ],
+      "inferences": [
+        {
+          "text": "The label GOST 28147-89 is insufficient for interoperable encryption: the S-box parameter set and mode must also be specified.",
+          "confidence": "strong",
+          "assumption": null,
+          "claim_id": "INTL-GOST-28147-I1",
+          "depends_on": [
+            "INTL-GOST-28147-F1",
+            "INTL-GOST-28147-F2",
+            "INTL-GOST-28147-F3"
+          ],
+          "source_refs": [
+            {
+              "source_id": "S020",
+              "locator": "Sections 4 and 5.1"
+            },
+            {
+              "source_id": "S020",
+              "locator": "Section 4, S-box remark and long-term parameter discussion"
+            },
+            {
+              "source_id": "S050",
+              "locator": "Sections 8.1, 11.1 and 11.2"
+            }
+          ]
+        }
+      ],
+      "unknowns": [
+        "The 1989 standard date does not establish the original internal design date or approval for every later product."
+      ]
+    },
+    {
+      "slug": "magma",
+      "name": "Magma",
+      "region": "Russia",
+      "role": "Symmetric encryption",
+      "primitive": "Feistel block cipher",
+      "parameters": "64-bit block; 256-bit key; 32 round keys",
+      "synopsis": "The updated 64-bit cipher in GOST R 34.12-2015, with important compatibility details.",
+      "facts": [
+        {
+          "text": "Magma uses a 64-bit block and 256-bit key; its specified encryption composition uses 32 round keys.",
+          "source_refs": [
+            {
+              "source_id": "S021",
+              "locator": "Abstract; Sections 4.2, 4.3 and 5.1"
+            }
+          ],
+          "claim_id": "INTL-MAGMA-F1"
+        },
+        {
+          "text": "Relative to GOST 28147-89, the RFC fixes the S-box set and changes key/block parsing conventions, including big-endian key parsing.",
+          "source_refs": [
+            {
+              "source_id": "S021",
+              "locator": "Appendix B, Background"
+            }
+          ],
+          "claim_id": "INTL-MAGMA-F2"
+        },
+        {
+          "text": "Its national-standard edition is 2015; RFC 8891 was published in September 2020.",
+          "source_refs": [
+            {
+              "source_id": "S021",
+              "locator": "Header, Introduction and normative reference GOSTR3412-2015"
+            }
+          ],
+          "claim_id": "INTL-MAGMA-F3"
+        }
+      ],
+      "inferences": [
+        {
+          "text": "Replacing a legacy GOST implementation by changing its displayed algorithm name is insufficient: representation and parameter choices can change ciphertext.",
+          "confidence": "strong",
+          "assumption": null,
+          "claim_id": "INTL-MAGMA-I1",
+          "depends_on": [
+            "INTL-MAGMA-F1",
+            "INTL-MAGMA-F2"
+          ],
+          "source_refs": [
+            {
+              "source_id": "S021",
+              "locator": "Abstract; Sections 4.2, 4.3 and 5.1"
+            },
+            {
+              "source_id": "S021",
+              "locator": "Appendix B, Background"
+            }
+          ]
+        }
+      ],
+      "unknowns": [
+        "The 2020 RFC date is an English-publication milestone, not the cipher invention date."
+      ]
+    },
+    {
+      "slug": "kuznyechik",
+      "name": "Kuznyechik",
+      "region": "Russia",
+      "role": "Symmetric encryption",
+      "primitive": "Substitution and linear-diffusion network",
+      "parameters": "128-bit block; 256-bit key; ten round keys",
+      "synopsis": "The 128-bit cipher standardized alongside Magma in GOST R 34.12-2015.",
+      "facts": [
+        {
+          "text": "The standard specifies a 128-bit block and 256-bit key. Ten round keys are derived, and encryption applies nine keyed substitution/linear-transform layers followed by a final key XOR.",
+          "source_refs": [
+            {
+              "source_id": "S022",
+              "locator": "Abstract; Sections 4.4 and 4.5.1"
+            }
+          ],
+          "claim_id": "INTL-KUZNYECHIK-F1"
+        },
+        {
+          "text": "Its nonlinear byte substitution, linear transformation and key schedule are explicitly specified with worked examples.",
+          "source_refs": [
+            {
+              "source_id": "S022",
+              "locator": "Sections 4.1-4.4 and 5"
+            }
+          ],
+          "claim_id": "INTL-KUZNYECHIK-F2"
+        },
+        {
+          "text": "The Russian standard is the 2015 edition; the English RFC dates to March 2016.",
+          "source_refs": [
+            {
+              "source_id": "S022",
+              "locator": "Header and normative reference GOSTR3412-2015"
+            }
+          ],
+          "claim_id": "INTL-KUZNYECHIK-F3"
+        }
+      ],
+      "inferences": [
+        {
+          "text": "The published transformations and vectors permit independent implementations; implementation agreement can be checked without knowing unpublished round details.",
+          "confidence": "strong",
+          "assumption": null,
+          "claim_id": "INTL-KUZNYECHIK-I1",
+          "depends_on": [
+            "INTL-KUZNYECHIK-F1",
+            "INTL-KUZNYECHIK-F2"
+          ],
+          "source_refs": [
+            {
+              "source_id": "S022",
+              "locator": "Abstract; Sections 4.4 and 4.5.1"
+            },
+            {
+              "source_id": "S022",
+              "locator": "Sections 4.1-4.4 and 5"
+            }
+          ]
+        }
+      ],
+      "unknowns": [
+        "Sharing a standard with Magma does not make the two ciphers mathematically interchangeable."
+      ]
+    },
+    {
+      "slug": "streebog",
+      "name": "Streebog / GOST R 34.11-2012",
+      "region": "Russia",
+      "role": "Cryptographic hashing",
+      "primitive": "Iterated compression with substitution, permutation and linear transforms",
+      "parameters": "256- or 512-bit digest; 512-bit chaining state",
+      "synopsis": "A hash-function standard, with a fully specified compression construction.",
+      "facts": [
+        {
+          "text": "GOST R 34.11-2012 defines 256-bit and 512-bit digest variants. Both use a 512-bit chaining state and specified S, P and L transformations.",
+          "source_refs": [
+            {
+              "source_id": "S023",
+              "locator": "Sections 5-9"
+            }
+          ],
+          "claim_id": "INTL-STREEBOG-F1"
+        },
+        {
+          "text": "The compression function combines a keyed internal transformation with the previous chaining value and message block by XOR; finalization also processes message length and a block sum.",
+          "source_refs": [
+            {
+              "source_id": "S023",
+              "locator": "Sections 8 and 9"
+            }
+          ],
+          "claim_id": "INTL-STREEBOG-F2"
+        },
+        {
+          "text": "The standard edition is 2012; the preserved English publication is RFC 6986 of August 2013.",
+          "source_refs": [
+            {
+              "source_id": "S023",
+              "locator": "Header and normative reference GOST3411-2012"
+            }
+          ],
+          "claim_id": "INTL-STREEBOG-F3"
+        }
+      ],
+      "inferences": [
+        {
+          "text": "A 256-bit digest is an output length. It is not a 256-bit encryption key, and a hash interface does not provide a decryption operation.",
+          "confidence": "strong",
+          "assumption": null,
+          "claim_id": "INTL-STREEBOG-I1",
+          "depends_on": [
+            "INTL-STREEBOG-F1",
+            "INTL-STREEBOG-F2"
+          ],
+          "source_refs": [
+            {
+              "source_id": "S023",
+              "locator": "Sections 5-9"
+            },
+            {
+              "source_id": "S023",
+              "locator": "Sections 8 and 9"
+            }
+          ]
+        }
+      ],
+      "unknowns": [
+        "This profile records the specified construction, not a complete survey of subsequent cryptanalysis."
+      ]
+    },
+    {
+      "slug": "gost-signatures",
+      "name": "GOST R 34.10-2012",
+      "region": "Russia",
+      "role": "Digital signatures",
+      "primitive": "Elliptic-curve discrete-logarithm scheme",
+      "parameters": "Prime-field elliptic curves; 512- or 1024-bit encoded signatures",
+      "synopsis": "The GOST signature standard is a separate mathematical object from GOST block ciphers.",
+      "facts": [
+        {
+          "text": "The standard defines signing and verification using an elliptic-curve point group over a prime finite field. It specifies signature encodings of 512 or 1024 bits.",
+          "source_refs": [
+            {
+              "source_id": "S024",
+              "locator": "Sections 1.2, 4 and 5"
+            }
+          ],
+          "claim_id": "INTL-GOST-SIGNATURES-F1"
+        },
+        {
+          "text": "The signing rule uses an ephemeral scalar k, point C=kP, r=x_C mod q, and s=(r*d+k*e) mod q, with the specified hash-to-integer and retry rules.",
+          "source_refs": [
+            {
+              "source_id": "S024",
+              "locator": "Section 6.1"
+            }
+          ],
+          "claim_id": "INTL-GOST-SIGNATURES-F2"
+        },
+        {
+          "text": "The standard edition is 2012 and the English RFC is dated December 2013.",
+          "source_refs": [
+            {
+              "source_id": "S024",
+              "locator": "Header and Section 1.1"
+            }
+          ],
+          "claim_id": "INTL-GOST-SIGNATURES-F3"
+        }
+      ],
+      "inferences": [
+        {
+          "text": "GOST can name an ecosystem containing signatures, hashes and ciphers. A signature length alone cannot identify the block cipher used by a product.",
+          "confidence": "strong",
+          "assumption": null,
+          "claim_id": "INTL-GOST-SIGNATURES-I1",
+          "depends_on": [
+            "INTL-GOST-SIGNATURES-F1",
+            "INTL-GOST-SIGNATURES-F2"
+          ],
+          "source_refs": [
+            {
+              "source_id": "S024",
+              "locator": "Sections 1.2, 4 and 5"
+            },
+            {
+              "source_id": "S024",
+              "locator": "Section 6.1"
+            }
+          ]
+        }
+      ],
+      "unknowns": [
+        "A product profile must additionally identify curve parameters, hash function and encoding conventions."
+      ]
+    },
+    {
+      "slug": "fialka",
+      "name": "FIALKA / M-125 family",
+      "region": "Soviet Union",
+      "role": "Historical machine encryption",
+      "primitive": "Electromechanical rotor substitution",
+      "parameters": "Ten rotors; 30 contacts per rotor on examined M-125 specimens",
+      "synopsis": "A Cold War cipher-machine family documented through surviving artifacts and a German-language manual.",
+      "facts": [
+        {
+          "text": "The examined M-125 machines have ten 30-contact rotors; adjacent rotors move in opposite directions. A punched card sets internal connections, and the machine prints and punches paper tape.",
+          "source_refs": [
+            {
+              "source_id": "S051",
+              "locator": "General Description; Input and Output; Card Reader; Direction of Rotor Rotation"
+            }
+          ],
+          "claim_id": "INTL-FIALKA-F1"
+        },
+        {
+          "text": "The preserved manual covers M-125-MN and M-125-3MN. Its digitizer introduction is dated 24 March 2005 and explicitly notes missing original pages 2, 4 and 60.",
+          "source_refs": [
+            {
+              "source_id": "S025",
+              "locator": "PDF pp.1-2, digitizer cover and introduction"
+            }
+          ],
+          "claim_id": "INTL-FIALKA-F2"
+        }
+      ],
+      "inferences": [
+        {
+          "text": "These are changing symbol permutations implemented with physical contacts and stepping mechanics. A modern fixed-width block-cipher API would omit important machine-state and operating-procedure details.",
+          "confidence": "strong",
+          "assumption": null,
+          "claim_id": "INTL-FIALKA-I1",
+          "depends_on": [
+            "INTL-FIALKA-F1"
+          ],
+          "source_refs": [
+            {
+              "source_id": "S051",
+              "locator": "General Description; Input and Output; Card Reader; Direction of Rotor Rotation"
+            }
+          ]
+        }
+      ],
+      "unknowns": [
+        "The original manual date and first service-approval date are not verified here.",
+        "Variant-specific reflector connections and rotor sets require examination of the particular model."
+      ]
+    },
+    {
+      "slug": "sm4",
+      "name": "SM4 / SMS4",
+      "region": "China",
+      "role": "Symmetric encryption",
+      "primitive": "Unbalanced Feistel-style word transformation",
+      "parameters": "128-bit block; 128-bit key; 32 rounds",
+      "synopsis": "A public block cipher whose earlier name SMS4 and later standard numbers describe different historical milestones.",
+      "facts": [
+        {
+          "text": "The published transformation uses four 32-bit state words, 32 rounds, byte S-box substitution and a linear layer built from XOR and rotations. Both block and key are 128 bits.",
+          "source_refs": [
+            {
+              "source_id": "S027",
+              "locator": "Sections 4, 6 and 7"
+            }
+          ],
+          "claim_id": "INTL-SM4-F1"
+        },
+        {
+          "text": "In compact notation, the update is X[i+4]=X[i] XOR T(X[i+1] XOR X[i+2] XOR X[i+3] XOR rk[i]); output reverses the final four words.",
+          "source_refs": [
+            {
+              "source_id": "S027",
+              "locator": "Sections 6.1 and 7.1"
+            }
+          ],
+          "claim_id": "INTL-SM4-F2"
+        },
+        {
+          "text": "Diffie and Ledin's dated May 2008 translation reports that SMS4 was issued in January 2006. OSCCA explicitly identified SM4 as formerly SMS4 in its March 2012 announcement.",
+          "source_refs": [
+            {
+              "source_id": "S053",
+              "locator": "Cover and introductory paragraph"
+            },
+            {
+              "source_id": "S034",
+              "locator": "Announcement list, GM/T0002-2012"
+            }
+          ],
+          "claim_id": "INTL-SM4-F3"
+        },
+        {
+          "text": "The official national record gives GB/T 32907-2016 an issue date of 29 August 2016 and an implementation date of 1 March 2017.",
+          "source_refs": [
+            {
+              "source_id": "S035",
+              "locator": "Publication and implementation metadata"
+            }
+          ],
+          "claim_id": "INTL-SM4-F4"
+        }
+      ],
+      "inferences": [
+        {
+          "text": "A protocol entry such as SM4-GCM identifies a block cipher plus a mode. Its authentication and nonce rules belong to the full protocol profile, rather than to the SM4 round function alone.",
+          "confidence": "strong",
+          "assumption": null,
+          "claim_id": "INTL-SM4-I1",
+          "depends_on": [
+            "INTL-SM4-F1",
+            "INTL-SM4-F2"
+          ],
+          "source_refs": [
+            {
+              "source_id": "S027",
+              "locator": "Sections 4, 6 and 7"
+            },
+            {
+              "source_id": "S027",
+              "locator": "Sections 6.1 and 7.1"
+            }
+          ]
+        }
+      ],
+      "unknowns": [
+        "The hosted English translation lacks an official dated Chinese cover; its edition is not established by its filename."
+      ]
+    },
+    {
+      "slug": "sm3",
+      "name": "SM3",
+      "region": "China",
+      "role": "Cryptographic hashing",
+      "primitive": "Iterated word-oriented compression",
+      "parameters": "256-bit digest; 512-bit message blocks; 64 compression steps",
+      "synopsis": "A public hash specification built from Boolean functions, word additions, rotations and message expansion.",
+      "facts": [
+        {
+          "text": "SM3 pads messages into 512-bit blocks and updates a 256-bit chaining value with a compression function. That function iterates j from 0 to 63.",
+          "source_refs": [
+            {
+              "source_id": "S028",
+              "locator": "Sections 5.1-5.3.3"
+            }
+          ],
+          "claim_id": "INTL-SM3-F1"
+        },
+        {
+          "text": "The compression state comprises eight 32-bit words, using specified Boolean functions, rotations, additions and permutations P0/P1.",
+          "source_refs": [
+            {
+              "source_id": "S028",
+              "locator": "Sections 3, 4 and 5.3.3"
+            }
+          ],
+          "claim_id": "INTL-SM3-F2"
+        },
+        {
+          "text": "OSCCA announced GM/T 0004-2012 for SM3 on 21 March 2012. RFC 8998 later specifies SM3 in its SM TLS 1.3 profile.",
+          "source_refs": [
+            {
+              "source_id": "S034",
+              "locator": "Announcement list, GM/T0004-2012"
+            },
+            {
+              "source_id": "S026",
+              "locator": "Sections 1.1 and 3.4"
+            }
+          ],
+          "claim_id": "INTL-SM3-F3"
+        }
+      ],
+      "inferences": [
+        {
+          "text": "The concrete object is a digest computation, with message expansion and compression, rather than a bulk-encryption key schedule.",
+          "confidence": "strong",
+          "assumption": null,
+          "claim_id": "INTL-SM3-I1",
+          "depends_on": [
+            "INTL-SM3-F1",
+            "INTL-SM3-F2"
+          ],
+          "source_refs": [
+            {
+              "source_id": "S028",
+              "locator": "Sections 5.1-5.3.3"
+            },
+            {
+              "source_id": "S028",
+              "locator": "Sections 3, 4 and 5.3.3"
+            }
+          ]
+        }
+      ],
+      "unknowns": [
+        "A 256-bit digest length alone does not establish every security property or interoperability with other 256-bit hashes."
+      ]
+    },
+    {
+      "slug": "sm2",
+      "name": "SM2 family",
+      "region": "China",
+      "role": "Signatures, key exchange and public-key encryption",
+      "primitive": "Elliptic-curve cryptography",
+      "parameters": "TLS profile uses a 256-bit prime-field curve",
+      "synopsis": "SM2 names several related algorithms; the operation and protocol must be identified.",
+      "facts": [
+        {
+          "text": "The preserved parts separately describe general elliptic-curve operations, signatures, key exchange, public-key encryption and parameter definition.",
+          "source_refs": [
+            {
+              "source_id": "S029",
+              "locator": "Title and Scope; companion parts S030-S033"
+            },
+            {
+              "source_id": "S030",
+              "locator": "Title and Scope; companion parts S031-S033"
+            }
+          ],
+          "claim_id": "INTL-SM2-F1"
+        },
+        {
+          "text": "The signature algorithm hashes an identity-bound value with the message; its signing equations include r=(e+x1) mod n and s=(1+d)^(-1)*(k-r*d) mod n, with required retry conditions.",
+          "source_refs": [
+            {
+              "source_id": "S030",
+              "locator": "Sections 5.5 and 6.1"
+            }
+          ],
+          "claim_id": "INTL-SM2-F2"
+        },
+        {
+          "text": "RFC 8998 specifies a 256-bit prime-field curve and uses SM2 signatures with SM3. Its TLS key exchange is ECDHE over that curve.",
+          "source_refs": [
+            {
+              "source_id": "S026",
+              "locator": "Sections 1, 3.2.1 and 3.3"
+            }
+          ],
+          "claim_id": "INTL-SM2-F3"
+        },
+        {
+          "text": "OSCCA announced the GM/T SM2 family in March 2012. The official GB/T Part 1 record was issued in August 2016 and implemented in March 2017.",
+          "source_refs": [
+            {
+              "source_id": "S036",
+              "locator": "Publication and implementation metadata"
+            },
+            {
+              "source_id": "S034",
+              "locator": "Announcement list, GM/T0003-2012"
+            }
+          ],
+          "claim_id": "INTL-SM2-F4"
+        }
+      ],
+      "inferences": [
+        {
+          "text": "Using the SM2 curve for ECDHE in TLS does not by itself mean that the native SM2 Part 3 key-exchange protocol is being executed.",
+          "confidence": "strong",
+          "assumption": null,
+          "claim_id": "INTL-SM2-I1",
+          "depends_on": [
+            "INTL-SM2-F1",
+            "INTL-SM2-F3"
+          ],
+          "source_refs": [
+            {
+              "source_id": "S029",
+              "locator": "Title and Scope; companion parts S030-S033"
+            },
+            {
+              "source_id": "S026",
+              "locator": "Sections 1, 3.2.1 and 3.3"
+            }
+          ]
+        }
+      ],
+      "unknowns": [
+        "The English Part 5 filename says 2016, whereas RFC 8998 cites GB/T 32918.5-2017. The filename must not be treated as authoritative edition metadata."
+      ]
+    },
+    {
+      "slug": "zuc",
+      "name": "ZUC / Zu Chongzhi",
+      "region": "China / international mobile standards",
+      "role": "Keystream generation",
+      "primitive": "LFSR plus nonlinear state machine",
+      "parameters": "128-bit key; 128-bit IV; 32-bit output words in version 1.6",
+      "synopsis": "A public word-oriented stream cipher used as a building block for mobile confidentiality and integrity algorithms.",
+      "facts": [
+        {
+          "text": "Version 1.6 takes a 128-bit key and 128-bit IV and produces 32-bit keystream words. The design combines a 16-cell, 31-bit LFSR, bit reorganization and a nonlinear function.",
+          "source_refs": [
+            {
+              "source_id": "S037",
+              "locator": "Sections 1, 2.1-2.4"
+            }
+          ],
+          "claim_id": "INTL-ZUC-F1"
+        },
+        {
+          "text": "The preserved specification is dated 28 June 2011 and identifies ZUC as the core for 128-EEA3 and 128-EIA3.",
+          "source_refs": [
+            {
+              "source_id": "S037",
+              "locator": "Cover and Section 1"
+            }
+          ],
+          "claim_id": "INTL-ZUC-F2"
+        },
+        {
+          "text": "OSCCA included the Zu Chongzhi industry standard in its 21 March 2012 announcement.",
+          "source_refs": [
+            {
+              "source_id": "S034",
+              "locator": "Announcement list, GM/T0001-2012"
+            }
+          ],
+          "claim_id": "INTL-ZUC-F3"
+        }
+      ],
+      "inferences": [
+        {
+          "text": "The keystream generator, the confidentiality algorithm and the integrity algorithm occupy different interfaces; the name ZUC alone does not specify the full mobile packet-protection procedure.",
+          "confidence": "strong",
+          "assumption": null,
+          "claim_id": "INTL-ZUC-I1",
+          "depends_on": [
+            "INTL-ZUC-F1",
+            "INTL-ZUC-F2"
+          ],
+          "source_refs": [
+            {
+              "source_id": "S037",
+              "locator": "Sections 1, 2.1-2.4"
+            },
+            {
+              "source_id": "S037",
+              "locator": "Cover and Section 1"
+            }
+          ]
+        }
+      ],
+      "unknowns": [
+        "Parameters in this profile apply to the preserved 128-bit version, not automatically to later ZUC-256 variants."
+      ]
+    },
+    {
+      "slug": "enigma",
+      "name": "Enigma",
+      "region": "Germany",
+      "role": "Historical machine encryption",
+      "primitive": "Stepped rotor permutations with a reflector",
+      "parameters": "26-symbol service-machine description; model-dependent rotor/plugboard settings",
+      "synopsis": "A machine family whose operating procedures and reflector structure are documented in wartime sources.",
+      "facts": [
+        {
+          "text": "Turing describes 26-contact rotors, paired reflector contacts, turnover mechanics and plugboard changes. At a fixed machine position, encryption is reciprocal and no letter maps to itself.",
+          "source_refs": [
+            {
+              "source_id": "S039",
+              "locator": "Chapter 1, printed pp.1-4, especially p.2"
+            }
+          ],
+          "claim_id": "INTL-ENIGMA-F1"
+        },
+        {
+          "text": "The 1940 naval manual records a contemporary operational procedure; it is a separate kind of evidence from a patent or a later cryptanalytic account.",
+          "source_refs": [
+            {
+              "source_id": "S038",
+              "locator": "Title page and operational instructions"
+            }
+          ],
+          "claim_id": "INTL-ENIGMA-F2"
+        },
+        {
+          "text": "Scherbius's patent record distinguishes its 23 February 1918 application/priority date from publication on 8 July 1925.",
+          "source_refs": [
+            {
+              "source_id": "S054",
+              "locator": "Patent front page"
+            },
+            {
+              "source_id": "S056",
+              "locator": "Opening paragraph, Scherbius patent application"
+            }
+          ],
+          "claim_id": "INTL-ENIGMA-F3"
+        }
+      ],
+      "inferences": [
+        {
+          "text": "Writing the fixed-position wiring as E=T^(-1)*R*T shows why E is its own inverse when the reflector R is an involution. A reflector without fixed points also makes E fixed-point-free.",
+          "confidence": "strong",
+          "assumption": "T includes all forward wiring and the reflector pairs distinct contacts; composition is evaluated at one fixed stepping state.",
+          "claim_id": "INTL-ENIGMA-I1",
+          "depends_on": [
+            "INTL-ENIGMA-F1"
+          ],
+          "source_refs": [
+            {
+              "source_id": "S039",
+              "locator": "Chapter 1, printed pp.1-4, especially p.2"
+            }
+          ]
+        }
+      ],
+      "unknowns": [
+        "The 1918 patent milestone does not establish the service-approval date of every later Enigma model.",
+        "Different Enigma variants and operating procedures require separate profiles."
+      ]
+    },
+    {
+      "slug": "lorenz",
+      "name": "Lorenz SZ / Tunny",
+      "region": "Germany",
+      "role": "Historical teleprinter encryption",
+      "primitive": "Additive keystream cipher with wheel-controlled state",
+      "parameters": "Five teleprinter bits; five chi wheels, five psi wheels and motor control",
+      "synopsis": "Tunny is the British cryptanalytic name used in the preserved wartime record.",
+      "facts": [
+        {
+          "text": "The wartime dictionary describes five regularly moving chi wheels, five psi wheels with controlled movement, and motor-wheel control of the psi movement.",
+          "source_refs": [
+            {
+              "source_id": "S055",
+              "locator": "Entries CHI, PSI, MOTOR-WHEELS and TUNNY"
+            }
+          ],
+          "claim_id": "INTL-LORENZ-F1"
+        },
+        {
+          "text": "The Newmanry report describes machine-based setting work beginning in December 1942 and pilot Robinson and Tunny machines arriving in April 1943.",
+          "source_refs": [
+            {
+              "source_id": "S040",
+              "locator": "Section 31A, original p.276"
+            }
+          ],
+          "claim_id": "INTL-LORENZ-F2"
+        },
+        {
+          "text": "The report treats five-impulse teleprinter characters, chi/psi components and addition modulo 2 in its account of Tunny and decoding machines.",
+          "source_refs": [
+            {
+              "source_id": "S040",
+              "locator": "Section 56J, original pp.376-378"
+            }
+          ],
+          "claim_id": "INTL-LORENZ-F3"
+        }
+      ],
+      "inferences": [
+        {
+          "text": "At the additive interface C=P XOR K, reuse of the same keystream yields C1 XOR C2=P1 XOR P2. This is a property of keystream reuse, independent of the number of wheels.",
+          "confidence": "strong",
+          "assumption": "The two messages use the same keystream at aligned bit positions.",
+          "claim_id": "INTL-LORENZ-I1",
+          "depends_on": [
+            "INTL-LORENZ-F1",
+            "INTL-LORENZ-F3"
+          ],
+          "source_refs": [
+            {
+              "source_id": "S055",
+              "locator": "Entries CHI, PSI, MOTOR-WHEELS and TUNNY"
+            },
+            {
+              "source_id": "S040",
+              "locator": "Section 56J, original pp.376-378"
+            }
+          ]
+        }
+      ],
+      "unknowns": [
+        "The preserved 1942-1945 British milestones do not date the original German invention or every SZ40/SZ42 deployment.",
+        "The Newmanry PDF is a transcription of part of the report, not the complete wartime original."
+      ]
+    },
+    {
+      "slug": "chiasmus",
+      "name": "CHIASMUS",
+      "region": "Germany",
+      "role": "Government file encryption and historical SINA use",
+      "primitive": "Proprietary symmetric-encryption system; internal construction unresolved here",
+      "parameters": "Key material and format are product-specific in the cited agency account",
+      "synopsis": "A German government example where public lifecycle evidence is clearer than the primitive's internals.",
+      "facts": [
+        {
+          "text": "BSI dates the Windows Chiasmus file-encryption program to 2001, followed by a Linux command-line version. Partners had to exchange secret key material beforehand.",
+          "source_refs": [
+            {
+              "source_id": "S042",
+              "locator": "Section 1, printed p.4"
+            }
+          ],
+          "claim_id": "INTL-CHIASMUS-F1"
+        },
+        {
+          "text": "BSI describes non-open algorithms and standards and proprietary software; it says Chiasmus key material is incompatible with replacement products.",
+          "source_refs": [
+            {
+              "source_id": "S042",
+              "locator": "Section 1, printed p.4"
+            }
+          ],
+          "claim_id": "INTL-CHIASMUS-F2"
+        },
+        {
+          "text": "BSI states that the VS-NfD approval was withdrawn on 30 June 2022. Its SINA history separately records replacing CHIASMUS by AES at lower classification levels.",
+          "source_refs": [
+            {
+              "source_id": "S042",
+              "locator": "Section 1, printed p.4"
+            },
+            {
+              "source_id": "S041",
+              "locator": "Cryptographic migration paragraph"
+            }
+          ],
+          "claim_id": "INTL-CHIASMUS-F3"
+        }
+      ],
+      "inferences": [
+        {
+          "text": "A file archive or migration tool needs the actual container, key format and implementation behavior; merely selecting another symmetric cipher cannot make a Chiasmus file readable.",
+          "confidence": "strong",
+          "assumption": null,
+          "claim_id": "INTL-CHIASMUS-I1",
+          "depends_on": [
+            "INTL-CHIASMUS-F1",
+            "INTL-CHIASMUS-F2"
+          ],
+          "source_refs": [
+            {
+              "source_id": "S042",
+              "locator": "Section 1, printed p.4"
+            },
+            {
+              "source_id": "S042",
+              "locator": "Section 1, printed p.4"
+            }
+          ]
+        }
+      ],
+      "unknowns": [
+        "The cited agency records do not expose a complete round function or establish the cipher's original design date.",
+        "Independent reverse engineering should be catalogued separately from an official design release."
+      ]
+    },
+    {
+      "slug": "libelle",
+      "name": "LIBELLE in SINA",
+      "region": "Germany",
+      "role": "Government network protection",
+      "primitive": "Algorithm implemented inside a hardware security module",
+      "parameters": "Internal primitive parameters not established by the cited BSI records",
+      "synopsis": "A named government cipher with public architectural and migration evidence.",
+      "facts": [
+        {
+          "text": "BSI's SINA history says development was commissioned from secunet in 1999. It identifies LIBELLE as an HSM-implemented algorithm used at higher classification levels and describes gradual replacement by a newly approved algorithm.",
+          "source_refs": [
+            {
+              "source_id": "S041",
+              "locator": "SINA im Wandel der Zeit, development and cryptographic migration paragraphs"
+            }
+          ],
+          "claim_id": "INTL-LIBELLE-F1"
+        },
+        {
+          "text": "The preserved SINA brochure is a January 2016 system description covering protected network communication, storage and separation of functions.",
+          "source_refs": [
+            {
+              "source_id": "S048",
+              "locator": "Sections 1 and 4; imprint, January 2016"
+            }
+          ],
+          "claim_id": "INTL-LIBELLE-F2"
+        }
+      ],
+      "inferences": [
+        {
+          "text": "A stable product-family name such as SINA can span changes in cipher and security hardware. The algorithm, hardware module and product version must be identified separately.",
+          "confidence": "strong",
+          "assumption": null,
+          "claim_id": "INTL-LIBELLE-I1",
+          "depends_on": [
+            "INTL-LIBELLE-F1",
+            "INTL-LIBELLE-F2"
+          ],
+          "source_refs": [
+            {
+              "source_id": "S041",
+              "locator": "SINA im Wandel der Zeit, development and cryptographic migration paragraphs"
+            },
+            {
+              "source_id": "S048",
+              "locator": "Sections 1 and 4; imprint, January 2016"
+            }
+          ]
+        }
+      ],
+      "unknowns": [
+        "The cited sources do not identify the replacement cipher or provide LIBELLE's round function.",
+        "The 1999 SINA contract is a system-development milestone, not a verified first approval of LIBELLE."
+      ]
+    },
+    {
+      "slug": "camellia",
+      "name": "Camellia",
+      "region": "Japan",
+      "role": "Symmetric encryption",
+      "primitive": "Feistel network with FL/FLINV layers",
+      "parameters": "128-bit block; 128/192/256-bit keys; 18 or 24 rounds",
+      "synopsis": "A designer-published cipher from NTT and Mitsubishi Electric with early CRYPTREC records.",
+      "facts": [
+        {
+          "text": "Camellia was jointly developed by NTT and Mitsubishi Electric. It has a 128-bit block and 128-, 192- and 256-bit key options.",
+          "source_refs": [
+            {
+              "source_id": "S043",
+              "locator": "Abstract and Section 1.1"
+            }
+          ],
+          "claim_id": "INTL-CAMELLIA-F1"
+        },
+        {
+          "text": "The data path has 18 rounds for 128-bit keys and 24 rounds for the larger keys, with FL and FLINV functions inserted every six rounds.",
+          "source_refs": [
+            {
+              "source_id": "S043",
+              "locator": "Sections 2.3 and 2.4"
+            }
+          ],
+          "claim_id": "INTL-CAMELLIA-F2"
+        },
+        {
+          "text": "The designer archive identifies a 12 July 2000 CRYPTREC specification and a 26 September 2001 version 2.0. The English RFC followed in April 2004.",
+          "source_refs": [
+            {
+              "source_id": "S047",
+              "locator": "Version 2.0 title and revision record; companion 2000 submission S052"
+            },
+            {
+              "source_id": "S052",
+              "locator": "2000 designer submission"
+            },
+            {
+              "source_id": "S043",
+              "locator": "Header"
+            }
+          ],
+          "claim_id": "INTL-CAMELLIA-F3"
+        }
+      ],
+      "inferences": [
+        {
+          "text": "A 128-bit block interface with several key sizes does not imply AES internals: Camellia's specified data path is a Feistel construction with additional keyed layers.",
+          "confidence": "strong",
+          "assumption": null,
+          "claim_id": "INTL-CAMELLIA-I1",
+          "depends_on": [
+            "INTL-CAMELLIA-F1",
+            "INTL-CAMELLIA-F2"
+          ],
+          "source_refs": [
+            {
+              "source_id": "S043",
+              "locator": "Abstract and Section 1.1"
+            },
+            {
+              "source_id": "S043",
+              "locator": "Sections 2.3 and 2.4"
+            }
+          ]
+        }
+      ],
+      "unknowns": [
+        "A submission, an algorithm publication and a national procurement approval are separate historical milestones."
+      ]
+    },
+    {
+      "slug": "clefia",
+      "name": "CLEFIA",
+      "region": "Japan",
+      "role": "Symmetric encryption",
+      "primitive": "Four-branch generalized Feistel network",
+      "parameters": "128-bit block; 128/192/256-bit keys; 18/22/26 rounds",
+      "synopsis": "Sony's published cipher gives an explicit alternative to a two-branch Feistel network.",
+      "facts": [
+        {
+          "text": "Sony's version 1.0 specification is dated 1 June 2007. It uses four 32-bit data branches and 18, 22 or 26 rounds for the three key sizes.",
+          "source_refs": [
+            {
+              "source_id": "S049",
+              "locator": "Cover; Sections 1 and 4.2"
+            }
+          ],
+          "claim_id": "INTL-CLEFIA-F1"
+        },
+        {
+          "text": "The data-processing part uses a four-branch generalized Feistel network; an eight-branch construction also appears in scheduling larger keys.",
+          "source_refs": [
+            {
+              "source_id": "S044",
+              "locator": "Section 4"
+            }
+          ],
+          "claim_id": "INTL-CLEFIA-F2"
+        },
+        {
+          "text": "The English RFC specification was published in March 2011 and dates the algorithm's public publication to 2007.",
+          "source_refs": [
+            {
+              "source_id": "S044",
+              "locator": "Header and Introduction"
+            }
+          ],
+          "claim_id": "INTL-CLEFIA-F3"
+        }
+      ],
+      "inferences": [
+        {
+          "text": "The four-branch structure is a concrete design distinction, despite sharing a 128-bit block interface and key-size choices with several other ciphers.",
+          "confidence": "strong",
+          "assumption": null,
+          "claim_id": "INTL-CLEFIA-I1",
+          "depends_on": [
+            "INTL-CLEFIA-F1",
+            "INTL-CLEFIA-F2"
+          ],
+          "source_refs": [
+            {
+              "source_id": "S049",
+              "locator": "Cover; Sections 1 and 4.2"
+            },
+            {
+              "source_id": "S044",
+              "locator": "Section 4"
+            }
+          ]
+        }
+      ],
+      "unknowns": [
+        "The preserved design dates do not establish when every Sony product first deployed CLEFIA."
+      ]
+    },
+    {
+      "slug": "seed",
+      "name": "SEED",
+      "region": "Republic of Korea",
+      "role": "Symmetric encryption",
+      "primitive": "16-round Feistel network",
+      "parameters": "128-bit block; 128-bit key",
+      "synopsis": "A Korean national cipher with a public description of its round structure.",
+      "facts": [
+        {
+          "text": "RFC 4269 describes SEED as developed by KISA since 1998 and as a Korean national standard. It specifies a 128-bit block, a 128-bit key and 16 Feistel rounds.",
+          "source_refs": [
+            {
+              "source_id": "S045",
+              "locator": "Section 1.2"
+            }
+          ],
+          "claim_id": "INTL-SEED-F1"
+        },
+        {
+          "text": "The public round description includes S-box transformations, permutations, XOR and addition, with an explicit key schedule and test data.",
+          "source_refs": [
+            {
+              "source_id": "S045",
+              "locator": "Sections 2 and 3; appendices"
+            }
+          ],
+          "claim_id": "INTL-SEED-F2"
+        },
+        {
+          "text": "The preserved RFC is dated December 2005 and replaces the earlier RFC 4009 description.",
+          "source_refs": [
+            {
+              "source_id": "S045",
+              "locator": "Header and Abstract"
+            }
+          ],
+          "claim_id": "INTL-SEED-F3"
+        }
+      ],
+      "inferences": [
+        {
+          "text": "SEED provides an example where both the primitive's structure and development period can be stated from a published specification, while product certification remains a separate question.",
+          "confidence": "strong",
+          "assumption": null,
+          "claim_id": "INTL-SEED-I1",
+          "depends_on": [
+            "INTL-SEED-F1",
+            "INTL-SEED-F2"
+          ],
+          "source_refs": [
+            {
+              "source_id": "S045",
+              "locator": "Section 1.2"
+            },
+            {
+              "source_id": "S045",
+              "locator": "Sections 2 and 3; appendices"
+            }
+          ]
+        }
+      ],
+      "unknowns": [
+        "This profile concerns the 128-bit SEED specification in RFC 4269, not every later similarly named variant."
+      ]
+    },
+    {
+      "slug": "aria",
+      "name": "ARIA",
+      "region": "Republic of Korea",
+      "role": "Symmetric encryption",
+      "primitive": "Substitution and involutive linear-diffusion layers",
+      "parameters": "128-bit block; 128/192/256-bit keys; 12/14/16 rounds",
+      "synopsis": "A Korean cipher with public development and standardization milestones.",
+      "facts": [
+        {
+          "text": "RFC 5794 dates development by Korean cryptographers to 2003 and Korean standardization to 2004. It specifies 128-bit blocks with 12, 14 or 16 rounds depending on key size.",
+          "source_refs": [
+            {
+              "source_id": "S046",
+              "locator": "Section 1"
+            }
+          ],
+          "claim_id": "INTL-ARIA-F1"
+        },
+        {
+          "text": "The round transformations alternate substitution layers, use XOR key addition and a diffusion map A satisfying A(A(x))=x.",
+          "source_refs": [
+            {
+              "source_id": "S046",
+              "locator": "Sections 2.4.1-2.4.3"
+            }
+          ],
+          "claim_id": "INTL-ARIA-F2"
+        },
+        {
+          "text": "The preserved English RFC was published in March 2010.",
+          "source_refs": [
+            {
+              "source_id": "S046",
+              "locator": "Header"
+            }
+          ],
+          "claim_id": "INTL-ARIA-F3"
+        }
+      ],
+      "inferences": [
+        {
+          "text": "The diffusion map's involution is a specific algebraic property. It does not mean encryption is self-inverse without the specified key-schedule and round transformations.",
+          "confidence": "strong",
+          "assumption": null,
+          "claim_id": "INTL-ARIA-I1",
+          "depends_on": [
+            "INTL-ARIA-F1",
+            "INTL-ARIA-F2"
+          ],
+          "source_refs": [
+            {
+              "source_id": "S046",
+              "locator": "Section 1"
+            },
+            {
+              "source_id": "S046",
+              "locator": "Sections 2.4.1-2.4.3"
+            }
+          ]
+        }
+      ],
+      "unknowns": [
+        "The 2004 national-standard milestone is not proof of universal approval for all Korean government information."
+      ]
+    }
+  ],
+  "events": [
+    {
+      "date": "1918-02-23",
+      "subject": "Enigma precursor",
+      "date_kind": "patent_application",
+      "interpretation": "Application/priority milestone for Scherbius's cipher apparatus; not military approval.",
+      "source_id": "S054",
+      "locator": "Front page"
+    },
+    {
+      "date": "1925-07-08",
+      "subject": "DE416219",
+      "date_kind": "patent_publication",
+      "interpretation": "Public patent document; distinguish from the 1918 filing.",
+      "source_id": "S054",
+      "locator": "Front page"
+    },
+    {
+      "date": "1940",
+      "subject": "Enigma",
+      "date_kind": "operating_manual",
+      "interpretation": "Naval operational instructions in a contemporary original manual.",
+      "source_id": "S038",
+      "locator": "Title page"
+    },
+    {
+      "date": "circa-1940",
+      "subject": "Enigma",
+      "date_kind": "cryptanalytic_treatise",
+      "interpretation": "Turing's mathematical and mechanical account; preserved as an edited transcription.",
+      "source_id": "S039",
+      "locator": "Chapter 1 and editorial note"
+    },
+    {
+      "date": "1942-12",
+      "subject": "Tunny",
+      "date_kind": "cryptanalytic_program",
+      "interpretation": "Newman given the task of developing machine-setting methods.",
+      "source_id": "S040",
+      "locator": "Section 31A, original p.276"
+    },
+    {
+      "date": "1943-04",
+      "subject": "Tunny",
+      "date_kind": "cryptanalytic_equipment",
+      "interpretation": "Pilot Robinson and Tunny machines arrive at the Newmanry.",
+      "source_id": "S040",
+      "locator": "Section 31A, original p.276"
+    },
+    {
+      "date": "1944",
+      "subject": "Tunny",
+      "date_kind": "wartime_reference",
+      "interpretation": "Wartime dictionary records wheel terminology and construction.",
+      "source_id": "S055",
+      "locator": "TUNNY, CHI, PSI and MOTOR-WHEELS entries"
+    },
+    {
+      "date": "1945",
+      "subject": "Tunny",
+      "date_kind": "retrospective_report",
+      "interpretation": "Wartime participants record the work; the archived PDF is a 2001 transcription of one portion.",
+      "source_id": "S040",
+      "locator": "Introduction"
+    },
+    {
+      "date": "1989",
+      "subject": "GOST 28147-89",
+      "date_kind": "standard_edition",
+      "interpretation": "Date of the cited Soviet standard; English RFC follows in 2010.",
+      "source_id": "S020",
+      "locator": "Normative reference GOST28147-89"
+    },
+    {
+      "date": "1998",
+      "subject": "SEED",
+      "date_kind": "reported_development",
+      "interpretation": "RFC states development by KISA since 1998.",
+      "source_id": "S045",
+      "locator": "Section 1.2"
+    },
+    {
+      "date": "1999",
+      "subject": "SINA",
+      "date_kind": "system_development_contract",
+      "interpretation": "BSI commissions secunet; this does not date LIBELLE's first approval.",
+      "source_id": "S041",
+      "locator": "Development paragraph"
+    },
+    {
+      "date": "2000-07-12",
+      "subject": "Camellia",
+      "date_kind": "designer_submission",
+      "interpretation": "Early CRYPTREC algorithm specification.",
+      "source_id": "S052",
+      "locator": "2000 submission"
+    },
+    {
+      "date": "2001",
+      "subject": "Chiasmus software",
+      "date_kind": "reported_development",
+      "interpretation": "BSI dates Windows program development to 2001.",
+      "source_id": "S042",
+      "locator": "Section 1, p.4"
+    },
+    {
+      "date": "2001-09-26",
+      "subject": "Camellia",
+      "date_kind": "specification_revision",
+      "interpretation": "Designer specification version 2.0.",
+      "source_id": "S047",
+      "locator": "Title and revision record"
+    },
+    {
+      "date": "2003",
+      "subject": "ARIA",
+      "date_kind": "reported_development",
+      "interpretation": "RFC dates development by Korean cryptographers.",
+      "source_id": "S046",
+      "locator": "Section 1"
+    },
+    {
+      "date": "2004",
+      "subject": "ARIA",
+      "date_kind": "national_standard",
+      "interpretation": "Korean national-standard milestone reported by the RFC.",
+      "source_id": "S046",
+      "locator": "Section 1"
+    },
+    {
+      "date": "2004-04",
+      "subject": "Camellia",
+      "date_kind": "english_rfc",
+      "interpretation": "RFC 3713 publication.",
+      "source_id": "S043",
+      "locator": "Header"
+    },
+    {
+      "date": "2005-03-24",
+      "subject": "Fialka",
+      "date_kind": "digitizer_introduction",
+      "interpretation": "Dated introduction to the preserved manual copy; original manual date remains unknown.",
+      "source_id": "S025",
+      "locator": "PDF p.2"
+    },
+    {
+      "date": "2005-12",
+      "subject": "SEED",
+      "date_kind": "english_rfc",
+      "interpretation": "RFC 4269 publication, replacing RFC 4009.",
+      "source_id": "S045",
+      "locator": "Header"
+    },
+    {
+      "date": "2006-01",
+      "subject": "SMS4",
+      "date_kind": "reported_standard_issue",
+      "interpretation": "The 2008 Diffie/Ledin translation reports issue in January 2006.",
+      "source_id": "S053",
+      "locator": "Introduction"
+    },
+    {
+      "date": "2007-06-01",
+      "subject": "CLEFIA",
+      "date_kind": "designer_specification",
+      "interpretation": "Sony specification version 1.0.",
+      "source_id": "S049",
+      "locator": "Cover"
+    },
+    {
+      "date": "2008-05-15",
+      "subject": "SMS4",
+      "date_kind": "english_translation",
+      "interpretation": "Diffie/Ledin translation version 1.03.",
+      "source_id": "S053",
+      "locator": "Cover"
+    },
+    {
+      "date": "2010-03",
+      "subject": "GOST 28147-89 / ARIA",
+      "date_kind": "english_rfc",
+      "interpretation": "RFCs 5830 and 5794; later publications than the original designs.",
+      "source_id": "S020",
+      "locator": "Header; companion RFC S046"
+    },
+    {
+      "date": "2011-03",
+      "subject": "CLEFIA",
+      "date_kind": "english_rfc",
+      "interpretation": "RFC 6114 publication.",
+      "source_id": "S044",
+      "locator": "Header"
+    },
+    {
+      "date": "2011-06-28",
+      "subject": "ZUC",
+      "date_kind": "specification_revision",
+      "interpretation": "Version 1.6 of the public ZUC core specification.",
+      "source_id": "S037",
+      "locator": "Cover"
+    },
+    {
+      "date": "2012-03-21",
+      "subject": "ZUC / SM4 / SM2 / SM3",
+      "date_kind": "industry_standard_release",
+      "interpretation": "OSCCA releases GM/T 0001-0004, effective on announcement.",
+      "source_id": "S034",
+      "locator": "Announcement"
+    },
+    {
+      "date": "2012",
+      "subject": "GOST hash and signature schemes",
+      "date_kind": "standard_edition",
+      "interpretation": "GOST R 34.11-2012 and GOST R 34.10-2012 editions.",
+      "source_id": "S023",
+      "locator": "Introduction; companion signature RFC S024"
+    },
+    {
+      "date": "2013-08",
+      "subject": "GOST hash function",
+      "date_kind": "english_rfc",
+      "interpretation": "RFC 6986 publication.",
+      "source_id": "S023",
+      "locator": "Header"
+    },
+    {
+      "date": "2013-12",
+      "subject": "GOST signature algorithm",
+      "date_kind": "english_rfc",
+      "interpretation": "RFC 7091 publication.",
+      "source_id": "S024",
+      "locator": "Header"
+    },
+    {
+      "date": "2015",
+      "subject": "Magma / Kuznyechik",
+      "date_kind": "standard_edition",
+      "interpretation": "GOST R 34.12-2015 includes both ciphers.",
+      "source_id": "S021",
+      "locator": "Introduction"
+    },
+    {
+      "date": "2016-01",
+      "subject": "SINA",
+      "date_kind": "system_brochure",
+      "interpretation": "Date of the preserved BSI system-description edition.",
+      "source_id": "S048",
+      "locator": "Imprint"
+    },
+    {
+      "date": "2016-03",
+      "subject": "Kuznyechik",
+      "date_kind": "english_rfc",
+      "interpretation": "RFC 7801 publication.",
+      "source_id": "S022",
+      "locator": "Header"
+    },
+    {
+      "date": "2016-08-29",
+      "subject": "SM4 / SM2 Part 1",
+      "date_kind": "national_standard_issue",
+      "interpretation": "Official GB/T issue milestone, separate from implementation date.",
+      "source_id": "S035",
+      "locator": "Metadata; companion SM2 record S036"
+    },
+    {
+      "date": "2017-03-01",
+      "subject": "SM4 / SM2 Part 1",
+      "date_kind": "national_standard_implementation",
+      "interpretation": "Official implementation date for the cited GB/T records.",
+      "source_id": "S035",
+      "locator": "Metadata; companion SM2 record S036"
+    },
+    {
+      "date": "2020-09",
+      "subject": "Magma",
+      "date_kind": "english_rfc",
+      "interpretation": "RFC 8891 publication.",
+      "source_id": "S021",
+      "locator": "Header"
+    },
+    {
+      "date": "2021-03",
+      "subject": "SM algorithms with TLS 1.3",
+      "date_kind": "protocol_profile",
+      "interpretation": "RFC 8998 describes the combination; it is an Informational Independent Submission.",
+      "source_id": "S026",
+      "locator": "Header and Status of This Memo"
+    },
+    {
+      "date": "2022-06-30",
+      "subject": "Chiasmus",
+      "date_kind": "approval_withdrawal",
+      "interpretation": "BSI withdraws the software's VS-NfD approval; not an algorithm invention date.",
+      "source_id": "S042",
+      "locator": "Section 1, p.4"
+    }
+  ]
+}
