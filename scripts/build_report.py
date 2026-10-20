@@ -92,7 +92,7 @@ Harris reports that Sierra II received NSA certification in Harris fiscal 2005 (
     timeline += [f"| {e['date']} | {e['subject']} | {e['date_kind'].replace('_',' ')} | {e['interpretation']} | [{e['source_id']}](../sources/README.md#{e['source_id'].lower()}), {e['locator']} |" for e in events]
     write('docs/timeline.md', '\n'.join(timeline)+'\n')
     counts = Counter(s['download']['status'] for s in sources.values())
-    source_doc = ['# Source catalogue', '', f"Research snapshot: {AS_OF}. Preserved: {counts.get('archived',0)}/{len(sources)} records.", '', 'Original source bytes (PDF, RFC text and raw web snapshots) are preserved unchanged. Retrieval time is separate from document date. A checksum identifies the local copy; it is not an authentication certificate.', '']
+    source_doc = ['# Source catalogue', '', f"Research snapshot: {AS_OF}. Preserved: {counts.get('archived',0)}/{len(sources)} records.", '', 'Acquired source bytes (PDF, RFC text, publisher XML and raw web snapshots) are preserved unchanged. Mirrors may already contain scan marks or host-added text; provenance notes identify these limits. Retrieval time is separate from document date. A checksum identifies the local copy; it is not an authentication certificate.', '', '[Acquisition attempts and unresolved retrievals](../data/acquisition-attempts.json)', '']
     for source in sources.values():
         d = source['download']
         source_doc += [f"## {source['id']}", '', f"**{source['title']}**", '', f"Publisher: {source['publisher']}  ", f"Document date: {source['document_date'] or 'Not verified'}  ", f"Provenance: {source['provenance']}  ", f"Original URL: <{source['url']}>  ", f"Preservation status: **{d['status']}**", '']
@@ -100,8 +100,15 @@ Harris reports that Sierra II received NSA certification in Harris fiscal 2005 (
             source_doc += [source['date_note'], '']
         source_doc += [f"Collection: {', '.join(source.get('collections',['suite-a']))}  ",f"Region: {source.get('region','United States')}  ",f"Language: {source.get('language','English')}  ",f"Format: {source['format']}", '']
         for key, label in [('version','Edition'), ('original_issue_date','Initial issue'),
-                           ('revision_date','Revision'), ('publication_category','RFC category'),
-                           ('publication_stream','RFC stream'), ('extent','Extent')]:
+                           ('revision_date','Revision'), ('effective_date','Effective date'),
+                           ('approval_date','Stated standard approval'), ('printed_edition_date','Printing'),
+                           ('declassification_date','Declassification annotation'),
+                           ('publication_category','RFC category'), ('publication_stream','RFC stream'),
+                           ('publication_status','RFC status at publication'),
+                           ('current_status_at_retrieval','RFC status in acquired index'),
+                           ('host','Acquired from host'), ('mirror_owner','Mirror'),
+                           ('mirror_revision','Mirror revision'), ('mirror_path','Mirror path'),
+                           ('completeness_note','Completeness check'), ('extent','Extent')]:
             if source.get(key):
                 source_doc += [f"{label}: {source[key]}", '']
         if source.get('acquisition_url'):
@@ -110,7 +117,10 @@ Harris reports that Sierra II received NSA certification in Harris fiscal 2005 (
             local = source['archive_path'].removeprefix('sources/')
             source_doc += [f"[Preserved file]({local}) · {d['bytes']:,} bytes" + (f" · {d['page_count']} pages" if 'page_count' in d else ''), '', f"Retrieved: {d['retrieved_at_utc']}  ", f"SHA-256: `{d['sha256']}`", '']
         else:
-            source_doc += [f"Retrieval note: {d.get('error','Not yet retrieved.')}", '']
+            source_doc += [f"Retrieval note: {d.get('error','Not yet retrieved.')}", '',
+                           'Attempt UTC: '+d.get('attempted_at_utc','not recorded'), '']
+        for previous in source.get('acquisition_history',[]):
+            source_doc += ['Earlier attempt UTC: '+previous.get('attempted_at_utc','not recorded')+' — '+previous.get('error',previous['status']), '']
         source_doc += [source['rights'], '']
     write('sources/README.md', '\n'.join(source_doc)+'\n')
 

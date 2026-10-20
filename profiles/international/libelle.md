@@ -21,4 +21,4 @@ Parameters: Internal primitive parameters not established by the cited BSI recor
 - The cited sources do not identify the replacement cipher or provide LIBELLE's round function.
 - The 1999 SINA contract is a system-development milestone, not a verified first approval of LIBELLE.
 
-[Companion standards: Germany: general recommendations and protocol guidance](../../docs/companion-standards.md#germany)
+[Companion standards: Germany: ECC constructions, Brainpool and protocol guidance](../../docs/companion-standards.md#germany)

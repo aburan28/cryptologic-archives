@@ -1,6 +1,6 @@
 # Suite A: a public-source technical and historical record
 
-Research snapshot: 2026-10-17
+Research snapshot: 2026-10-20
 
 This first collection translates codeword names into technical roles and bounded inferences. It preserves a distinction between what a source states, what follows under stated assumptions, and what remains unknown. It is a research record rather than an official inventory or current deployment guide.
 

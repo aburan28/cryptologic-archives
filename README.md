@@ -1,6 +1,6 @@
 # Cryptologic Archives
 
-A historical research archive of public cryptologic records, original documents, and technical inferences from multiple countries. Collections cover NSA Suite A and Soviet/Russian, Chinese, German, Japanese and Korean cryptography.
+A historical research archive of public cryptologic records, original documents, and technical inferences from multiple countries. Collections cover NSA Suite A and Soviet/Russian, Chinese, German, Japanese, Korean, Swiss and Swedish records, with French cryptographic guidance.
 
 ## Start here
 
@@ -23,7 +23,11 @@ Original source files, including PDFs and publisher-supplied RFC text, are store
 
 The international collection includes GOST 28147-89, Magma, Kuznyechik, Streebog, GOST signatures, Fialka, SM2, SM3, SM4, ZUC, Enigma, Lorenz/Tunny, CHIASMUS, LIBELLE/SINA, Camellia, CLEFIA, SEED and ARIA. Regional labels describe design or historical context. Each profile identifies the operation and type of evidence rather than treating all national standards as equivalents of Suite A.
 
-The companion collection adds official 2010 SM2 and SM3 release PDFs, GOST modes and protocol bindings, ZUC test/evaluation records, historical and revised CRYPTREC lists, BSI protocol guidance, and Camellia/SEED/ARIA profiles. It distinguishes publication categories, revisions and effective dates. Three KISA validation pages were unavailable; the preserved GM/T 0009-2012 booklet scan is incomplete. These limits are explicit in the guide and catalogue.
+The companion collection includes official 2010 SM2 and SM3 releases, national-language GOST modes and corrections, Chinese application/message/certificate/token scans, cellular test/evaluation records, CRYPTREC lists, German ECC and protocol guidance, and French ANSSI selection and mechanism guides. It distinguishes publication categories, revisions and effective dates.
+
+The **2026-10-20 continuation adds 40 preserved source records**, bringing the archive to **139 records and 136 preserved files**. It adds seven profiles: MISTY1, KCipher-2, KASUMI, Brainpool, SNOW 3G, NEMA and Siemens T52/G-schreiber. The new 12-page GM/T 0009-2012 copy includes all body pages 1–7; the earlier three-page incomplete scan remains unchanged. The French rules and selection guides are separately dated 2026 and 2021. A GOST password-KDF counter-encoding discrepancy remains an explicit specification question.
+
+Three KISA validation pages still returned HTTP 503 after one retry each. Full texts of the 2023 Chinese revisions, the historical ANSSI v2.04 file and RGS key-management Annex B2 remain acquisition gaps. See the [guide’s coverage limits](docs/companion-standards.md#preservation-and-coverage-limits) and [acquisition-attempt record](data/acquisition-attempts.json).
 
 ## Reproduce and check
 

@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "research_as_of": "2026-10-20",
+  "attempts": [
+    {
+      "candidate": "tc26-modes-index",
+      "url": "https://tc26.ru/standarts/natsionalnye-standarty/gost-r-34-13-2015-informatsionnaya-tekhnologiya-kriptograficheskaya-zashchita-informatsii-rezhimy-raboty-blochnykh-shifrov.html",
+      "status": "failed",
+      "attempted_at_utc": "2026-10-20T15:36:50.768955+00:00",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "candidate": "tc26-translations",
+      "url": "https://tc26.ru/standarts/perevody/",
+      "status": "failed",
+      "attempted_at_utc": "2026-10-20T15:36:51.321665+00:00",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "candidate": "gmt0009-complete",
+      "url": "https://www.gmbz.org.cn/file/2018-01-10/e5346085-a04e-483a-8fb3-65b434993aa2.PDF",
+      "status": "failed",
+      "attempted_at_utc": "2026-10-20T15:36:52.214753+00:00",
+      "error": "HTTPError: HTTP Error 503: Service Unavailable"
+    },
+    {
+      "candidate": "anssi-b2",
+      "url": "https://cyber.gouv.fr/sites/default/files/2022-10/RGS_v-2-0_B2.pdf",
+      "status": "failed",
+      "attempted_at_utc": "2026-10-20T15:37:51.002538+00:00",
+      "error": "HTTPError: HTTP Error 404: Not Found"
+    },
+    {
+      "candidate": "anssi-b1",
+      "url": "https://cyber.gouv.fr/sites/default/files/2021/03/anssi-guide-mecanismes_crypto-2.04.pdf",
+      "status": "failed",
+      "attempted_at_utc": "2026-10-20T15:38:41.769699+00:00",
+      "error": "ValueError: Response does not contain a PDF header"
+    },
+    {
+      "candidate": "anssi-b2-original",
+      "url": "https://www.ssi.gouv.fr/uploads/2014/11/RGS_v-2-0_B2.pdf",
+      "status": "failed",
+      "attempted_at_utc": "2026-10-20T15:39:18.240386+00:00",
+      "error": "HTTPError: HTTP Error 404: Not Found"
+    },
+    {
+      "candidate": "anssi-rgs-index",
+      "url": "https://cyber.gouv.fr/reglementation/reglementation-identite-confiance-numerique/securite-echanges-voie-electronique/referentiel-general-de-securite/documents-referentiel-general-de-securite/",
+      "status": "rejected",
+      "attempted_at_utc": "2026-10-20T15:36:48.871925+00:00",
+      "error": "HTTP 200 contained a 212-byte Incapsula script/interstitial, not the RGS distribution page. No source copy registered."
+    },
+    {
+      "candidate": "anssi-b1-redirect",
+      "url": "https://cyber.gouv.fr/sites/default/files/2021/03/anssi-guide-mecanismes_crypto-2.04.pdf",
+      "status": "not_original_pdf",
+      "resolved_url": "https://messervices.cyber.gouv.fr/guides/mecanismes-cryptographiques",
+      "error": "Former v2.04 PDF address redirects to current HTML distribution page. New editions separately acquired as S128–S130; historical v2.04 PDF remains unpreserved.",
+      "attempted_at_utc": "2026-10-20T15:38:41.769699+00:00"
+    },
+    {
+      "source_id": "S084",
+      "url": "https://seed.kisa.or.kr/kisa/kcmvp/EgovVerification.do",
+      "status": "failed",
+      "attempted_at_utc": "2026-10-20T15:36:04.711250+00:00",
+      "error": "HTTPError: HTTP Error 503: Service Unavailable"
+    },
+    {
+      "source_id": "S085",
+      "url": "https://seed.kisa.or.kr/kisa/kcmvp/reference.do",
+      "status": "failed",
+      "attempted_at_utc": "2026-10-20T15:36:06.117019+00:00",
+      "error": "HTTPError: HTTP Error 503: Service Unavailable"
+    },
+    {
+      "source_id": "S099",
+      "url": "https://www.kisa.or.kr/1040209",
+      "status": "failed",
+      "attempted_at_utc": "2026-10-20T15:36:07.447820+00:00",
+      "error": "HTTPError: HTTP Error 503: Service Unavailable"
+    }
+  ],
+  "excluded_acquisitions": [
+    {
+      "candidate": "nema-technical",
+      "reason": "WS_nema.pdf is Walter Schmid’s later historical study, not an original government technical manual. Kept only in scratch; original NEMA instructions preserved as S136."
+    },
+    {
+      "candidate": "nema-index",
+      "reason": "Secondary museum overview used to locate the primary manual; no claims of original approval are based on the overview."
+    }
+  ]
+}

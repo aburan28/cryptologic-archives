@@ -4,6 +4,7 @@ import hashlib
 import json
 from pathlib import Path
 import re
+import xml.etree.ElementTree as ET
 from pypdf import PdfReader
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -13,6 +14,9 @@ sources = catalog['sources']
 ids = [s['id'] for s in sources]
 if len(ids) != len(set(ids)):
     errors.append('Duplicate source IDs')
+paths = [s['archive_path'] for s in sources]
+if len(paths) != len(set(paths)):
+    errors.append('Duplicate source archive paths')
 source_ids = set(ids)
 sources_by_id = {s['id']:s for s in sources}
 claims = []
@@ -34,6 +38,23 @@ for claim in claims:
             errors.append(f"Missing premise {dep} in {claim['id']}")
 international = json.loads((ROOT/'data/international.json').read_text())
 standards = json.loads((ROOT/'data/standards.json').read_text())
+for profile in international['profiles']:
+    canonical = {item['claim_id']:(kind,item) for kind,key in [('documented','facts'),('inference','inferences')]
+                 for item in profile[key]}
+    normalized = {c['id']:c for c in claims if c.get('collection') == 'international' and c.get('profile') == profile['slug']}
+    if canonical.keys() != normalized.keys() or any(
+        normalized[cid]['kind'] != kind or any(normalized[cid].get(k) != value for k,value in item.items())
+        for cid,(kind,item) in canonical.items()
+    ):
+        errors.append('Stale generated international claims: '+profile['slug'])
+continuation = standards.get('continuation',{})
+for sid in continuation.get('new_source_ids',[]):
+    source = sources_by_id.get(sid,{})
+    if not source or source.get('download',{}).get('status') != 'archived':
+        errors.append('Missing continuation acquisition: '+sid)
+    for field in ['publisher','provenance','document_date','version','extent','host']:
+        if field not in source:
+            errors.append(f'Missing continuation metadata {field}: {sid}')
 for family in standards['families']:
     for sid in family['source_ids']:
         if sid not in source_ids or 'standards' not in sources_by_id[sid].get('collections',[]):
@@ -56,11 +77,18 @@ for event in events:
     if event['source_id'] not in source_ids:
         errors.append('Invalid timeline source '+event['source_id'])
 archived = 0
+archived_hashes = {}
 for source in sources:
     info = source['download']
     if info['status'] != 'archived':
         continue
     archived += 1
+    for field in ['retrieved_at_utc','resolved_url','content_type','bytes','sha256']:
+        if not info.get(field):
+            errors.append(f'Missing acquisition field {field}: {source["id"]}')
+    if info.get('sha256') in archived_hashes:
+        errors.append(f'Duplicate acquired bytes: {source["id"]}, {archived_hashes[info["sha256"]]}')
+    archived_hashes[info.get('sha256')] = source['id']
     target = ROOT/source['archive_path']
     if not target.is_file():
         errors.append('Missing archived file '+source['id'])
@@ -81,6 +109,13 @@ for source in sources:
                 errors.append('PDF page-count mismatch '+source['id'])
         except Exception as error:
             errors.append(f"Unreadable PDF {source['id']}: {error}")
+    if source['format'] == 'xml':
+        try:
+            xml_root = ET.parse(target).getroot()
+            if source['id'] == 'S100' and xml_root.tag != '{https://www.rfc-editor.org/rfc-index}rfc-index':
+                errors.append('Incorrect publisher-index XML root: '+source['id'])
+        except ET.ParseError as error:
+            errors.append(f"Unreadable XML {source['id']}: {error}")
     rfc = re.match(r'RFC (\d+):',source['title'])
     if rfc:
         number = rfc.group(1)
@@ -94,6 +129,22 @@ for source in sources:
             header = ''
         if not re.search(r'(?:Request for Comments:|RFC:|RFC)\s*'+number+r'\b',header):
             errors.append('RFC identity missing from acquired header: '+source['id'])
+        if source.get('metadata_source_id') == 'S100':
+            ns = {'r':'https://www.rfc-editor.org/rfc-index'}
+            index = ET.parse(ROOT/sources_by_id['S100']['archive_path']).getroot()
+            entry = next((e for e in index.findall('r:rfc-entry',ns)
+                          if e.findtext('r:doc-id',namespaces=ns) == 'RFC'+number),None)
+            if entry is None:
+                errors.append('RFC absent from preserved index: '+source['id'])
+            else:
+                stream = entry.findtext('r:stream',namespaces=ns)
+                expected_stream = {'INDEPENDENT':'Independent Submission',
+                    'Legacy':'Legacy (publisher index; original header predates stream labels)'}.get(stream,stream)
+                if source['publication_stream'] != expected_stream:
+                    errors.append('RFC stream differs from preserved index: '+source['id'])
+                for field,tag in [('publication_status','publication-status'),('current_status_at_retrieval','current-status')]:
+                    if source[field] != entry.findtext('r:'+tag,namespaces=ns):
+                        errors.append('RFC status differs from preserved index: '+source['id'])
 for markdown in ROOT.rglob('*.md'):
     for link in re.findall(r'\]\(([^)]+)\)', markdown.read_text()):
         if '://' in link or link.startswith('#'):

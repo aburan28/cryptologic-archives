@@ -20,9 +20,15 @@ Preserve source bytes unchanged. Record publisher, host, original and resolved U
 
 Original RFC text is retained where it is the publisher's source format. A digitized scan, edited transcription, English translation and original national-language standard are recorded as distinct kinds of evidence. Filenames and hosting-page dates do not establish a translation's edition or authorization. Missing pages and known discrepancies remain explicit.
 
+A mirror may have added advertising links, watermarks or OCR before acquisition. Preserve those acquired bytes while identifying the host's additions; do not call such a copy an authenticated publisher original. A pinned Git revision identifies the mirror snapshot, not the issuing authority's approval. Assess completeness against contents and page sequences, and state the extent of inspection rather than treating a valid PDF header as proof of a complete document.
+
+Retain earlier failed acquisition records when retrying. An HTTP 200 interstitial or a former PDF URL redirected to a current HTML page is not the requested historical document. Alternative editions are catalogued separately. The acquisition-attempt log records unresolved URLs and rejected responses without treating them as source evidence.
+
 Successful retrieval does not mean a document is complete. The three-page GM/T 0009 booklet scan is an incomplete source, even though its acquired bytes are fully preserved. A revision announcement establishes the revisions and dates it actually lists; it does not supply the complete revised standard. Mutable publisher URLs identify a location, while the recorded hash and retrieval time identify the acquired edition.
 
 Record an RFC's publication category and stream separately: IETF Informational, IRTF Informational and Informational Independent Submissions have different provenance. These labels describe publication status at issue. They do not establish national approval, implementation certification or current deployment suitability. Check explicit version references: a later standards wrapper can incorporate an earlier algorithm edition.
+
+For older RFCs whose headers predate explicit stream labels, cite the preserved publisher index rather than infer a stream from “Network Working Group.” Record the original category, index publication status and index current status separately. An index snapshot is a dated metadata observation, not a complete errata or deployment-approval audit. Contradictory encoding definitions remain explicit specification questions until independent evidence resolves them.
 
 ## International context
 

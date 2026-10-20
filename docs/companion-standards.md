@@ -1,6 +1,6 @@
 # Companion standards: from primitives to implementations
 
-Research snapshot: 2026-10-17
+Research snapshot: 2026-10-20
 
 This collection links the archive’s algorithm profiles to the surrounding specifications: modes, parameters, key formats, protocol profiles, selection lists and validation records. It preserves particular editions and their dates rather than claiming to hold every standard or the latest version of every document.
 
@@ -8,7 +8,9 @@ An algorithm release, a national-standard issue, an effective date, an RFC publi
 
 The original files remain unchanged. Documented statements have source locators; deductions identify their premises and assumptions. Acquisition failures and incomplete copies are listed alongside successful preservation.
 
-This guide maps **7 families**, **36 claims** and **27 dated milestones** to 52 source records. 49 copies are preserved, including 40 newly added documents and snapshots. Three KISA pages remain acquisition gaps.
+The 2026-10-20 continuation adds Russian national-language modes and correction records, complete-body Chinese companion scans, Japanese and Korean protocol records, German ECC/Brainpool material, French ANSSI guides, international mobile specifications, and Swiss/Swedish historical records. The original 2010 SM2/SM3 releases remain the earlier preserved editions.
+
+This guide maps **10 families**, **77 claims** and **40 dated milestones** to 92 source records. 89 copies are preserved, including 40 additions since the 2026-10-17 baseline. Three KISA pages remain acquisition gaps after a 2026-10-20 retry.
 
 [PDF edition](../reports/companion-standards.pdf) · [Source catalogue](../sources/README.md) · [Structured research](../data/standards.json) · [Normalized claims](../data/standards-claims.json)
 
@@ -29,13 +31,16 @@ A recommendation list can name a primitive and a mode while leaving the protocol
 
 | Family | Companion records | What the records resolve |
 |---|---|---|
-| [Common modes, formats and Suite A interfaces](#interfaces) | [S001](../sources/README.md#s001), [S003](../sources/README.md#s003), [S004](../sources/README.md#s004), [S064](../sources/README.md#s064), [S065](../sources/README.md#s065), [S066](../sources/README.md#s066), [S067](../sources/README.md#s067), [S068](../sources/README.md#s068), [S069](../sources/README.md#s069) | Read the primitive or mechanism interface, then the mode definition, then the protocol that uses it. The PKCS #11 Base and Historical Mechanisms copies deliberately share the v3.0 publication date. |
-| [Russia: GOST parameters, modes and protocol bindings](#gost) | [S050](../sources/README.md#s050), [S057](../sources/README.md#s057), [S058](../sources/README.md#s058), [S059](../sources/README.md#s059), [S060](../sources/README.md#s060), [S061](../sources/README.md#s061), [S062](../sources/README.md#s062), [S063](../sources/README.md#s063), [S064](../sources/README.md#s064), [S065](../sources/README.md#s065) | Start with the existing primitive profiles. Use RFC 4357 for older GOST companion choices; RFC 7836 for newer auxiliary algorithms and curves; RFC 9058 for MGM; then choose the certificate, TLS or IPsec binding. |
-| [China: original releases, parameters and successive standards](#shangmi) | [S026](../sources/README.md#s026), [S034](../sources/README.md#s034), [S035](../sources/README.md#s035), [S036](../sources/README.md#s036), [S070](../sources/README.md#s070), [S071](../sources/README.md#s071), [S072](../sources/README.md#s072), [S073](../sources/README.md#s073), [S074](../sources/README.md#s074), [S096](../sources/README.md#s096), [S097](../sources/README.md#s097), [S098](../sources/README.md#s098) | Pair the dated 2010 announcements with their official attachments. Read the one-page SM2 curve parameters separately from the general algorithm. Follow the 2012 industry standards, later GB/T records, revised application standards, and the TLS 1.3 profile. |
+| [Common modes, formats and Suite A interfaces](#interfaces) | [S001](../sources/README.md#s001), [S003](../sources/README.md#s003), [S004](../sources/README.md#s004), [S064](../sources/README.md#s064), [S065](../sources/README.md#s065), [S066](../sources/README.md#s066), [S067](../sources/README.md#s067), [S068](../sources/README.md#s068), [S069](../sources/README.md#s069), [S100](../sources/README.md#s100), [S126](../sources/README.md#s126), [S127](../sources/README.md#s127) | Read the primitive or mechanism interface, then the mode definition, then the protocol that uses it. The PKCS #11 Base and Historical Mechanisms copies deliberately share the v3.0 publication date. |
+| [Russia: GOST parameters, modes and protocol bindings](#gost) | [S050](../sources/README.md#s050), [S057](../sources/README.md#s057), [S058](../sources/README.md#s058), [S059](../sources/README.md#s059), [S060](../sources/README.md#s060), [S061](../sources/README.md#s061), [S062](../sources/README.md#s062), [S063](../sources/README.md#s063), [S064](../sources/README.md#s064), [S065](../sources/README.md#s065), [S101](../sources/README.md#s101), [S102](../sources/README.md#s102), [S103](../sources/README.md#s103), [S104](../sources/README.md#s104), [S105](../sources/README.md#s105), [S106](../sources/README.md#s106), [S107](../sources/README.md#s107), [S108](../sources/README.md#s108) | Start with the Russian modes text, official registration record, separate 2018 correction and per-key data-volume recommendation. Then choose the algorithm generation, parameter/KDF documents, certificate or PFX encoding, and the required TLS/IPsec/CMS profile. RFC 9337’s integer-counter notation is an explicit unresolved compatibility question. |
+| [China: original releases, parameters and successive standards](#shangmi) | [S026](../sources/README.md#s026), [S034](../sources/README.md#s034), [S035](../sources/README.md#s035), [S036](../sources/README.md#s036), [S070](../sources/README.md#s070), [S071](../sources/README.md#s071), [S072](../sources/README.md#s072), [S073](../sources/README.md#s073), [S074](../sources/README.md#s074), [S096](../sources/README.md#s096), [S097](../sources/README.md#s097), [S098](../sources/README.md#s098), [S109](../sources/README.md#s109), [S110](../sources/README.md#s110), [S111](../sources/README.md#s111), [S112](../sources/README.md#s112), [S113](../sources/README.md#s113), [S114](../sources/README.md#s114) | Read the original 2010 release and curve sheet, then the acquired 2012 application/message/certificate/token standards and historical 2014 SSL VPN specification. S109 fills the missing GM/T 0009 body pages. Compare each with its exact later revision and the separate RFC 8998 TLS 1.3 profile. |
 | [China and 3GPP: ZUC, EEA3 and EIA3](#zuc) | [S037](../sources/README.md#s037), [S075](../sources/README.md#s075), [S076](../sources/README.md#s076), [S092](../sources/README.md#s092), [S093](../sources/README.md#s093) | Read ZUC Document 2 for the keystream generator, Document 1 for the EEA3/EIA3 packet algorithms, Document 3 for implementer test data and Document 4 for design/evaluation history. The Release 19 ETSI wrapper records the later standards context. |
-| [Japan: CRYPTREC selections and Camellia protocol profiles](#japan) | [S077](../sources/README.md#s077), [S078](../sources/README.md#s078), [S079](../sources/README.md#s079), [S080](../sources/README.md#s080), [S086](../sources/README.md#s086), [S087](../sources/README.md#s087), [S094](../sources/README.md#s094) | Compare the historical 2003 list (with its 2005 correction), the original 2013 list, and the preserved March 2026 revision. Use the strength-requirements document to interpret key-length and lifetime choices. Camellia TLS and IPsec bindings are separate protocol records. |
-| [Republic of Korea: SEED and ARIA protocol profiles](#korea) | [S084](../sources/README.md#s084), [S085](../sources/README.md#s085), [S088](../sources/README.md#s088), [S089](../sources/README.md#s089), [S090](../sources/README.md#s090), [S091](../sources/README.md#s091), [S099](../sources/README.md#s099) | Use the existing SEED and ARIA primitive specifications, then the TLS and IPsec/SRTP bindings as relevant. The KCMVP programme pages are acquisition leads only until their original bytes can be preserved. |
-| [Germany: general recommendations and protocol guidance](#germany) | [S081](../sources/README.md#s081), [S082](../sources/README.md#s082), [S083](../sources/README.md#s083), [S095](../sources/README.md#s095) | TR-02102-1 gives general cryptographic mechanism and key-length recommendations; Parts 2, 3 and 4 specialize guidance for TLS, IPsec/IKEv2 and SSH. Read these separately from the existing historical product and approval records. |
+| [Japan: selection lists, additional primitives and Camellia profiles](#japan) | [S077](../sources/README.md#s077), [S078](../sources/README.md#s078), [S079](../sources/README.md#s079), [S080](../sources/README.md#s080), [S086](../sources/README.md#s086), [S087](../sources/README.md#s087), [S094](../sources/README.md#s094), [S115](../sources/README.md#s115), [S116](../sources/README.md#s116), [S117](../sources/README.md#s117), [S118](../sources/README.md#s118), [S119](../sources/README.md#s119), [S120](../sources/README.md#s120), [S139](../sources/README.md#s139) | Compare dated CRYPTREC selections with the primitive specification. Camellia’s mode/test-vector, IPsec and TLS documents have different RFC categories. MISTY1, KCipher-2 and KASUMI are separately specified primitives; a later RFC or standards wrapper does not date their invention. |
+| [Republic of Korea: SEED and ARIA protocol profiles](#korea) | [S084](../sources/README.md#s084), [S085](../sources/README.md#s085), [S088](../sources/README.md#s088), [S089](../sources/README.md#s089), [S090](../sources/README.md#s090), [S091](../sources/README.md#s091), [S099](../sources/README.md#s099), [S121](../sources/README.md#s121), [S122](../sources/README.md#s122) | Use the existing SEED and ARIA primitive specifications, then the TLS and IPsec/SRTP bindings as relevant. The KCMVP programme pages are acquisition leads only until their original bytes can be preserved. |
+| [Germany: ECC constructions, Brainpool and protocol guidance](#germany) | [S081](../sources/README.md#s081), [S082](../sources/README.md#s082), [S083](../sources/README.md#s083), [S095](../sources/README.md#s095), [S123](../sources/README.md#s123), [S124](../sources/README.md#s124), [S125](../sources/README.md#s125) | Read TR-03111 for concrete signature/key-agreement operations and encodings, RFC 5639 for Brainpool parameters and RFC 8734 for its TLS 1.3 binding. TR-02102 supplies the separately dated recommendation and protocol context. |
+| [France: ANSSI selection and mechanism rules](#france) | [S128](../sources/README.md#s128), [S129](../sources/README.md#s129), [S130](../sources/README.md#s130), [S123](../sources/README.md#s123), [S126](../sources/README.md#s126), [S127](../sources/README.md#s127) | Read the distribution-page snapshot, then the exact cover and history of each guide. The rules PDF is version 3.00 of March 2026; the selection guide is version 1.0 of March 2021. Use cited specifications for the actual algorithm and encoding. |
+| [International mobile standards: SNOW 3G, UEA2 and UIA2](#mobile-snow) | [S131](../sources/README.md#s131), [S132](../sources/README.md#s132), [S133](../sources/README.md#s133), [S134](../sources/README.md#s134), [S135](../sources/README.md#s135) | Read Document 2 for the generator, Document 1 for packet confidentiality/integrity, Document 3 for tests and Document 5 for design history. The GSMA distribution index records the provenance of these copies. |
+| [Swiss and Swedish historical machine records](#historical-archives) | [S136](../sources/README.md#s136), [S137](../sources/README.md#s137), [S138](../sources/README.md#s138) | Start with the original bilingual NEMA instructions and their cover stamp. For Siemens T52, separate FRA’s retrospective institutional history from Borelius’s explicitly hypothetical reconstruction of Beurling’s working method. |
 
 <a id="interfaces"></a>
 
@@ -53,6 +58,8 @@ Read the primitive or mechanism interface, then the mode definition, then the pr
 - **STD-COM-F2** — CMAC supplies message authentication, CCM combines counter-mode encryption with CBC-MAC, and SP 800-38F specifies methods for cryptographic key wrapping. These documents address distinct operations. ([S067](../sources/README.md#s067), Abstract; Section 6; [S068](../sources/README.md#s068), Abstract; Section 6; [S069](../sources/README.md#s069), Abstract; Sections 1 and 4)
 - **STD-COM-F3** — The preserved PKCS #11 Base and Historical Mechanisms specifications are both OASIS v3.0 standards dated 2020-06-15. The base API and historical mechanism descriptions are separate companion documents. ([S066](../sources/README.md#s066), Cover; Sections 1 and 2; [S001](../sources/README.md#s001), Cover; Scope)
 - **STD-COM-F4** — RFC 5280 profiles X.509 certificates and certificate revocation lists; RFC 8446 specifies TLS 1.3. Their publication category is Standards Track, which is distinct from the Informational categories of several national-algorithm profiles. ([S064](../sources/README.md#s064), Header; Abstract; Sections 4 and 5; [S065](../sources/README.md#s065), Header; Abstract)
+- **STD-COM-F5** — HKDF separates extraction of a pseudorandom key from expansion of output keying material. PKCS #5 v2.1 separately specifies PBKDF2, PBES2 and PBMAC1 for password-based derivation, encryption and authentication. ([S126](../sources/README.md#s126), Sections 2.1–2.3; Appendix A; [S127](../sources/README.md#s127), Sections 5.2, 6.2 and 7.1)
+- **STD-COM-F6** — The preserved RFC index supplies stream, publication-status and current-status fields. For example it labels RFC 2994 Legacy, RFC 5528 IETF and Informational, and RFC 5529 IETF and Proposed Standard. The category printed in each RFC and the index’s more specific status remain distinct fields. ([S100](../sources/README.md#s100), rfc-entry elements RFC2994, RFC5528 and RFC5529: stream, publication-status, current-status; [S115](../sources/README.md#s115), Header and Status of This Memo; [S116](../sources/README.md#s116), Header and Status of This Memo)
 
 ### Inference
 
@@ -65,9 +72,9 @@ Read the primitive or mechanism interface, then the mode definition, then the pr
 
 Existing profiles: [GOST 28147-89](../profiles/international/gost-28147.md), [Magma](../profiles/international/magma.md), [Kuznyechik](../profiles/international/kuznyechik.md), [Streebog](../profiles/international/streebog.md), [GOST signatures](../profiles/international/gost-signatures.md).
 
-Start with the existing primitive profiles. Use RFC 4357 for older GOST companion choices; RFC 7836 for newer auxiliary algorithms and curves; RFC 9058 for MGM; then choose the certificate, TLS or IPsec binding.
+Start with the Russian modes text, official registration record, separate 2018 correction and per-key data-volume recommendation. Then choose the algorithm generation, parameter/KDF documents, certificate or PFX encoding, and the required TLS/IPsec/CMS profile. RFC 9337’s integer-counter notation is an explicit unresolved compatibility question.
 
-**Scope limit:** The preserved GOST binding RFCs are Informational Independent Submissions. RFC 8645 is an IRTF Informational document. These distinct streams do not imply IETF standards-track endorsement or establish the original Russian approval dates.
+**Scope limit:** The preserved GOST binding RFCs are Informational Independent Submissions. RFC 8645 is an IRTF Informational document. These distinct streams do not imply IETF standards-track endorsement or establish the original Russian approval dates. The Russian printing and separate erratum are reproduced by a mirror with advertising-link text; they are not authenticated publisher downloads. RFC publication category varies across generations.
 
 ### Documented statements
 
@@ -76,11 +83,22 @@ Start with the existing primitive profiles. Use RFC 4357 for older GOST companio
 - **STD-GOST-F3** — RFC 9227 binds Magma and Kuznyechik in MGM, with external rekeying, to ESP and IKEv2. RFC 9189 profiles GOST for TLS 1.2; RFC 9367 separately defines cipher suites, signature schemes and key exchange for TLS 1.3. ([S060](../sources/README.md#s060), Abstract; Section 1; [S062](../sources/README.md#s062), Abstract; [S063](../sources/README.md#s063), Abstract; Sections 4–6)
 - **STD-GOST-F4** — RFC 9215 specifies GOST signature/hash identifiers, parameters and encodings for the Internet X.509 PKI, including public-key encoding and signature representation. ([S061](../sources/README.md#s061), Abstract; Sections 2–4)
 - **STD-GOST-F5** — RFCs 7836, 9058, 9189, 9215, 9227 and 9367 are Informational Independent Submissions. RFC 8645 is Informational in the IRTF stream and describes symmetric rekeying mechanisms. ([S057](../sources/README.md#s057), Header; Status of This Memo; [S058](../sources/README.md#s058), Header; Abstract; Status of This Memo; [S059](../sources/README.md#s059), Header; [S060](../sources/README.md#s060), Header; [S061](../sources/README.md#s061), Header; [S062](../sources/README.md#s062), Header; [S063](../sources/README.md#s063), Header)
+- **STD-GOST-F6** — GOST R 34.13-2015 cites approval order 750-st of 2015-06-19 and an effective date of 2016-01-01. The acquired Russian printing has a 2016 cover and an imprint signed for printing on 2016-03-28; these are separate milestones. ([S101](../sources/README.md#s101), Foreword, PDF p.2; printed p.1 / PDF p.6; imprint, PDF p.29; [S103](../sources/README.md#s103), Registration in the fund: order number, order date and effective date)
+- **STD-GOST-F7** — The Russian modes standard defines ECB, CTR, OFB, CBC, CFB and MAC procedures and supplies examples for 128-bit and 64-bit block ciphers. Its Magma CBC example uses a 192-bit initialization register for a 64-bit block cipher. ([S101](../sources/README.md#s101), Sections 5.1–5.6; Appendix A; A.2.4.1, printed p.21 / PDF p.26)
+- **STD-GOST-F8** — The separately preserved IUS No.6/2018 correction changes Section 5.3.2, rule (7), of GOST R 34.13-2015. It is retained as a correction document, without altering the earlier printing’s acquired bytes. ([S102](../sources/README.md#s102), Entire one-page correction, location column and corrected formula; [S103](../sources/README.md#s103), Changes and corrections: IUS 6-2018)
+- **STD-GOST-F9** — R 1323565.1.005-2017 addresses permissible plaintext-block volumes processed under one key for certain GOST modes. It cites approval on 2017-10-25 and states effective 2018-04-01. Its scope assumes the adversary cannot obtain additional information about the key. ([S104](../sources/README.md#s104), Foreword, PDF p.2; Introduction, PDF p.4; Section 1, printed p.1 / PDF p.5)
+- **STD-GOST-F10** — RFCs 4490 and 4491 were issued as Standards Track in May 2006 and bind the older GOST signature/hash family to CMS and X.509 respectively. RFC 9215 is a separate 2022 profile for the 2012 signature/hash algorithms; the editions are not interchangeable. ([S105](../sources/README.md#s105), Header; Sections 1–2; [S106](../sources/README.md#s106), Header; Section 1; [S061](../sources/README.md#s061), Header; Sections 1–2; [S100](../sources/README.md#s100), RFC4490, RFC4491 and RFC9215 entries)
+- **STD-GOST-F11** — RFC 9337 specifies password-based derivation with HMAC using the 512-bit GOST R 34.11-2012 hash output, plus PBES2, PBMAC1 and ASN.1 identifiers. RFC 9548 separately profiles PKCS #12 PFX containers, private-key representations and certificates for GOST R 34.10-2012. Both are Informational Independent Submissions. ([S107](../sources/README.md#s107), Header; Sections 3–7; Appendix A; [S108](../sources/README.md#s108), Header; Sections 4–7 and 10; Appendix A)
+- **STD-GOST-F12** — There is a visible counter-encoding discrepancy between the preserved texts: RFC 8018 Section 5.2 defines INT(i) as four octets with the most significant octet first, while RFC 9337 Section 3 defines Int(i) using i=i1+2^8*i2+2^16*i3+2^24*i4 and Section 4 uses S || INT(i). This is recorded as a specification question, not a verified implementation failure or a completed errata audit. ([S127](../sources/README.md#s127), Section 5.2, step 3 definition of INT(i); [S107](../sources/README.md#s107), Section 3, Table 1 Int(i); Section 4, U_1(i) equation)
 
 ### Inference
 
 - **STD-GOST-I1 · conditional** — An implementation described only as supporting GOST is underspecified: interoperation also requires agreement on the primitive generation, curve or parameter set, mode, rekeying rules, encoding and protocol profile. Basis: STD-GOST-F1, STD-GOST-F2, STD-GOST-F3, STD-GOST-F4.
   Assumption: The parties exchange keys, signatures or protected messages using the cited protocol families.
+- **STD-GOST-I2 · conditional** — An IV length alone cannot identify the cipher’s block size: the preserved GOST example explicitly uses an initialization register longer than one block. Basis: STD-GOST-F7.
+  Assumption: The interface implements the cited GOST mode and its generalized register construction.
+- **STD-GOST-I3 · conditional** — Literal implementations of the two counter definitions require an explicit compatibility decision before assuming identical PBKDF2 outputs. No claim is made here about deployed implementations or the resolution of any erratum. Basis: STD-GOST-F12.
+  Assumption: The Int/INT notation in RFC 9337 denotes its tabulated integer encoding; no external correction or implementation-specific convention overrides it.
 
 <a id="shangmi"></a>
 
@@ -88,9 +106,9 @@ Start with the existing primitive profiles. Use RFC 4357 for older GOST companio
 
 Existing profiles: [SM2](../profiles/international/sm2.md), [SM3](../profiles/international/sm3.md), [SM4](../profiles/international/sm4.md).
 
-Pair the dated 2010 announcements with their official attachments. Read the one-page SM2 curve parameters separately from the general algorithm. Follow the 2012 industry standards, later GB/T records, revised application standards, and the TLS 1.3 profile.
+Read the original 2010 release and curve sheet, then the acquired 2012 application/message/certificate/token standards and historical 2014 SSL VPN specification. S109 fills the missing GM/T 0009 body pages. Compare each with its exact later revision and the separate RFC 8998 TLS 1.3 profile.
 
-**Scope limit:** The 2010 release texts, later industry/national standards and hosted English translations are different editions. The archive has official revision announcements, but not complete copies of every announced 2023 standard. S074 is an incomplete booklet scan.
+**Scope limit:** The new Chinese scans are third-party mirror copies, not authenticated publisher downloads. S109 supplies the full 2012 application body, while S074 remains incomplete. The 2023 revision announcement still does not supply full revised texts. The 2012/2014 companion editions and the RFC’s TLS profile remain separate.
 
 ### Documented statements
 
@@ -102,11 +120,20 @@ Pair the dated 2010 announcements with their official attachments. Read the one-
 - **STD-SM-F6** — Announcement No.45, posted 2023-12-23, lists 2023 revisions of GM/T 0009, 0010, 0014 and 0015 among other standards and states an effective date of 2024-06-01. The web posting date is recorded separately from each standard’s issue date. ([S073](../sources/README.md#s073), Posting date; announcement; attached standards list)
 - **STD-SM-F7** — The official GB/T records for SM2 Part 1 and SM4 record issue on 2016-08-29 and implementation on 2017-03-01. These are later national-standard milestones, separate from the 2010 SM2 release and 2012 industry-standard announcements. ([S035](../sources/README.md#s035), Issue and implementation metadata; [S036](../sources/README.md#s036), Issue and implementation metadata; [S070](../sources/README.md#s070), Release date; [S034](../sources/README.md#s034), Announcement No.23 and standards list)
 - **STD-SM-F8** — RFC 8998 profiles SM2, SM3 and SM4 for TLS 1.3, including SM4-GCM and SM4-CCM cipher suites. It is an Informational Independent Submission, while the underlying TLS 1.3 specification RFC 8446 is Standards Track. ([S026](../sources/README.md#s026), Header; Sections 2 and 3; [S065](../sources/README.md#s065), Header)
+- **STD-SM-F9** — A second GM/T 0009-2012 acquisition contains 12 PDF pages, including all printed body pages 1–7. Its cover prints issue and implementation on 2012-11-22; its final imprint says first edition and printing in January 2013. The older S074 remains a separately preserved incomplete scan. ([S109](../sources/README.md#s109), Cover; contents; printed body pp.1–7 / PDF pp.5–11; imprint / PDF p.12)
+- **STD-SM-F10** — GM/T 0009-2012 specifies private/public-key and encryption/signature data formats. Its public-key BIT STRING contains 04 || X || Y, with 256-bit coordinates. Its encryption structure lists XCoordinate, YCoordinate, a 32-byte hash and ciphertext; its signature representation contains integer R and S fields. ([S109](../sources/README.md#s109), Sections 5.1–5.2 and 7.1–7.3, printed pp.1–3 / PDF pp.5–7)
+- **STD-SM-F11** — The application standard defines identity preprocessing and, absent a special agreement, the 16-byte user identity represented by the ASCII string 1234567812345678. RFC 8998 instead specifies a TLS-specific SM2 signature identity for its handshake context and separately discusses certificate identities. ([S109](../sources/README.md#s109), Section 8, printed p.4 / PDF p.8; Section 10, printed p.7 / PDF p.11; [S026](../sources/README.md#s026), Section 3.2.1, SM2 signature scheme identity values)
+- **STD-SM-F12** — GM/T 0010-2012 defines object identifiers and signed, enveloped, signed-and-enveloped, encrypted and key-agreement message structures, with SM2 key syntax in normative Appendix A. These are message encodings around the primitive. ([S110](../sources/README.md#s110), Section 5; Sections 8–12; normative Appendix A, printed p.9 / PDF p.12)
+- **STD-SM-F13** — GM/T 0014-2012 specifies certificate-system protocols and associated message formats; Section 5 refers SM2 key structures to GM/T 0009 and encapsulation to GM/T 0010. GM/T 0015-2012 separately specifies DER-based certificate and CRL structures and encoding examples. ([S111](../sources/README.md#s111), Section 5, printed p.2 / PDF p.7; Section 6; Appendices A–B; [S112](../sources/README.md#s112), Sections 5.2 and 6; Appendices A–D)
+- **STD-SM-F14** — GM/T 0017-2012 is a smart-token interface data-format specification whose Sections 7–9 cover command/response APDUs, instruction/status-byte encoding and commands. The scan’s cover prints the 2012 edition and 2012-11-22 issue/effective dates. ([S113](../sources/README.md#s113), Cover, PDF p.1; contents, PDF pp.2–5; Sections 7–9)
+- **STD-SM-F15** — The acquired GM/T 0024-2014 is an SSL VPN specification with issue and effective dates 2014-02-13 on its cover. It is a historical Chinese VPN specification, separate from the 2021 RFC 8998 TLS 1.3 profile. ([S114](../sources/README.md#s114), Cover, PDF p.1; contents and Scope; [S026](../sources/README.md#s026), Header; Abstract; Section 1)
 
 ### Inference
 
 - **STD-SM-I1 · conditional** — The curve sheet and SM3 text allow concrete descriptions of arithmetic, parameters and hashing without inferring those choices from a codeword. The published record does not, by itself, identify the original classified design date or every government use. Basis: STD-SM-F1, STD-SM-F2, STD-SM-F3, STD-SM-F4.
   Assumption: The question concerns the preserved public specifications and their dated releases, rather than an undocumented earlier variant.
+- **STD-SM-I2 · conditional** — Interoperation requires agreement on identity preprocessing, point/ciphertext/signature representation and the protocol binding. The label SM2 support alone leaves choices visible in these companion documents unresolved. Basis: STD-SM-F10, STD-SM-F11, STD-SM-F12, STD-SM-F13.
+  Assumption: The implementations exchange the specified SM2 objects or signatures, rather than merely using elliptic-curve arithmetic internally.
 
 <a id="zuc"></a>
 
@@ -132,11 +159,11 @@ Read ZUC Document 2 for the keystream generator, Document 1 for the EEA3/EIA3 pa
 
 <a id="japan"></a>
 
-## Japan: CRYPTREC selections and Camellia protocol profiles
+## Japan: selection lists, additional primitives and Camellia profiles
 
-Existing profiles: [Camellia](../profiles/international/camellia.md), [CLEFIA](../profiles/international/clefia.md).
+Existing profiles: [Camellia](../profiles/international/camellia.md), [CLEFIA](../profiles/international/clefia.md), [MISTY1](../profiles/international/misty1.md), [KCipher-2](../profiles/international/kcipher2.md), [KASUMI](../profiles/international/kasumi.md).
 
-Compare the historical 2003 list (with its 2005 correction), the original 2013 list, and the preserved March 2026 revision. Use the strength-requirements document to interpret key-length and lifetime choices. Camellia TLS and IPsec bindings are separate protocol records.
+Compare dated CRYPTREC selections with the primitive specification. Camellia’s mode/test-vector, IPsec and TLS documents have different RFC categories. MISTY1, KCipher-2 and KASUMI are separately specified primitives; a later RFC or standards wrapper does not date their invention.
 
 **Scope limit:** CRYPTREC list membership and category are dated policy evidence. They do not establish first invention, implementation certification or universal government approval.
 
@@ -146,6 +173,9 @@ Compare the historical 2003 list (with its 2005 correction), the original 2013 l
 - **STD-JP-F2** — The March 2026 list places Camellia among e-Government Recommended Ciphers and CLEFIA among Candidate Recommended Ciphers. A separate Monitored Ciphers category also exists. ([S078](../sources/README.md#s078), e-Government Recommended, Candidate Recommended and Monitored tables; PDF pages 1, 4 and 5)
 - **STD-JP-F3** — The strength-requirements PDF’s revision table records first publication on 2022-07-01 and corrections on 2023-03-30. Its cover still states March 2022; the archive retains that internal date discrepancy. ([S080](../sources/README.md#s080), Cover; revision table in introductory pages)
 - **STD-JP-F4** — RFC 5932 specifies Camellia cipher suites for TLS (June 2010), and RFC 4312 specifies Camellia for IPsec (December 2005). Both were published with the Standards Track category. ([S086](../sources/README.md#s086), Header; Abstract; [S087](../sources/README.md#s087), Header; Abstract)
+- **STD-JP-F5** — RFC 5528 gives Camellia CTR/CCM algorithms and test vectors; RFC 5529 binds CBC/CTR/CCM to IPsec. Both date to April 2009, but the first is IETF Informational and the second Standards Track. RFC 6367 adds Camellia TLS cipher suites in September 2011 as IETF Informational. ([S115](../sources/README.md#s115), Header; Sections 3–4; [S116](../sources/README.md#s116), Header; Sections 1 and 3–6; [S117](../sources/README.md#s117), Header; Abstract; Sections 2–3; [S100](../sources/README.md#s100), RFC5528, RFC5529 and RFC6367 stream/status entries)
+- **STD-JP-F6** — The new primitive records include MISTY1 (RFC 2994, November 2000), KCipher-2 (RFC 7008, August 2013) and an April 2022 Release 17 KASUMI specification. These are concrete preserved editions, not common first-approval dates. ([S118](../sources/README.md#s118), Header; Sections 1–2; [S119](../sources/README.md#s119), Header; Abstract; Section 2; [S120](../sources/README.md#s120), Cover; Sections 0 and 3)
+- **STD-JP-F7** — The December 2002 3GPP TR 55.919 design/evaluation report explicitly describes KASUMI’s changes from MISTY1 in the data-encryption part and key schedule. Its cover marks the preserved copy as not approved by the Organizational Partners and not for implementation; its design history is not an approval record. ([S139](../sources/README.md#s139), Cover; Sections 9.2–9.3, printed/PDF pp.14–15)
 
 ### Inference
 
@@ -166,6 +196,8 @@ Use the existing SEED and ARIA primitive specifications, then the TLS and IPsec/
 
 - **STD-KR-F1** — RFCs 4162 and 4196 bind SEED to TLS and IPsec, with publication dates August and October 2005. Their preserved headers give the Standards Track category. ([S088](../sources/README.md#s088), Header; Abstract; [S089](../sources/README.md#s089), Header; Abstract)
 - **STD-KR-F2** — RFC 6209 defines ARIA cipher suites for TLS (April 2011). RFC 8269 defines ARIA for SRTP (October 2017), including CTR/GCM, key derivation, DTLS-SRTP profiles and MIKEY parameters. Both are IETF Informational documents. ([S090](../sources/README.md#s090), Header; Abstract; Status of This Memo; [S091](../sources/README.md#s091), Header; Abstract; Status of This Memo)
+- **STD-KR-F3** — RFC 4010, issued Standards Track in February 2005, specifies SEED in CMS and supplies identifiers for its use. It is an encoding/protocol companion rather than a module-validation certificate. ([S122](../sources/README.md#s122), Header; Abstract; Sections 2–3; [S100](../sources/README.md#s100), RFC4010 stream/status entry)
+- **STD-KR-F4** — RFC 5669, issued IETF Standards Track in August 2010, specifies SEED for SRTP/SRTCP, including CTR, CCM and GCM, nonce formats, SEED-CTR key derivation and test vectors. ([S121](../sources/README.md#s121), Header; Sections 2–4; Appendix A)
 
 ### Inference
 
@@ -174,11 +206,11 @@ Use the existing SEED and ARIA primitive specifications, then the TLS and IPsec/
 
 <a id="germany"></a>
 
-## Germany: general recommendations and protocol guidance
+## Germany: ECC constructions, Brainpool and protocol guidance
 
-Existing profiles: [CHIASMUS](../profiles/international/chiasmus.md), [LIBELLE / SINA](../profiles/international/libelle.md).
+Existing profiles: [CHIASMUS](../profiles/international/chiasmus.md), [LIBELLE / SINA](../profiles/international/libelle.md), [Brainpool curves](../profiles/international/brainpool.md).
 
-TR-02102-1 gives general cryptographic mechanism and key-length recommendations; Parts 2, 3 and 4 specialize guidance for TLS, IPsec/IKEv2 and SSH. Read these separately from the existing historical product and approval records.
+Read TR-03111 for concrete signature/key-agreement operations and encodings, RFC 5639 for Brainpool parameters and RFC 8734 for its TLS 1.3 binding. TR-02102 supplies the separately dated recommendation and protocol context.
 
 **Scope limit:** General BSI technical guidance is not a public specification of LIBELLE or proof that a particular SINA product is approved for a classification level. It also does not establish CHIASMUS’s internal construction.
 
@@ -186,11 +218,79 @@ TR-02102-1 gives general cryptographic mechanism and key-length recommendations;
 
 - **STD-DE-F1** — The archived TR-02102-1 is version 2026-01, as of 2026-01-23. It provides general cryptographic mechanism and key-length recommendations. ([S081](../sources/README.md#s081), Cover; Section 1)
 - **STD-DE-F2** — TR-02102 Parts 2, 3 and 4 address TLS, IPsec/IKEv2 and SSH respectively. Each preserved edition’s history dates version 2026-01 to 2026-01-27. ([S082](../sources/README.md#s082), Cover; Document history; Section 1; [S083](../sources/README.md#s083), Cover; Document history; Section 1; [S095](../sources/README.md#s095), Cover; Document history; Section 1)
+- **STD-DE-F3** — BSI TR-03111’s cover and history identify version 2.10 dated 2018-06-01 and its initial public version on 2007-02-14. The URL filename’s V-2-1 token is not the printed version number. ([S125](../sources/README.md#s125), Cover, PDF p.1; History, PDF p.2)
+- **STD-DE-F4** — TR-03111 separately specifies ECDSA, ECGDSA, EC Schnorr signatures, elliptic-curve key agreement, derivation functions and PACE, then gives public-key/signature input-output formats and OIDs. ([S125](../sources/README.md#s125), Sections 4.2–4.4; Sections 5.1–5.4)
+- **STD-DE-F5** — RFC 5639 supplies Brainpool curve parameters and generation procedures. RFC 8734 separately specifies Brainpool groups and signature schemes for TLS 1.3. Both are Informational Independent Submissions; a curve definition and a TLS binding are different records. ([S123](../sources/README.md#s123), Header; Sections 2–4; Appendix A; [S124](../sources/README.md#s124), Header; Sections 2–3)
 
 ### Inference
 
 - **STD-DE-I1 · conditional** — The TR series supplies a public policy and protocol context for German deployments; identifying the mathematics or approval scope of an opaque product still requires a record that names that product and its algorithm or certification boundary. Basis: STD-DE-F1, STD-DE-F2.
   Assumption: No additional product-specific approval or algorithm specification is supplied by the generic guidance citation.
+
+<a id="france"></a>
+
+## France: ANSSI selection and mechanism rules
+
+Existing profiles: [Brainpool curves](../profiles/international/brainpool.md).
+
+Read the distribution-page snapshot, then the exact cover and history of each guide. The rules PDF is version 3.00 of March 2026; the selection guide is version 1.0 of March 2021. Use cited specifications for the actual algorithm and encoding.
+
+**Scope limit:** A distribution page’s date does not redetermine a linked PDF’s edition. Recommendation, reference-rule compliance and product certification remain different attributes. The earlier v2.04 PDF was not recovered in this pass.
+
+### Documented statements
+
+- **STD-FR-F1** — The current ANSSI distribution page is dated 2026-03-20 and links two guides. The mechanisms rules PDF is version 3.00 dated 2026-03-20; the algorithm-selection PDF remains the initial version 1.0 dated 2021-03-08. ([S128](../sources/README.md#s128), Publication date and two download links; [S129](../sources/README.md#s129), Cover; version history, PDF p.3; [S130](../sources/README.md#s130), Cover; version history, PDF p.3)
+- **STD-FR-F2** — The mechanisms guide’s revision history records a first applicable version on 2004-11-19, v2.04 on 2020-01-01 and v3.00 on 2026-03-20, with the quantum threat added to the latter. These are guide-version milestones. ([S129](../sources/README.md#s129), Version history, PDF p.3)
+- **STD-FR-F3** — The 2021 selection guide separately recommends key-wrapping mechanisms SIV and AES-KeyWrap, KDFs including HKDF and PBKDF2, and selected elliptic-curve families including Brainpool. Recommendations are attached to specified mechanisms and implementation notes. ([S130](../sources/README.md#s130), Sections 4.6–4.8, printed pp.26–28 / PDF pp.28–30; Section 5.3, printed pp.31–32 / PDF pp.33–34)
+- **STD-FR-F4** — The 2026 rules guide recommends seeking post-quantum security for mechanisms expected to remain in use after 2030-01-01 or exposed to retrospective decryption risk. The guide states that general rule compliance alone is insufficient to guarantee mechanism security. ([S129](../sources/README.md#s129), Section 2, RecoSécuLongTerme, printed p.8 / PDF p.10; Section 1.4, printed p.5 / PDF p.7)
+
+### Inference
+
+- **STD-FR-I1 · conditional** — The two currently linked guides must be interpreted with their own dates and scopes. A 2026 webpage does not establish a 2026 revision of every recommendation in the 2021 PDF. Basis: STD-FR-F1, STD-FR-F2, STD-FR-F3.
+  Assumption: The historical question concerns the acquired PDF editions, not an unpreserved later revision.
+
+<a id="mobile-snow"></a>
+
+## International mobile standards: SNOW 3G, UEA2 and UIA2
+
+Existing profiles: [SNOW 3G](../profiles/international/snow3g.md).
+
+Read Document 2 for the generator, Document 1 for packet confidentiality/integrity, Document 3 for tests and Document 5 for design history. The GSMA distribution index records the provenance of these copies.
+
+**Scope limit:** The preserved companion documents have different dates and version numbers. The historical evaluation describes its contemporary design rationale; it is not a present-day security guarantee. This is an international standardization context, not a national approval inventory.
+
+### Documented statements
+
+- **STD-MOBILE-F1** — SNOW 3G Document 2 v1.1 is dated 2006-09-06 and records initial publication on 2006-01-10. The generator uses a 128-bit key and 128-bit initialization variable, a 16-word LFSR and a three-register FSM, with 32-bit output words. ([S131](../sources/README.md#s131), Cover; Document History, PDF p.2; Sections 2.1, 3.2 and 3.3)
+- **STD-MOBILE-F2** — UEA2/UIA2 Document 1 v2.1 is dated 2009-03-16. Its confidentiality and integrity algorithms use distinct input mappings and generator uses; the history identifies the 2009 change as a C-code improvement. ([S132](../sources/README.md#s132), Cover; Document History, PDF p.2; Sections 3–4)
+- **STD-MOBILE-F3** — The design/evaluation report describes SNOW 3G as a modification of SNOW 2.0 and explains changes to the FSM and nonlinear components. Its v1.1 cover is dated 2006-09-06; its history records v1.0 on 2006-02-06. ([S134](../sources/README.md#s134), Cover; Document History, PDF p.2; Sections 8.1.2–8.3)
+- **STD-MOBILE-F4** — The implementors’ test document is v1.1 dated 2012-10-25, distinct from the 2006 primitive and design documents and 2009 packet specification. GSMA’s distribution page links these records and states its distribution role for UEA2/UIA2. ([S133](../sources/README.md#s133), Cover; Document History, PDF pp.1–2; [S135](../sources/README.md#s135), UEA2 & UIA2 distribution section and Documents 1–5 links)
+
+### Inference
+
+- **STD-MOBILE-I1 · conditional** — A name such as SNOW 3G identifies a generator; a complete cellular operation also needs the confidentiality or integrity construction, initialization mapping, length conventions and exact companion edition. Basis: STD-MOBILE-F1, STD-MOBILE-F2, STD-MOBILE-F4.
+  Assumption: The target implementation follows the preserved UEA2/UIA2 family, rather than another use of the underlying generator.
+
+<a id="historical-archives"></a>
+
+## Swiss and Swedish historical machine records
+
+Existing profiles: [NEMA](../profiles/international/nema.md), [Siemens T52 / G-schreiber](../profiles/international/siemens-t52.md).
+
+Start with the original bilingual NEMA instructions and their cover stamp. For Siemens T52, separate FRA’s retrospective institutional history from Borelius’s explicitly hypothetical reconstruction of Beurling’s working method.
+
+**Scope limit:** The manual’s original issue date is unverified. Borelius’s account was written in the 1980s and is not Beurling’s contemporaneous laboratory record. Raw web snapshots do not include every externally linked image.
+
+### Documented statements
+
+- **STD-HIST-F1** — The NEMA instructions’ cover identifies copy 717 and bears a declassification stamp dated 1992-07-09. The bilingual German/French instructions are preserved as 18 PDF pages of scanned booklet spreads; the original publication date is not established. ([S136](../sources/README.md#s136), Cover, PDF p.1; German opening, PDF p.2; French portion)
+- **STD-HIST-F2** — FRA’s official history identifies the G-schreiber as Siemens und Halske T52 and dates the first interception of the relevant teleprinter traffic to 19 May 1940. It separately dates FRA’s establishment as an independent agency to 1942-07-01. ([S137](../sources/README.md#s137), G-skrivaren, printed pp.8–9 / PDF p.5; FRA bildas, printed pp.10–11 / PDF p.6)
+- **STD-HIST-F3** — FRA identifies Carl-Gösta Borelius as a participant in G-schreiber cryptanalysis from 1941 and describes this account as written in the 1980s. Its introduction explicitly presents a reconstruction of how Beurling may have proceeded, rather than a disclosed account by Beurling himself. ([S138](../sources/README.md#s138), Introduction under Hur gjorde Arne Beurling för att forcera G-skrivaren?; concluding paragraphs)
+
+### Inference
+
+- **STD-HIST-I1 · conditional** — The 1992 declassification stamp dates release of a secrecy control on the surviving manual; it supplies no first-use or first-approval date for the NEMA machine. Basis: STD-HIST-F1.
+  Assumption: The stamp is read as a declassification annotation on this copy, without an additional original approval record.
 
 ## Publication and effective dates
 
@@ -198,22 +298,34 @@ These events distinguish releases, revisions, list selections and publication ca
 
 | Date | Subject | Event type | Interpretation | Evidence |
 |---|---|---|---|---|
+| 1992-07-09 | NEMA operating manual | declassification annotation | Date stamped on surviving manual copy 717; original issue unverified. | [S136](../sources/README.md#s136), Cover |
 | 2003-02-20 | CRYPTREC legacy list | list issue | Original list date; the preserved R1 copy also has a 2005 correction. | [S094](../sources/README.md#s094), Cover; correction appendix |
 | 2005-08 | SEED / TLS | RFC publication | RFC 4162 Standards Track profile; not an invention date. | [S088](../sources/README.md#s088), Header |
 | 2005-10-12 | CRYPTREC legacy list | correction | Specification-reference correction; not a new cipher design. | [S094](../sources/README.md#s094), Correction appendix |
 | 2005-12 | Camellia / IPsec | RFC publication | RFC 4312 Standards Track profile. | [S087](../sources/README.md#s087), Header |
+| 2006-01-10 | SNOW 3G Document 2 | recorded initial publication | Date in the preserved v1.1 history, not a first national approval. | [S131](../sources/README.md#s131), Document History, PDF p.2 |
 | 2010-06-18 | EEA3/EIA3 | specification publication | Document 1 history records v1.0 publication. | [S076](../sources/README.md#s076), Document History, PDF page 2 |
 | 2010-12-17 | SM2 and SM3 | public release announcements | Official releases; attached PDFs have December 2010 covers. | [S070](../sources/README.md#s070), Announcement; compare S071 |
 | 2011-01-04 | ZUC/EEA3/EIA3 | algorithm revision and test edition | EIA3 modification and v1.1 implementer-test edition; see design report for ZUC change. | [S076](../sources/README.md#s076), Document History; compare S092 and S093 |
 | 2011-09-09 | ZUC design evaluation | report edition | Version 2.0 final deliverable. | [S093](../sources/README.md#s093), Cover; Document History |
 | 2012-03-21 | Chinese industry standards | standards announcement | No.23 lists six standards including SM3 and SM4 industry standards. | [S034](../sources/README.md#s034), Announcement; standards list |
+| 2012-10-25 | UEA2/UIA2 test data | document revision | Document 3 v1.1; not the generator specification’s date. | [S133](../sources/README.md#s133), Cover |
 | 2012-11-22 | SM2 application ecosystem | standards announcement | No.24 lists applications, message syntax, certificate protocols and formats. | [S072](../sources/README.md#s072), Announcement; standards list |
+| 2013-01 | GM/T 0009-2012 | first printing | January 2013 first edition/printing follows the standard’s 2012-11-22 issue. | [S109](../sources/README.md#s109), Imprint, PDF p.12 |
 | 2013-03-01 | CRYPTREC list | list issue | Original 2013 list retained as a historical edition. | [S079](../sources/README.md#s079), Cover |
+| 2014-02-13 | GM/T 0024-2014 | standard issue and effective date | Historical SSL VPN specification; separate from the later TLS 1.3 RFC. | [S114](../sources/README.md#s114), Cover |
+| 2015-06-19 | GOST R 34.13-2015 | standard approval order | Order 750-st; distinct from effective and printing dates. | [S101](../sources/README.md#s101), Foreword, PDF p.2 |
+| 2016-01-01 | GOST R 34.13-2015 | effective date | Effective date printed in the standard and official catalogue. | [S101](../sources/README.md#s101), Printed p.1 / PDF p.6 |
+| 2016-03-28 | GOST R 34.13-2015 | printing milestone | Signed for printing; not the standard issue date. | [S101](../sources/README.md#s101), Imprint, PDF p.29 |
 | 2016-08-29 | SM2 Part 1 and SM4 | national-standard issue | GB/T issue date; later implementation date is 2017-03-01. | [S036](../sources/README.md#s036), Official metadata; compare S035 |
 | 2017-03-01 | SM2 Part 1 and SM4 | national-standard implementation | Implementation date distinct from public release and issue. | [S036](../sources/README.md#s036), Official metadata; compare S035 |
 | 2017-10 | ARIA / SRTP | RFC publication | RFC 8269 IETF Informational profile. | [S091](../sources/README.md#s091), Header |
+| 2018-04-01 | R 1323565.1.005-2017 | effective date | Per-key data-volume recommendation; approval order is dated 2017-10-25. | [S104](../sources/README.md#s104), Printed p.1 / PDF p.5 |
+| 2018-06 | GOST modes correction | corrigendum issue | IUS No.6/2018 correction to 5.3.2, rule (7); no exact day asserted. | [S102](../sources/README.md#s102), One-page correction |
+| 2018-06-01 | BSI TR-03111 | guideline revision | Printed version 2.10, despite V-2-1 in the download filename. | [S125](../sources/README.md#s125), Cover and History |
 | 2019-01-24 | EEA3/EIA3 | specification revision | Document 1 v1.8 increases maximum integrity-message length. | [S076](../sources/README.md#s076), Cover; Document History |
 | 2020-06-15 | PKCS #11 v3.0 | OASIS standard edition | Matched Base and Historical Mechanisms editions. | [S066](../sources/README.md#s066), Cover; compare S001 |
+| 2021-03-08 | ANSSI selection guide | initial guide issue | ANSSI-PA-079 v1.0; the currently linked PDF still has this date. | [S130](../sources/README.md#s130), Cover and version history |
 | 2021-06 | MGM | RFC publication | RFC 9058; separate from the original Russian mode standardization. | [S059](../sources/README.md#s059), Header; Abstract |
 | 2022-03 | GOST protocol and PKI profiles | RFC publications | TLS 1.2, X.509 and ESP/IKEv2 companion RFCs. | [S062](../sources/README.md#s062), Header; compare S060 and S061 |
 | 2022-07-01 | CRYPTREC strength requirements | first publication in revision table | Table date conflicts with March 2022 printed cover; retain both fields. | [S080](../sources/README.md#s080), Cover; revision table |
@@ -224,21 +336,22 @@ These events distinguish releases, revisions, list selections and publication ca
 | 2025-10 | ETSI EEA3/EIA3 wrapper | technical-specification edition | TS 135 221 v19.0.0, Release 19. | [S075](../sources/README.md#s075), Cover |
 | 2026-01-23 | BSI TR-02102-1 | guidance edition | Version 2026-01, as-of date from cover. | [S081](../sources/README.md#s081), Cover |
 | 2026-01-27 | BSI TLS/IPsec/SSH guidance | guidance edition | Version 2026-01 dates from histories of Parts 2, 3 and 4. | [S082](../sources/README.md#s082), Document history; compare S083 and S095 |
+| 2026-03-20 | ANSSI mechanism rules | guideline revision | ANSSI-PG-083 v3.00; adds quantum-threat treatment. | [S129](../sources/README.md#s129), Cover and version history |
 | 2026-03-30 | CRYPTREC list | list revision | LS-0001-2022R2, with distinct recommended, candidate and monitored lists. | [S078](../sources/README.md#s078), Cover; list tables |
 
 ## Preservation and coverage limits
 
 ### Incomplete application-standard scan
 
-S074 is preserved exactly as acquired: three PDF pages containing imposed booklet images of covers, contents, foreword and printed body pages 6–7. Earlier body pages are absent. It must not be cited as a complete GM/T 0009-2012 text. ([S074](../sources/README.md#s074))
+S074 remains the original three-page incomplete booklet scan and must still be labeled incomplete. S109 is a separate 12-page mirror acquisition whose complete body sequence 1–7 has been checked against the contents. The earlier gap is filled for the 2012 application text; the old bytes are retained for provenance. This does not supply the 2023 revision. ([S074](../sources/README.md#s074), [S109](../sources/README.md#s109))
 
 ### Korean validation acquisition gaps
 
-S084, S085 and S099 returned HTTP 503. The catalogue retains the attempted URLs and retrieval errors, but no original copy is claimed. Programme names and acquisition leads are not substitutes for a preserved current eligibility list or product certificate. ([S084](../sources/README.md#s084), [S085](../sources/README.md#s085), [S099](../sources/README.md#s099))
+S084, S085 and S099 each returned HTTP 503 again on 2026-10-20 after one respectful retry. Prior errors remain in acquisition_history. No current KCMVP eligibility list, procedure page or product certificate is claimed. New SEED RFC companions do not resolve this gap. ([S084](../sources/README.md#s084), [S085](../sources/README.md#s085), [S099](../sources/README.md#s099))
 
 ### Revised standards announced but not fully acquired
 
-S073 preserves the official announcement and list of 2023 industry-standard revisions. The archive does not claim to contain the full text of every listed revision. Historical 2012 material cannot silently substitute for a 2023 edition. ([S072](../sources/README.md#s072), [S073](../sources/README.md#s073), [S074](../sources/README.md#s074))
+S073 preserves the official announcement and list of 2023 industry-standard revisions. The archive does not claim to contain the full text of every listed revision. Historical 2012 material cannot silently substitute for a 2023 edition. ([S072](../sources/README.md#s072), [S073](../sources/README.md#s073), [S074](../sources/README.md#s074), [S109](../sources/README.md#s109), [S110](../sources/README.md#s110), [S111](../sources/README.md#s111), [S112](../sources/README.md#s112))
 
 ### Translations and mutable publisher URLs
 
@@ -247,6 +360,18 @@ The earlier Alipay-hosted English SM2/SM3/SM4 files remain separately labeled tr
 ### Status and coverage limits
 
 RFC categories and streams describe publication status at issue. This guide does not perform a complete present-day obsolescence, errata or approval audit. Full ISO/IEC standards and every national standard cited by the profiles are not all preserved. Historical rotor-machine records remain in their existing profiles; modern companion standards are not retroactively applied to Enigma, Lorenz or Fialka.
+
+### Mirrors, overlays and incomplete authentication
+
+The Chinese scans are pinned to a third-party GitHub commit and retain scan marks. The Russian Meganorm copies include host-added advertising-link text. Their acquired bytes are unchanged, but neither host is the original issuing authority. Rosstandart’s independently preserved catalogue record confirms the identified modes standard and dates, not the byte authenticity of every mirrored page. ([S101](../sources/README.md#s101), [S102](../sources/README.md#s102), [S103](../sources/README.md#s103), [S104](../sources/README.md#s104), [S109](../sources/README.md#s109), [S110](../sources/README.md#s110), [S111](../sources/README.md#s111), [S112](../sources/README.md#s112), [S113](../sources/README.md#s113), [S114](../sources/README.md#s114))
+
+### French historical guide recovery and edition mismatch
+
+The former v2.04 mechanisms-PDF URL now redirects to a current distribution page. The archive acquired the linked March 2026 v3.00 rules and March 2021 v1.0 selection guide separately. The historical v2.04 file and RGS key-management Annex B2 were not acquired; attempted B2 locations returned 404. data/acquisition-attempts.json records these outcomes. ([S128](../sources/README.md#s128), [S129](../sources/README.md#s129), [S130](../sources/README.md#s130))
+
+### GOST password-KDF notation remains a specification question
+
+The literal integer-counter encodings in RFC 8018 and RFC 9337 differ. The guide records the equations and their locators, without silently merging the definitions, asserting a deployed failure, or claiming that all errata and implementations have been audited. ([S107](../sources/README.md#s107), [S127](../sources/README.md#s127))
 
 ## Source catalogue
 
@@ -872,7 +997,7 @@ An eligibility/validation-reference page, not a certificate for a particular imp
 Original URL: <https://seed.kisa.or.kr/kisa/kcmvp/EgovVerification.do>
 
 **Not preserved:** failed; HTTPError: HTTP Error 503: Service Unavailable  
-Attempt UTC: 2026-10-17T19:11:54.380270+00:00
+Attempt UTC: 2026-10-20T15:36:04.711250+00:00
 
 ### S085 — KCMVP: cryptographic module testing and validation procedures
 
@@ -884,7 +1009,7 @@ Provenance: Original publisher
 Original URL: <https://seed.kisa.or.kr/kisa/kcmvp/reference.do>
 
 **Not preserved:** failed; HTTPError: HTTP Error 503: Service Unavailable  
-Attempt UTC: 2026-10-17T19:11:55.326633+00:00
+Attempt UTC: 2026-10-20T15:36:06.117019+00:00
 
 ### S086 — RFC 5932: Camellia Cipher Suites for TLS
 
@@ -1132,4 +1257,724 @@ Official programme overview on KISA's main host, distinct from the unavailable s
 Original URL: <https://www.kisa.or.kr/1040209>
 
 **Not preserved:** failed; HTTPError: HTTP Error 503: Service Unavailable  
-Attempt UTC: 2026-10-17T19:14:35.057635+00:00
+Attempt UTC: 2026-10-20T15:36:07.447820+00:00
+
+### S100 — RFC Series index: publisher XML metadata snapshot
+
+Publisher: RFC Editor  
+Document date: not printed / not verified  
+Language: English · Format: xml  
+Provenance: Original publisher XML; dated acquisition snapshot
+
+Extent: Publisher XML index snapshot
+
+Mutable publisher index acquired on 2026-10-20. Stream and current-status fields are observations at retrieval; they do not alter the category printed in an original RFC.
+
+Original URL: <https://www.rfc-editor.org/rfc/rfc-index.xml>
+
+[Preserved file](../sources/originals/S100-rfc-index.xml) · 13,732,842 bytes
+
+Retrieved UTC: 2026-10-20T15:42:47.878865+00:00  
+SHA-256: `ab81329d975096f37b9a8a85cfb8b593e5c249b65f7a9707cd1ec45d3edf4099`
+
+### S101 — GOST R 34.13-2015: Modes of operation for block ciphers, Russian official-edition scan
+
+Publisher: Rosstandart; Standartinform  
+Document date: 2016-03-28  
+Language: Russian · Format: pdf  
+Provenance: Primary Russian standard reproduced by the Meganorm mirror; host-added advertising text remains unchanged
+
+Edition: GOST R 34.13-2015 / Standartinform 2016 printing | Initial issue: 2015-06-19 | Effective: 2016-01-01 | Printing: 2016-03-28 | Extent: 29 PDF pages: cover, preliminaries, printed body pages 1–23 and imprint
+
+Foreword cites approval order 750-st of 2015-06-19; body states effective 2016-01-01. Imprint says signed for printing 2016-03-28. Meganorm mirror contains added advertising/link text; it is a reproduced standard, not an authenticated publisher download. The separate 2018 erratum is not silently applied.
+
+Original URL: <https://meganorm.ru/Data2/1/4293762/4293762703.pdf>
+
+[Preserved file](../sources/originals/S101-gost-modes-ru.pdf) · 606,856 bytes · 29 PDF pages
+
+Retrieved UTC: 2026-10-20T15:41:13.464877+00:00  
+SHA-256: `de71f9360586a492986bb5f984950b57805febc31accc0894174cce7f57e7d0f`
+
+### S102 — Correction to GOST R 34.13-2015, IUS No. 6/2018
+
+Publisher: Rosstandart / national standards information bulletin  
+Document date: 2018-06  
+Language: Russian · Format: pdf  
+Provenance: Primary correction notice reproduced by the Meganorm mirror
+
+Edition: IUS No. 6/2018 | Revision: 2018-06 | Extent: 1 PDF pages
+
+One-page correction to Section 5.3.2, rule (7). Month comes from IUS No. 6/2018; no exact issue day is asserted. Mirror contains added advertising/link text.
+
+Original URL: <https://meganorm.ru/Data2/0/4294800/4294800102.pdf>
+
+[Preserved file](../sources/originals/S102-gost-modes-erratum.pdf) · 18,242 bytes · 1 PDF pages
+
+Retrieved UTC: 2026-10-20T15:41:13.465939+00:00  
+SHA-256: `d8e9e45e18d8675dddf05d120cf18fa88887255cfc29815aad7e3d006c9938b9`
+
+### S103 — Official Rosstandart record for GOST R 34.13-2015 and its correction
+
+Publisher: Rosstandart / Institute of Standardization  
+Document date: not printed / not verified  
+Language: Russian · Format: html  
+Provenance: Original publisher
+
+Effective: 2016-01-01 | Extent: Raw HTML snapshot; linked assets not bundled
+
+Live catalogue metadata, not a dated copy of the standard itself. Lists order 750-st dated 2015-06-19, effective 2016-01-01 and IUS 6-2018 correction.
+
+Original URL: <https://protect.gost.ru/gost/details/ed723f12-1f11-4bbb-b09b-86c455a393db>
+
+[Preserved file](../sources/web/S103-gost-modes-official-record.html) · 87,658 bytes
+
+Retrieved UTC: 2026-10-20T15:41:13.467034+00:00  
+SHA-256: `353af593617336f82de902d2b9be2183d010757082e0fd67e5a6e00cc345b6e7`
+
+### S104 — R 1323565.1.005-2017: Permissible data volumes under one key for GOST block-cipher modes
+
+Publisher: Rosstandart; Standartinform  
+Document date: 2017  
+Language: Russian · Format: pdf  
+Provenance: Primary Russian recommendation reproduced by the Meganorm mirror
+
+Edition: R 1323565.1.005-2017 | Initial issue: 2017-10-25 | Effective: 2018-04-01 | Extent: 8 PDF pages
+
+Cover printing year 2017; foreword cites order 1518-st of 2017-10-25; body states effective 2018-04-01. A standardization recommendation, distinct from a product certificate. Mirror-added advertising text remains in the acquired PDF.
+
+Original URL: <https://meganorm.ru/Data2/1/4293741/4293741713.pdf>
+
+[Preserved file](../sources/originals/S104-gost-key-volume.pdf) · 126,643 bytes · 8 PDF pages
+
+Retrieved UTC: 2026-10-20T15:41:15.621639+00:00  
+SHA-256: `3afe34287fca0c08812ceff61e22a9a1aaa03675e520ed333993a4bc9555a989`
+
+### S105 — RFC 4490: Using the GOST 28147-89, GOST R 34.11-94, GOST R 34.10-94, and GOST R 34.10-2001 Algorithms with Cryptographic Message Syntax (CMS)
+
+Publisher: RFC Editor; named document authors  
+Document date: 2006-05  
+Language: English · Format: text  
+Provenance: Original publisher
+
+Edition: RFC 4490 | RFC category: Standards Track | RFC stream: IETF | RFC status at issue: PROPOSED STANDARD | Status in acquired index: PROPOSED STANDARD | Extent: 29 publisher-index pages; original RFC text
+
+Category is transcribed from the preserved original header. Stream and publisher status fields are cross-checked against the separately preserved RFC index (S100), entry RFC4490. They establish RFC publication provenance, not national approval or implementation certification.
+
+Original URL: <https://www.rfc-editor.org/rfc/rfc4490.txt>
+
+[Preserved file](../sources/originals/S105-rfc4490.txt) · 54,912 bytes
+
+Retrieved UTC: 2026-10-20T15:37:46.105890+00:00  
+SHA-256: `c1391aca412ec468dd584196f0ba8e7f0ccdbaf49e3a83b7d76ebd304f5c8f45`
+
+### S106 — RFC 4491: Using the GOST R 34.10-94, GOST R 34.10-2001, and GOST R 34.11-94 Algorithms with the Internet X.509 Public Key Infrastructure Certificate and CRL Profile
+
+Publisher: RFC Editor; named document authors  
+Document date: 2006-05  
+Language: English · Format: text  
+Provenance: Original publisher
+
+Edition: RFC 4491 | RFC category: Standards Track | RFC stream: IETF | RFC status at issue: PROPOSED STANDARD | Status in acquired index: PROPOSED STANDARD | Extent: 20 publisher-index pages; original RFC text
+
+Category is transcribed from the preserved original header. Stream and publisher status fields are cross-checked against the separately preserved RFC index (S100), entry RFC4491. They establish RFC publication provenance, not national approval or implementation certification. The index snapshot does not mark this RFC obsoleted; RFC 9215 separately addresses the 2012 GOST algorithms. The two profiles must not be silently merged.
+
+Original URL: <https://www.rfc-editor.org/rfc/rfc4491.txt>
+
+[Preserved file](../sources/originals/S106-rfc4491.txt) · 39,095 bytes
+
+Retrieved UTC: 2026-10-20T15:37:46.107768+00:00  
+SHA-256: `39f1d26e869fb99e4615c0bc4cfe6a8b44aaca0b28f7f99f45d28658da89eb6e`
+
+### S107 — RFC 9337: Generating Password-Based Keys Using the GOST Algorithms
+
+Publisher: RFC Editor; named document authors  
+Document date: 2022-12  
+Language: English · Format: text  
+Provenance: Original publisher
+
+Edition: RFC 9337 | RFC category: Informational | RFC stream: Independent Submission | RFC status at issue: INFORMATIONAL | Status in acquired index: INFORMATIONAL | Extent: 14 publisher-index pages; original RFC text
+
+Category is transcribed from the preserved original header. Stream and publisher status fields are cross-checked against the separately preserved RFC index (S100), entry RFC9337. They establish RFC publication provenance, not national approval or implementation certification.
+
+Original URL: <https://www.rfc-editor.org/rfc/rfc9337.txt>
+
+[Preserved file](../sources/originals/S107-rfc9337.txt) · 28,990 bytes
+
+Retrieved UTC: 2026-10-20T15:37:46.103313+00:00  
+SHA-256: `4af753ad9ca1056af97d7a011f8874b435b62bc42d004f063b79259c858253c1`
+
+### S108 — RFC 9548: Generating Transport Key Containers (PFX) Using the GOST Algorithms
+
+Publisher: RFC Editor; named document authors  
+Document date: 2024-05  
+Language: English · Format: text  
+Provenance: Original publisher
+
+Edition: RFC 9548 | RFC category: Informational | RFC stream: Independent Submission | RFC status at issue: INFORMATIONAL | Status in acquired index: INFORMATIONAL | Extent: 24 publisher-index pages; original RFC text
+
+Category is transcribed from the preserved original header. Stream and publisher status fields are cross-checked against the separately preserved RFC index (S100), entry RFC9548. They establish RFC publication provenance, not national approval or implementation certification.
+
+Original URL: <https://www.rfc-editor.org/rfc/rfc9548.txt>
+
+[Preserved file](../sources/originals/S108-rfc9548.txt) · 52,834 bytes
+
+Retrieved UTC: 2026-10-20T15:38:40.965686+00:00  
+SHA-256: `43a2fac0561542aaa2d743a8897dc99c1b10413ddfedaa2f36d265a501d09e55`
+
+### S109 — GM/T 0009-2012: SM2 cryptography algorithm application specification (Chinese scan)
+
+Publisher: State Cryptography Administration of China; Standards Press of China  
+Document date: 2012-11-22  
+Language: Chinese · Format: pdf  
+Provenance: Primary Chinese standard reproduced by the guanzhi/GM-Standards mirror; not a publisher-hosted or translated edition
+
+Edition: GM/T 0009-2012 | Initial issue: 2012-11-22 | Effective: 2012-11-22 | Printing: 2013-01 | Extent: 12 PDF pages
+
+Chinese national-language standard scan hosted by guanzhi/GM-Standards on GitHub, pinned to commit 402e57ed1c4002e3262978061b4f490b5e9ffc65. Cover identifies GM/T 0009-2012 and prints issue/effective dates 2012-11-22. Host filenames and mirror commit dates are not issue or approval dates. Final imprint identifies the first edition and first printing as January 2013, distinct from the 2012 standard issue date. This 12-page scan includes covers, contents, foreword, introduction and all printed body pages 1–7; it fills the omissions in S074. S074 remains preserved as the earlier incomplete acquisition.
+
+Original URL: <https://raw.githubusercontent.com/guanzhi/GM-Standards/402e57ed1c4002e3262978061b4f490b5e9ffc65/GMT%E5%AF%86%E7%A0%81%E8%A1%8C%E6%A0%87/GMT%200009-2012%20SM2%E5%AF%86%E7%A0%81%E7%AE%97%E6%B3%95%E4%BD%BF%E7%94%A8%E8%A7%84%E8%8C%83%20.pdf>
+
+[Preserved file](../sources/originals/S109-gmt0009-mirror.pdf) · 4,128,321 bytes · 12 PDF pages
+
+Retrieved UTC: 2026-10-20T15:38:38.797048+00:00  
+SHA-256: `281abef0ae055ef3f40aa28b3e63daf9d1d6b209125fe2ecd321311582ffd029`
+
+### S110 — GM/T 0010-2012: SM2 cryptography message syntax specification (Chinese scan)
+
+Publisher: State Cryptography Administration of China; Standards Press of China  
+Document date: 2012-11-22  
+Language: Chinese · Format: pdf  
+Provenance: Primary Chinese standard reproduced by the guanzhi/GM-Standards mirror; not a publisher-hosted or translated edition
+
+Edition: GM/T 0010-2012 | Initial issue: 2012-11-22 | Effective: 2012-11-22 | Printing: 2013-01 | Extent: 14 PDF pages
+
+Chinese national-language standard scan hosted by guanzhi/GM-Standards on GitHub, pinned to commit 402e57ed1c4002e3262978061b4f490b5e9ffc65. Cover identifies GM/T 0010-2012 and prints issue/effective dates 2012-11-22. Host filenames and mirror commit dates are not issue or approval dates. Final imprint identifies the first edition and first printing as January 2013, distinct from the 2012 standard issue date.
+
+Original URL: <https://raw.githubusercontent.com/guanzhi/GM-Standards/402e57ed1c4002e3262978061b4f490b5e9ffc65/GMT%E5%AF%86%E7%A0%81%E8%A1%8C%E6%A0%87/GMT%200010-2012%20SM2%E5%AF%86%E7%A0%81%E7%AE%97%E6%B3%95%E5%8A%A0%E5%AF%86%E7%AD%BE%E5%90%8D%E6%B6%88%E6%81%AF%E8%AF%AD%E6%B3%95%E8%A7%84%E8%8C%83.pdf>
+
+[Preserved file](../sources/originals/S110-gmt0010-mirror.pdf) · 5,170,500 bytes · 14 PDF pages
+
+Retrieved UTC: 2026-10-20T15:38:38.796117+00:00  
+SHA-256: `34acf1e833f4a03b66ff1fa27c6081533f2120d22931b613d04ef9255886429b`
+
+### S111 — GM/T 0014-2012: Digital certificate authentication system cryptography protocol specification (Chinese scan)
+
+Publisher: State Cryptography Administration of China; Standards Press of China  
+Document date: 2012-11-22  
+Language: Chinese · Format: pdf  
+Provenance: Primary Chinese standard reproduced by the guanzhi/GM-Standards mirror; not a publisher-hosted or translated edition
+
+Edition: GM/T 0014-2012 | Initial issue: 2012-11-22 | Effective: 2012-11-22 | Printing: 2013-01 | Extent: 58 PDF pages
+
+Chinese national-language standard scan hosted by guanzhi/GM-Standards on GitHub, pinned to commit 402e57ed1c4002e3262978061b4f490b5e9ffc65. Cover identifies GM/T 0014-2012 and prints issue/effective dates 2012-11-22. Host filenames and mirror commit dates are not issue or approval dates. Final imprint identifies the first edition and first printing as January 2013, distinct from the 2012 standard issue date.
+
+Original URL: <https://raw.githubusercontent.com/guanzhi/GM-Standards/402e57ed1c4002e3262978061b4f490b5e9ffc65/GMT%E5%AF%86%E7%A0%81%E8%A1%8C%E6%A0%87/GMT%200014-2012%20%E6%95%B0%E5%AD%97%E8%AF%81%E4%B9%A6%E8%AE%A4%E8%AF%81%E7%B3%BB%E7%BB%9F%E5%AF%86%E7%A0%81%E5%8D%8F%E8%AE%AE%E8%A7%84%E8%8C%83.pdf>
+
+[Preserved file](../sources/originals/S111-gmt0014-mirror.pdf) · 30,400,068 bytes · 58 PDF pages
+
+Retrieved UTC: 2026-10-20T15:38:38.798362+00:00  
+SHA-256: `2bb1aa39225d13d036d1cee761a4da12b5a49e0a31e296cddba83037c362ae1a`
+
+### S112 — GM/T 0015-2012: Digital certificate format based on SM2 algorithm (Chinese scan)
+
+Publisher: State Cryptography Administration of China; Standards Press of China  
+Document date: 2012-11-22  
+Language: Chinese · Format: pdf  
+Provenance: Primary Chinese standard reproduced by the guanzhi/GM-Standards mirror; not a publisher-hosted or translated edition
+
+Edition: GM/T 0015-2012 | Initial issue: 2012-11-22 | Effective: 2012-11-22 | Printing: 2013-01 | Extent: 61 PDF pages
+
+Chinese national-language standard scan hosted by guanzhi/GM-Standards on GitHub, pinned to commit 402e57ed1c4002e3262978061b4f490b5e9ffc65. Cover identifies GM/T 0015-2012 and prints issue/effective dates 2012-11-22. Host filenames and mirror commit dates are not issue or approval dates. Final imprint identifies the first edition and first printing as January 2013, distinct from the 2012 standard issue date.
+
+Original URL: <https://raw.githubusercontent.com/guanzhi/GM-Standards/402e57ed1c4002e3262978061b4f490b5e9ffc65/GMT%E5%AF%86%E7%A0%81%E8%A1%8C%E6%A0%87/GMT%200015-2012%20%E5%9F%BA%E4%BA%8ESM2%E5%AF%86%E7%A0%81%E7%AE%97%E6%B3%95%E7%9A%84%E6%95%B0%E5%AD%97%E8%AF%81%E4%B9%A6%E6%A0%BC%E5%BC%8F.pdf>
+
+[Preserved file](../sources/originals/S112-gmt0015-mirror.pdf) · 35,429,684 bytes · 61 PDF pages
+
+Retrieved UTC: 2026-10-20T15:38:39.639274+00:00  
+SHA-256: `d5e574253005472654039118133ec921060c8cc500648fc7ee859e8c27fed8fa`
+
+### S113 — GM/T 0017-2012: Smart token cryptography application interface data format specification (Chinese scan)
+
+Publisher: State Cryptography Administration of China; Standards Press of China  
+Document date: 2012-11-22  
+Language: Chinese · Format: pdf  
+Provenance: Primary Chinese standard reproduced by the guanzhi/GM-Standards mirror; not a publisher-hosted or translated edition
+
+Edition: GM/T 0017-2012 | Initial issue: 2012-11-22 | Effective: 2012-11-22 | Extent: 155 PDF pages
+
+Chinese national-language standard scan hosted by guanzhi/GM-Standards on GitHub, pinned to commit 402e57ed1c4002e3262978061b4f490b5e9ffc65. Cover identifies GM/T 0017-2012 and prints issue/effective dates 2012-11-22. Host filenames and mirror commit dates are not issue or approval dates.
+
+Original URL: <https://raw.githubusercontent.com/guanzhi/GM-Standards/402e57ed1c4002e3262978061b4f490b5e9ffc65/GMT%E5%AF%86%E7%A0%81%E8%A1%8C%E6%A0%87/GMT%200017-2012%20%E6%99%BA%E8%83%BD%E5%AF%86%E7%A0%81%E9%92%A5%E5%8C%99%E5%AF%86%E7%A0%81%E5%BA%94%E7%94%A8%E6%8E%A5%E5%8F%A3%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E8%A7%84%E8%8C%83.PDF>
+
+[Preserved file](../sources/originals/S113-gmt0017-mirror.pdf) · 4,335,518 bytes · 155 PDF pages
+
+Retrieved UTC: 2026-10-20T15:38:39.644895+00:00  
+SHA-256: `53ec505191d603ebf95c60978404d25c60cd53b9672ac45096606897c65a3dce`
+
+### S114 — GM/T 0024-2014: SSL VPN specification (Chinese scan)
+
+Publisher: State Cryptography Administration of China; Standards Press of China  
+Document date: 2014-02-13  
+Language: Chinese · Format: pdf  
+Provenance: Primary Chinese standard reproduced by the guanzhi/GM-Standards mirror; not a publisher-hosted or translated edition
+
+Edition: GM/T 0024-2014 | Initial issue: 2014-02-13 | Effective: 2014-02-13 | Extent: 36 PDF pages
+
+Chinese national-language standard scan hosted by guanzhi/GM-Standards on GitHub, pinned to commit 402e57ed1c4002e3262978061b4f490b5e9ffc65. Cover identifies GM/T 0024-2014 and prints issue/effective dates 2014-02-13. Host filenames and mirror commit dates are not issue or approval dates.
+
+Original URL: <https://raw.githubusercontent.com/guanzhi/GM-Standards/402e57ed1c4002e3262978061b4f490b5e9ffc65/GMT%E5%AF%86%E7%A0%81%E8%A1%8C%E6%A0%87/GMT%200024-2014%20SSL%20VPN%20%E6%8A%80%E6%9C%AF%E8%A7%84%E8%8C%83.PDF>
+
+[Preserved file](../sources/originals/S114-gmt0024-mirror.pdf) · 4,302,806 bytes · 36 PDF pages
+
+Retrieved UTC: 2026-10-20T15:38:40.552273+00:00  
+SHA-256: `20787a423e00dcaa4935f78e628b35234cb5a588679ba4e3122d4ae0d59a51d2`
+
+### S115 — RFC 5528: Camellia Counter Mode and Camellia Counter with CBC-MAC Mode Algorithms
+
+Publisher: RFC Editor; named document authors  
+Document date: 2009-04  
+Language: English · Format: text  
+Provenance: Original publisher
+
+Edition: RFC 5528 | RFC category: Informational | RFC stream: IETF | RFC status at issue: INFORMATIONAL | Status in acquired index: INFORMATIONAL | Extent: 22 publisher-index pages; original RFC text
+
+Category is transcribed from the preserved original header. Stream and publisher status fields are cross-checked against the separately preserved RFC index (S100), entry RFC5528. They establish RFC publication provenance, not national approval or implementation certification.
+
+Original URL: <https://www.rfc-editor.org/rfc/rfc5528.txt>
+
+[Preserved file](../sources/originals/S115-rfc5528.txt) · 56,134 bytes
+
+Retrieved UTC: 2026-10-20T15:37:46.578342+00:00  
+SHA-256: `3477959e97dcadfdd78abfd106f3e9bd94dd4a40bdec279b77d84e89e83760b9`
+
+### S116 — RFC 5529: Modes of Operation for Camellia for Use with IPsec
+
+Publisher: RFC Editor; named document authors  
+Document date: 2009-04  
+Language: English · Format: text  
+Provenance: Original publisher
+
+Edition: RFC 5529 | RFC category: Standards Track | RFC stream: IETF | RFC status at issue: PROPOSED STANDARD | Status in acquired index: PROPOSED STANDARD | Extent: 7 publisher-index pages; original RFC text
+
+Category is transcribed from the preserved original header. Stream and publisher status fields are cross-checked against the separately preserved RFC index (S100), entry RFC5529. They establish RFC publication provenance, not national approval or implementation certification.
+
+Original URL: <https://www.rfc-editor.org/rfc/rfc5529.txt>
+
+[Preserved file](../sources/originals/S116-rfc5529.txt) · 13,030 bytes
+
+Retrieved UTC: 2026-10-20T15:37:46.765850+00:00  
+SHA-256: `6a8e197a19c385161a20f113f8c0d2b26984968e6f3a9e023dfd02c9545d66d7`
+
+### S117 — RFC 6367: Addition of the Camellia Cipher Suites to Transport Layer Security (TLS)
+
+Publisher: RFC Editor; named document authors  
+Document date: 2011-09  
+Language: English · Format: text  
+Provenance: Original publisher
+
+Edition: RFC 6367 | RFC category: Informational | RFC stream: IETF | RFC status at issue: INFORMATIONAL | Status in acquired index: INFORMATIONAL | Extent: 8 publisher-index pages; original RFC text
+
+Category is transcribed from the preserved original header. Stream and publisher status fields are cross-checked against the separately preserved RFC index (S100), entry RFC6367. They establish RFC publication provenance, not national approval or implementation certification.
+
+Original URL: <https://www.rfc-editor.org/rfc/rfc6367.txt>
+
+[Preserved file](../sources/originals/S117-rfc6367.txt) · 17,613 bytes
+
+Retrieved UTC: 2026-10-20T15:37:46.774000+00:00  
+SHA-256: `7343444b83b9d7c264cf80a940665b94181011be741b80a260500d939c421ab2`
+
+### S118 — RFC 2994: A Description of the MISTY1 Encryption Algorithm
+
+Publisher: RFC Editor; named document authors  
+Document date: 2000-11  
+Language: English · Format: text  
+Provenance: Original publisher
+
+Edition: RFC 2994 | RFC category: Informational | RFC stream: Legacy (publisher index; original header predates stream labels) | RFC status at issue: INFORMATIONAL | Status in acquired index: INFORMATIONAL | Extent: 10 publisher-index pages; original RFC text
+
+Category is transcribed from the preserved original header. Stream and publisher status fields are cross-checked against the separately preserved RFC index (S100), entry RFC2994. They establish RFC publication provenance, not national approval or implementation certification.
+
+Original URL: <https://www.rfc-editor.org/rfc/rfc2994.txt>
+
+[Preserved file](../sources/originals/S118-rfc2994.txt) · 17,803 bytes
+
+Retrieved UTC: 2026-10-20T15:37:47.443597+00:00  
+SHA-256: `a1ba5947ca793c55b2653f449fe19d0f972683a19c0bbb717a90ce6e98020756`
+
+### S119 — RFC 7008: A Description of the KCipher-2 Encryption Algorithm
+
+Publisher: RFC Editor; named document authors  
+Document date: 2013-08  
+Language: English · Format: text  
+Provenance: Original publisher
+
+Edition: RFC 7008 | RFC category: Informational | RFC stream: Independent Submission | RFC status at issue: INFORMATIONAL | Status in acquired index: INFORMATIONAL | Extent: 37 publisher-index pages; original RFC text
+
+Category is transcribed from the preserved original header. Stream and publisher status fields are cross-checked against the separately preserved RFC index (S100), entry RFC7008. They establish RFC publication provenance, not national approval or implementation certification.
+
+Original URL: <https://www.rfc-editor.org/rfc/rfc7008.txt>
+
+[Preserved file](../sources/originals/S119-rfc7008.txt) · 71,051 bytes
+
+Retrieved UTC: 2026-10-20T15:37:47.149022+00:00  
+SHA-256: `5a5074fb4655296fa5fa0d274191a48f87e14ac66573eb21c79c3788870d6e23`
+
+### S120 — ETSI TS 135 202 V17.0.0: KASUMI specification, Release 17
+
+Publisher: ETSI / 3GPP  
+Document date: 2022-04  
+Language: English · Format: pdf  
+Provenance: Original publisher
+
+Edition: ETSI TS 135 202 V17.0.0 / 3GPP TS 35.202 Release 17 | Extent: 26 PDF pages
+
+The April 2022 edition is the preserved standards wrapper, not a claim that the primitive was invented or first approved in 2022. Its annex includes an older dated sample implementation.
+
+Original URL: <https://www.etsi.org/deliver/etsi_ts/135200_135299/135202/17.00.00_60/ts_135202v170000p.pdf>
+
+[Preserved file](../sources/originals/S120-kasumi-17.pdf) · 147,275 bytes · 26 PDF pages
+
+Retrieved UTC: 2026-10-20T15:38:41.558310+00:00  
+SHA-256: `73f26476db04881d7bc2395ca623aa6d8e81ce38e163fd10a1da3593f263326d`
+
+### S121 — RFC 5669: The SEED Cipher Algorithm and Its Use with the Secure Real-Time Transport Protocol (SRTP)
+
+Publisher: RFC Editor; named document authors  
+Document date: 2010-08  
+Language: English · Format: text  
+Provenance: Original publisher
+
+Edition: RFC 5669 | RFC category: Standards Track | RFC stream: IETF | RFC status at issue: PROPOSED STANDARD | Status in acquired index: PROPOSED STANDARD | Extent: 13 publisher-index pages; original RFC text
+
+Category is transcribed from the preserved original header. Stream and publisher status fields are cross-checked against the separately preserved RFC index (S100), entry RFC5669. They establish RFC publication provenance, not national approval or implementation certification.
+
+Original URL: <https://www.rfc-editor.org/rfc/rfc5669.txt>
+
+[Preserved file](../sources/originals/S121-rfc5669.txt) · 24,918 bytes
+
+Retrieved UTC: 2026-10-20T15:37:47.216827+00:00  
+SHA-256: `2fc14db340ecf3aed3b80c8c4b2a11c109967586f0b0b03d4e54ab63f6c48d89`
+
+### S122 — RFC 4010: Use of the SEED Encryption Algorithm in Cryptographic Message Syntax (CMS)
+
+Publisher: RFC Editor; named document authors  
+Document date: 2005-02  
+Language: English · Format: text  
+Provenance: Original publisher
+
+Edition: RFC 4010 | RFC category: Standards Track | RFC stream: IETF | RFC status at issue: PROPOSED STANDARD | Status in acquired index: PROPOSED STANDARD | Extent: 13 publisher-index pages; original RFC text
+
+Category is transcribed from the preserved original header. Stream and publisher status fields are cross-checked against the separately preserved RFC index (S100), entry RFC4010. They establish RFC publication provenance, not national approval or implementation certification.
+
+Original URL: <https://www.rfc-editor.org/rfc/rfc4010.txt>
+
+[Preserved file](../sources/originals/S122-rfc4010.txt) · 22,403 bytes
+
+Retrieved UTC: 2026-10-20T15:38:41.333764+00:00  
+SHA-256: `13e00750f938bdbd21bb938010505288908e84610aa419079584d13ac3a66545`
+
+### S123 — RFC 5639: Elliptic Curve Cryptography (ECC) Brainpool Standard Curves and Curve Generation
+
+Publisher: RFC Editor; named document authors  
+Document date: 2010-03  
+Language: English · Format: text  
+Provenance: Original publisher
+
+Edition: RFC 5639 | RFC category: Informational | RFC stream: Independent Submission | RFC status at issue: INFORMATIONAL | Status in acquired index: INFORMATIONAL | Extent: 27 publisher-index pages; original RFC text
+
+Category is transcribed from the preserved original header. Stream and publisher status fields are cross-checked against the separately preserved RFC index (S100), entry RFC5639. They establish RFC publication provenance, not national approval or implementation certification.
+
+Original URL: <https://www.rfc-editor.org/rfc/rfc5639.txt>
+
+[Preserved file](../sources/originals/S123-rfc5639.txt) · 50,566 bytes
+
+Retrieved UTC: 2026-10-20T15:37:46.458842+00:00  
+SHA-256: `d19949766009ac82b69e46b09f3a08d712908381300a340d3fa3b1478f4b215e`
+
+### S124 — RFC 8734: Elliptic Curve Cryptography (ECC) Brainpool Curves for Transport Layer Security (TLS) Version 1.3
+
+Publisher: RFC Editor; named document authors  
+Document date: 2020-02  
+Language: English · Format: text  
+Provenance: Original publisher
+
+Edition: RFC 8734 | RFC category: Informational | RFC stream: Independent Submission | RFC status at issue: INFORMATIONAL | Status in acquired index: INFORMATIONAL | Extent: 11 publisher-index pages; original RFC text
+
+Category is transcribed from the preserved original header. Stream and publisher status fields are cross-checked against the separately preserved RFC index (S100), entry RFC8734. They establish RFC publication provenance, not national approval or implementation certification.
+
+Original URL: <https://www.rfc-editor.org/rfc/rfc8734.txt>
+
+[Preserved file](../sources/originals/S124-rfc8734.txt) · 18,297 bytes
+
+Retrieved UTC: 2026-10-20T15:37:46.496541+00:00  
+SHA-256: `47d4e076ec158107aceb2415a3f417eb30e034bcee99c91ab1f64656a5879075`
+
+### S125 — BSI TR-03111: Elliptic Curve Cryptography, Version 2.10
+
+Publisher: German Federal Office for Information Security (BSI)  
+Document date: 2018-06-01  
+Language: English · Format: pdf  
+Provenance: Original publisher
+
+Edition: 2.10 | Initial issue: 2007-02-14 | Revision: 2018-06-01 | Extent: 43 PDF pages
+
+Cover and revision history identify version 2.10 dated 2018-06-01. The URL filename contains V-2-1, which must not be silently substituted for the printed version. History dates the first public version to 2007-02-14.
+
+Original URL: <https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03111/BSI-TR-03111_V-2-1_pdf.pdf?__blob=publicationFile&v=1>
+
+[Preserved file](../sources/originals/S125-bsi-tr03111.pdf) · 813,167 bytes · 43 PDF pages
+
+Retrieved UTC: 2026-10-20T15:37:47.528572+00:00  
+SHA-256: `51ee5d0fab150c42d8b446bd48dc7bb7be987278507a0bd96619b50eb127c440`
+
+### S126 — RFC 5869: HMAC-based Extract-and-Expand Key Derivation Function (HKDF)
+
+Publisher: RFC Editor; named document authors  
+Document date: 2010-05  
+Language: English · Format: text  
+Provenance: Original publisher
+
+Edition: RFC 5869 | RFC category: Informational | RFC stream: IETF | RFC status at issue: INFORMATIONAL | Status in acquired index: INFORMATIONAL | Extent: 14 publisher-index pages; original RFC text
+
+Category is transcribed from the preserved original header. Stream and publisher status fields are cross-checked against the separately preserved RFC index (S100), entry RFC5869. They establish RFC publication provenance, not national approval or implementation certification.
+
+Original URL: <https://www.rfc-editor.org/rfc/rfc5869.txt>
+
+[Preserved file](../sources/originals/S126-rfc5869.txt) · 25,854 bytes
+
+Retrieved UTC: 2026-10-20T15:37:47.425544+00:00  
+SHA-256: `7a40eb3835b35fc947eb12a2ed614db079d43b26e50dbc537c31fba16397089c`
+
+### S127 — RFC 8018: PKCS #5: Password-Based Cryptography Specification Version 2.1
+
+Publisher: RFC Editor; named document authors  
+Document date: 2017-01  
+Language: English · Format: text  
+Provenance: Original publisher
+
+Edition: RFC 8018 | RFC category: Informational | RFC stream: IETF | RFC status at issue: INFORMATIONAL | Status in acquired index: INFORMATIONAL | Extent: 40 publisher-index pages; original RFC text
+
+Category is transcribed from the preserved original header. Stream and publisher status fields are cross-checked against the separately preserved RFC index (S100), entry RFC8018. They establish RFC publication provenance, not national approval or implementation certification.
+
+Original URL: <https://www.rfc-editor.org/rfc/rfc8018.txt>
+
+[Preserved file](../sources/originals/S127-rfc8018.txt) · 80,887 bytes
+
+Retrieved UTC: 2026-10-20T15:37:47.221891+00:00  
+SHA-256: `cf96b02e68216f618ea33b20b49d476edba9d70f2333597ec516629d22971cda`
+
+### S128 — ANSSI cryptographic mechanisms: current guide distribution page
+
+Publisher: ANSSI / MesServicesCyber  
+Document date: 2026-03-20  
+Language: French · Format: html  
+Provenance: Original government distribution page; raw HTML snapshot
+
+Extent: Raw HTML snapshot; linked assets not bundled
+
+Page says published 2026-03-20 and links a v3.00 rules guide together with a v1.0 selection guide. The latter PDF remains dated 2021-03-08. An older v2.04 PDF URL redirects here; it does not return the historical PDF.
+
+Original URL: <https://messervices.cyber.gouv.fr/guides/mecanismes-cryptographiques>
+
+[Preserved file](../sources/web/S128-anssi-current-index.html) · 33,212 bytes
+
+Retrieved UTC: 2026-10-20T15:39:18.239432+00:00  
+SHA-256: `0fb9d35a8a31eeeebc4d08069b1cddcd06b8c2dc1168f7afa8df5b1169e206ae`
+
+### S129 — ANSSI-PG-083: Rules and recommendations for choosing and sizing cryptographic mechanisms
+
+Publisher: ANSSI  
+Document date: 2026-03-20  
+Language: French · Format: pdf  
+Provenance: Original publisher
+
+Edition: 3.00 | Initial issue: 2004-11-19 | Revision: 2026-03-20 | Extent: 81 PDF pages
+
+Cover and revision table identify 2026-03-20 / v3.00. The table records v2.04 on 2020-01-01 and a first applicable version on 2004-11-19. The 2026 edition explicitly adds quantum-threat treatment. These are guide milestones, not first approval dates for every algorithm.
+
+Original URL: <https://messervices.cyber.gouv.fr/documents-guides/anssi-guide-mecanismes-crypto-3.00.pdf>
+
+[Preserved file](../sources/originals/S129-anssi-mechanisms-300.pdf) · 1,365,473 bytes · 81 PDF pages
+
+Retrieved UTC: 2026-10-20T15:39:51.588090+00:00  
+SHA-256: `1baf13e8ae81bd476f09aed12885587850429a6925a182b6b8d5c76b31b288ec`
+
+### S130 — ANSSI-PA-079: Guide to selecting cryptographic algorithms
+
+Publisher: ANSSI  
+Document date: 2021-03-08  
+Language: French · Format: pdf  
+Provenance: Original publisher
+
+Edition: 1.0 | Initial issue: 2021-03-08 | Extent: 58 PDF pages
+
+Cover prints 8/3/2021; the revision table calls this the initial v1.0 edition. It is linked from a page dated March 2026 but remains a 2021 document. Recommendations retain their original scope and date.
+
+Original URL: <https://messervices.cyber.gouv.fr/documents-guides/anssi-guide-selection_crypto-1.0.pdf>
+
+[Preserved file](../sources/originals/S130-anssi-selection-10.pdf) · 428,530 bytes · 58 PDF pages
+
+Retrieved UTC: 2026-10-20T15:39:51.587281+00:00  
+SHA-256: `5b48eb227d57be08c7d0365b39e3168be7580222f8c0cf69e044fb9265950281`
+
+### S131 — Document 2: SNOW 3G Algorithm Specification
+
+Publisher: ETSI/SAGE; distributed by GSMA  
+Document date: 2006-09-06  
+Language: English · Format: pdf  
+Provenance: Original publisher
+
+Edition: 1.1 | Initial issue: 2006-01-10 | Revision: 2006-09-06 | Extent: 37 PDF pages
+
+Edition and date transcribed from this document’s cover. The 2019 hosting directory does not date the specification. Companion documents have different version/date histories and are not treated as a synchronized release.
+
+Original URL: <https://www.gsma.com/solutions-and-impact/technologies/security/wp-content/uploads/2019/05/snow3gspec.pdf>
+
+[Preserved file](../sources/originals/S131-snow3g.pdf) · 355,133 bytes · 37 PDF pages
+
+Retrieved UTC: 2026-10-20T15:39:51.588712+00:00  
+SHA-256: `a4dc79f2dcf3a1d91a0c5efbae317ffc50cbf90a9bb53da0edb52b4e86b989b5`
+
+### S132 — Document 1: UEA2 and UIA2 Specification
+
+Publisher: ETSI/SAGE; distributed by GSMA  
+Document date: 2009-03-16  
+Language: English · Format: pdf  
+Provenance: Original publisher
+
+Edition: 2.1 | Revision: 2009-03-16 | Extent: 27 PDF pages
+
+Edition and date transcribed from this document’s cover. The 2019 hosting directory does not date the specification. Companion documents have different version/date histories and are not treated as a synchronized release.
+
+Original URL: <https://www.gsma.com/solutions-and-impact/technologies/security/wp-content/uploads/2019/05/uea2uia2d1v21.pdf>
+
+[Preserved file](../sources/originals/S132-uea2-uia2.pdf) · 102,689 bytes · 27 PDF pages
+
+Retrieved UTC: 2026-10-20T15:39:52.526883+00:00  
+SHA-256: `d2671f7821e8971e8bf4245ff50f28fa7a1ec71be29927f60ef2f436b8edf438`
+
+### S133 — Document 3: UEA2/UIA2 Implementors’ Test Data
+
+Publisher: ETSI/SAGE; distributed by GSMA  
+Document date: 2012-10-25  
+Language: English · Format: pdf  
+Provenance: Original publisher
+
+Edition: 1.1 | Revision: 2012-10-25 | Extent: 20 PDF pages
+
+Edition and date transcribed from this document’s cover. The 2019 hosting directory does not date the specification. Companion documents have different version/date histories and are not treated as a synchronized release.
+
+Original URL: <https://www.gsma.com/solutions-and-impact/technologies/security/wp-content/uploads/2019/05/Doc3-UEA2-UIA2-Spec-Implementors-Test-Data.pdf>
+
+[Preserved file](../sources/originals/S133-snow-tests.pdf) · 335,256 bytes · 20 PDF pages
+
+Retrieved UTC: 2026-10-20T15:39:53.089544+00:00  
+SHA-256: `fdf3281aacb8098f7cee4461851910aeff84f8c6cbdaadca95ee9a5d63d1c677`
+
+### S134 — Document 5: UEA2/UIA2 Design and Evaluation Report
+
+Publisher: ETSI/SAGE; distributed by GSMA  
+Document date: 2006-09-06  
+Language: English · Format: pdf  
+Provenance: Original publisher
+
+Edition: 1.1 | Initial issue: 2006-02-06 | Revision: 2006-09-06 | Extent: 40 PDF pages
+
+Edition and date transcribed from this document’s cover. The 2019 hosting directory does not date the specification. Companion documents have different version/date histories and are not treated as a synchronized release.
+
+Original URL: <https://www.gsma.com/solutions-and-impact/technologies/security/wp-content/uploads/2019/05/uea2designevaluation.pdf>
+
+[Preserved file](../sources/originals/S134-snow-evaluation.pdf) · 506,305 bytes · 40 PDF pages
+
+Retrieved UTC: 2026-10-20T15:39:53.437096+00:00  
+SHA-256: `0c5640830b9d2f9d63f26181cf13a52400516035846d36548878b8feee4e321a`
+
+### S135 — GSMA security algorithms: specifications and distribution provenance
+
+Publisher: GSMA  
+Document date: not printed / not verified  
+Language: English · Format: html  
+Provenance: Original publisher
+
+Extent: Raw HTML snapshot; linked assets not bundled
+
+Live distribution index. Its UEA2/UIA2 section states distribution rights and links Documents 1–5; raw HTML is not a complete offline rendering of linked files.
+
+Original URL: <https://www.gsma.com/solutions-and-impact/technologies/security/security-algorithms/>
+
+[Preserved file](../sources/web/S135-gsma-algorithm-index.html) · 98,554 bytes
+
+Retrieved UTC: 2026-10-20T15:39:18.241072+00:00  
+SHA-256: `316da170e7fd880ae82c7dccbb7c4c42540a6c72db69a9c9ea685f845951dff6`
+
+### S136 — NEMA operating instructions / Instruction de service de la machine à chiffrer
+
+Publisher: Historical Swiss NEMA operating manual; issuing office not named on the scanned cover  
+Document date: not printed / not verified  
+Language: German / French · Format: pdf  
+Provenance: Primary historical operating manual reproduced as a Crypto Museum scan
+
+Declassification annotation: 1992-07-09 | Extent: 18 PDF pages of scanned booklet spreads, including covers and German/French instructions
+
+Original booklet scan hosted by Crypto Museum, copy number 717. Cover is stamped declassified 1992-07-09. No original issue date has been verified; the declassification date is not its publication, design or first approval date.
+
+Original URL: <https://www.cryptomuseum.com/crypto/nema/files/nema_manual.pdf>
+
+[Preserved file](../sources/originals/S136-nema-manual.pdf) · 10,468,622 bytes · 18 PDF pages
+
+Retrieved UTC: 2026-10-20T15:37:47.625724+00:00  
+SHA-256: `303b7e2e90235d8add3ff4eab207bf4e13e8eb056f4624134aaad62dfbc8eb03`
+
+### S137 — FRA’s history in brief: From Morse telegraphy to cyber defence
+
+Publisher: Swedish National Defence Radio Establishment (FRA); Fredrik Wallin  
+Document date: not printed / not verified  
+Language: Swedish · Format: pdf  
+Provenance: Original agency historical publication
+
+Extent: 15 PDF pages containing booklet spreads and covers; printed history through page 26
+
+Official retrospective history. No publication date is printed in the inspected cover or final page; the 2022 download-path timestamp and PDF metadata are not asserted as the original issue date.
+
+Original URL: <https://fra.se/download/18.55af049f184e92956c43f20/1658314605605/FRAs-historia-i-korthet.pdf>
+
+[Preserved file](../sources/originals/S137-fra-history.pdf) · 1,660,464 bytes · 15 PDF pages
+
+Retrieved UTC: 2026-10-20T15:36:49.379785+00:00  
+SHA-256: `26c6d5c18a28d3dccb8cf353a75a855b86bb49e31427e718902c0e30ecb459a4`
+
+### S138 — How Arne Beurling may have broken the G-schreiber: Carl-Gösta Borelius account
+
+Publisher: FRA; Carl-Gösta Borelius  
+Document date: not printed / not verified  
+Language: Swedish · Format: html  
+Provenance: Participant’s archival retrospective account published by the original agency; raw HTML snapshot
+
+Extent: Raw HTML snapshot; linked assets not bundled
+
+FRA describes the account as written in the 1980s and published here from its archive; exact composition and web-publication dates are not established. Borelius participated in G-schreiber cryptanalysis from 1941. His account reconstructs how Beurling may have worked; it is not Beurling’s contemporaneous explanation.
+
+Original URL: <https://www.fra.se/omfra/frashistoria/forceringenavgskrivaren.4.55af049f184e92956c42acb.html>
+
+[Preserved file](../sources/web/S138-fra-g-schreiber.html) · 87,300 bytes
+
+Retrieved UTC: 2026-10-20T15:36:48.879831+00:00  
+SHA-256: `5ca0e426a721b80caef827494be1afb4529e874750ae32559a79ebd4f726b202`
+
+### S139 — 3GPP TR 55.919 V6.1.0: A5/3 and GEA3 design and evaluation report (development copy)
+
+Publisher: 3GPP / ETSI SAGE; distributed by GSMA  
+Document date: 2002-12  
+Language: English · Format: pdf  
+Provenance: Original standards-project technical report, distributed by GSMA; cover status warning retained
+
+Edition: 3GPP TR 55.919 V6.1.0 / Release 6 | Revision: 2002-12 | Extent: 26 PDF pages
+
+Cover identifies Release 6 / V6.1.0 (2002-12) and explicitly says the document has not been subject to approval by the Organizational Partners and shall not be implemented. Preserved as a historical design/evaluation account, not an approval or implementation instruction. The 2019 hosting directory is not the report date.
+
+Original URL: <https://www.gsma.com/solutions-and-impact/technologies/security/wp-content/uploads/2019/05/designevaluationreport.pdf>
+
+[Preserved file](../sources/originals/S139-kasumi-evaluation.pdf) · 165,984 bytes · 26 PDF pages
+
+Retrieved UTC: 2026-10-20T15:52:09.510652+00:00  
+SHA-256: `7372e93973ced4088d904bec185bb78567e7529f56aaac5f60c69343f9899f97`

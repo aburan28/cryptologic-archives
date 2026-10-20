@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "collection": "international",
-  "research_as_of": "2026-10-17",
+  "research_as_of": "2026-10-20",
   "profiles": [
     {
       "slug": "gost-28147",
@@ -1264,6 +1264,387 @@
       "unknowns": [
         "The 2004 national-standard milestone is not proof of universal approval for all Korean government information."
       ]
+    },
+    {
+      "slug": "misty1",
+      "name": "MISTY1",
+      "region": "Japan",
+      "role": "Symmetric encryption",
+      "primitive": "Nested Feistel construction with FL, FO and FI functions",
+      "parameters": "64-bit block; 128-bit key; eight-round configuration recommended in RFC 2994",
+      "synopsis": "A designer-authored public specification with explicit nonlinear functions, S-boxes and test data.",
+      "facts": [
+        {
+          "claim_id": "INTL-MISTY1-F1",
+          "text": "RFC 2994 describes a 64-bit block cipher with a 128-bit key and variable round count, recommending eight rounds. Its FI function uses 7-bit and 9-bit S-boxes; FO and FL and the key schedule are explicitly described.",
+          "source_refs": [
+            {
+              "source_id": "S118",
+              "locator": "Sections 1, 2.2 and 2.3"
+            }
+          ]
+        },
+        {
+          "claim_id": "INTL-MISTY1-F2",
+          "text": "The preserved designer-authored RFC is dated November 2000 and cites Matsui’s FSE 1997 MISTY publication. The RFC is Informational; the publisher index labels its stream Legacy.",
+          "source_refs": [
+            {
+              "source_id": "S118",
+              "locator": "Header; Section 6 reference [1]"
+            },
+            {
+              "source_id": "S100",
+              "locator": "RFC2994 entry"
+            }
+          ]
+        }
+      ],
+      "inferences": [
+        {
+          "claim_id": "INTL-MISTY1-I1",
+          "text": "A reported eight-round MISTY1 implementation can be compared with the published S-boxes, schedule and example data, rather than characterized only by its name or key length.",
+          "confidence": "conditional",
+          "depends_on": [
+            "INTL-MISTY1-F1"
+          ],
+          "assumption": "The implementation claims the RFC’s specified eight-round configuration."
+        }
+      ],
+      "unknowns": [
+        "A 1997 publication citation and a 2000 RFC are not first governmental approval records. A present-day security recommendation is outside this historical profile."
+      ]
+    },
+    {
+      "slug": "kcipher2",
+      "name": "KCipher-2",
+      "region": "Japan",
+      "role": "Keystream generation",
+      "primitive": "Word-oriented stream cipher with feedback registers and nonlinear operations",
+      "parameters": "128-bit key; 128-bit IV; 32-bit state words",
+      "synopsis": "A public Japanese stream-cipher specification distinct from the block-cipher families in the archive.",
+      "facts": [
+        {
+          "claim_id": "INTL-KCIPHER2-F1",
+          "text": "RFC 7008 specifies a 128-bit key and 128-bit IV, state registers, feedback shifts, nonlinear functions and keystream generation. It includes sample implementation code and test vectors.",
+          "source_refs": [
+            {
+              "source_id": "S119",
+              "locator": "Abstract; Sections 2.2–2.5; Appendices B–C"
+            }
+          ]
+        },
+        {
+          "claim_id": "INTL-KCIPHER2-F2",
+          "text": "The RFC was published in August 2013 as an Informational Independent Submission. It reports that KCipher-2 was published in 2007; this is a source-reported historical statement, not an original approval record.",
+          "source_refs": [
+            {
+              "source_id": "S119",
+              "locator": "Header; Abstract; Status of This Memo"
+            }
+          ]
+        }
+      ],
+      "inferences": [
+        {
+          "claim_id": "INTL-KCIPHER2-I1",
+          "text": "The 128-bit IV does not make the primitive a 128-bit block cipher; its specified interface produces a keystream from word-oriented state.",
+          "confidence": "conditional",
+          "depends_on": [
+            "INTL-KCIPHER2-F1"
+          ],
+          "assumption": "The name refers to the generator specified in RFC 7008."
+        }
+      ],
+      "unknowns": [
+        "The RFC’s historical security statements describe its publication context and are not treated as a current cryptanalytic guarantee."
+      ]
+    },
+    {
+      "slug": "kasumi",
+      "name": "KASUMI",
+      "region": "International mobile standards / Japanese design context",
+      "role": "Symmetric encryption primitive for cellular algorithms",
+      "primitive": "Eight-round Feistel cipher with FL, FO and FI functions",
+      "parameters": "64-bit block; 128-bit key; eight rounds",
+      "synopsis": "The preserved Release 17 specification exposes the cipher core and distinguishes it from the complete confidentiality and integrity algorithms.",
+      "facts": [
+        {
+          "claim_id": "INTL-KASUMI-F1",
+          "text": "KASUMI has a 64-bit data block, a 128-bit key and eight Feistel rounds. Its FI function uses 7-bit and 9-bit S-boxes, and the specification gives round-key derivation and tables.",
+          "source_refs": [
+            {
+              "source_id": "S120",
+              "locator": "Sections 3 and 4.1–4.6"
+            }
+          ]
+        },
+        {
+          "claim_id": "INTL-KASUMI-F2",
+          "text": "The archived PDF is ETSI TS 135 202 V17.0.0 dated April 2022, incorporating 3GPP TS 35.202 Release 17. It specifies KASUMI as the component used by f8 and f9, rather than the complete algorithms.",
+          "source_refs": [
+            {
+              "source_id": "S120",
+              "locator": "Cover; Section 0 Scope"
+            }
+          ]
+        },
+        {
+          "claim_id": "INTL-KASUMI-F3",
+          "text": "3GPP’s December 2002 design report identifies KASUMI as a modification of MISTY1 and describes separate data-path and key-schedule changes. The preserved report is explicitly a development copy not approved by the Organizational Partners.",
+          "source_refs": [
+            {
+              "source_id": "S139",
+              "locator": "Cover; Sections 9.2–9.3, printed/PDF pp.14–15"
+            }
+          ]
+        }
+      ],
+      "inferences": [
+        {
+          "claim_id": "INTL-KASUMI-I1",
+          "text": "The core cipher’s block/key sizes are insufficient to specify a cellular packet-protection operation; the f8/f9 construction and input handling also matter.",
+          "confidence": "conditional",
+          "depends_on": [
+            "INTL-KASUMI-F1",
+            "INTL-KASUMI-F2"
+          ],
+          "assumption": "The implementation uses KASUMI through a cellular confidentiality or integrity algorithm."
+        }
+      ],
+      "unknowns": [
+        "This later standards edition does not establish KASUMI’s original invention or first approval date. Similar function names in MISTY1 do not establish interchangeability."
+      ]
+    },
+    {
+      "slug": "brainpool",
+      "name": "Brainpool elliptic curves",
+      "region": "Germany / international",
+      "role": "Elliptic-curve domain parameters",
+      "primitive": "Prime-field elliptic curves and specified parameter-generation procedures",
+      "parameters": "Named r1/t1 curves at 160, 192, 224, 256, 320, 384 and 512 bits in RFC 5639",
+      "synopsis": "Published curve parameters are distinguished from the signature, agreement and transport protocols that use them.",
+      "facts": [
+        {
+          "claim_id": "INTL-BRAINPOOL-F1",
+          "text": "RFC 5639 gives prime-field curve parameter sets, requirements, OIDs and generation procedures. Its listed field sizes range from 160 to 512 bits.",
+          "source_refs": [
+            {
+              "source_id": "S123",
+              "locator": "Sections 2–4; Appendix A"
+            }
+          ]
+        },
+        {
+          "claim_id": "INTL-BRAINPOOL-F2",
+          "text": "RFC 8734 defines separate Brainpool groups and signature scheme identifiers for TLS 1.3. Both RFCs are Informational Independent Submissions.",
+          "source_refs": [
+            {
+              "source_id": "S124",
+              "locator": "Header; Sections 2–3"
+            },
+            {
+              "source_id": "S123",
+              "locator": "Header"
+            }
+          ]
+        },
+        {
+          "claim_id": "INTL-BRAINPOOL-F3",
+          "text": "BSI TR-03111 separately specifies signature, key-agreement and encoding operations. ANSSI’s 2021 selection guide lists selected Brainpool curves, which is a different kind of evidence from the original curve definition.",
+          "source_refs": [
+            {
+              "source_id": "S125",
+              "locator": "Sections 4.2–4.4 and 5"
+            },
+            {
+              "source_id": "S130",
+              "locator": "Section 5.3, printed pp.31–32 / PDF pp.33–34"
+            }
+          ]
+        }
+      ],
+      "inferences": [
+        {
+          "claim_id": "INTL-BRAINPOOL-I1",
+          "text": "Sharing a curve does not imply sharing a signature scheme, key-agreement protocol or encoding; these are independent choices in the preserved records.",
+          "confidence": "conditional",
+          "depends_on": [
+            "INTL-BRAINPOOL-F1",
+            "INTL-BRAINPOOL-F2",
+            "INTL-BRAINPOOL-F3"
+          ],
+          "assumption": "The implementations use a named Brainpool domain parameter set through the cited schemes."
+        }
+      ],
+      "unknowns": [
+        "Listing a curve in the 2010 parameter document is not a present-day recommendation for every listed size or evidence of classified product approval."
+      ]
+    },
+    {
+      "slug": "snow3g",
+      "name": "SNOW 3G",
+      "region": "International mobile standards",
+      "role": "Keystream generation for confidentiality and integrity constructions",
+      "primitive": "16-word LFSR and three-register nonlinear finite-state machine",
+      "parameters": "128-bit key; 128-bit IV; 32-bit output words",
+      "synopsis": "An explicitly specified generator with separately preserved UEA2/UIA2 algorithms, tests and design rationale.",
+      "facts": [
+        {
+          "claim_id": "INTL-SNOW3G-F1",
+          "text": "The generator produces 32-bit keystream words from a 128-bit key and IV and combines a 16-word LFSR with a three-register FSM.",
+          "source_refs": [
+            {
+              "source_id": "S131",
+              "locator": "Sections 2.1, 3.2 and 3.3"
+            }
+          ]
+        },
+        {
+          "claim_id": "INTL-SNOW3G-F2",
+          "text": "The design report traces SNOW 3G to SNOW 2.0 and specifies the reasoning for changing the nonlinear/FSM components. This is documented design history rather than an inference from a shared name.",
+          "source_refs": [
+            {
+              "source_id": "S134",
+              "locator": "Sections 8.1.2–8.3"
+            }
+          ]
+        },
+        {
+          "claim_id": "INTL-SNOW3G-F3",
+          "text": "Document 2 v1.1 is dated 2006-09-06; Document 1 v2.1 is dated 2009-03-16; Document 3 v1.1 is dated 2012-10-25. They describe different layers and have separate histories.",
+          "source_refs": [
+            {
+              "source_id": "S131",
+              "locator": "Cover and Document History"
+            },
+            {
+              "source_id": "S132",
+              "locator": "Cover and Document History"
+            },
+            {
+              "source_id": "S133",
+              "locator": "Cover and Document History"
+            }
+          ]
+        }
+      ],
+      "inferences": [
+        {
+          "claim_id": "INTL-SNOW3G-I1",
+          "text": "A comparison with ZUC should distinguish generator architecture from the surrounding packet confidentiality/integrity algorithms; the public specifications expose both layers.",
+          "confidence": "conditional",
+          "depends_on": [
+            "INTL-SNOW3G-F1",
+            "INTL-SNOW3G-F3",
+            "INTL-ZUC-F1",
+            "INTL-ZUC-F2"
+          ],
+          "assumption": "The comparison concerns the preserved 128-bit-key generator families, not an unpreserved later variant."
+        }
+      ],
+      "unknowns": [
+        "The 2006 evaluation does not establish immunity to later attacks, and packet-algorithm conformance is not established solely by generator test vectors."
+      ]
+    },
+    {
+      "slug": "nema",
+      "name": "NEMA",
+      "region": "Switzerland",
+      "role": "Historical machine encryption",
+      "primitive": "Electromechanical wheel machine with electrical contact and stepping wheels",
+      "parameters": "Manual describes five contact wheels, five stepping wheels and ten-letter external settings",
+      "synopsis": "A surviving original bilingual manual provides operational structure and a directly visible declassification annotation.",
+      "facts": [
+        {
+          "claim_id": "INTL-NEMA-F1",
+          "text": "The manual’s opening describes five electrical contact wheels and five mechanical stepping wheels. It distinguishes internal wheel arrangement from a ten-letter external setting.",
+          "source_refs": [
+            {
+              "source_id": "S136",
+              "locator": "German Section I, printed p.1 / PDF p.2"
+            }
+          ]
+        },
+        {
+          "claim_id": "INTL-NEMA-F2",
+          "text": "The operator enters a letter on the keyboard and reads the corresponding lamp; the same procedure is used for deciphering after the prescribed setting. Additional control keys operate auxiliary devices without operating the cipher mechanism.",
+          "source_refs": [
+            {
+              "source_id": "S136",
+              "locator": "German Section I, printed p.1 / PDF p.2; Section II.B.1, printed p.3 / PDF p.3"
+            }
+          ]
+        },
+        {
+          "claim_id": "INTL-NEMA-F3",
+          "text": "This copy is numbered 717 and its cover bears a declassification stamp dated 9 July 1992. The inspected copy does not establish its original issue date.",
+          "source_refs": [
+            {
+              "source_id": "S136",
+              "locator": "Cover, PDF p.1; opening, PDF p.2"
+            }
+          ]
+        }
+      ],
+      "inferences": [
+        {
+          "claim_id": "INTL-NEMA-I1",
+          "text": "The ten-letter external setting is one part of the keying procedure, not a sufficient description of the entire key space; the manual separately identifies the internal wheel arrangement.",
+          "confidence": "conditional",
+          "depends_on": [
+            "INTL-NEMA-F1"
+          ],
+          "assumption": "The keying procedure is the one described in this manual, with wheel arrangement not fixed by another external instruction."
+        }
+      ],
+      "unknowns": [
+        "Original approval and publication dates are not established. The manual does not by itself prove the wiring or interchangeability of every surviving NEMA variant."
+      ]
+    },
+    {
+      "slug": "siemens-t52",
+      "name": "Siemens T52 / G-schreiber",
+      "region": "Germany / Swedish cryptanalytic records",
+      "role": "Historical teleprinter encryption",
+      "primitive": "Five-impulse masking and transposition, as described in the published reconstruction",
+      "parameters": "Five teleprinter bit positions; aligned parallel traffic is central to Borelius’s account",
+      "synopsis": "FRA preserves an institutional history and a participant’s explicitly reconstructed account of the Swedish cryptanalysis.",
+      "facts": [
+        {
+          "claim_id": "INTL-T52-F1",
+          "text": "FRA’s history identifies the G-schreiber as Siemens und Halske T52. It dates the first interception of this teleprinter traffic to 19 May 1940 and describes Beurling’s solution and subsequent logical replicas.",
+          "source_refs": [
+            {
+              "source_id": "S137",
+              "locator": "G-skrivaren, printed pp.8–9 / PDF p.5"
+            }
+          ]
+        },
+        {
+          "claim_id": "INTL-T52-F2",
+          "text": "Borelius’s published account describes five-bit teleprinter symbols subjected to common masking and transposition in aligned parallel messages. Its introduction says the account was written in the 1980s and reconstructs how Beurling may have worked.",
+          "source_refs": [
+            {
+              "source_id": "S138",
+              "locator": "Introduction; passage beginning Dessa tecken har utsatts för samma överlagring och samma transposition; following comparison and transposition discussion"
+            }
+          ]
+        }
+      ],
+      "inferences": [
+        {
+          "claim_id": "INTL-T52-I1",
+          "text": "For a fixed mask K and bit permutation pi, the map C=pi(P XOR K) preserves pairwise Hamming distances between aligned plaintext symbols. This explains the kind of comparison described in the account without proving Beurling’s actual sequence of discoveries.",
+          "confidence": "conditional",
+          "depends_on": [
+            "INTL-T52-F2"
+          ],
+          "assumption": "The compared messages use the same mask and permutation at the aligned position; no claim is made about all T52 models or operating states."
+        }
+      ],
+      "unknowns": [
+        "The retrospective account is not a contemporaneous explanation by Beurling. Exact model variants, full wiring and original German approval dates are outside these sources."
+      ]
     }
   ],
   "events": [
@@ -1292,12 +1673,20 @@
       "locator": "Title page"
     },
     {
-      "date": "circa-1940",
-      "subject": "Enigma",
-      "date_kind": "cryptanalytic_treatise",
-      "interpretation": "Turing's mathematical and mechanical account; preserved as an edited transcription.",
-      "source_id": "S039",
-      "locator": "Chapter 1 and editorial note"
+      "date": "1940-05-19",
+      "subject": "Siemens T52 / G-schreiber",
+      "date_kind": "interception milestone",
+      "interpretation": "FRA retrospective history dates first interception of this traffic; not German invention or approval.",
+      "source_id": "S137",
+      "locator": "G-skrivaren, printed pp.8–9 / PDF p.5"
+    },
+    {
+      "date": "1942-07-01",
+      "subject": "FRA",
+      "date_kind": "agency establishment",
+      "interpretation": "Official history dates establishment as an independent Swedish agency.",
+      "source_id": "S137",
+      "locator": "FRA bildas, printed pp.10–11 / PDF p.6"
     },
     {
       "date": "1942-12",
@@ -1340,6 +1729,14 @@
       "locator": "Normative reference GOST28147-89"
     },
     {
+      "date": "1992-07-09",
+      "subject": "NEMA manual",
+      "date_kind": "declassification annotation",
+      "interpretation": "Surviving copy 717 bears this stamp; original issue date remains unknown.",
+      "source_id": "S136",
+      "locator": "Cover"
+    },
+    {
       "date": "1998",
       "subject": "SEED",
       "date_kind": "reported_development",
@@ -1362,6 +1759,14 @@
       "interpretation": "Early CRYPTREC algorithm specification.",
       "source_id": "S052",
       "locator": "2000 submission"
+    },
+    {
+      "date": "2000-11",
+      "subject": "MISTY1",
+      "date_kind": "RFC publication",
+      "interpretation": "Informational RFC 2994; publisher stream Legacy.",
+      "source_id": "S118",
+      "locator": "Header"
     },
     {
       "date": "2001",
@@ -1428,6 +1833,14 @@
       "locator": "Introduction"
     },
     {
+      "date": "2006-01-10",
+      "subject": "SNOW 3G",
+      "date_kind": "recorded initial publication",
+      "interpretation": "Document 2’s history records v1.0 on this date.",
+      "source_id": "S131",
+      "locator": "Document History, PDF p.2"
+    },
+    {
       "date": "2007-06-01",
       "subject": "CLEFIA",
       "date_kind": "designer_specification",
@@ -1442,6 +1855,14 @@
       "interpretation": "Diffie/Ledin translation version 1.03.",
       "source_id": "S053",
       "locator": "Cover"
+    },
+    {
+      "date": "2010-03",
+      "subject": "Brainpool curves",
+      "date_kind": "RFC publication",
+      "interpretation": "RFC 5639 specifies domain parameters and generation.",
+      "source_id": "S123",
+      "locator": "Header"
     },
     {
       "date": "2010-03",
@@ -1484,14 +1905,6 @@
       "locator": "Cover"
     },
     {
-      "date": "2012-03-21",
-      "subject": "ZUC / SM4 / SM2 / SM3",
-      "date_kind": "industry_standard_release",
-      "interpretation": "OSCCA releases GM/T 0001-0004, effective on announcement.",
-      "source_id": "S034",
-      "locator": "Announcement"
-    },
-    {
       "date": "2012",
       "subject": "GOST hash and signature schemes",
       "date_kind": "standard_edition",
@@ -1500,11 +1913,27 @@
       "locator": "Introduction; companion signature RFC S024"
     },
     {
+      "date": "2012-03-21",
+      "subject": "ZUC / SM4 / SM2 / SM3",
+      "date_kind": "industry_standard_release",
+      "interpretation": "OSCCA releases GM/T 0001-0004, effective on announcement.",
+      "source_id": "S034",
+      "locator": "Announcement"
+    },
+    {
       "date": "2013-08",
       "subject": "GOST hash function",
       "date_kind": "english_rfc",
       "interpretation": "RFC 6986 publication.",
       "source_id": "S023",
+      "locator": "Header"
+    },
+    {
+      "date": "2013-08",
+      "subject": "KCipher-2",
+      "date_kind": "RFC publication",
+      "interpretation": "Informational Independent Submission RFC 7008.",
+      "source_id": "S119",
       "locator": "Header"
     },
     {
@@ -1556,6 +1985,14 @@
       "locator": "Metadata; companion SM2 record S036"
     },
     {
+      "date": "2020-02",
+      "subject": "Brainpool TLS 1.3",
+      "date_kind": "RFC publication",
+      "interpretation": "RFC 8734 separately binds curves to TLS 1.3.",
+      "source_id": "S124",
+      "locator": "Header"
+    },
+    {
       "date": "2020-09",
       "subject": "Magma",
       "date_kind": "english_rfc",
@@ -1572,12 +2009,28 @@
       "locator": "Header and Status of This Memo"
     },
     {
+      "date": "2022-04",
+      "subject": "KASUMI",
+      "date_kind": "preserved standards edition",
+      "interpretation": "ETSI TS 135 202 V17.0.0 / 3GPP Release 17; not first appearance.",
+      "source_id": "S120",
+      "locator": "Cover"
+    },
+    {
       "date": "2022-06-30",
       "subject": "Chiasmus",
       "date_kind": "approval_withdrawal",
       "interpretation": "BSI withdraws the software's VS-NfD approval; not an algorithm invention date.",
       "source_id": "S042",
       "locator": "Section 1, p.4"
+    },
+    {
+      "date": "circa-1940",
+      "subject": "Enigma",
+      "date_kind": "cryptanalytic_treatise",
+      "interpretation": "Turing's mathematical and mechanical account; preserved as an edited transcription.",
+      "source_id": "S039",
+      "locator": "Chapter 1 and editorial note"
     }
   ]
 }

@@ -21,7 +21,8 @@ sources = {s['id']: s for s in catalog['sources'] if 'standards' in s.get('colle
 AS_OF = data['research_as_of']
 families = data['families']
 preserved = sum(s['download']['status'] == 'archived' for s in sources.values())
-new_preserved = sum(s['download']['status'] == 'archived' and int(sid[1:]) >= 57 for sid,s in sources.items())
+addition_ids = set(data['continuation']['new_source_ids'])
+new_preserved = sum(s['download']['status'] == 'archived' and sid in addition_ids for sid,s in sources.items())
 
 
 def write(path, text):
@@ -38,15 +39,19 @@ def source_links(ids):
 
 def edition(source):
     fields = [('version','Edition'), ('original_issue_date','Initial issue'),
-              ('revision_date','Revision'), ('publication_category','RFC category'),
-              ('publication_stream','RFC stream'), ('extent','Extent')]
+              ('revision_date','Revision'), ('effective_date','Effective'),
+              ('printed_edition_date','Printing'), ('declassification_date','Declassification annotation'),
+              ('publication_category','RFC category'), ('publication_stream','RFC stream'),
+              ('publication_status','RFC status at issue'),
+              ('current_status_at_retrieval','Status in acquired index'),
+              ('extent','Extent')]
     return ' | '.join(label+': '+source[key] for key,label in fields if source.get(key))
 
 
 def build_markdown():
     lines = ['# '+data['title'], '', f'Research snapshot: {AS_OF}', '']
     lines += [p+'\n' for p in data['scope']]
-    lines += [f'This guide maps **{len(families)} families**, **{sum(len(f["findings"]) for f in families)} claims** and **{len(data["milestones"])} dated milestones** to {len(sources)} source records. {preserved} copies are preserved, including {new_preserved} newly added documents and snapshots. Three KISA pages remain acquisition gaps.', '',
+    lines += [f'This guide maps **{len(families)} families**, **{sum(len(f["findings"]) for f in families)} claims** and **{len(data["milestones"])} dated milestones** to {len(sources)} source records. {preserved} copies are preserved, including {new_preserved} additions since the 2026-10-17 baseline. Three KISA pages remain acquisition gaps after a 2026-10-20 retry.', '',
               '[PDF edition](../reports/companion-standards.pdf) · [Source catalogue](../sources/README.md) · [Structured research](../data/standards.json) · [Normalized claims](../data/standards-claims.json)', '',
               '## Read the layers', '', '| Layer | Question | Examples | Evidence |', '|---|---|---|---|']
     for layer in data['layers']:
@@ -147,7 +152,7 @@ def build_pdf():
     story.append(Spacer(1,12*mm))
     add(f'{len(families)} family maps; {sum(len(f["findings"]) for f in families)} sourced claims and deductions; {len(data["milestones"])} dated milestones.')
     add(f'{new_preserved} additional preserved documents and snapshots. This guide references {len(sources)} records, of which {preserved} are preserved.')
-    add('Includes official 2010 SM2/SM3 releases, Russian GOST companion RFCs, ZUC specification and evaluation records, Japanese selection lists, German protocol guidance and Korean cipher profiles.','small')
+    add('Includes Russian national-language modes and correction records, Chinese application and certificate scans, Japanese/Korean profiles, German ECC, French ANSSI guidance, international cellular specifications and Swiss/Swedish historical records.','small')
     story.append(PageBreak())
     add('Scope and how to read','h1')
     for p in data['scope']:add(p)

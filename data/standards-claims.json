@@ -92,6 +92,46 @@
       "assumption": "The manufacturer’s GCM label refers to the standard mode without a proprietary change in its block interface."
     },
     {
+      "id": "STD-COM-F5",
+      "collection": "standards",
+      "family": "interfaces",
+      "claim_id": "STD-COM-F5",
+      "kind": "documented",
+      "text": "HKDF separates extraction of a pseudorandom key from expansion of output keying material. PKCS #5 v2.1 separately specifies PBKDF2, PBES2 and PBMAC1 for password-based derivation, encryption and authentication.",
+      "source_refs": [
+        {
+          "source_id": "S126",
+          "locator": "Sections 2.1–2.3; Appendix A"
+        },
+        {
+          "source_id": "S127",
+          "locator": "Sections 5.2, 6.2 and 7.1"
+        }
+      ]
+    },
+    {
+      "id": "STD-COM-F6",
+      "collection": "standards",
+      "family": "interfaces",
+      "claim_id": "STD-COM-F6",
+      "kind": "documented",
+      "text": "The preserved RFC index supplies stream, publication-status and current-status fields. For example it labels RFC 2994 Legacy, RFC 5528 IETF and Informational, and RFC 5529 IETF and Proposed Standard. The category printed in each RFC and the index’s more specific status remain distinct fields.",
+      "source_refs": [
+        {
+          "source_id": "S100",
+          "locator": "rfc-entry elements RFC2994, RFC5528 and RFC5529: stream, publication-status, current-status"
+        },
+        {
+          "source_id": "S115",
+          "locator": "Header and Status of This Memo"
+        },
+        {
+          "source_id": "S116",
+          "locator": "Header and Status of This Memo"
+        }
+      ]
+    },
+    {
       "id": "STD-GOST-F1",
       "collection": "standards",
       "family": "gost",
@@ -212,6 +252,158 @@
         "STD-GOST-F4"
       ],
       "assumption": "The parties exchange keys, signatures or protected messages using the cited protocol families."
+    },
+    {
+      "id": "STD-GOST-F6",
+      "collection": "standards",
+      "family": "gost",
+      "claim_id": "STD-GOST-F6",
+      "kind": "documented",
+      "text": "GOST R 34.13-2015 cites approval order 750-st of 2015-06-19 and an effective date of 2016-01-01. The acquired Russian printing has a 2016 cover and an imprint signed for printing on 2016-03-28; these are separate milestones.",
+      "source_refs": [
+        {
+          "source_id": "S101",
+          "locator": "Foreword, PDF p.2; printed p.1 / PDF p.6; imprint, PDF p.29"
+        },
+        {
+          "source_id": "S103",
+          "locator": "Registration in the fund: order number, order date and effective date"
+        }
+      ]
+    },
+    {
+      "id": "STD-GOST-F7",
+      "collection": "standards",
+      "family": "gost",
+      "claim_id": "STD-GOST-F7",
+      "kind": "documented",
+      "text": "The Russian modes standard defines ECB, CTR, OFB, CBC, CFB and MAC procedures and supplies examples for 128-bit and 64-bit block ciphers. Its Magma CBC example uses a 192-bit initialization register for a 64-bit block cipher.",
+      "source_refs": [
+        {
+          "source_id": "S101",
+          "locator": "Sections 5.1–5.6; Appendix A; A.2.4.1, printed p.21 / PDF p.26"
+        }
+      ]
+    },
+    {
+      "id": "STD-GOST-F8",
+      "collection": "standards",
+      "family": "gost",
+      "claim_id": "STD-GOST-F8",
+      "kind": "documented",
+      "text": "The separately preserved IUS No.6/2018 correction changes Section 5.3.2, rule (7), of GOST R 34.13-2015. It is retained as a correction document, without altering the earlier printing’s acquired bytes.",
+      "source_refs": [
+        {
+          "source_id": "S102",
+          "locator": "Entire one-page correction, location column and corrected formula"
+        },
+        {
+          "source_id": "S103",
+          "locator": "Changes and corrections: IUS 6-2018"
+        }
+      ]
+    },
+    {
+      "id": "STD-GOST-F9",
+      "collection": "standards",
+      "family": "gost",
+      "claim_id": "STD-GOST-F9",
+      "kind": "documented",
+      "text": "R 1323565.1.005-2017 addresses permissible plaintext-block volumes processed under one key for certain GOST modes. It cites approval on 2017-10-25 and states effective 2018-04-01. Its scope assumes the adversary cannot obtain additional information about the key.",
+      "source_refs": [
+        {
+          "source_id": "S104",
+          "locator": "Foreword, PDF p.2; Introduction, PDF p.4; Section 1, printed p.1 / PDF p.5"
+        }
+      ]
+    },
+    {
+      "id": "STD-GOST-F10",
+      "collection": "standards",
+      "family": "gost",
+      "claim_id": "STD-GOST-F10",
+      "kind": "documented",
+      "text": "RFCs 4490 and 4491 were issued as Standards Track in May 2006 and bind the older GOST signature/hash family to CMS and X.509 respectively. RFC 9215 is a separate 2022 profile for the 2012 signature/hash algorithms; the editions are not interchangeable.",
+      "source_refs": [
+        {
+          "source_id": "S105",
+          "locator": "Header; Sections 1–2"
+        },
+        {
+          "source_id": "S106",
+          "locator": "Header; Section 1"
+        },
+        {
+          "source_id": "S061",
+          "locator": "Header; Sections 1–2"
+        },
+        {
+          "source_id": "S100",
+          "locator": "RFC4490, RFC4491 and RFC9215 entries"
+        }
+      ]
+    },
+    {
+      "id": "STD-GOST-F11",
+      "collection": "standards",
+      "family": "gost",
+      "claim_id": "STD-GOST-F11",
+      "kind": "documented",
+      "text": "RFC 9337 specifies password-based derivation with HMAC using the 512-bit GOST R 34.11-2012 hash output, plus PBES2, PBMAC1 and ASN.1 identifiers. RFC 9548 separately profiles PKCS #12 PFX containers, private-key representations and certificates for GOST R 34.10-2012. Both are Informational Independent Submissions.",
+      "source_refs": [
+        {
+          "source_id": "S107",
+          "locator": "Header; Sections 3–7; Appendix A"
+        },
+        {
+          "source_id": "S108",
+          "locator": "Header; Sections 4–7 and 10; Appendix A"
+        }
+      ]
+    },
+    {
+      "id": "STD-GOST-F12",
+      "collection": "standards",
+      "family": "gost",
+      "claim_id": "STD-GOST-F12",
+      "kind": "documented",
+      "text": "There is a visible counter-encoding discrepancy between the preserved texts: RFC 8018 Section 5.2 defines INT(i) as four octets with the most significant octet first, while RFC 9337 Section 3 defines Int(i) using i=i1+2^8*i2+2^16*i3+2^24*i4 and Section 4 uses S || INT(i). This is recorded as a specification question, not a verified implementation failure or a completed errata audit.",
+      "source_refs": [
+        {
+          "source_id": "S127",
+          "locator": "Section 5.2, step 3 definition of INT(i)"
+        },
+        {
+          "source_id": "S107",
+          "locator": "Section 3, Table 1 Int(i); Section 4, U_1(i) equation"
+        }
+      ]
+    },
+    {
+      "id": "STD-GOST-I2",
+      "collection": "standards",
+      "family": "gost",
+      "claim_id": "STD-GOST-I2",
+      "kind": "inference",
+      "text": "An IV length alone cannot identify the cipher’s block size: the preserved GOST example explicitly uses an initialization register longer than one block.",
+      "confidence": "conditional",
+      "depends_on": [
+        "STD-GOST-F7"
+      ],
+      "assumption": "The interface implements the cited GOST mode and its generalized register construction."
+    },
+    {
+      "id": "STD-GOST-I3",
+      "collection": "standards",
+      "family": "gost",
+      "claim_id": "STD-GOST-I3",
+      "kind": "inference",
+      "text": "Literal implementations of the two counter definitions require an explicit compatibility decision before assuming identical PBKDF2 outputs. No claim is made here about deployed implementations or the resolution of any erratum.",
+      "confidence": "conditional",
+      "depends_on": [
+        "STD-GOST-F12"
+      ],
+      "assumption": "The Int/INT notation in RFC 9337 denotes its tabulated integer encoding; no external correction or implementation-specific convention overrides it."
     },
     {
       "id": "STD-SM-F1",
@@ -372,6 +564,132 @@
         "STD-SM-F4"
       ],
       "assumption": "The question concerns the preserved public specifications and their dated releases, rather than an undocumented earlier variant."
+    },
+    {
+      "id": "STD-SM-F9",
+      "collection": "standards",
+      "family": "shangmi",
+      "claim_id": "STD-SM-F9",
+      "kind": "documented",
+      "text": "A second GM/T 0009-2012 acquisition contains 12 PDF pages, including all printed body pages 1–7. Its cover prints issue and implementation on 2012-11-22; its final imprint says first edition and printing in January 2013. The older S074 remains a separately preserved incomplete scan.",
+      "source_refs": [
+        {
+          "source_id": "S109",
+          "locator": "Cover; contents; printed body pp.1–7 / PDF pp.5–11; imprint / PDF p.12"
+        }
+      ]
+    },
+    {
+      "id": "STD-SM-F10",
+      "collection": "standards",
+      "family": "shangmi",
+      "claim_id": "STD-SM-F10",
+      "kind": "documented",
+      "text": "GM/T 0009-2012 specifies private/public-key and encryption/signature data formats. Its public-key BIT STRING contains 04 || X || Y, with 256-bit coordinates. Its encryption structure lists XCoordinate, YCoordinate, a 32-byte hash and ciphertext; its signature representation contains integer R and S fields.",
+      "source_refs": [
+        {
+          "source_id": "S109",
+          "locator": "Sections 5.1–5.2 and 7.1–7.3, printed pp.1–3 / PDF pp.5–7"
+        }
+      ]
+    },
+    {
+      "id": "STD-SM-F11",
+      "collection": "standards",
+      "family": "shangmi",
+      "claim_id": "STD-SM-F11",
+      "kind": "documented",
+      "text": "The application standard defines identity preprocessing and, absent a special agreement, the 16-byte user identity represented by the ASCII string 1234567812345678. RFC 8998 instead specifies a TLS-specific SM2 signature identity for its handshake context and separately discusses certificate identities.",
+      "source_refs": [
+        {
+          "source_id": "S109",
+          "locator": "Section 8, printed p.4 / PDF p.8; Section 10, printed p.7 / PDF p.11"
+        },
+        {
+          "source_id": "S026",
+          "locator": "Section 3.2.1, SM2 signature scheme identity values"
+        }
+      ]
+    },
+    {
+      "id": "STD-SM-F12",
+      "collection": "standards",
+      "family": "shangmi",
+      "claim_id": "STD-SM-F12",
+      "kind": "documented",
+      "text": "GM/T 0010-2012 defines object identifiers and signed, enveloped, signed-and-enveloped, encrypted and key-agreement message structures, with SM2 key syntax in normative Appendix A. These are message encodings around the primitive.",
+      "source_refs": [
+        {
+          "source_id": "S110",
+          "locator": "Section 5; Sections 8–12; normative Appendix A, printed p.9 / PDF p.12"
+        }
+      ]
+    },
+    {
+      "id": "STD-SM-F13",
+      "collection": "standards",
+      "family": "shangmi",
+      "claim_id": "STD-SM-F13",
+      "kind": "documented",
+      "text": "GM/T 0014-2012 specifies certificate-system protocols and associated message formats; Section 5 refers SM2 key structures to GM/T 0009 and encapsulation to GM/T 0010. GM/T 0015-2012 separately specifies DER-based certificate and CRL structures and encoding examples.",
+      "source_refs": [
+        {
+          "source_id": "S111",
+          "locator": "Section 5, printed p.2 / PDF p.7; Section 6; Appendices A–B"
+        },
+        {
+          "source_id": "S112",
+          "locator": "Sections 5.2 and 6; Appendices A–D"
+        }
+      ]
+    },
+    {
+      "id": "STD-SM-F14",
+      "collection": "standards",
+      "family": "shangmi",
+      "claim_id": "STD-SM-F14",
+      "kind": "documented",
+      "text": "GM/T 0017-2012 is a smart-token interface data-format specification whose Sections 7–9 cover command/response APDUs, instruction/status-byte encoding and commands. The scan’s cover prints the 2012 edition and 2012-11-22 issue/effective dates.",
+      "source_refs": [
+        {
+          "source_id": "S113",
+          "locator": "Cover, PDF p.1; contents, PDF pp.2–5; Sections 7–9"
+        }
+      ]
+    },
+    {
+      "id": "STD-SM-F15",
+      "collection": "standards",
+      "family": "shangmi",
+      "claim_id": "STD-SM-F15",
+      "kind": "documented",
+      "text": "The acquired GM/T 0024-2014 is an SSL VPN specification with issue and effective dates 2014-02-13 on its cover. It is a historical Chinese VPN specification, separate from the 2021 RFC 8998 TLS 1.3 profile.",
+      "source_refs": [
+        {
+          "source_id": "S114",
+          "locator": "Cover, PDF p.1; contents and Scope"
+        },
+        {
+          "source_id": "S026",
+          "locator": "Header; Abstract; Section 1"
+        }
+      ]
+    },
+    {
+      "id": "STD-SM-I2",
+      "collection": "standards",
+      "family": "shangmi",
+      "claim_id": "STD-SM-I2",
+      "kind": "inference",
+      "text": "Interoperation requires agreement on identity preprocessing, point/ciphertext/signature representation and the protocol binding. The label SM2 support alone leaves choices visible in these companion documents unresolved.",
+      "confidence": "conditional",
+      "depends_on": [
+        "STD-SM-F10",
+        "STD-SM-F11",
+        "STD-SM-F12",
+        "STD-SM-F13"
+      ],
+      "assumption": "The implementations exchange the specified SM2 objects or signatures, rather than merely using elliptic-curve arithmetic internally."
     },
     {
       "id": "STD-ZUC-F1",
@@ -546,6 +864,68 @@
       "assumption": "The claim refers to the March 2026 CRYPTREC list, rather than a different selection program or edition."
     },
     {
+      "id": "STD-JP-F5",
+      "collection": "standards",
+      "family": "japan",
+      "claim_id": "STD-JP-F5",
+      "kind": "documented",
+      "text": "RFC 5528 gives Camellia CTR/CCM algorithms and test vectors; RFC 5529 binds CBC/CTR/CCM to IPsec. Both date to April 2009, but the first is IETF Informational and the second Standards Track. RFC 6367 adds Camellia TLS cipher suites in September 2011 as IETF Informational.",
+      "source_refs": [
+        {
+          "source_id": "S115",
+          "locator": "Header; Sections 3–4"
+        },
+        {
+          "source_id": "S116",
+          "locator": "Header; Sections 1 and 3–6"
+        },
+        {
+          "source_id": "S117",
+          "locator": "Header; Abstract; Sections 2–3"
+        },
+        {
+          "source_id": "S100",
+          "locator": "RFC5528, RFC5529 and RFC6367 stream/status entries"
+        }
+      ]
+    },
+    {
+      "id": "STD-JP-F6",
+      "collection": "standards",
+      "family": "japan",
+      "claim_id": "STD-JP-F6",
+      "kind": "documented",
+      "text": "The new primitive records include MISTY1 (RFC 2994, November 2000), KCipher-2 (RFC 7008, August 2013) and an April 2022 Release 17 KASUMI specification. These are concrete preserved editions, not common first-approval dates.",
+      "source_refs": [
+        {
+          "source_id": "S118",
+          "locator": "Header; Sections 1–2"
+        },
+        {
+          "source_id": "S119",
+          "locator": "Header; Abstract; Section 2"
+        },
+        {
+          "source_id": "S120",
+          "locator": "Cover; Sections 0 and 3"
+        }
+      ]
+    },
+    {
+      "id": "STD-JP-F7",
+      "collection": "standards",
+      "family": "japan",
+      "claim_id": "STD-JP-F7",
+      "kind": "documented",
+      "text": "The December 2002 3GPP TR 55.919 design/evaluation report explicitly describes KASUMI’s changes from MISTY1 in the data-encryption part and key schedule. Its cover marks the preserved copy as not approved by the Organizational Partners and not for implementation; its design history is not an approval record.",
+      "source_refs": [
+        {
+          "source_id": "S139",
+          "locator": "Cover; Sections 9.2–9.3, printed/PDF pp.14–15"
+        }
+      ]
+    },
+    {
       "id": "STD-KR-F1",
       "collection": "standards",
       "family": "korea",
@@ -596,6 +976,38 @@
       "assumption": "The proposed claim concerns implementation validation rather than publication of a protocol profile."
     },
     {
+      "id": "STD-KR-F3",
+      "collection": "standards",
+      "family": "korea",
+      "claim_id": "STD-KR-F3",
+      "kind": "documented",
+      "text": "RFC 4010, issued Standards Track in February 2005, specifies SEED in CMS and supplies identifiers for its use. It is an encoding/protocol companion rather than a module-validation certificate.",
+      "source_refs": [
+        {
+          "source_id": "S122",
+          "locator": "Header; Abstract; Sections 2–3"
+        },
+        {
+          "source_id": "S100",
+          "locator": "RFC4010 stream/status entry"
+        }
+      ]
+    },
+    {
+      "id": "STD-KR-F4",
+      "collection": "standards",
+      "family": "korea",
+      "claim_id": "STD-KR-F4",
+      "kind": "documented",
+      "text": "RFC 5669, issued IETF Standards Track in August 2010, specifies SEED for SRTP/SRTCP, including CTR, CCM and GCM, nonce formats, SEED-CTR key derivation and test vectors.",
+      "source_refs": [
+        {
+          "source_id": "S121",
+          "locator": "Header; Sections 2–4; Appendix A"
+        }
+      ]
+    },
+    {
       "id": "STD-DE-F1",
       "collection": "standards",
       "family": "germany",
@@ -644,6 +1056,261 @@
         "STD-DE-F2"
       ],
       "assumption": "No additional product-specific approval or algorithm specification is supplied by the generic guidance citation."
+    },
+    {
+      "id": "STD-DE-F3",
+      "collection": "standards",
+      "family": "germany",
+      "claim_id": "STD-DE-F3",
+      "kind": "documented",
+      "text": "BSI TR-03111’s cover and history identify version 2.10 dated 2018-06-01 and its initial public version on 2007-02-14. The URL filename’s V-2-1 token is not the printed version number.",
+      "source_refs": [
+        {
+          "source_id": "S125",
+          "locator": "Cover, PDF p.1; History, PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "STD-DE-F4",
+      "collection": "standards",
+      "family": "germany",
+      "claim_id": "STD-DE-F4",
+      "kind": "documented",
+      "text": "TR-03111 separately specifies ECDSA, ECGDSA, EC Schnorr signatures, elliptic-curve key agreement, derivation functions and PACE, then gives public-key/signature input-output formats and OIDs.",
+      "source_refs": [
+        {
+          "source_id": "S125",
+          "locator": "Sections 4.2–4.4; Sections 5.1–5.4"
+        }
+      ]
+    },
+    {
+      "id": "STD-DE-F5",
+      "collection": "standards",
+      "family": "germany",
+      "claim_id": "STD-DE-F5",
+      "kind": "documented",
+      "text": "RFC 5639 supplies Brainpool curve parameters and generation procedures. RFC 8734 separately specifies Brainpool groups and signature schemes for TLS 1.3. Both are Informational Independent Submissions; a curve definition and a TLS binding are different records.",
+      "source_refs": [
+        {
+          "source_id": "S123",
+          "locator": "Header; Sections 2–4; Appendix A"
+        },
+        {
+          "source_id": "S124",
+          "locator": "Header; Sections 2–3"
+        }
+      ]
+    },
+    {
+      "id": "STD-FR-F1",
+      "collection": "standards",
+      "family": "france",
+      "claim_id": "STD-FR-F1",
+      "kind": "documented",
+      "text": "The current ANSSI distribution page is dated 2026-03-20 and links two guides. The mechanisms rules PDF is version 3.00 dated 2026-03-20; the algorithm-selection PDF remains the initial version 1.0 dated 2021-03-08.",
+      "source_refs": [
+        {
+          "source_id": "S128",
+          "locator": "Publication date and two download links"
+        },
+        {
+          "source_id": "S129",
+          "locator": "Cover; version history, PDF p.3"
+        },
+        {
+          "source_id": "S130",
+          "locator": "Cover; version history, PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "STD-FR-F2",
+      "collection": "standards",
+      "family": "france",
+      "claim_id": "STD-FR-F2",
+      "kind": "documented",
+      "text": "The mechanisms guide’s revision history records a first applicable version on 2004-11-19, v2.04 on 2020-01-01 and v3.00 on 2026-03-20, with the quantum threat added to the latter. These are guide-version milestones.",
+      "source_refs": [
+        {
+          "source_id": "S129",
+          "locator": "Version history, PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "STD-FR-F3",
+      "collection": "standards",
+      "family": "france",
+      "claim_id": "STD-FR-F3",
+      "kind": "documented",
+      "text": "The 2021 selection guide separately recommends key-wrapping mechanisms SIV and AES-KeyWrap, KDFs including HKDF and PBKDF2, and selected elliptic-curve families including Brainpool. Recommendations are attached to specified mechanisms and implementation notes.",
+      "source_refs": [
+        {
+          "source_id": "S130",
+          "locator": "Sections 4.6–4.8, printed pp.26–28 / PDF pp.28–30; Section 5.3, printed pp.31–32 / PDF pp.33–34"
+        }
+      ]
+    },
+    {
+      "id": "STD-FR-F4",
+      "collection": "standards",
+      "family": "france",
+      "claim_id": "STD-FR-F4",
+      "kind": "documented",
+      "text": "The 2026 rules guide recommends seeking post-quantum security for mechanisms expected to remain in use after 2030-01-01 or exposed to retrospective decryption risk. The guide states that general rule compliance alone is insufficient to guarantee mechanism security.",
+      "source_refs": [
+        {
+          "source_id": "S129",
+          "locator": "Section 2, RecoSécuLongTerme, printed p.8 / PDF p.10; Section 1.4, printed p.5 / PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "STD-FR-I1",
+      "collection": "standards",
+      "family": "france",
+      "claim_id": "STD-FR-I1",
+      "kind": "inference",
+      "text": "The two currently linked guides must be interpreted with their own dates and scopes. A 2026 webpage does not establish a 2026 revision of every recommendation in the 2021 PDF.",
+      "confidence": "conditional",
+      "depends_on": [
+        "STD-FR-F1",
+        "STD-FR-F2",
+        "STD-FR-F3"
+      ],
+      "assumption": "The historical question concerns the acquired PDF editions, not an unpreserved later revision."
+    },
+    {
+      "id": "STD-MOBILE-F1",
+      "collection": "standards",
+      "family": "mobile-snow",
+      "claim_id": "STD-MOBILE-F1",
+      "kind": "documented",
+      "text": "SNOW 3G Document 2 v1.1 is dated 2006-09-06 and records initial publication on 2006-01-10. The generator uses a 128-bit key and 128-bit initialization variable, a 16-word LFSR and a three-register FSM, with 32-bit output words.",
+      "source_refs": [
+        {
+          "source_id": "S131",
+          "locator": "Cover; Document History, PDF p.2; Sections 2.1, 3.2 and 3.3"
+        }
+      ]
+    },
+    {
+      "id": "STD-MOBILE-F2",
+      "collection": "standards",
+      "family": "mobile-snow",
+      "claim_id": "STD-MOBILE-F2",
+      "kind": "documented",
+      "text": "UEA2/UIA2 Document 1 v2.1 is dated 2009-03-16. Its confidentiality and integrity algorithms use distinct input mappings and generator uses; the history identifies the 2009 change as a C-code improvement.",
+      "source_refs": [
+        {
+          "source_id": "S132",
+          "locator": "Cover; Document History, PDF p.2; Sections 3–4"
+        }
+      ]
+    },
+    {
+      "id": "STD-MOBILE-F3",
+      "collection": "standards",
+      "family": "mobile-snow",
+      "claim_id": "STD-MOBILE-F3",
+      "kind": "documented",
+      "text": "The design/evaluation report describes SNOW 3G as a modification of SNOW 2.0 and explains changes to the FSM and nonlinear components. Its v1.1 cover is dated 2006-09-06; its history records v1.0 on 2006-02-06.",
+      "source_refs": [
+        {
+          "source_id": "S134",
+          "locator": "Cover; Document History, PDF p.2; Sections 8.1.2–8.3"
+        }
+      ]
+    },
+    {
+      "id": "STD-MOBILE-F4",
+      "collection": "standards",
+      "family": "mobile-snow",
+      "claim_id": "STD-MOBILE-F4",
+      "kind": "documented",
+      "text": "The implementors’ test document is v1.1 dated 2012-10-25, distinct from the 2006 primitive and design documents and 2009 packet specification. GSMA’s distribution page links these records and states its distribution role for UEA2/UIA2.",
+      "source_refs": [
+        {
+          "source_id": "S133",
+          "locator": "Cover; Document History, PDF pp.1–2"
+        },
+        {
+          "source_id": "S135",
+          "locator": "UEA2 & UIA2 distribution section and Documents 1–5 links"
+        }
+      ]
+    },
+    {
+      "id": "STD-MOBILE-I1",
+      "collection": "standards",
+      "family": "mobile-snow",
+      "claim_id": "STD-MOBILE-I1",
+      "kind": "inference",
+      "text": "A name such as SNOW 3G identifies a generator; a complete cellular operation also needs the confidentiality or integrity construction, initialization mapping, length conventions and exact companion edition.",
+      "confidence": "conditional",
+      "depends_on": [
+        "STD-MOBILE-F1",
+        "STD-MOBILE-F2",
+        "STD-MOBILE-F4"
+      ],
+      "assumption": "The target implementation follows the preserved UEA2/UIA2 family, rather than another use of the underlying generator."
+    },
+    {
+      "id": "STD-HIST-F1",
+      "collection": "standards",
+      "family": "historical-archives",
+      "claim_id": "STD-HIST-F1",
+      "kind": "documented",
+      "text": "The NEMA instructions’ cover identifies copy 717 and bears a declassification stamp dated 1992-07-09. The bilingual German/French instructions are preserved as 18 PDF pages of scanned booklet spreads; the original publication date is not established.",
+      "source_refs": [
+        {
+          "source_id": "S136",
+          "locator": "Cover, PDF p.1; German opening, PDF p.2; French portion"
+        }
+      ]
+    },
+    {
+      "id": "STD-HIST-F2",
+      "collection": "standards",
+      "family": "historical-archives",
+      "claim_id": "STD-HIST-F2",
+      "kind": "documented",
+      "text": "FRA’s official history identifies the G-schreiber as Siemens und Halske T52 and dates the first interception of the relevant teleprinter traffic to 19 May 1940. It separately dates FRA’s establishment as an independent agency to 1942-07-01.",
+      "source_refs": [
+        {
+          "source_id": "S137",
+          "locator": "G-skrivaren, printed pp.8–9 / PDF p.5; FRA bildas, printed pp.10–11 / PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "STD-HIST-F3",
+      "collection": "standards",
+      "family": "historical-archives",
+      "claim_id": "STD-HIST-F3",
+      "kind": "documented",
+      "text": "FRA identifies Carl-Gösta Borelius as a participant in G-schreiber cryptanalysis from 1941 and describes this account as written in the 1980s. Its introduction explicitly presents a reconstruction of how Beurling may have proceeded, rather than a disclosed account by Beurling himself.",
+      "source_refs": [
+        {
+          "source_id": "S138",
+          "locator": "Introduction under Hur gjorde Arne Beurling för att forcera G-skrivaren?; concluding paragraphs"
+        }
+      ]
+    },
+    {
+      "id": "STD-HIST-I1",
+      "collection": "standards",
+      "family": "historical-archives",
+      "claim_id": "STD-HIST-I1",
+      "kind": "inference",
+      "text": "The 1992 declassification stamp dates release of a secrecy control on the surviving manual; it supplies no first-use or first-approval date for the NEMA machine.",
+      "confidence": "conditional",
+      "depends_on": [
+        "STD-HIST-F1"
+      ],
+      "assumption": "The stamp is read as a declassification annotation on this copy, without an additional original approval record."
     }
   ]
 }

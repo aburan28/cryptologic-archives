@@ -1,8 +1,10 @@
 # Source catalogue
 
-Research snapshot: 2026-10-17. Preserved: 96/99 records.
+Research snapshot: 2026-10-20. Preserved: 136/139 records.
 
-Original source bytes (PDF, RFC text and raw web snapshots) are preserved unchanged. Retrieval time is separate from document date. A checksum identifies the local copy; it is not an authentication certificate.
+Acquired source bytes (PDF, RFC text, publisher XML and raw web snapshots) are preserved unchanged. Mirrors may already contain scan marks or host-added text; provenance notes identify these limits. Retrieval time is separate from document date. A checksum identifies the local copy; it is not an authentication certificate.
+
+[Acquisition attempts and unresolved retrievals](../data/acquisition-attempts.json)
 
 ## S001
 
@@ -326,6 +328,8 @@ Format: html
 Retrieved: 2026-10-17T18:41:30.411233+00:00  
 SHA-256: `4bf4e23d2cb38e9a2cd00e437771db4c02b7cd07aae513348f6d325e59a05c89`
 
+Earlier attempt UTC: 2026-10-17T18:40:00.104670+00:00 — HTTPError: HTTP Error 503: Service Unavailable
+
 Original publisher notices apply; no repository-wide license is applied to source documents.
 
 ## S015
@@ -399,6 +403,8 @@ Acquisition URL: <https://web.archive.org/web/20200108180327id_/https://gdmissio
 
 Retrieved: 2026-10-17T18:41:30.413653+00:00  
 SHA-256: `0ceaf63d0115e02a8ecb30d69a823b352f23b1e5c6a7693ddd3b7409cb883397`
+
+Earlier attempt UTC: 2026-10-17T18:40:01.026489+00:00 — HTTPError: HTTP Error 403: Forbidden
 
 Original publisher notices apply; no repository-wide license is applied to source documents.
 
@@ -1248,6 +1254,8 @@ Format: pdf
 Retrieved: 2026-10-17T18:57:13.755407+00:00  
 SHA-256: `cedd73c0e85f4d89c5d7865a20716b455ffc458629c947fec965700185fa22d3`
 
+Earlier attempt UTC: 2026-10-17T18:53:41.241488+00:00 — HTTPError: HTTP Error 404: Not Found
+
 Original publisher notices apply; no repository-wide license is applied to source documents.
 
 ## S053
@@ -2077,6 +2085,10 @@ Format: html
 
 Retrieval note: HTTPError: HTTP Error 503: Service Unavailable
 
+Attempt UTC: 2026-10-20T15:36:04.711250+00:00
+
+Earlier attempt UTC: 2026-10-17T19:11:54.380270+00:00 — HTTPError: HTTP Error 503: Service Unavailable
+
 Original publisher notices apply; no repository-wide license is applied to source documents.
 
 ## S085
@@ -2095,6 +2107,10 @@ Language: Korean
 Format: html
 
 Retrieval note: HTTPError: HTTP Error 503: Service Unavailable
+
+Attempt UTC: 2026-10-20T15:36:06.117019+00:00
+
+Earlier attempt UTC: 2026-10-17T19:11:55.326633+00:00 — HTTPError: HTTP Error 503: Service Unavailable
 
 Original publisher notices apply; no repository-wide license is applied to source documents.
 
@@ -2470,6 +2486,1442 @@ Language: Korean
 Format: html
 
 Retrieval note: HTTPError: HTTP Error 503: Service Unavailable
+
+Attempt UTC: 2026-10-20T15:36:07.447820+00:00
+
+Earlier attempt UTC: 2026-10-17T19:14:35.057635+00:00 — HTTPError: HTTP Error 503: Service Unavailable
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S100
+
+**RFC Series index: publisher XML metadata snapshot**
+
+Publisher: RFC Editor  
+Document date: Not verified  
+Provenance: Original publisher XML; dated acquisition snapshot  
+Original URL: <https://www.rfc-editor.org/rfc/rfc-index.xml>  
+Preservation status: **archived**
+
+Mutable publisher index acquired on 2026-10-20. Stream and current-status fields are observations at retrieval; they do not alter the category printed in an original RFC.
+
+Collection: standards  
+Region: International  
+Language: English  
+Format: xml
+
+Acquired from host: www.rfc-editor.org
+
+Extent: Publisher XML index snapshot
+
+[Preserved file](originals/S100-rfc-index.xml) · 13,732,842 bytes
+
+Retrieved: 2026-10-20T15:42:47.878865+00:00  
+SHA-256: `ab81329d975096f37b9a8a85cfb8b593e5c249b65f7a9707cd1ec45d3edf4099`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S101
+
+**GOST R 34.13-2015: Modes of operation for block ciphers, Russian official-edition scan**
+
+Publisher: Rosstandart; Standartinform  
+Document date: 2016-03-28  
+Provenance: Primary Russian standard reproduced by the Meganorm mirror; host-added advertising text remains unchanged  
+Original URL: <https://meganorm.ru/Data2/1/4293762/4293762703.pdf>  
+Preservation status: **archived**
+
+Foreword cites approval order 750-st of 2015-06-19; body states effective 2016-01-01. Imprint says signed for printing 2016-03-28. Meganorm mirror contains added advertising/link text; it is a reproduced standard, not an authenticated publisher download. The separate 2018 erratum is not silently applied.
+
+Collection: standards, international  
+Region: Russia  
+Language: Russian  
+Format: pdf
+
+Edition: GOST R 34.13-2015 / Standartinform 2016 printing
+
+Initial issue: 2015-06-19
+
+Effective date: 2016-01-01
+
+Stated standard approval: 2015-06-19
+
+Printing: 2016-03-28
+
+Acquired from host: meganorm.ru
+
+Extent: 29 PDF pages: cover, preliminaries, printed body pages 1–23 and imprint
+
+[Preserved file](originals/S101-gost-modes-ru.pdf) · 606,856 bytes · 29 pages
+
+Retrieved: 2026-10-20T15:41:13.464877+00:00  
+SHA-256: `de71f9360586a492986bb5f984950b57805febc31accc0894174cce7f57e7d0f`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S102
+
+**Correction to GOST R 34.13-2015, IUS No. 6/2018**
+
+Publisher: Rosstandart / national standards information bulletin  
+Document date: 2018-06  
+Provenance: Primary correction notice reproduced by the Meganorm mirror  
+Original URL: <https://meganorm.ru/Data2/0/4294800/4294800102.pdf>  
+Preservation status: **archived**
+
+One-page correction to Section 5.3.2, rule (7). Month comes from IUS No. 6/2018; no exact issue day is asserted. Mirror contains added advertising/link text.
+
+Collection: standards, international  
+Region: Russia  
+Language: Russian  
+Format: pdf
+
+Edition: IUS No. 6/2018
+
+Revision: 2018-06
+
+Acquired from host: meganorm.ru
+
+Extent: 1 PDF pages
+
+[Preserved file](originals/S102-gost-modes-erratum.pdf) · 18,242 bytes · 1 pages
+
+Retrieved: 2026-10-20T15:41:13.465939+00:00  
+SHA-256: `d8e9e45e18d8675dddf05d120cf18fa88887255cfc29815aad7e3d006c9938b9`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S103
+
+**Official Rosstandart record for GOST R 34.13-2015 and its correction**
+
+Publisher: Rosstandart / Institute of Standardization  
+Document date: Not verified  
+Provenance: Original publisher  
+Original URL: <https://protect.gost.ru/gost/details/ed723f12-1f11-4bbb-b09b-86c455a393db>  
+Preservation status: **archived**
+
+Live catalogue metadata, not a dated copy of the standard itself. Lists order 750-st dated 2015-06-19, effective 2016-01-01 and IUS 6-2018 correction.
+
+Collection: standards, international  
+Region: Russia  
+Language: Russian  
+Format: html
+
+Effective date: 2016-01-01
+
+Stated standard approval: 2015-06-19
+
+Acquired from host: protect.gost.ru
+
+Extent: Raw HTML snapshot; linked assets not bundled
+
+[Preserved file](web/S103-gost-modes-official-record.html) · 87,658 bytes
+
+Retrieved: 2026-10-20T15:41:13.467034+00:00  
+SHA-256: `353af593617336f82de902d2b9be2183d010757082e0fd67e5a6e00cc345b6e7`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S104
+
+**R 1323565.1.005-2017: Permissible data volumes under one key for GOST block-cipher modes**
+
+Publisher: Rosstandart; Standartinform  
+Document date: 2017  
+Provenance: Primary Russian recommendation reproduced by the Meganorm mirror  
+Original URL: <https://meganorm.ru/Data2/1/4293741/4293741713.pdf>  
+Preservation status: **archived**
+
+Cover printing year 2017; foreword cites order 1518-st of 2017-10-25; body states effective 2018-04-01. A standardization recommendation, distinct from a product certificate. Mirror-added advertising text remains in the acquired PDF.
+
+Collection: standards, international  
+Region: Russia  
+Language: Russian  
+Format: pdf
+
+Edition: R 1323565.1.005-2017
+
+Initial issue: 2017-10-25
+
+Effective date: 2018-04-01
+
+Stated standard approval: 2017-10-25
+
+Acquired from host: meganorm.ru
+
+Extent: 8 PDF pages
+
+[Preserved file](originals/S104-gost-key-volume.pdf) · 126,643 bytes · 8 pages
+
+Retrieved: 2026-10-20T15:41:15.621639+00:00  
+SHA-256: `3afe34287fca0c08812ceff61e22a9a1aaa03675e520ed333993a4bc9555a989`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S105
+
+**RFC 4490: Using the GOST 28147-89, GOST R 34.11-94, GOST R 34.10-94, and GOST R 34.10-2001 Algorithms with Cryptographic Message Syntax (CMS)**
+
+Publisher: RFC Editor; named document authors  
+Document date: 2006-05  
+Provenance: Original publisher  
+Original URL: <https://www.rfc-editor.org/rfc/rfc4490.txt>  
+Preservation status: **archived**
+
+Category is transcribed from the preserved original header. Stream and publisher status fields are cross-checked against the separately preserved RFC index (S100), entry RFC4490. They establish RFC publication provenance, not national approval or implementation certification.
+
+Collection: standards, international  
+Region: Russia / international  
+Language: English  
+Format: text
+
+Edition: RFC 4490
+
+RFC category: Standards Track
+
+RFC stream: IETF
+
+RFC status at publication: PROPOSED STANDARD
+
+RFC status in acquired index: PROPOSED STANDARD
+
+Acquired from host: www.rfc-editor.org
+
+Extent: 29 publisher-index pages; original RFC text
+
+[Preserved file](originals/S105-rfc4490.txt) · 54,912 bytes
+
+Retrieved: 2026-10-20T15:37:46.105890+00:00  
+SHA-256: `c1391aca412ec468dd584196f0ba8e7f0ccdbaf49e3a83b7d76ebd304f5c8f45`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S106
+
+**RFC 4491: Using the GOST R 34.10-94, GOST R 34.10-2001, and GOST R 34.11-94 Algorithms with the Internet X.509 Public Key Infrastructure Certificate and CRL Profile**
+
+Publisher: RFC Editor; named document authors  
+Document date: 2006-05  
+Provenance: Original publisher  
+Original URL: <https://www.rfc-editor.org/rfc/rfc4491.txt>  
+Preservation status: **archived**
+
+Category is transcribed from the preserved original header. Stream and publisher status fields are cross-checked against the separately preserved RFC index (S100), entry RFC4491. They establish RFC publication provenance, not national approval or implementation certification. The index snapshot does not mark this RFC obsoleted; RFC 9215 separately addresses the 2012 GOST algorithms. The two profiles must not be silently merged.
+
+Collection: standards, international  
+Region: Russia / international  
+Language: English  
+Format: text
+
+Edition: RFC 4491
+
+RFC category: Standards Track
+
+RFC stream: IETF
+
+RFC status at publication: PROPOSED STANDARD
+
+RFC status in acquired index: PROPOSED STANDARD
+
+Acquired from host: www.rfc-editor.org
+
+Extent: 20 publisher-index pages; original RFC text
+
+[Preserved file](originals/S106-rfc4491.txt) · 39,095 bytes
+
+Retrieved: 2026-10-20T15:37:46.107768+00:00  
+SHA-256: `39f1d26e869fb99e4615c0bc4cfe6a8b44aaca0b28f7f99f45d28658da89eb6e`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S107
+
+**RFC 9337: Generating Password-Based Keys Using the GOST Algorithms**
+
+Publisher: RFC Editor; named document authors  
+Document date: 2022-12  
+Provenance: Original publisher  
+Original URL: <https://www.rfc-editor.org/rfc/rfc9337.txt>  
+Preservation status: **archived**
+
+Category is transcribed from the preserved original header. Stream and publisher status fields are cross-checked against the separately preserved RFC index (S100), entry RFC9337. They establish RFC publication provenance, not national approval or implementation certification.
+
+Collection: standards, international  
+Region: Russia / international  
+Language: English  
+Format: text
+
+Edition: RFC 9337
+
+RFC category: Informational
+
+RFC stream: Independent Submission
+
+RFC status at publication: INFORMATIONAL
+
+RFC status in acquired index: INFORMATIONAL
+
+Acquired from host: www.rfc-editor.org
+
+Extent: 14 publisher-index pages; original RFC text
+
+[Preserved file](originals/S107-rfc9337.txt) · 28,990 bytes
+
+Retrieved: 2026-10-20T15:37:46.103313+00:00  
+SHA-256: `4af753ad9ca1056af97d7a011f8874b435b62bc42d004f063b79259c858253c1`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S108
+
+**RFC 9548: Generating Transport Key Containers (PFX) Using the GOST Algorithms**
+
+Publisher: RFC Editor; named document authors  
+Document date: 2024-05  
+Provenance: Original publisher  
+Original URL: <https://www.rfc-editor.org/rfc/rfc9548.txt>  
+Preservation status: **archived**
+
+Category is transcribed from the preserved original header. Stream and publisher status fields are cross-checked against the separately preserved RFC index (S100), entry RFC9548. They establish RFC publication provenance, not national approval or implementation certification.
+
+Collection: standards, international  
+Region: Russia / international  
+Language: English  
+Format: text
+
+Edition: RFC 9548
+
+RFC category: Informational
+
+RFC stream: Independent Submission
+
+RFC status at publication: INFORMATIONAL
+
+RFC status in acquired index: INFORMATIONAL
+
+Acquired from host: www.rfc-editor.org
+
+Extent: 24 publisher-index pages; original RFC text
+
+[Preserved file](originals/S108-rfc9548.txt) · 52,834 bytes
+
+Retrieved: 2026-10-20T15:38:40.965686+00:00  
+SHA-256: `43a2fac0561542aaa2d743a8897dc99c1b10413ddfedaa2f36d265a501d09e55`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S109
+
+**GM/T 0009-2012: SM2 cryptography algorithm application specification (Chinese scan)**
+
+Publisher: State Cryptography Administration of China; Standards Press of China  
+Document date: 2012-11-22  
+Provenance: Primary Chinese standard reproduced by the guanzhi/GM-Standards mirror; not a publisher-hosted or translated edition  
+Original URL: <https://raw.githubusercontent.com/guanzhi/GM-Standards/402e57ed1c4002e3262978061b4f490b5e9ffc65/GMT%E5%AF%86%E7%A0%81%E8%A1%8C%E6%A0%87/GMT%200009-2012%20SM2%E5%AF%86%E7%A0%81%E7%AE%97%E6%B3%95%E4%BD%BF%E7%94%A8%E8%A7%84%E8%8C%83%20.pdf>  
+Preservation status: **archived**
+
+Chinese national-language standard scan hosted by guanzhi/GM-Standards on GitHub, pinned to commit 402e57ed1c4002e3262978061b4f490b5e9ffc65. Cover identifies GM/T 0009-2012 and prints issue/effective dates 2012-11-22. Host filenames and mirror commit dates are not issue or approval dates. Final imprint identifies the first edition and first printing as January 2013, distinct from the 2012 standard issue date. This 12-page scan includes covers, contents, foreword, introduction and all printed body pages 1–7; it fills the omissions in S074. S074 remains preserved as the earlier incomplete acquisition.
+
+Collection: standards, international  
+Region: China  
+Language: Chinese  
+Format: pdf
+
+Edition: GM/T 0009-2012
+
+Initial issue: 2012-11-22
+
+Effective date: 2012-11-22
+
+Printing: 2013-01
+
+Acquired from host: raw.githubusercontent.com
+
+Mirror: guanzhi/GM-Standards
+
+Mirror revision: 402e57ed1c4002e3262978061b4f490b5e9ffc65
+
+Mirror path: GMT密码行标/GMT 0009-2012 SM2密码算法使用规范 .pdf
+
+Completeness check: Complete body page sequence 1–7 checked against the contents; 12 PDF pages including preliminaries and imprint.
+
+Extent: 12 PDF pages
+
+[Preserved file](originals/S109-gmt0009-mirror.pdf) · 4,128,321 bytes · 12 pages
+
+Retrieved: 2026-10-20T15:38:38.797048+00:00  
+SHA-256: `281abef0ae055ef3f40aa28b3e63daf9d1d6b209125fe2ecd321311582ffd029`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S110
+
+**GM/T 0010-2012: SM2 cryptography message syntax specification (Chinese scan)**
+
+Publisher: State Cryptography Administration of China; Standards Press of China  
+Document date: 2012-11-22  
+Provenance: Primary Chinese standard reproduced by the guanzhi/GM-Standards mirror; not a publisher-hosted or translated edition  
+Original URL: <https://raw.githubusercontent.com/guanzhi/GM-Standards/402e57ed1c4002e3262978061b4f490b5e9ffc65/GMT%E5%AF%86%E7%A0%81%E8%A1%8C%E6%A0%87/GMT%200010-2012%20SM2%E5%AF%86%E7%A0%81%E7%AE%97%E6%B3%95%E5%8A%A0%E5%AF%86%E7%AD%BE%E5%90%8D%E6%B6%88%E6%81%AF%E8%AF%AD%E6%B3%95%E8%A7%84%E8%8C%83.pdf>  
+Preservation status: **archived**
+
+Chinese national-language standard scan hosted by guanzhi/GM-Standards on GitHub, pinned to commit 402e57ed1c4002e3262978061b4f490b5e9ffc65. Cover identifies GM/T 0010-2012 and prints issue/effective dates 2012-11-22. Host filenames and mirror commit dates are not issue or approval dates. Final imprint identifies the first edition and first printing as January 2013, distinct from the 2012 standard issue date.
+
+Collection: standards, international  
+Region: China  
+Language: Chinese  
+Format: pdf
+
+Edition: GM/T 0010-2012
+
+Initial issue: 2012-11-22
+
+Effective date: 2012-11-22
+
+Printing: 2013-01
+
+Acquired from host: raw.githubusercontent.com
+
+Mirror: guanzhi/GM-Standards
+
+Mirror revision: 402e57ed1c4002e3262978061b4f490b5e9ffc65
+
+Mirror path: GMT密码行标/GMT 0010-2012 SM2密码算法加密签名消息语法规范.pdf
+
+Completeness check: Cover, contents and sampled cited pages inspected; no claim of an exhaustive proofread or official authentication of the mirror.
+
+Extent: 14 PDF pages
+
+[Preserved file](originals/S110-gmt0010-mirror.pdf) · 5,170,500 bytes · 14 pages
+
+Retrieved: 2026-10-20T15:38:38.796117+00:00  
+SHA-256: `34acf1e833f4a03b66ff1fa27c6081533f2120d22931b613d04ef9255886429b`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S111
+
+**GM/T 0014-2012: Digital certificate authentication system cryptography protocol specification (Chinese scan)**
+
+Publisher: State Cryptography Administration of China; Standards Press of China  
+Document date: 2012-11-22  
+Provenance: Primary Chinese standard reproduced by the guanzhi/GM-Standards mirror; not a publisher-hosted or translated edition  
+Original URL: <https://raw.githubusercontent.com/guanzhi/GM-Standards/402e57ed1c4002e3262978061b4f490b5e9ffc65/GMT%E5%AF%86%E7%A0%81%E8%A1%8C%E6%A0%87/GMT%200014-2012%20%E6%95%B0%E5%AD%97%E8%AF%81%E4%B9%A6%E8%AE%A4%E8%AF%81%E7%B3%BB%E7%BB%9F%E5%AF%86%E7%A0%81%E5%8D%8F%E8%AE%AE%E8%A7%84%E8%8C%83.pdf>  
+Preservation status: **archived**
+
+Chinese national-language standard scan hosted by guanzhi/GM-Standards on GitHub, pinned to commit 402e57ed1c4002e3262978061b4f490b5e9ffc65. Cover identifies GM/T 0014-2012 and prints issue/effective dates 2012-11-22. Host filenames and mirror commit dates are not issue or approval dates. Final imprint identifies the first edition and first printing as January 2013, distinct from the 2012 standard issue date.
+
+Collection: standards, international  
+Region: China  
+Language: Chinese  
+Format: pdf
+
+Edition: GM/T 0014-2012
+
+Initial issue: 2012-11-22
+
+Effective date: 2012-11-22
+
+Printing: 2013-01
+
+Acquired from host: raw.githubusercontent.com
+
+Mirror: guanzhi/GM-Standards
+
+Mirror revision: 402e57ed1c4002e3262978061b4f490b5e9ffc65
+
+Mirror path: GMT密码行标/GMT 0014-2012 数字证书认证系统密码协议规范.pdf
+
+Completeness check: Cover, contents and sampled cited pages inspected; no claim of an exhaustive proofread or official authentication of the mirror.
+
+Extent: 58 PDF pages
+
+[Preserved file](originals/S111-gmt0014-mirror.pdf) · 30,400,068 bytes · 58 pages
+
+Retrieved: 2026-10-20T15:38:38.798362+00:00  
+SHA-256: `2bb1aa39225d13d036d1cee761a4da12b5a49e0a31e296cddba83037c362ae1a`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S112
+
+**GM/T 0015-2012: Digital certificate format based on SM2 algorithm (Chinese scan)**
+
+Publisher: State Cryptography Administration of China; Standards Press of China  
+Document date: 2012-11-22  
+Provenance: Primary Chinese standard reproduced by the guanzhi/GM-Standards mirror; not a publisher-hosted or translated edition  
+Original URL: <https://raw.githubusercontent.com/guanzhi/GM-Standards/402e57ed1c4002e3262978061b4f490b5e9ffc65/GMT%E5%AF%86%E7%A0%81%E8%A1%8C%E6%A0%87/GMT%200015-2012%20%E5%9F%BA%E4%BA%8ESM2%E5%AF%86%E7%A0%81%E7%AE%97%E6%B3%95%E7%9A%84%E6%95%B0%E5%AD%97%E8%AF%81%E4%B9%A6%E6%A0%BC%E5%BC%8F.pdf>  
+Preservation status: **archived**
+
+Chinese national-language standard scan hosted by guanzhi/GM-Standards on GitHub, pinned to commit 402e57ed1c4002e3262978061b4f490b5e9ffc65. Cover identifies GM/T 0015-2012 and prints issue/effective dates 2012-11-22. Host filenames and mirror commit dates are not issue or approval dates. Final imprint identifies the first edition and first printing as January 2013, distinct from the 2012 standard issue date.
+
+Collection: standards, international  
+Region: China  
+Language: Chinese  
+Format: pdf
+
+Edition: GM/T 0015-2012
+
+Initial issue: 2012-11-22
+
+Effective date: 2012-11-22
+
+Printing: 2013-01
+
+Acquired from host: raw.githubusercontent.com
+
+Mirror: guanzhi/GM-Standards
+
+Mirror revision: 402e57ed1c4002e3262978061b4f490b5e9ffc65
+
+Mirror path: GMT密码行标/GMT 0015-2012 基于SM2密码算法的数字证书格式.pdf
+
+Completeness check: Cover, contents and sampled cited pages inspected; no claim of an exhaustive proofread or official authentication of the mirror.
+
+Extent: 61 PDF pages
+
+[Preserved file](originals/S112-gmt0015-mirror.pdf) · 35,429,684 bytes · 61 pages
+
+Retrieved: 2026-10-20T15:38:39.639274+00:00  
+SHA-256: `d5e574253005472654039118133ec921060c8cc500648fc7ee859e8c27fed8fa`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S113
+
+**GM/T 0017-2012: Smart token cryptography application interface data format specification (Chinese scan)**
+
+Publisher: State Cryptography Administration of China; Standards Press of China  
+Document date: 2012-11-22  
+Provenance: Primary Chinese standard reproduced by the guanzhi/GM-Standards mirror; not a publisher-hosted or translated edition  
+Original URL: <https://raw.githubusercontent.com/guanzhi/GM-Standards/402e57ed1c4002e3262978061b4f490b5e9ffc65/GMT%E5%AF%86%E7%A0%81%E8%A1%8C%E6%A0%87/GMT%200017-2012%20%E6%99%BA%E8%83%BD%E5%AF%86%E7%A0%81%E9%92%A5%E5%8C%99%E5%AF%86%E7%A0%81%E5%BA%94%E7%94%A8%E6%8E%A5%E5%8F%A3%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E8%A7%84%E8%8C%83.PDF>  
+Preservation status: **archived**
+
+Chinese national-language standard scan hosted by guanzhi/GM-Standards on GitHub, pinned to commit 402e57ed1c4002e3262978061b4f490b5e9ffc65. Cover identifies GM/T 0017-2012 and prints issue/effective dates 2012-11-22. Host filenames and mirror commit dates are not issue or approval dates.
+
+Collection: standards, international  
+Region: China  
+Language: Chinese  
+Format: pdf
+
+Edition: GM/T 0017-2012
+
+Initial issue: 2012-11-22
+
+Effective date: 2012-11-22
+
+Acquired from host: raw.githubusercontent.com
+
+Mirror: guanzhi/GM-Standards
+
+Mirror revision: 402e57ed1c4002e3262978061b4f490b5e9ffc65
+
+Mirror path: GMT密码行标/GMT 0017-2012 智能密码钥匙密码应用接口数据格式规范.PDF
+
+Completeness check: Cover, contents and sampled cited pages inspected; no claim of an exhaustive proofread or official authentication of the mirror.
+
+Extent: 155 PDF pages
+
+[Preserved file](originals/S113-gmt0017-mirror.pdf) · 4,335,518 bytes · 155 pages
+
+Retrieved: 2026-10-20T15:38:39.644895+00:00  
+SHA-256: `53ec505191d603ebf95c60978404d25c60cd53b9672ac45096606897c65a3dce`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S114
+
+**GM/T 0024-2014: SSL VPN specification (Chinese scan)**
+
+Publisher: State Cryptography Administration of China; Standards Press of China  
+Document date: 2014-02-13  
+Provenance: Primary Chinese standard reproduced by the guanzhi/GM-Standards mirror; not a publisher-hosted or translated edition  
+Original URL: <https://raw.githubusercontent.com/guanzhi/GM-Standards/402e57ed1c4002e3262978061b4f490b5e9ffc65/GMT%E5%AF%86%E7%A0%81%E8%A1%8C%E6%A0%87/GMT%200024-2014%20SSL%20VPN%20%E6%8A%80%E6%9C%AF%E8%A7%84%E8%8C%83.PDF>  
+Preservation status: **archived**
+
+Chinese national-language standard scan hosted by guanzhi/GM-Standards on GitHub, pinned to commit 402e57ed1c4002e3262978061b4f490b5e9ffc65. Cover identifies GM/T 0024-2014 and prints issue/effective dates 2014-02-13. Host filenames and mirror commit dates are not issue or approval dates.
+
+Collection: standards, international  
+Region: China  
+Language: Chinese  
+Format: pdf
+
+Edition: GM/T 0024-2014
+
+Initial issue: 2014-02-13
+
+Effective date: 2014-02-13
+
+Acquired from host: raw.githubusercontent.com
+
+Mirror: guanzhi/GM-Standards
+
+Mirror revision: 402e57ed1c4002e3262978061b4f490b5e9ffc65
+
+Mirror path: GMT密码行标/GMT 0024-2014 SSL VPN 技术规范.PDF
+
+Completeness check: Cover, contents and sampled cited pages inspected; no claim of an exhaustive proofread or official authentication of the mirror.
+
+Extent: 36 PDF pages
+
+[Preserved file](originals/S114-gmt0024-mirror.pdf) · 4,302,806 bytes · 36 pages
+
+Retrieved: 2026-10-20T15:38:40.552273+00:00  
+SHA-256: `20787a423e00dcaa4935f78e628b35234cb5a588679ba4e3122d4ae0d59a51d2`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S115
+
+**RFC 5528: Camellia Counter Mode and Camellia Counter with CBC-MAC Mode Algorithms**
+
+Publisher: RFC Editor; named document authors  
+Document date: 2009-04  
+Provenance: Original publisher  
+Original URL: <https://www.rfc-editor.org/rfc/rfc5528.txt>  
+Preservation status: **archived**
+
+Category is transcribed from the preserved original header. Stream and publisher status fields are cross-checked against the separately preserved RFC index (S100), entry RFC5528. They establish RFC publication provenance, not national approval or implementation certification.
+
+Collection: standards, international  
+Region: Japan / international  
+Language: English  
+Format: text
+
+Edition: RFC 5528
+
+RFC category: Informational
+
+RFC stream: IETF
+
+RFC status at publication: INFORMATIONAL
+
+RFC status in acquired index: INFORMATIONAL
+
+Acquired from host: www.rfc-editor.org
+
+Extent: 22 publisher-index pages; original RFC text
+
+[Preserved file](originals/S115-rfc5528.txt) · 56,134 bytes
+
+Retrieved: 2026-10-20T15:37:46.578342+00:00  
+SHA-256: `3477959e97dcadfdd78abfd106f3e9bd94dd4a40bdec279b77d84e89e83760b9`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S116
+
+**RFC 5529: Modes of Operation for Camellia for Use with IPsec**
+
+Publisher: RFC Editor; named document authors  
+Document date: 2009-04  
+Provenance: Original publisher  
+Original URL: <https://www.rfc-editor.org/rfc/rfc5529.txt>  
+Preservation status: **archived**
+
+Category is transcribed from the preserved original header. Stream and publisher status fields are cross-checked against the separately preserved RFC index (S100), entry RFC5529. They establish RFC publication provenance, not national approval or implementation certification.
+
+Collection: standards, international  
+Region: Japan / international  
+Language: English  
+Format: text
+
+Edition: RFC 5529
+
+RFC category: Standards Track
+
+RFC stream: IETF
+
+RFC status at publication: PROPOSED STANDARD
+
+RFC status in acquired index: PROPOSED STANDARD
+
+Acquired from host: www.rfc-editor.org
+
+Extent: 7 publisher-index pages; original RFC text
+
+[Preserved file](originals/S116-rfc5529.txt) · 13,030 bytes
+
+Retrieved: 2026-10-20T15:37:46.765850+00:00  
+SHA-256: `6a8e197a19c385161a20f113f8c0d2b26984968e6f3a9e023dfd02c9545d66d7`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S117
+
+**RFC 6367: Addition of the Camellia Cipher Suites to Transport Layer Security (TLS)**
+
+Publisher: RFC Editor; named document authors  
+Document date: 2011-09  
+Provenance: Original publisher  
+Original URL: <https://www.rfc-editor.org/rfc/rfc6367.txt>  
+Preservation status: **archived**
+
+Category is transcribed from the preserved original header. Stream and publisher status fields are cross-checked against the separately preserved RFC index (S100), entry RFC6367. They establish RFC publication provenance, not national approval or implementation certification.
+
+Collection: standards, international  
+Region: Japan / international  
+Language: English  
+Format: text
+
+Edition: RFC 6367
+
+RFC category: Informational
+
+RFC stream: IETF
+
+RFC status at publication: INFORMATIONAL
+
+RFC status in acquired index: INFORMATIONAL
+
+Acquired from host: www.rfc-editor.org
+
+Extent: 8 publisher-index pages; original RFC text
+
+[Preserved file](originals/S117-rfc6367.txt) · 17,613 bytes
+
+Retrieved: 2026-10-20T15:37:46.774000+00:00  
+SHA-256: `7343444b83b9d7c264cf80a940665b94181011be741b80a260500d939c421ab2`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S118
+
+**RFC 2994: A Description of the MISTY1 Encryption Algorithm**
+
+Publisher: RFC Editor; named document authors  
+Document date: 2000-11  
+Provenance: Original publisher  
+Original URL: <https://www.rfc-editor.org/rfc/rfc2994.txt>  
+Preservation status: **archived**
+
+Category is transcribed from the preserved original header. Stream and publisher status fields are cross-checked against the separately preserved RFC index (S100), entry RFC2994. They establish RFC publication provenance, not national approval or implementation certification.
+
+Collection: standards, international  
+Region: Japan / international  
+Language: English  
+Format: text
+
+Edition: RFC 2994
+
+RFC category: Informational
+
+RFC stream: Legacy (publisher index; original header predates stream labels)
+
+RFC status at publication: INFORMATIONAL
+
+RFC status in acquired index: INFORMATIONAL
+
+Acquired from host: www.rfc-editor.org
+
+Extent: 10 publisher-index pages; original RFC text
+
+[Preserved file](originals/S118-rfc2994.txt) · 17,803 bytes
+
+Retrieved: 2026-10-20T15:37:47.443597+00:00  
+SHA-256: `a1ba5947ca793c55b2653f449fe19d0f972683a19c0bbb717a90ce6e98020756`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S119
+
+**RFC 7008: A Description of the KCipher-2 Encryption Algorithm**
+
+Publisher: RFC Editor; named document authors  
+Document date: 2013-08  
+Provenance: Original publisher  
+Original URL: <https://www.rfc-editor.org/rfc/rfc7008.txt>  
+Preservation status: **archived**
+
+Category is transcribed from the preserved original header. Stream and publisher status fields are cross-checked against the separately preserved RFC index (S100), entry RFC7008. They establish RFC publication provenance, not national approval or implementation certification.
+
+Collection: standards, international  
+Region: Japan / international  
+Language: English  
+Format: text
+
+Edition: RFC 7008
+
+RFC category: Informational
+
+RFC stream: Independent Submission
+
+RFC status at publication: INFORMATIONAL
+
+RFC status in acquired index: INFORMATIONAL
+
+Acquired from host: www.rfc-editor.org
+
+Extent: 37 publisher-index pages; original RFC text
+
+[Preserved file](originals/S119-rfc7008.txt) · 71,051 bytes
+
+Retrieved: 2026-10-20T15:37:47.149022+00:00  
+SHA-256: `5a5074fb4655296fa5fa0d274191a48f87e14ac66573eb21c79c3788870d6e23`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S120
+
+**ETSI TS 135 202 V17.0.0: KASUMI specification, Release 17**
+
+Publisher: ETSI / 3GPP  
+Document date: 2022-04  
+Provenance: Original publisher  
+Original URL: <https://www.etsi.org/deliver/etsi_ts/135200_135299/135202/17.00.00_60/ts_135202v170000p.pdf>  
+Preservation status: **archived**
+
+The April 2022 edition is the preserved standards wrapper, not a claim that the primitive was invented or first approved in 2022. Its annex includes an older dated sample implementation.
+
+Collection: standards, international  
+Region: Japan / international mobile standards  
+Language: English  
+Format: pdf
+
+Edition: ETSI TS 135 202 V17.0.0 / 3GPP TS 35.202 Release 17
+
+Acquired from host: www.etsi.org
+
+Extent: 26 PDF pages
+
+[Preserved file](originals/S120-kasumi-17.pdf) · 147,275 bytes · 26 pages
+
+Retrieved: 2026-10-20T15:38:41.558310+00:00  
+SHA-256: `73f26476db04881d7bc2395ca623aa6d8e81ce38e163fd10a1da3593f263326d`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S121
+
+**RFC 5669: The SEED Cipher Algorithm and Its Use with the Secure Real-Time Transport Protocol (SRTP)**
+
+Publisher: RFC Editor; named document authors  
+Document date: 2010-08  
+Provenance: Original publisher  
+Original URL: <https://www.rfc-editor.org/rfc/rfc5669.txt>  
+Preservation status: **archived**
+
+Category is transcribed from the preserved original header. Stream and publisher status fields are cross-checked against the separately preserved RFC index (S100), entry RFC5669. They establish RFC publication provenance, not national approval or implementation certification.
+
+Collection: standards, international  
+Region: Republic of Korea / international  
+Language: English  
+Format: text
+
+Edition: RFC 5669
+
+RFC category: Standards Track
+
+RFC stream: IETF
+
+RFC status at publication: PROPOSED STANDARD
+
+RFC status in acquired index: PROPOSED STANDARD
+
+Acquired from host: www.rfc-editor.org
+
+Extent: 13 publisher-index pages; original RFC text
+
+[Preserved file](originals/S121-rfc5669.txt) · 24,918 bytes
+
+Retrieved: 2026-10-20T15:37:47.216827+00:00  
+SHA-256: `2fc14db340ecf3aed3b80c8c4b2a11c109967586f0b0b03d4e54ab63f6c48d89`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S122
+
+**RFC 4010: Use of the SEED Encryption Algorithm in Cryptographic Message Syntax (CMS)**
+
+Publisher: RFC Editor; named document authors  
+Document date: 2005-02  
+Provenance: Original publisher  
+Original URL: <https://www.rfc-editor.org/rfc/rfc4010.txt>  
+Preservation status: **archived**
+
+Category is transcribed from the preserved original header. Stream and publisher status fields are cross-checked against the separately preserved RFC index (S100), entry RFC4010. They establish RFC publication provenance, not national approval or implementation certification.
+
+Collection: standards, international  
+Region: Republic of Korea / international  
+Language: English  
+Format: text
+
+Edition: RFC 4010
+
+RFC category: Standards Track
+
+RFC stream: IETF
+
+RFC status at publication: PROPOSED STANDARD
+
+RFC status in acquired index: PROPOSED STANDARD
+
+Acquired from host: www.rfc-editor.org
+
+Extent: 13 publisher-index pages; original RFC text
+
+[Preserved file](originals/S122-rfc4010.txt) · 22,403 bytes
+
+Retrieved: 2026-10-20T15:38:41.333764+00:00  
+SHA-256: `13e00750f938bdbd21bb938010505288908e84610aa419079584d13ac3a66545`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S123
+
+**RFC 5639: Elliptic Curve Cryptography (ECC) Brainpool Standard Curves and Curve Generation**
+
+Publisher: RFC Editor; named document authors  
+Document date: 2010-03  
+Provenance: Original publisher  
+Original URL: <https://www.rfc-editor.org/rfc/rfc5639.txt>  
+Preservation status: **archived**
+
+Category is transcribed from the preserved original header. Stream and publisher status fields are cross-checked against the separately preserved RFC index (S100), entry RFC5639. They establish RFC publication provenance, not national approval or implementation certification.
+
+Collection: standards, international  
+Region: Germany / international  
+Language: English  
+Format: text
+
+Edition: RFC 5639
+
+RFC category: Informational
+
+RFC stream: Independent Submission
+
+RFC status at publication: INFORMATIONAL
+
+RFC status in acquired index: INFORMATIONAL
+
+Acquired from host: www.rfc-editor.org
+
+Extent: 27 publisher-index pages; original RFC text
+
+[Preserved file](originals/S123-rfc5639.txt) · 50,566 bytes
+
+Retrieved: 2026-10-20T15:37:46.458842+00:00  
+SHA-256: `d19949766009ac82b69e46b09f3a08d712908381300a340d3fa3b1478f4b215e`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S124
+
+**RFC 8734: Elliptic Curve Cryptography (ECC) Brainpool Curves for Transport Layer Security (TLS) Version 1.3**
+
+Publisher: RFC Editor; named document authors  
+Document date: 2020-02  
+Provenance: Original publisher  
+Original URL: <https://www.rfc-editor.org/rfc/rfc8734.txt>  
+Preservation status: **archived**
+
+Category is transcribed from the preserved original header. Stream and publisher status fields are cross-checked against the separately preserved RFC index (S100), entry RFC8734. They establish RFC publication provenance, not national approval or implementation certification.
+
+Collection: standards, international  
+Region: Germany / international  
+Language: English  
+Format: text
+
+Edition: RFC 8734
+
+RFC category: Informational
+
+RFC stream: Independent Submission
+
+RFC status at publication: INFORMATIONAL
+
+RFC status in acquired index: INFORMATIONAL
+
+Acquired from host: www.rfc-editor.org
+
+Extent: 11 publisher-index pages; original RFC text
+
+[Preserved file](originals/S124-rfc8734.txt) · 18,297 bytes
+
+Retrieved: 2026-10-20T15:37:46.496541+00:00  
+SHA-256: `47d4e076ec158107aceb2415a3f417eb30e034bcee99c91ab1f64656a5879075`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S125
+
+**BSI TR-03111: Elliptic Curve Cryptography, Version 2.10**
+
+Publisher: German Federal Office for Information Security (BSI)  
+Document date: 2018-06-01  
+Provenance: Original publisher  
+Original URL: <https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03111/BSI-TR-03111_V-2-1_pdf.pdf?__blob=publicationFile&v=1>  
+Preservation status: **archived**
+
+Cover and revision history identify version 2.10 dated 2018-06-01. The URL filename contains V-2-1, which must not be silently substituted for the printed version. History dates the first public version to 2007-02-14.
+
+Collection: standards, international  
+Region: Germany  
+Language: English  
+Format: pdf
+
+Edition: 2.10
+
+Initial issue: 2007-02-14
+
+Revision: 2018-06-01
+
+Acquired from host: www.bsi.bund.de
+
+Extent: 43 PDF pages
+
+[Preserved file](originals/S125-bsi-tr03111.pdf) · 813,167 bytes · 43 pages
+
+Retrieved: 2026-10-20T15:37:47.528572+00:00  
+SHA-256: `51ee5d0fab150c42d8b446bd48dc7bb7be987278507a0bd96619b50eb127c440`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S126
+
+**RFC 5869: HMAC-based Extract-and-Expand Key Derivation Function (HKDF)**
+
+Publisher: RFC Editor; named document authors  
+Document date: 2010-05  
+Provenance: Original publisher  
+Original URL: <https://www.rfc-editor.org/rfc/rfc5869.txt>  
+Preservation status: **archived**
+
+Category is transcribed from the preserved original header. Stream and publisher status fields are cross-checked against the separately preserved RFC index (S100), entry RFC5869. They establish RFC publication provenance, not national approval or implementation certification.
+
+Collection: standards  
+Region: International  
+Language: English  
+Format: text
+
+Edition: RFC 5869
+
+RFC category: Informational
+
+RFC stream: IETF
+
+RFC status at publication: INFORMATIONAL
+
+RFC status in acquired index: INFORMATIONAL
+
+Acquired from host: www.rfc-editor.org
+
+Extent: 14 publisher-index pages; original RFC text
+
+[Preserved file](originals/S126-rfc5869.txt) · 25,854 bytes
+
+Retrieved: 2026-10-20T15:37:47.425544+00:00  
+SHA-256: `7a40eb3835b35fc947eb12a2ed614db079d43b26e50dbc537c31fba16397089c`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S127
+
+**RFC 8018: PKCS #5: Password-Based Cryptography Specification Version 2.1**
+
+Publisher: RFC Editor; named document authors  
+Document date: 2017-01  
+Provenance: Original publisher  
+Original URL: <https://www.rfc-editor.org/rfc/rfc8018.txt>  
+Preservation status: **archived**
+
+Category is transcribed from the preserved original header. Stream and publisher status fields are cross-checked against the separately preserved RFC index (S100), entry RFC8018. They establish RFC publication provenance, not national approval or implementation certification.
+
+Collection: standards  
+Region: International  
+Language: English  
+Format: text
+
+Edition: RFC 8018
+
+RFC category: Informational
+
+RFC stream: IETF
+
+RFC status at publication: INFORMATIONAL
+
+RFC status in acquired index: INFORMATIONAL
+
+Acquired from host: www.rfc-editor.org
+
+Extent: 40 publisher-index pages; original RFC text
+
+[Preserved file](originals/S127-rfc8018.txt) · 80,887 bytes
+
+Retrieved: 2026-10-20T15:37:47.221891+00:00  
+SHA-256: `cf96b02e68216f618ea33b20b49d476edba9d70f2333597ec516629d22971cda`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S128
+
+**ANSSI cryptographic mechanisms: current guide distribution page**
+
+Publisher: ANSSI / MesServicesCyber  
+Document date: 2026-03-20  
+Provenance: Original government distribution page; raw HTML snapshot  
+Original URL: <https://messervices.cyber.gouv.fr/guides/mecanismes-cryptographiques>  
+Preservation status: **archived**
+
+Page says published 2026-03-20 and links a v3.00 rules guide together with a v1.0 selection guide. The latter PDF remains dated 2021-03-08. An older v2.04 PDF URL redirects here; it does not return the historical PDF.
+
+Collection: standards, international  
+Region: France  
+Language: French  
+Format: html
+
+Acquired from host: messervices.cyber.gouv.fr
+
+Extent: Raw HTML snapshot; linked assets not bundled
+
+[Preserved file](web/S128-anssi-current-index.html) · 33,212 bytes
+
+Retrieved: 2026-10-20T15:39:18.239432+00:00  
+SHA-256: `0fb9d35a8a31eeeebc4d08069b1cddcd06b8c2dc1168f7afa8df5b1169e206ae`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S129
+
+**ANSSI-PG-083: Rules and recommendations for choosing and sizing cryptographic mechanisms**
+
+Publisher: ANSSI  
+Document date: 2026-03-20  
+Provenance: Original publisher  
+Original URL: <https://messervices.cyber.gouv.fr/documents-guides/anssi-guide-mecanismes-crypto-3.00.pdf>  
+Preservation status: **archived**
+
+Cover and revision table identify 2026-03-20 / v3.00. The table records v2.04 on 2020-01-01 and a first applicable version on 2004-11-19. The 2026 edition explicitly adds quantum-threat treatment. These are guide milestones, not first approval dates for every algorithm.
+
+Collection: standards, international  
+Region: France  
+Language: French  
+Format: pdf
+
+Edition: 3.00
+
+Initial issue: 2004-11-19
+
+Revision: 2026-03-20
+
+Acquired from host: messervices.cyber.gouv.fr
+
+Extent: 81 PDF pages
+
+[Preserved file](originals/S129-anssi-mechanisms-300.pdf) · 1,365,473 bytes · 81 pages
+
+Retrieved: 2026-10-20T15:39:51.588090+00:00  
+SHA-256: `1baf13e8ae81bd476f09aed12885587850429a6925a182b6b8d5c76b31b288ec`
+
+ANSSI original production under Licence Ouverte v2.0; attribution and update date required; source notices retained.
+
+## S130
+
+**ANSSI-PA-079: Guide to selecting cryptographic algorithms**
+
+Publisher: ANSSI  
+Document date: 2021-03-08  
+Provenance: Original publisher  
+Original URL: <https://messervices.cyber.gouv.fr/documents-guides/anssi-guide-selection_crypto-1.0.pdf>  
+Preservation status: **archived**
+
+Cover prints 8/3/2021; the revision table calls this the initial v1.0 edition. It is linked from a page dated March 2026 but remains a 2021 document. Recommendations retain their original scope and date.
+
+Collection: standards, international  
+Region: France  
+Language: French  
+Format: pdf
+
+Edition: 1.0
+
+Initial issue: 2021-03-08
+
+Acquired from host: messervices.cyber.gouv.fr
+
+Extent: 58 PDF pages
+
+[Preserved file](originals/S130-anssi-selection-10.pdf) · 428,530 bytes · 58 pages
+
+Retrieved: 2026-10-20T15:39:51.587281+00:00  
+SHA-256: `5b48eb227d57be08c7d0365b39e3168be7580222f8c0cf69e044fb9265950281`
+
+ANSSI original production under Licence ouverte / Etalab; source notices retained.
+
+## S131
+
+**Document 2: SNOW 3G Algorithm Specification**
+
+Publisher: ETSI/SAGE; distributed by GSMA  
+Document date: 2006-09-06  
+Provenance: Original publisher  
+Original URL: <https://www.gsma.com/solutions-and-impact/technologies/security/wp-content/uploads/2019/05/snow3gspec.pdf>  
+Preservation status: **archived**
+
+Edition and date transcribed from this document’s cover. The 2019 hosting directory does not date the specification. Companion documents have different version/date histories and are not treated as a synchronized release.
+
+Collection: standards, international  
+Region: International mobile standards  
+Language: English  
+Format: pdf
+
+Edition: 1.1
+
+Initial issue: 2006-01-10
+
+Revision: 2006-09-06
+
+Acquired from host: www.gsma.com
+
+Extent: 37 PDF pages
+
+[Preserved file](originals/S131-snow3g.pdf) · 355,133 bytes · 37 pages
+
+Retrieved: 2026-10-20T15:39:51.588712+00:00  
+SHA-256: `a4dc79f2dcf3a1d91a0c5efbae317ffc50cbf90a9bb53da0edb52b4e86b989b5`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S132
+
+**Document 1: UEA2 and UIA2 Specification**
+
+Publisher: ETSI/SAGE; distributed by GSMA  
+Document date: 2009-03-16  
+Provenance: Original publisher  
+Original URL: <https://www.gsma.com/solutions-and-impact/technologies/security/wp-content/uploads/2019/05/uea2uia2d1v21.pdf>  
+Preservation status: **archived**
+
+Edition and date transcribed from this document’s cover. The 2019 hosting directory does not date the specification. Companion documents have different version/date histories and are not treated as a synchronized release.
+
+Collection: standards, international  
+Region: International mobile standards  
+Language: English  
+Format: pdf
+
+Edition: 2.1
+
+Revision: 2009-03-16
+
+Acquired from host: www.gsma.com
+
+Extent: 27 PDF pages
+
+[Preserved file](originals/S132-uea2-uia2.pdf) · 102,689 bytes · 27 pages
+
+Retrieved: 2026-10-20T15:39:52.526883+00:00  
+SHA-256: `d2671f7821e8971e8bf4245ff50f28fa7a1ec71be29927f60ef2f436b8edf438`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S133
+
+**Document 3: UEA2/UIA2 Implementors’ Test Data**
+
+Publisher: ETSI/SAGE; distributed by GSMA  
+Document date: 2012-10-25  
+Provenance: Original publisher  
+Original URL: <https://www.gsma.com/solutions-and-impact/technologies/security/wp-content/uploads/2019/05/Doc3-UEA2-UIA2-Spec-Implementors-Test-Data.pdf>  
+Preservation status: **archived**
+
+Edition and date transcribed from this document’s cover. The 2019 hosting directory does not date the specification. Companion documents have different version/date histories and are not treated as a synchronized release.
+
+Collection: standards, international  
+Region: International mobile standards  
+Language: English  
+Format: pdf
+
+Edition: 1.1
+
+Revision: 2012-10-25
+
+Acquired from host: www.gsma.com
+
+Extent: 20 PDF pages
+
+[Preserved file](originals/S133-snow-tests.pdf) · 335,256 bytes · 20 pages
+
+Retrieved: 2026-10-20T15:39:53.089544+00:00  
+SHA-256: `fdf3281aacb8098f7cee4461851910aeff84f8c6cbdaadca95ee9a5d63d1c677`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S134
+
+**Document 5: UEA2/UIA2 Design and Evaluation Report**
+
+Publisher: ETSI/SAGE; distributed by GSMA  
+Document date: 2006-09-06  
+Provenance: Original publisher  
+Original URL: <https://www.gsma.com/solutions-and-impact/technologies/security/wp-content/uploads/2019/05/uea2designevaluation.pdf>  
+Preservation status: **archived**
+
+Edition and date transcribed from this document’s cover. The 2019 hosting directory does not date the specification. Companion documents have different version/date histories and are not treated as a synchronized release.
+
+Collection: standards, international  
+Region: International mobile standards  
+Language: English  
+Format: pdf
+
+Edition: 1.1
+
+Initial issue: 2006-02-06
+
+Revision: 2006-09-06
+
+Acquired from host: www.gsma.com
+
+Extent: 40 PDF pages
+
+[Preserved file](originals/S134-snow-evaluation.pdf) · 506,305 bytes · 40 pages
+
+Retrieved: 2026-10-20T15:39:53.437096+00:00  
+SHA-256: `0c5640830b9d2f9d63f26181cf13a52400516035846d36548878b8feee4e321a`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S135
+
+**GSMA security algorithms: specifications and distribution provenance**
+
+Publisher: GSMA  
+Document date: Not verified  
+Provenance: Original publisher  
+Original URL: <https://www.gsma.com/solutions-and-impact/technologies/security/security-algorithms/>  
+Preservation status: **archived**
+
+Live distribution index. Its UEA2/UIA2 section states distribution rights and links Documents 1–5; raw HTML is not a complete offline rendering of linked files.
+
+Collection: standards, international  
+Region: International mobile standards  
+Language: English  
+Format: html
+
+Acquired from host: www.gsma.com
+
+Extent: Raw HTML snapshot; linked assets not bundled
+
+[Preserved file](web/S135-gsma-algorithm-index.html) · 98,554 bytes
+
+Retrieved: 2026-10-20T15:39:18.241072+00:00  
+SHA-256: `316da170e7fd880ae82c7dccbb7c4c42540a6c72db69a9c9ea685f845951dff6`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S136
+
+**NEMA operating instructions / Instruction de service de la machine à chiffrer**
+
+Publisher: Historical Swiss NEMA operating manual; issuing office not named on the scanned cover  
+Document date: Not verified  
+Provenance: Primary historical operating manual reproduced as a Crypto Museum scan  
+Original URL: <https://www.cryptomuseum.com/crypto/nema/files/nema_manual.pdf>  
+Preservation status: **archived**
+
+Original booklet scan hosted by Crypto Museum, copy number 717. Cover is stamped declassified 1992-07-09. No original issue date has been verified; the declassification date is not its publication, design or first approval date.
+
+Collection: standards, international  
+Region: Switzerland  
+Language: German / French  
+Format: pdf
+
+Declassification annotation: 1992-07-09
+
+Acquired from host: www.cryptomuseum.com
+
+Extent: 18 PDF pages of scanned booklet spreads, including covers and German/French instructions
+
+[Preserved file](originals/S136-nema-manual.pdf) · 10,468,622 bytes · 18 pages
+
+Retrieved: 2026-10-20T15:37:47.625724+00:00  
+SHA-256: `303b7e2e90235d8add3ff4eab207bf4e13e8eb056f4624134aaad62dfbc8eb03`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S137
+
+**FRA’s history in brief: From Morse telegraphy to cyber defence**
+
+Publisher: Swedish National Defence Radio Establishment (FRA); Fredrik Wallin  
+Document date: Not verified  
+Provenance: Original agency historical publication  
+Original URL: <https://fra.se/download/18.55af049f184e92956c43f20/1658314605605/FRAs-historia-i-korthet.pdf>  
+Preservation status: **archived**
+
+Official retrospective history. No publication date is printed in the inspected cover or final page; the 2022 download-path timestamp and PDF metadata are not asserted as the original issue date.
+
+Collection: standards, international  
+Region: Sweden / Germany  
+Language: Swedish  
+Format: pdf
+
+Acquired from host: fra.se
+
+Extent: 15 PDF pages containing booklet spreads and covers; printed history through page 26
+
+[Preserved file](originals/S137-fra-history.pdf) · 1,660,464 bytes · 15 pages
+
+Retrieved: 2026-10-20T15:36:49.379785+00:00  
+SHA-256: `26c6d5c18a28d3dccb8cf353a75a855b86bb49e31427e718902c0e30ecb459a4`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S138
+
+**How Arne Beurling may have broken the G-schreiber: Carl-Gösta Borelius account**
+
+Publisher: FRA; Carl-Gösta Borelius  
+Document date: Not verified  
+Provenance: Participant’s archival retrospective account published by the original agency; raw HTML snapshot  
+Original URL: <https://www.fra.se/omfra/frashistoria/forceringenavgskrivaren.4.55af049f184e92956c42acb.html>  
+Preservation status: **archived**
+
+FRA describes the account as written in the 1980s and published here from its archive; exact composition and web-publication dates are not established. Borelius participated in G-schreiber cryptanalysis from 1941. His account reconstructs how Beurling may have worked; it is not Beurling’s contemporaneous explanation.
+
+Collection: standards, international  
+Region: Sweden / Germany  
+Language: Swedish  
+Format: html
+
+Acquired from host: www.fra.se
+
+Extent: Raw HTML snapshot; linked assets not bundled
+
+[Preserved file](web/S138-fra-g-schreiber.html) · 87,300 bytes
+
+Retrieved: 2026-10-20T15:36:48.879831+00:00  
+SHA-256: `5ca0e426a721b80caef827494be1afb4529e874750ae32559a79ebd4f726b202`
+
+Original publisher notices apply; no repository-wide license is applied to source documents.
+
+## S139
+
+**3GPP TR 55.919 V6.1.0: A5/3 and GEA3 design and evaluation report (development copy)**
+
+Publisher: 3GPP / ETSI SAGE; distributed by GSMA  
+Document date: 2002-12  
+Provenance: Original standards-project technical report, distributed by GSMA; cover status warning retained  
+Original URL: <https://www.gsma.com/solutions-and-impact/technologies/security/wp-content/uploads/2019/05/designevaluationreport.pdf>  
+Preservation status: **archived**
+
+Cover identifies Release 6 / V6.1.0 (2002-12) and explicitly says the document has not been subject to approval by the Organizational Partners and shall not be implemented. Preserved as a historical design/evaluation account, not an approval or implementation instruction. The 2019 hosting directory is not the report date.
+
+Collection: standards, international  
+Region: Japan / international mobile standards  
+Language: English  
+Format: pdf
+
+Edition: 3GPP TR 55.919 V6.1.0 / Release 6
+
+Revision: 2002-12
+
+Acquired from host: www.gsma.com
+
+Extent: 26 PDF pages
+
+[Preserved file](originals/S139-kasumi-evaluation.pdf) · 165,984 bytes · 26 pages
+
+Retrieved: 2026-10-20T15:52:09.510652+00:00  
+SHA-256: `7372e93973ced4088d904bec185bb78567e7529f56aaac5f60c69343f9899f97`
 
 Original publisher notices apply; no repository-wide license is applied to source documents.
 

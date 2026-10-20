@@ -1,6 +1,6 @@
 # International algorithm and system profiles
 
-18 profiles. Detailed evidence is linked from each page.
+25 profiles. Detailed evidence is linked from each page.
 
 - [GOST 28147-89](gost-28147.md) — Soviet Union / Russia; Symmetric encryption and MAC.
 - [Magma](magma.md) — Russia; Symmetric encryption.
@@ -20,3 +20,10 @@
 - [CLEFIA](clefia.md) — Japan; Symmetric encryption.
 - [SEED](seed.md) — Republic of Korea; Symmetric encryption.
 - [ARIA](aria.md) — Republic of Korea; Symmetric encryption.
+- [MISTY1](misty1.md) — Japan; Symmetric encryption.
+- [KCipher-2](kcipher2.md) — Japan; Keystream generation.
+- [KASUMI](kasumi.md) — International mobile standards / Japanese design context; Symmetric encryption primitive for cellular algorithms.
+- [Brainpool elliptic curves](brainpool.md) — Germany / international; Elliptic-curve domain parameters.
+- [SNOW 3G](snow3g.md) — International mobile standards; Keystream generation for confidentiality and integrity constructions.
+- [NEMA](nema.md) — Switzerland; Historical machine encryption.
+- [Siemens T52 / G-schreiber](siemens-t52.md) — Germany / Swedish cryptanalytic records; Historical teleprinter encryption.

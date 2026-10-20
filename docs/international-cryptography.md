@@ -1,8 +1,8 @@
 # International cryptography: constructions and historical records
 
-Research snapshot: 2026-10-17
+Research snapshot: 2026-10-20
 
-This collection extends the archive across Soviet/Russian, Chinese, German, Japanese and Korean cryptography. It records public national standards, historical military machines and government systems for which only limited architectural information is public.
+This collection extends the archive across Soviet/Russian, Chinese, German, Japanese, Korean, Swiss and Swedish cryptographic records, with French recommendation and evaluation context in the companion guide. It records public national standards, historical military machines and government systems for which only limited architectural information is public.
 
 Regional labels describe design or historical context. They are not assertions of exclusive use, present-day approval or equivalence to NSA Suite A. Hashes, signatures, key-establishment protocols and encryption ciphers have distinct roles.
 
@@ -30,6 +30,13 @@ Every profile separates source-reported statements, deductions and unresolved de
 | Japan | [CLEFIA](../profiles/international/clefia.md) | Symmetric encryption; Four-branch generalized Feistel network | 128-bit block; 128/192/256-bit keys; 18/22/26 rounds |
 | Republic of Korea | [SEED](../profiles/international/seed.md) | Symmetric encryption; 16-round Feistel network | 128-bit block; 128-bit key |
 | Republic of Korea | [ARIA](../profiles/international/aria.md) | Symmetric encryption; Substitution and involutive linear-diffusion layers | 128-bit block; 128/192/256-bit keys; 12/14/16 rounds |
+| Japan | [MISTY1](../profiles/international/misty1.md) | Symmetric encryption; Nested Feistel construction with FL, FO and FI functions | 64-bit block; 128-bit key; eight-round configuration recommended in RFC 2994 |
+| Japan | [KCipher-2](../profiles/international/kcipher2.md) | Keystream generation; Word-oriented stream cipher with feedback registers and nonlinear operations | 128-bit key; 128-bit IV; 32-bit state words |
+| International mobile standards / Japanese design context | [KASUMI](../profiles/international/kasumi.md) | Symmetric encryption primitive for cellular algorithms; Eight-round Feistel cipher with FL, FO and FI functions | 64-bit block; 128-bit key; eight rounds |
+| Germany / international | [Brainpool elliptic curves](../profiles/international/brainpool.md) | Elliptic-curve domain parameters; Prime-field elliptic curves and specified parameter-generation procedures | Named r1/t1 curves at 160, 192, 224, 256, 320, 384 and 512 bits in RFC 5639 |
+| International mobile standards | [SNOW 3G](../profiles/international/snow3g.md) | Keystream generation for confidentiality and integrity constructions; 16-word LFSR and three-register nonlinear finite-state machine | 128-bit key; 128-bit IV; 32-bit output words |
+| Switzerland | [NEMA](../profiles/international/nema.md) | Historical machine encryption; Electromechanical wheel machine with electrical contact and stepping wheels | Manual describes five contact wheels, five stepping wheels and ten-letter external settings |
+| Germany / Swedish cryptanalytic records | [Siemens T52 / G-schreiber](../profiles/international/siemens-t52.md) | Historical teleprinter encryption; Five-impulse masking and transposition, as described in the published reconstruction | Five teleprinter bit positions; aligned parallel traffic is central to Borelius’s account |
 
 See the [international timeline](international-timeline.md), [profile index](../profiles/international/README.md), [companion standards](companion-standards.md), and [source catalogue](../sources/README.md).
 
@@ -360,7 +367,7 @@ Parameters: Key material and format are product-specific in the cited agency acc
 - The cited agency records do not expose a complete round function or establish the cipher's original design date.
 - Independent reverse engineering should be catalogued separately from an official design release.
 
-[Companion standards: Germany: general recommendations and protocol guidance](../docs/companion-standards.md#germany)
+[Companion standards: Germany: ECC constructions, Brainpool and protocol guidance](../docs/companion-standards.md#germany)
 
 ## LIBELLE in SINA
 
@@ -385,7 +392,7 @@ Parameters: Internal primitive parameters not established by the cited BSI recor
 - The cited sources do not identify the replacement cipher or provide LIBELLE's round function.
 - The 1999 SINA contract is a system-development milestone, not a verified first approval of LIBELLE.
 
-[Companion standards: Germany: general recommendations and protocol guidance](../docs/companion-standards.md#germany)
+[Companion standards: Germany: ECC constructions, Brainpool and protocol guidance](../docs/companion-standards.md#germany)
 
 ## Camellia
 
@@ -410,7 +417,7 @@ Parameters: 128-bit block; 128/192/256-bit keys; 18 or 24 rounds
 
 - A submission, an algorithm publication and a national procurement approval are separate historical milestones.
 
-[Companion standards: Japan: CRYPTREC selections and Camellia protocol profiles](../docs/companion-standards.md#japan)
+[Companion standards: Japan: selection lists, additional primitives and Camellia profiles](../docs/companion-standards.md#japan)
 
 ## CLEFIA
 
@@ -435,7 +442,7 @@ Parameters: 128-bit block; 128/192/256-bit keys; 18/22/26 rounds
 
 - The preserved design dates do not establish when every Sony product first deployed CLEFIA.
 
-[Companion standards: Japan: CRYPTREC selections and Camellia protocol profiles](../docs/companion-standards.md#japan)
+[Companion standards: Japan: selection lists, additional primitives and Camellia profiles](../docs/companion-standards.md#japan)
 
 ## SEED
 
@@ -487,14 +494,197 @@ Parameters: 128-bit block; 128/192/256-bit keys; 12/14/16 rounds
 
 [Companion standards: Republic of Korea: SEED and ARIA protocol profiles](../docs/companion-standards.md#korea)
 
+## MISTY1
+
+A designer-authored public specification with explicit nonlinear functions, S-boxes and test data.
+
+Region: Japan  
+Role: Symmetric encryption  
+Construction: Nested Feistel construction with FL, FO and FI functions  
+Parameters: 64-bit block; 128-bit key; eight-round configuration recommended in RFC 2994
+
+### Documented statements
+
+- **INTL-MISTY1-F1** — RFC 2994 describes a 64-bit block cipher with a 128-bit key and variable round count, recommending eight rounds. Its FI function uses 7-bit and 9-bit S-boxes; FO and FL and the key schedule are explicitly described. ([S118](../sources/README.md#s118), Sections 1, 2.2 and 2.3)
+- **INTL-MISTY1-F2** — The preserved designer-authored RFC is dated November 2000 and cites Matsui’s FSE 1997 MISTY publication. The RFC is Informational; the publisher index labels its stream Legacy. ([S118](../sources/README.md#s118), Header; Section 6 reference [1]; [S100](../sources/README.md#s100), RFC2994 entry)
+
+### Technical inferences
+
+- **INTL-MISTY1-I1 · conditional** — A reported eight-round MISTY1 implementation can be compared with the published S-boxes, schedule and example data, rather than characterized only by its name or key length. Basis: INTL-MISTY1-F1.
+  Assumption: The implementation claims the RFC’s specified eight-round configuration.
+
+### Unresolved details
+
+- A 1997 publication citation and a 2000 RFC are not first governmental approval records. A present-day security recommendation is outside this historical profile.
+
+[Companion standards: Japan: selection lists, additional primitives and Camellia profiles](../docs/companion-standards.md#japan)
+
+## KCipher-2
+
+A public Japanese stream-cipher specification distinct from the block-cipher families in the archive.
+
+Region: Japan  
+Role: Keystream generation  
+Construction: Word-oriented stream cipher with feedback registers and nonlinear operations  
+Parameters: 128-bit key; 128-bit IV; 32-bit state words
+
+### Documented statements
+
+- **INTL-KCIPHER2-F1** — RFC 7008 specifies a 128-bit key and 128-bit IV, state registers, feedback shifts, nonlinear functions and keystream generation. It includes sample implementation code and test vectors. ([S119](../sources/README.md#s119), Abstract; Sections 2.2–2.5; Appendices B–C)
+- **INTL-KCIPHER2-F2** — The RFC was published in August 2013 as an Informational Independent Submission. It reports that KCipher-2 was published in 2007; this is a source-reported historical statement, not an original approval record. ([S119](../sources/README.md#s119), Header; Abstract; Status of This Memo)
+
+### Technical inferences
+
+- **INTL-KCIPHER2-I1 · conditional** — The 128-bit IV does not make the primitive a 128-bit block cipher; its specified interface produces a keystream from word-oriented state. Basis: INTL-KCIPHER2-F1.
+  Assumption: The name refers to the generator specified in RFC 7008.
+
+### Unresolved details
+
+- The RFC’s historical security statements describe its publication context and are not treated as a current cryptanalytic guarantee.
+
+[Companion standards: Japan: selection lists, additional primitives and Camellia profiles](../docs/companion-standards.md#japan)
+
+## KASUMI
+
+The preserved Release 17 specification exposes the cipher core and distinguishes it from the complete confidentiality and integrity algorithms.
+
+Region: International mobile standards / Japanese design context  
+Role: Symmetric encryption primitive for cellular algorithms  
+Construction: Eight-round Feistel cipher with FL, FO and FI functions  
+Parameters: 64-bit block; 128-bit key; eight rounds
+
+### Documented statements
+
+- **INTL-KASUMI-F1** — KASUMI has a 64-bit data block, a 128-bit key and eight Feistel rounds. Its FI function uses 7-bit and 9-bit S-boxes, and the specification gives round-key derivation and tables. ([S120](../sources/README.md#s120), Sections 3 and 4.1–4.6)
+- **INTL-KASUMI-F2** — The archived PDF is ETSI TS 135 202 V17.0.0 dated April 2022, incorporating 3GPP TS 35.202 Release 17. It specifies KASUMI as the component used by f8 and f9, rather than the complete algorithms. ([S120](../sources/README.md#s120), Cover; Section 0 Scope)
+- **INTL-KASUMI-F3** — 3GPP’s December 2002 design report identifies KASUMI as a modification of MISTY1 and describes separate data-path and key-schedule changes. The preserved report is explicitly a development copy not approved by the Organizational Partners. ([S139](../sources/README.md#s139), Cover; Sections 9.2–9.3, printed/PDF pp.14–15)
+
+### Technical inferences
+
+- **INTL-KASUMI-I1 · conditional** — The core cipher’s block/key sizes are insufficient to specify a cellular packet-protection operation; the f8/f9 construction and input handling also matter. Basis: INTL-KASUMI-F1, INTL-KASUMI-F2.
+  Assumption: The implementation uses KASUMI through a cellular confidentiality or integrity algorithm.
+
+### Unresolved details
+
+- This later standards edition does not establish KASUMI’s original invention or first approval date. Similar function names in MISTY1 do not establish interchangeability.
+
+[Companion standards: Japan: selection lists, additional primitives and Camellia profiles](../docs/companion-standards.md#japan)
+
+## Brainpool elliptic curves
+
+Published curve parameters are distinguished from the signature, agreement and transport protocols that use them.
+
+Region: Germany / international  
+Role: Elliptic-curve domain parameters  
+Construction: Prime-field elliptic curves and specified parameter-generation procedures  
+Parameters: Named r1/t1 curves at 160, 192, 224, 256, 320, 384 and 512 bits in RFC 5639
+
+### Documented statements
+
+- **INTL-BRAINPOOL-F1** — RFC 5639 gives prime-field curve parameter sets, requirements, OIDs and generation procedures. Its listed field sizes range from 160 to 512 bits. ([S123](../sources/README.md#s123), Sections 2–4; Appendix A)
+- **INTL-BRAINPOOL-F2** — RFC 8734 defines separate Brainpool groups and signature scheme identifiers for TLS 1.3. Both RFCs are Informational Independent Submissions. ([S124](../sources/README.md#s124), Header; Sections 2–3; [S123](../sources/README.md#s123), Header)
+- **INTL-BRAINPOOL-F3** — BSI TR-03111 separately specifies signature, key-agreement and encoding operations. ANSSI’s 2021 selection guide lists selected Brainpool curves, which is a different kind of evidence from the original curve definition. ([S125](../sources/README.md#s125), Sections 4.2–4.4 and 5; [S130](../sources/README.md#s130), Section 5.3, printed pp.31–32 / PDF pp.33–34)
+
+### Technical inferences
+
+- **INTL-BRAINPOOL-I1 · conditional** — Sharing a curve does not imply sharing a signature scheme, key-agreement protocol or encoding; these are independent choices in the preserved records. Basis: INTL-BRAINPOOL-F1, INTL-BRAINPOOL-F2, INTL-BRAINPOOL-F3.
+  Assumption: The implementations use a named Brainpool domain parameter set through the cited schemes.
+
+### Unresolved details
+
+- Listing a curve in the 2010 parameter document is not a present-day recommendation for every listed size or evidence of classified product approval.
+
+[Companion standards: Germany: ECC constructions, Brainpool and protocol guidance](../docs/companion-standards.md#germany)
+
+[Companion standards: France: ANSSI selection and mechanism rules](../docs/companion-standards.md#france)
+
+## SNOW 3G
+
+An explicitly specified generator with separately preserved UEA2/UIA2 algorithms, tests and design rationale.
+
+Region: International mobile standards  
+Role: Keystream generation for confidentiality and integrity constructions  
+Construction: 16-word LFSR and three-register nonlinear finite-state machine  
+Parameters: 128-bit key; 128-bit IV; 32-bit output words
+
+### Documented statements
+
+- **INTL-SNOW3G-F1** — The generator produces 32-bit keystream words from a 128-bit key and IV and combines a 16-word LFSR with a three-register FSM. ([S131](../sources/README.md#s131), Sections 2.1, 3.2 and 3.3)
+- **INTL-SNOW3G-F2** — The design report traces SNOW 3G to SNOW 2.0 and specifies the reasoning for changing the nonlinear/FSM components. This is documented design history rather than an inference from a shared name. ([S134](../sources/README.md#s134), Sections 8.1.2–8.3)
+- **INTL-SNOW3G-F3** — Document 2 v1.1 is dated 2006-09-06; Document 1 v2.1 is dated 2009-03-16; Document 3 v1.1 is dated 2012-10-25. They describe different layers and have separate histories. ([S131](../sources/README.md#s131), Cover and Document History; [S132](../sources/README.md#s132), Cover and Document History; [S133](../sources/README.md#s133), Cover and Document History)
+
+### Technical inferences
+
+- **INTL-SNOW3G-I1 · conditional** — A comparison with ZUC should distinguish generator architecture from the surrounding packet confidentiality/integrity algorithms; the public specifications expose both layers. Basis: INTL-SNOW3G-F1, INTL-SNOW3G-F3, INTL-ZUC-F1, INTL-ZUC-F2.
+  Assumption: The comparison concerns the preserved 128-bit-key generator families, not an unpreserved later variant.
+
+### Unresolved details
+
+- The 2006 evaluation does not establish immunity to later attacks, and packet-algorithm conformance is not established solely by generator test vectors.
+
+[Companion standards: International mobile standards: SNOW 3G, UEA2 and UIA2](../docs/companion-standards.md#mobile-snow)
+
+## NEMA
+
+A surviving original bilingual manual provides operational structure and a directly visible declassification annotation.
+
+Region: Switzerland  
+Role: Historical machine encryption  
+Construction: Electromechanical wheel machine with electrical contact and stepping wheels  
+Parameters: Manual describes five contact wheels, five stepping wheels and ten-letter external settings
+
+### Documented statements
+
+- **INTL-NEMA-F1** — The manual’s opening describes five electrical contact wheels and five mechanical stepping wheels. It distinguishes internal wheel arrangement from a ten-letter external setting. ([S136](../sources/README.md#s136), German Section I, printed p.1 / PDF p.2)
+- **INTL-NEMA-F2** — The operator enters a letter on the keyboard and reads the corresponding lamp; the same procedure is used for deciphering after the prescribed setting. Additional control keys operate auxiliary devices without operating the cipher mechanism. ([S136](../sources/README.md#s136), German Section I, printed p.1 / PDF p.2; Section II.B.1, printed p.3 / PDF p.3)
+- **INTL-NEMA-F3** — This copy is numbered 717 and its cover bears a declassification stamp dated 9 July 1992. The inspected copy does not establish its original issue date. ([S136](../sources/README.md#s136), Cover, PDF p.1; opening, PDF p.2)
+
+### Technical inferences
+
+- **INTL-NEMA-I1 · conditional** — The ten-letter external setting is one part of the keying procedure, not a sufficient description of the entire key space; the manual separately identifies the internal wheel arrangement. Basis: INTL-NEMA-F1.
+  Assumption: The keying procedure is the one described in this manual, with wheel arrangement not fixed by another external instruction.
+
+### Unresolved details
+
+- Original approval and publication dates are not established. The manual does not by itself prove the wiring or interchangeability of every surviving NEMA variant.
+
+[Companion standards: Swiss and Swedish historical machine records](../docs/companion-standards.md#historical-archives)
+
+## Siemens T52 / G-schreiber
+
+FRA preserves an institutional history and a participant’s explicitly reconstructed account of the Swedish cryptanalysis.
+
+Region: Germany / Swedish cryptanalytic records  
+Role: Historical teleprinter encryption  
+Construction: Five-impulse masking and transposition, as described in the published reconstruction  
+Parameters: Five teleprinter bit positions; aligned parallel traffic is central to Borelius’s account
+
+### Documented statements
+
+- **INTL-T52-F1** — FRA’s history identifies the G-schreiber as Siemens und Halske T52. It dates the first interception of this teleprinter traffic to 19 May 1940 and describes Beurling’s solution and subsequent logical replicas. ([S137](../sources/README.md#s137), G-skrivaren, printed pp.8–9 / PDF p.5)
+- **INTL-T52-F2** — Borelius’s published account describes five-bit teleprinter symbols subjected to common masking and transposition in aligned parallel messages. Its introduction says the account was written in the 1980s and reconstructs how Beurling may have worked. ([S138](../sources/README.md#s138), Introduction; passage beginning Dessa tecken har utsatts för samma överlagring och samma transposition; following comparison and transposition discussion)
+
+### Technical inferences
+
+- **INTL-T52-I1 · conditional** — For a fixed mask K and bit permutation pi, the map C=pi(P XOR K) preserves pairwise Hamming distances between aligned plaintext symbols. This explains the kind of comparison described in the account without proving Beurling’s actual sequence of discoveries. Basis: INTL-T52-F2.
+  Assumption: The compared messages use the same mask and permutation at the aligned position; no claim is made about all T52 models or operating states.
+
+### Unresolved details
+
+- The retrospective account is not a contemporaneous explanation by Beurling. Exact model variants, full wiring and original German approval dates are outside these sources.
+
+[Companion standards: Swiss and Swedish historical machine records](../docs/companion-standards.md#historical-archives)
+
 ## Translation and preservation notes
 
 The seven English SM2/SM3/SM4 files are preserved as hosted by Alipay. Their covers lack official dated Chinese standard identifiers; the filenames alone do not verify an edition or an authorized translation. In particular, the SM2 Part 5 filename contains 2016 while RFC 8998 cites a 2017 standard. The catalogue keeps this discrepancy visible. Official Chinese records and the contemporary OSCCA announcement provide separate date evidence.
 
 Official 2010 SM2 Parts 1–4, the recommended-curve sheet, and the original SM3 release are now preserved separately (S096–S098), together with the 2010-12-17 announcements (S070–S071). These earlier release texts are distinct from the hosted English translations and later GM/T/GB/T editions.
 
+The Chinese-language 2012/2014 companion scans (S109–S114) are pinned third-party mirror copies. S109 includes all body pages 1–7; the earlier S074 remains incomplete. Russian mirror copies retain host-added advertising/link text. New French distribution links point to different PDF editions (2026 rules and a 2021 selection guide). These provenance and edition distinctions remain explicit in the companion guide.
+
 The Fialka manual copy explicitly lacks original pages 2, 4 and 60. Turing Chapter 1, the Newmanry report portion and the Bletchley dictionary are edited transcriptions. They are labeled as such. Original RFC text is preserved when that is the publisher's available source format.
 
 ## Further acquisitions
 
-The archive can be extended with independently sourced French, Swiss, Swedish, Israeli, Indian and other collections; earlier Chinese cryptologic history; and public records of additional Soviet equipment. Record a concrete source and its provenance before adding a design or approval claim. This edition does not claim worldwide completeness.
+French ANSSI guides, original Swiss NEMA instructions and Swedish FRA historical records are now preserved. Further targets include original Swiss approval records, additional Swedish contemporary machine documents, Israeli and Indian collections, earlier Chinese cryptologic history, and public records of further Soviet equipment. Original first-approval and full revised standards remain separate acquisition questions. This edition does not claim worldwide completeness.

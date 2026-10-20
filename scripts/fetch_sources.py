@@ -42,7 +42,8 @@ def acquire(source, refresh=False):
                 raise ValueError('Response does not contain the expected original RFC text header')
             if source['format'] == 'html' and any(marker in first.lower() for marker in (
                 b'your request originates from an undeclared automated tool',
-                b'<title>access denied', b'<title>just a moment')):
+                b'<title>access denied', b'<title>just a moment',
+                b'/_incapsula_resource?', b'incapsula incident id')):
                 raise ValueError('Response is an automated-access interstitial, not the source page')
             h = hashlib.sha256()
             size = 0
